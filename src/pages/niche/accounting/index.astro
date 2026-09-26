@@ -1,0 +1,27 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { accountingTools } from '../../../data/accountingTools';
+const base=import.meta.env.BASE_URL;
+const title='Accounting Calculators & Finance Tools';
+const description='Free accounting calculators for working capital, liquidity, cash conversion, inventory, receivables, debt coverage, depreciation and business finance.';
+const schema={"@context":"https://schema.org","@type":"CollectionPage",name:title,description,url:new URL(`${base}niche/accounting/`,Astro.site||Astro.url).href};
+---
+<Layout title={`${title} | Ozarbox`} description={description}>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+<section class="container prose">
+<div class="eyebrow">Accounting · {accountingTools.length} tools</div>
+<h1>{title}</h1>
+<p>{description} Each calculator explains the formula, assumptions and example inputs so you can use it as a planning aid rather than a black-box number generator.</p>
+<div class="tool-grid" style="margin-top:28px">{accountingTools.map(t=><a class="card" href={`${base}niche/accounting/${t.slug}/`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div>
+<h2 style="margin-top:42px">Accounting tools by workflow</h2>
+<p>Use liquidity tools for short-term obligations, working-capital tools for cash-cycle decisions, leverage tools for financing analysis and fixed-asset tools for depreciation planning.</p>
+<h2>Important assumptions</h2>
+<p>These calculators use simplified formulas and user-supplied figures. Accounting policies, reporting standards, lender definitions and local rules can differ. Verify material decisions against the applicable accounting framework, loan agreement or qualified professional advice.</p>
+<h2>Related Ozarbox tools</h2>
+<div class="tool-grid">
+<a class="card" href={`${base}niche/micro-business/`}><strong>Micro-business tools</strong><span>GST, invoice, late-fee and small-business planning tools.</span></a>
+<a class="card" href={`${base}niche/professional-trades/`}><strong>Professional trades</strong><span>Tools for electricians, plumbers, contractors and other trades.</span></a>
+<a class="card" href={`${base}niche/construction/`}><strong>Construction</strong><span>Material quantity and project estimation calculators.</span></a>
+</div>
+</section>
+</Layout>

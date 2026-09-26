@@ -1,9 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { nicheTools } from '../../data/nicheTools';
-const groups=Object.entries(Object.groupBy(nicheTools,t=>t.cluster));
+const grouped=nicheTools.reduce((acc,t)=>{(acc[t.cluster]??=[]).push(t);return acc;},{} as Record<string,typeof nicheTools>);
 ---
 <Layout title="Niche Professional Calculators | ToolPlatform" description="Free niche calculators for solar, EV, HVAC, construction, trades, micro-business, GST, plumbing and sanitation.">
 <section class="container prose"><div class="eyebrow">Professional tools</div><h1>Niche calculators built for real workflows</h1><p>Browse focused tools for jobs that generic calculator sites handle poorly. These are designed around specific professional tasks, with transparent assumptions and browser-based calculations.</p>
-{groups.map(([cluster,items])=><section style="margin-top:34px"><h2><a href={`/niche/${cluster}/`}>{cluster.replaceAll('-',' ')}</a></h2><div class="tool-grid">{items.map(t=><a class="card" href={`/niche/${t.slug}`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div></section>)}
+{Object.entries(grouped).map(([cluster,items])=><section style="margin-top:34px"><h2><a href={`/niche/${cluster}/`}>{cluster.replaceAll('-',' ')}</a></h2><div class="tool-grid">{items.map(t=><a class="card" href={`/niche/${t.slug}`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div></section>)}
 </section></Layout>

@@ -18,6 +18,14 @@ const schema={"@context":"https://schema.org","@type":"WebApplication","name":"C
 </section>
 </Layout>
 <script>
-const n=(id)=>Number(document.getElementById(id).value||0); const money=(x)=>x.toLocaleString(undefined,{style:'currency',currency:'USD',maximumFractionDigits:2});
-document.getElementById('calculate')?.addEventListener('click',()=>{const productive=n('chairs')*n('days')*n('hours')*n('utilization')/100; const out=productive>0?n('overhead')/productive:NaN; document.getElementById('result').textContent=Number.isFinite(out)?`Estimated overhead: ${money(out)} per productive chair hour | Productive hours/month: ${productive.toFixed(1)}`:'Check your inputs.';});
+const input=(id:string): HTMLInputElement => {
+  const el=document.getElementById(id);
+  if (!(el instanceof HTMLInputElement)) throw new Error(`Expected input: ${id}`);
+  return el;
+};
+const n=(id:string):number=>Number(input(id).value||0);
+const money=(x:number):string=>x.toLocaleString(undefined,{style:'currency',currency:'USD',maximumFractionDigits:2});
+const result=document.getElementById('result');
+if (!result) throw new Error('Missing result element');
+document.getElementById('calculate')?.addEventListener('click',()=>{const productive=n('chairs')*n('days')*n('hours')*n('utilization')/100; const out=productive>0?n('overhead')/productive:NaN; result.textContent=Number.isFinite(out)?`Estimated overhead: ${money(out)} per productive chair hour | Productive hours/month: ${productive.toFixed(1)}`:'Check your inputs.';});
 </script>

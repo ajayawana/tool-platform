@@ -1,0 +1,12 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { researchTools } from '../../data/researchTools';
+const clusters=[...new Set(researchTools.map(t=>t.cluster))];
+---
+<Layout title="Niche Research Tools | Ozarbox" description="Free niche calculators for business costs, construction job costing, creator economics, US tax planning, freight logistics and physician practice.">
+<main class="container" style="padding:32px 0 60px">
+<header class="tool-head"><div class="eyebrow">Ozarbox research tools</div><h1>Niche Professional Calculators</h1><p>Focused calculators for specific business and professional needs. Each tool exposes its assumptions so you can adapt the model to your own numbers.</p></header>
+<section class="tool-grid">{clusters.map(cluster=><a class="card" href={`/research/cluster/${cluster}/`}><strong>{cluster.replaceAll('-',' ')}</strong><span>{researchTools.filter(t=>t.cluster===cluster).length} tools in this cluster.</span></a>)}</section>
+<section style="margin-top:42px"><h2>All research tools</h2><div class="tool-grid">{researchTools.map(t=><a class="card" href={`/research/${t.slug}/`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div></section>
+</main>
+</Layout>

@@ -1,0 +1,11 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { nicheTools } from '../../../data/nicheTools';
+const clusters=[...new Set(nicheTools.map(t=>t.cluster))];
+export function getStaticPaths(){return clusters.map(cluster=>({params:{cluster},props:{cluster,items:nicheTools.filter(t=>t.cluster===cluster)}}));}
+const {cluster,items}=Astro.props;
+const title=`${cluster.replaceAll('-',' ')} calculators & professional tools`;
+---
+<Layout title={`${title} | ToolPlatform`} description={`Free ${cluster.replaceAll('-',' ')} calculators and professional planning tools. Fast, browser-based and designed for practical estimates.`}>
+<section class="container prose"><div class="eyebrow">Niche tools</div><h1>{title}</h1><p>Purpose-built tools for a specific workflow. Each calculator explains its assumptions so you can adapt the inputs to your project, market and local requirements.</p><div class="tool-grid" style="margin-top:28px">{items.map(t=><a class="card" href={`/niche/${t.slug}`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div><h2 style="margin-top:42px">Important note</h2><p>These tools are estimates, not engineering, legal, tax or regulatory advice. Verify critical decisions against current official standards, local codes, contracts and manufacturer documentation.</p></section>
+</Layout>

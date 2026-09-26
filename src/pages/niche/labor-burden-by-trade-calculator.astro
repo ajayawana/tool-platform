@@ -19,6 +19,19 @@ const schema={"@context":"https://schema.org","@type":"WebApplication","name":"L
 </section>
 </Layout>
 <script>
-const n=(id)=>Number(document.getElementById(id).value||0); const money=(x)=>x.toLocaleString(undefined,{style:'currency',currency:'USD',maximumFractionDigits:2});
-document.getElementById('calculate')?.addEventListener('click',()=>{const burden=n('payroll')+n('workers')+n('benefits'); const loaded=n('wage')*(1+burden/100); const productive=n('pto')<100?loaded/(1-n('pto')/100):NaN; document.getElementById('result').textContent=Number.isFinite(productive)?`${document.getElementById('trade').value}: ${money(productive)} estimated productive-hour cost | Burden: ${burden.toFixed(1)}% | Loaded paid-hour cost: ${money(loaded)}`:'Check your inputs.';});
+const input=(id:string): HTMLInputElement => {
+  const el=document.getElementById(id);
+  if (!(el instanceof HTMLInputElement)) throw new Error(`Expected input: ${id}`);
+  return el;
+};
+const select=(id:string): HTMLSelectElement => {
+  const el=document.getElementById(id);
+  if (!(el instanceof HTMLSelectElement)) throw new Error(`Expected select: ${id}`);
+  return el;
+};
+const n=(id:string):number=>Number(input(id).value||0);
+const money=(x:number):string=>x.toLocaleString(undefined,{style:'currency',currency:'USD',maximumFractionDigits:2});
+const result=document.getElementById('result');
+if (!result) throw new Error('Missing result element');
+document.getElementById('calculate')?.addEventListener('click',()=>{const burden=n('payroll')+n('workers')+n('benefits'); const loaded=n('wage')*(1+burden/100); const productive=n('pto')<100?loaded/(1-n('pto')/100):NaN; result.textContent=Number.isFinite(productive)?`${select('trade').value}: ${money(productive)} estimated productive-hour cost | Burden: ${burden.toFixed(1)}% | Loaded paid-hour cost: ${money(loaded)}`:'Check your inputs.';});
 </script>

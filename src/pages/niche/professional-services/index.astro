@@ -1,0 +1,21 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { professionalTools } from '../../../data/professionalTools';
+const base=import.meta.env.BASE_URL;
+const title='Professional Services Calculators';
+const description='Free calculators for freelancers, consultants, agencies and service businesses covering rates, utilization, retainers, project margins, profitability and cash runway.';
+const schema={"@context":"https://schema.org","@type":"CollectionPage",name:title,description,url:new URL(`${base}niche/professional-services/`,Astro.site||Astro.url).href};
+---
+<Layout title={`${title} | Ozarbox`} description={description}>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+<section class="container prose">
+<div class="eyebrow">Professional services · {professionalTools.length} tools</div>
+<h1>{title}</h1>
+<p>{description} The goal is practical pricing and profitability analysis: enter your real workload, costs and target rate rather than relying on generic industry averages.</p>
+<div class="tool-grid" style="margin-top:28px">{professionalTools.map(t=><a class="card" href={`${base}niche/professional-services/${t.slug}/`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div>
+<h2 style="margin-top:42px">Use these tools as a connected workflow</h2>
+<p>Start with utilisation and rate calculations, price projects or retainers, then check client profitability and cash runway. The same business can use several tools together to stress-test a pricing decision.</p>
+<h2>Important assumptions</h2>
+<p>Professional-service economics vary by market, specialization, tax structure and workload. These calculators are planning estimates and do not guarantee a sustainable rate or business outcome.</p>
+</section>
+</Layout>

@@ -1,6 +1,6 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import { researchTools } from '../../../data/researchTools';
+import Layout from '../../../../layouts/Layout.astro';
+import { researchTools } from '../../../../data/researchTools';
 export function getStaticPaths(){const clusters=[...new Set(researchTools.map(t=>t.cluster))];return clusters.map(cluster=>({params:{cluster},props:{cluster,tools:researchTools.filter(t=>t.cluster===cluster)}}));}
 const {cluster,tools}=Astro.props;
 ---

@@ -1,0 +1,45 @@
+name: Auto-fix build source
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fix niche slug cluster variable
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('src/pages/niche/[slug].astro')
+          text = p.read_text()
+          marker = "const allTools=[...nicheTools,...globalTools];"
+          declaration = "const clusters=[...new Set(allTools.map(t=>t.cluster))].sort();"
+          if marker in text and declaration not in text:
+              text = text.replace(marker, marker + "\n" + declaration, 1)
+              p.write_text(text)
+              print('Inserted missing clusters declaration.')
+          else:
+              print('No source change needed.')
+          PY
+
+      - name: Commit fix if changed
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 'src/pages/niche/[slug].astro'
+          git commit -m "Fix niche tool build cluster variable"
+          git push

@@ -1,0 +1,21 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { dairyTools } from '../../data/dairyTools';
+---
+<Layout title="Dairy & Buffalo Calculators | ToolPlatform" description="Free dairy, buffalo and cattle calculators for feed cost, milk profit, break-even, startup cost and farm planning.">
+  <section class="container">
+    <div class="breadcrumbs"><a href="/">Home</a> / Dairy Tools</div>
+    <div class="tool-head">
+      <div class="eyebrow">Dairy & Buffalo</div>
+      <h1>Dairy & Buffalo Calculators</h1>
+      <p>Free practical calculators for dairy farmers, buffalo owners and small dairy businesses. Enter your own local prices and production numbers.</p>
+    </div>
+    <div class="tools-grid">
+      {dairyTools.map(tool => <a class="card" href={`/dairy/${tool.slug}/`}><h2>{tool.title}</h2><p>{tool.description}</p></a>)}
+    </div>
+    <div style="max-width:760px;margin-top:40px">
+      <h2>How these dairy calculators work</h2>
+      <p>These tools are planning calculators, not veterinary or animal-nutrition prescriptions. Results depend on the quality of your inputs, local feed prices, animal condition and farm practices.</p>
+    </div>
+  </section>
+</Layout>

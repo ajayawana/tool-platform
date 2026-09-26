@@ -1,43 +1,86 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { tools } from '../../data/tools';
-export function getStaticPaths(){return tools.map(tool=>({params:{slug:tool.slug},props:{tool}}));}
-const {tool}=Astro.props;
+export function getStaticPaths() { return tools.map(tool => ({ params: { slug: tool.slug }, props: { tool } })); }
+const { tool } = Astro.props;
 ---
 <Layout title={`${tool.title} | ToolPlatform`} description={tool.description}>
-<section class="tool-wrap container">
-<div class="breadcrumbs"><a href="/">Home</a> / <a href="/categories/">Tools</a> / {tool.title}</div>
-<div class="tool-head"><div class="eyebrow">{tool.category}</div><h1>{tool.title}</h1><p>{tool.description}</p></div>
-<div class="tool-box"><div class="form-grid">{tool.inputs.map(input=><label>{input.label}<input data-key={input.key} type="number" inputmode="decimal" placeholder={input.placeholder}/></label>)}</div><button id="calculate">Calculate</button><div class="result" id="result" aria-live="polite">Enter your values and tap Calculate.</div></div>
-<div style="max-width:760px;margin-top:30px"><h2>About this tool</h2><p>This free tool runs in your browser. Your entered values are not sent to a server by the calculator.</p></div>
-</section>
+  <section class="tool-wrap container">
+    <div class="breadcrumbs"><a href="/">Home</a> / <a href="/categories/">Tools</a> / {tool.title}</div>
+    <div class="tool-head"><div class="eyebrow">{tool.category}</div><h1>{tool.title}</h1><p>{tool.description}</p></div>
+    <div class="tool-box">
+      <div class="form-grid">
+        {tool.inputs.map(input => <label>{input.label}<input data-key={input.key} type="number" inputmode="decimal" placeholder={input.placeholder} /></label>)}
+      </div>
+      <button id="calculate">Calculate</button>
+      <div class="result" id="result" aria-live="polite">Enter your values and tap Calculate.</div>
+    </div>
+    <div style="max-width:760px;margin-top:30px"><h2>About this calculator</h2><p>This free tool performs the calculation instantly in your browser. Your entered values are not sent to a server.</p></div>
+  </section>
 </Layout>
-<script define:vars={{inputs:tool.inputs}}>
-const $=(k)=>document.querySelector(`[data-key="${k}"]`);const n=k=>Number($(k)?.value||0);const f=x=>Number(x).toLocaleString(undefined,{maximumFractionDigits:2});
-document.querySelector('#calculate')?.addEventListener('click',()=>{const key=location.pathname.split('/').filter(Boolean).pop();let out='Calculation unavailable.';
-const sum=inputs.map(x=>Number($(x.key)?.value)).filter(Number.isFinite);const avg=sum.length?sum.reduce((a,b)=>a+b,0)/sum.length:0;
-if(key==='percentage-calculator')out=f(n('percent')*n('number')/100);
-else if(key==='percentage-change-calculator')out=n('old')===0?'Original value cannot be 0.':`${f((n('new')-n('old'))/Math.abs(n('old'))*100)}%`;
-else if(key==='discount-calculator'){const d=n('price')*n('discount')/100;out=`Discount: ${f(d)} | Final price: ${f(n('price')-d)}`;}
-else if(key==='profit-calculator'){const p=n('selling')-n('cost');out=`Profit: ${f(p)} | Profit %: ${n('cost')?f(p/n('cost')*100)+'%':'N/A'}`;}
-else if(key==='margin-calculator')out=n('revenue')===0?'Revenue cannot be 0.':`${f((n('revenue')-n('cost'))/n('revenue')*100)}% margin`;
-else if(key==='markup-calculator'){const m=n('cost')*n('markup')/100;out=`Markup: ${f(m)} | Selling price: ${f(n('cost')+m)}`;}
-else if(key==='ratio-calculator'){let a=Math.abs(n('a')),b=Math.abs(n('b')),x=a,y=b;while(y){const t=x%y;x=y;y=t}out=x?`${f(a/x)} : ${f(b/x)}`:'Enter non-zero values.';}
-else if(key==='average-calculator'||key==='gpa-calculator')out=f(avg);
-else if(key==='fraction-calculator'){if(!n('b')||!n('d'))out='Denominators cannot be 0.';else{const num=n('a')*n('d')+n('c')*n('b'),den=n('b')*n('d');out=`${f(num)} / ${f(den)} = ${f(num/den)}`;}}
-else if(key==='tip-calculator'){const tip=n('bill')*n('tip')/100;out=`Tip: ${f(tip)} | Total: ${f(n('bill')+tip)}`;}
-else if(key==='sales-tax-calculator'){const tax=n('price')*n('tax')/100;out=`Tax: ${f(tax)} | Total: ${f(n('price')+tax)}`;}
-else if(key==='compound-interest-calculator'){const amount=n('frequency')>0?n('principal')*Math.pow(1+n('rate')/100/n('frequency'),n('frequency')*n('years')):0;out=`Final amount: ${f(amount)} | Interest: ${f(amount-n('principal'))}`;}
-else if(key==='simple-interest-calculator'){const interest=n('principal')*n('rate')/100*n('years');out=`Interest: ${f(interest)} | Total: ${f(n('principal')+interest)}`;}
-else if(key==='loan-payment-calculator'){const r=n('rate')/100/12,m=n('months'),p=n('amount');if(!m)out='Term must be greater than 0.';else if(!r)out=`Monthly payment: ${f(p/m)}`;else out=`Monthly payment: ${f(p*r*Math.pow(1+r,m)/(Math.pow(1+r,m)-1))}`;}
-else if(key==='bmi-calculator'){const h=n('height')/100;out=h>0?`BMI: ${f(n('weight')/(h*h))}`:'Height must be greater than 0.';}
-else if(key==='age-calculator')out=`Age: ${f(Math.max(0,n('currentYear')-n('birthYear')))} years`;
-else if(key==='time-duration-calculator')out=`Duration: ${f((n('end')-n('start')+24)%24)} hours`;
-else if(key==='unit-price-calculator')out=n('quantity')>0?`Unit price: ${f(n('price')/n('quantity'))}`:'Quantity must be greater than 0.';
-else if(key==='fuel-cost-calculator')out=n('efficiency')>0?`Fuel used: ${f(n('distance')/n('efficiency'))} L | Cost: ${f(n('distance')/n('efficiency')*n('price'))}`:'Efficiency must be greater than 0.';
-else if(key==='speed-distance-time-calculator')out=n('hours')>0?`Average speed: ${f(n('distance')/n('hours'))} km/h`:'Time must be greater than 0.';
-else if(key==='ohms-law-calculator')out=`Voltage: ${f(n('current')*n('resistance'))} V`;
-else if(key==='calories-burned-calculator')out=`Estimated calories: ${f(n('met')*3.5*n('weight')/200*n('minutes'))} kcal`;
-else if(key==='break-even-calculator'){const c=n('price')-n('variable');out=c>0?`Break-even units: ${f(n('fixed')/c)}`:'Price must exceed variable cost.';}
-document.querySelector('#result').textContent=out;});
+<script define:vars={{ inputs: tool.inputs }}>
+  const button = document.querySelector('#calculate');
+  const result = document.querySelector('#result');
+  const fmt = (n) => Number.isFinite(n) ? n.toLocaleString(undefined,{maximumFractionDigits:2}) : 'N/A';
+  const gcd = (a,b) => { a=Math.abs(Math.trunc(a)); b=Math.abs(Math.trunc(b)); while(b){const t=a%b;a=b;b=t} return a; };
+  button?.addEventListener('click', () => {
+    const raw = Object.fromEntries(inputs.map(input => [input.key, document.querySelector(`[data-key="${input.key}"]`)?.value ?? '']));
+    const values = Object.fromEntries(inputs.map(input => [input.key, Number(raw[input.key] || 0)]));
+    const key = location.pathname.split('/').filter(Boolean).pop();
+    const need = (keys) => keys.every(k => raw[k] !== '');
+    const formulas = {
+      'percentage-calculator': () => need(['percent','number']) ? fmt(values.percent*values.number/100) : 'Enter all values.',
+      'percentage-change-calculator': () => !need(['old','new']) ? 'Enter all values.' : values.old===0 ? 'Original value cannot be 0.' : `${fmt((values.new-values.old)/Math.abs(values.old)*100)}%`,
+      'discount-calculator': () => {if(!need(['price','discount']))return 'Enter all values.';const d=values.price*values.discount/100;return `Discount: ${fmt(d)} | Final price: ${fmt(values.price-d)}`},
+      'profit-calculator': () => {if(!need(['cost','selling']))return 'Enter all values.';const p=values.selling-values.cost;return `Profit: ${fmt(p)} | Profit %: ${values.cost===0?'N/A':fmt(p/values.cost*100)+'%'}`},
+      'margin-calculator': () => !need(['revenue','cost']) ? 'Enter all values.' : values.revenue===0?'Revenue cannot be 0.':`${fmt((values.revenue-values.cost)/values.revenue*100)}% margin`,
+      'markup-calculator': () => {if(!need(['cost','markup']))return 'Enter all values.';const m=values.cost*values.markup/100;return `Markup: ${fmt(m)} | Selling price: ${fmt(values.cost+m)}`},
+      'ratio-calculator': () => {if(!need(['a','b']))return 'Enter both values.';const g=gcd(values.a,values.b);return g?`${values.a/g} : ${values.b/g}`:'Enter non-zero values.'},
+      'average-calculator': () => {const v=inputs.map(i=>raw[i.key] === '' ? null : values[i.key]).filter(v=>v!==null);return v.length?fmt(v.reduce((a,b)=>a+b,0)/v.length):'Enter at least one number.'},
+      'fraction-calculator': () => {if(!need(['a','b','c','d']))return 'Enter all values.';if(!values.b||!values.d)return 'Denominators cannot be 0.';const num=values.a*values.d+values.c*values.b,den=values.b*values.d,g=gcd(num,den);return `${num/g} / ${den/g} = ${fmt(num/den)}`},
+      'tip-calculator': () => {if(!need(['bill','tip']))return 'Enter all values.';const tip=values.bill*values.tip/100;return `Tip: ${fmt(tip)} | Total: ${fmt(values.bill+tip)}`},
+      'sales-tax-calculator': () => {if(!need(['price','tax']))return 'Enter all values.';const t=values.price*values.tax/100;return `Tax: ${fmt(t)} | Total: ${fmt(values.price+t)}`},
+      'compound-interest-calculator': () => {if(!need(['principal','rate','years','frequency']))return 'Enter all values.';if(values.frequency<=0)return 'Compounding frequency must be above 0.';const total=values.principal*Math.pow(1+values.rate/100/values.frequency,values.frequency*values.years);return `Final amount: ${fmt(total)} | Interest: ${fmt(total-values.principal)}`},
+      'simple-interest-calculator': () => {if(!need(['principal','rate','years']))return 'Enter all values.';const i=values.principal*values.rate/100*values.years;return `Interest: ${fmt(i)} | Total: ${fmt(values.principal+i)}`},
+      'loan-payment-calculator': () => {if(!need(['amount','rate','months']))return 'Enter all values.';if(values.months<=0)return 'Term must be above 0.';const r=values.rate/100/12,p=values.amount*(r? r*Math.pow(1+r,values.months)/(Math.pow(1+r,values.months)-1):1/values.months);return `Monthly payment: ${fmt(p)} | Total paid: ${fmt(p*values.months)}`},
+      'bmi-calculator': () => {if(!need(['weight','height']))return 'Enter all values.';if(values.height<=0)return 'Height must be above 0.';return `BMI: ${fmt(values.weight/Math.pow(values.height/100,2))}`},
+      'age-calculator': () => {if(!need(['birthYear','currentYear']))return 'Enter all values.';return values.currentYear>=values.birthYear?`${fmt(values.currentYear-values.birthYear)} years`:'Current year must be after birth year.'},
+      'time-duration-calculator': () => {if(!need(['start','end']))return 'Enter all values.';let h=values.end-values.start;if(h<0)h+=24;return `${fmt(h)} hours`},
+      'unit-price-calculator': () => !need(['price','quantity'])?'Enter all values.':values.quantity<=0?'Quantity must be above 0.':fmt(values.price/values.quantity),
+      'fuel-cost-calculator': () => {if(!need(['distance','efficiency','price']))return 'Enter all values.';if(values.efficiency<=0)return 'Efficiency must be above 0.';const liters=values.distance/values.efficiency;return `Fuel: ${fmt(liters)} L | Cost: ${fmt(liters*values.price)}`},
+      'speed-distance-time-calculator': () => !need(['distance','hours'])?'Enter all values.':values.hours<=0?'Time must be above 0.':`${fmt(values.distance/values.hours)} km/h`,
+      'gpa-calculator': () => {const v=inputs.map(i=>raw[i.key]===''?null:values[i.key]).filter(v=>v!==null);return v.length?`GPA: ${fmt(v.reduce((a,b)=>a+b,0)/v.length)}`:'Enter at least one grade.'},
+      'ohms-law-calculator': () => !need(['current','resistance'])?'Enter all values.':`Voltage: ${fmt(values.current*values.resistance)} V`,
+      'calories-burned-calculator': () => !need(['weight','met','minutes'])?'Enter all values.':`Estimated calories: ${fmt(values.met*3.5*values.weight/200*values.minutes)} kcal`,
+      'break-even-calculator': () => {if(!need(['fixed','price','variable']))return 'Enter all values.';const c=values.price-values.variable;return c<=0?'Price must exceed variable cost.':`Break-even: ${fmt(values.fixed/c)} units`},
+      'mortgage-payment-calculator': () => {if(!need(['amount','rate','years']))return 'Enter all values.';const n=values.years*12,r=values.rate/100/12,p=values.amount*(r?r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1):1/n);return `Monthly payment: ${fmt(p)} | Total: ${fmt(p*n)}`},
+      'savings-goal-calculator': () => !need(['target','current','months'])?'Enter all values.':values.months<=0?'Months must be above 0.':`Monthly saving needed: ${fmt(Math.max(0,values.target-values.current)/values.months)}`,
+      'cagr-calculator': () => {if(!need(['start','end','years']))return 'Enter all values.';if(values.start<=0||values.end<0||values.years<=0)return 'Values must be valid.';return `CAGR: ${fmt((Math.pow(values.end/values.start,1/values.years)-1)*100)}%`},
+      'roi-calculator': () => !need(['gain','investment'])?'Enter all values.':values.investment===0?'Investment cannot be 0.':`ROI: ${fmt((values.gain-values.investment)/values.investment*100)}%`,
+      'commission-calculator': () => !need(['sales','rate'])?'Enter all values.':`Commission: ${fmt(values.sales*values.rate/100)} | Total earnings: ${fmt(values.sales+values.sales*values.rate/100)}`,
+      'conversion-rate-calculator': () => !need(['conversions','visitors'])?'Enter all values.':values.visitors===0?'Visitors cannot be 0.':`Conversion rate: ${fmt(values.conversions/values.visitors*100)}%`,
+      'roas-calculator': () => !need(['revenue','spend'])?'Enter all values.':values.spend===0?'Ad spend cannot be 0.':`ROAS: ${fmt(values.revenue/values.spend)}x`,
+      'hourly-rate-calculator': () => !need(['income','hours','weeks'])?'Enter all values.':values.hours<=0||values.weeks<=0?'Hours and weeks must be above 0.':`Hourly rate: ${fmt(values.income/(values.hours*values.weeks))}`,
+      'debt-to-income-calculator': () => !need(['debt','income'])?'Enter all values.':values.income===0?'Income cannot be 0.':`DTI: ${fmt(values.debt/values.income*100)}%`,
+      'bmr-calculator': () => {if(!need(['weight','height','age','sex']))return 'Enter all values.';const b=10*values.weight+6.25*values.height-5*values.age+(values.sex===1?5:-161);return `Estimated BMR: ${fmt(b)} kcal/day`},
+      'temperature-converter': () => {if(!need(['celsius']))return 'Enter a temperature.';return `${fmt(values.celsius*9/5+32)} °F | ${fmt(values.celsius+273.15)} K`},
+      'electricity-cost-calculator': () => {if(!need(['watts','hours','days','rate']))return 'Enter all values.';const kwh=values.watts/1000*values.hours*values.days;return `Energy: ${fmt(kwh)} kWh | Cost: ${fmt(kwh*values.rate)}`},
+      'pace-calculator': () => !need(['distance','minutes'])?'Enter all values.':values.distance<=0?'Distance must be above 0.':`Pace: ${fmt(values.minutes/values.distance)} min/km`,
+      'weighted-grade-calculator': () => {if(!need(['grade1','weight1','grade2','weight2']))return 'Enter all values.';const w=values.weight1+values.weight2;return w===0?'Weights cannot total 0.':`Weighted grade: ${fmt((values.grade1*values.weight1+values.grade2*values.weight2)/w)}`},
+      'study-time-calculator': () => !need(['total','days'])?'Enter all values.':values.days<=0?'Days must be above 0.':`Daily study time: ${fmt(values.total/values.days)} hours` ,
+      'pythagorean-theorem-calculator': () => !need(['a','b'])?'Enter both sides.':`Hypotenuse: ${fmt(Math.sqrt(values.a**2+values.b**2))}`,
+      'circle-area-calculator': () => !need(['radius'])?'Enter a radius.':`Area: ${fmt(Math.PI*values.radius**2)} | Circumference: ${fmt(2*Math.PI*values.radius)}`,
+      'triangle-area-calculator': () => !need(['base','height'])?'Enter all values.':`Area: ${fmt(values.base*values.height/2)}`,
+      'rectangle-area-calculator': () => !need(['length','width'])?'Enter all values.':`Area: ${fmt(values.length*values.width)} | Perimeter: ${fmt(2*(values.length+values.width))}`,
+      'cube-volume-calculator': () => !need(['side'])?'Enter a side length.':`Volume: ${fmt(values.side**3)} | Surface area: ${fmt(6*values.side**2)}`,
+      'quadratic-equation-calculator': () => {if(!need(['a','b','c']))return 'Enter all coefficients.';if(values.a===0)return 'A cannot be 0.';const d=values.b**2-4*values.a*values.c;return d<0?'No real roots.':d===0?`One root: ${fmt(-values.b/(2*values.a))}`:`Roots: ${fmt((-values.b+Math.sqrt(d))/(2*values.a))} and ${fmt((-values.b-Math.sqrt(d))/(2*values.a))}`},
+      'hcf-lcm-calculator': () => {if(!need(['a','b']))return 'Enter both integers.';const g=gcd(values.a,values.b);return `HCF: ${g} | LCM: ${g?Math.abs(values.a*values.b)/g:0}`},
+      'percentage-reverse-calculator': () => !need(['value','percent'])?'Enter all values.':values.percent===0?'Percentage cannot be 0.':`Original value: ${fmt(values.value/(values.percent/100))}`,
+      'vat-calculator': () => {if(!need(['price','vat']))return 'Enter all values.';const v=values.price*values.vat/100;return `VAT: ${fmt(v)} | Gross price: ${fmt(values.price+v)}`},
+      'gross-profit-calculator': () => {if(!need(['revenue','cogs']))return 'Enter all values.';const p=values.revenue-values.cogs;return `Gross profit: ${fmt(p)} | Gross margin: ${values.revenue===0?'N/A':fmt(p/values.revenue*100)+'%'}`},
+      'salary-tax-take-home-calculator': () => {if(!need(['salary','deduction']))return 'Enter all values.';const d=values.salary*values.deduction/100;return `Deductions: ${fmt(d)} | Estimated take-home: ${fmt(values.salary-d)}`},
+      'savings-interest-calculator': () => {if(!need(['principal','rate','years']))return 'Enter all values.';const i=values.principal*values.rate/100*values.years;return `Interest: ${fmt(i)} | Final balance: ${fmt(values.principal+i)}`}
+    };
+    result.textContent = formulas[key]?.() ?? 'Calculation unavailable.';
+  });
 </script>

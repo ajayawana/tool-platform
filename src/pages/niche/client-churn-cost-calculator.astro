@@ -1,0 +1,23 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const schema={"@context":"https://schema.org","@type":"WebApplication","name":"Client Churn Cost Calculator","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Estimate monthly revenue and gross-profit value at risk from client churn.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":Astro.url.href};
+---
+<Layout title="Client Churn Cost Calculator | Ozarbox" description="Estimate the revenue and gross-profit cost of client churn using active clients, monthly value, churn rate and replacement time.">
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+<section class="tool-wrap container">
+<div class="breadcrumbs"><a href="/">Home</a> / <a href="/niche/hidden-business-costs/">Hidden business costs</a> / Client churn cost</div>
+<div class="tool-head"><div class="eyebrow">Agency & professional services</div><h1>Client Churn Cost Calculator</h1><p>Estimate how much recurring revenue and gross profit you put at risk when clients leave.</p></div>
+<div class="tool-box"><div class="form-grid">
+<label>Active clients<input id="clients" type="number" value="50" min="0" step="1" /></label>
+<label>Average monthly revenue per client<input id="revenue" type="number" value="1000" min="0" step="0.01" /></label>
+<label>Monthly churn rate %<input id="churn" type="number" value="4" min="0" max="100" step="0.1" /></label>
+<label>Average months to replace a client<input id="months" type="number" value="2" min="0" step="0.1" /></label>
+<label>Gross margin %<input id="margin" type="number" value="70" min="0" max="100" step="0.1" /></label>
+</div><button id="calculate">Calculate churn cost</button><div class="result" id="result" aria-live="polite">Enter your values and tap Calculate.</div></div>
+<article class="prose"><h2>What does client churn really cost?</h2><p>Churn is more than the number of clients that leave. The economic cost depends on recurring client value and how long it takes to replace that lost business.</p><h2>Formula</h2><p>Expected clients lost per month = active clients × monthly churn rate. Monthly recurring revenue at risk = clients lost × average monthly revenue per client. Replacement-gap revenue at risk = monthly revenue at risk × average months to replace. Gross-profit value at risk = replacement-gap revenue × gross margin.</p><h2>Example</h2><p>With 50 clients, $1,000 average monthly value, 4% monthly churn and a 2-month replacement time, about 2 clients leave per month. The estimated two-month replacement-gap revenue is $4,000; at a 70% gross margin, about $2,800 of gross-profit value is at risk.</p><h2>Related tools</h2><p><a href="/niche/hidden-business-costs/">Hidden Business Costs hub</a> · <a href="/niche/client-profitability-calculator/">Client Profitability Calculator</a> · <a href="/niche/retainer-pricing-calculator/">Retainer Pricing Calculator</a></p><h2>Important note</h2><p>This is a planning estimate. Actual churn economics can include onboarding costs, sales commissions, acquisition costs, expansion revenue and contract termination terms.</p></article>
+</section>
+</Layout>
+<script>
+const n=(id)=>Number(document.getElementById(id).value||0); const money=(x)=>x.toLocaleString(undefined,{style:'currency',currency:'USD',maximumFractionDigits:2});
+document.getElementById('calculate')?.addEventListener('click',()=>{const lost=n('clients')*n('churn')/100; const monthly=lost*n('revenue'); const gap=monthly*n('months'); const gp=gap*n('margin')/100; document.getElementById('result').textContent=`Expected clients lost/month: ${lost.toFixed(2)} | Monthly revenue at risk: ${money(monthly)} | Replacement-gap revenue: ${money(gap)} | Gross-profit value at risk: ${money(gp)}`;});
+</script>

@@ -1,41 +1,43 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { tools, getTool } from '../../data/tools';
-export function getStaticPaths() { return tools.map(tool => ({ params: { slug: tool.slug }, props: { tool } })); }
-const { tool } = Astro.props;
+import { tools } from '../../data/tools';
+export function getStaticPaths(){return tools.map(tool=>({params:{slug:tool.slug},props:{tool}}));}
+const {tool}=Astro.props;
 ---
 <Layout title={`${tool.title} | ToolPlatform`} description={tool.description}>
-  <section class="tool-wrap container">
-    <div class="breadcrumbs"><a href="/">Home</a> / <a href="/categories/">Tools</a> / {tool.title}</div>
-    <div class="tool-head"><div class="eyebrow">{tool.category}</div><h1>{tool.title}</h1><p>{tool.description}</p></div>
-    <div class="tool-box">
-      <div class="form-grid">
-        {tool.inputs.map(input => <label>{input.label}<input data-key={input.key} type="number" inputmode="decimal" placeholder={input.placeholder} /></label>)}
-      </div>
-      <button id="calculate">Calculate</button>
-      <div class="result" id="result" aria-live="polite">Enter your values and tap Calculate.</div>
-    </div>
-    <div style="max-width:760px;margin-top:30px"><h2>About this calculator</h2><p>This free tool performs the calculation instantly in your browser. Your entered values are not sent to a server.</p></div>
-  </section>
+<section class="tool-wrap container">
+<div class="breadcrumbs"><a href="/">Home</a> / <a href="/categories/">Tools</a> / {tool.title}</div>
+<div class="tool-head"><div class="eyebrow">{tool.category}</div><h1>{tool.title}</h1><p>{tool.description}</p></div>
+<div class="tool-box"><div class="form-grid">{tool.inputs.map(input=><label>{input.label}<input data-key={input.key} type="number" inputmode="decimal" placeholder={input.placeholder}/></label>)}</div><button id="calculate">Calculate</button><div class="result" id="result" aria-live="polite">Enter your values and tap Calculate.</div></div>
+<div style="max-width:760px;margin-top:30px"><h2>About this tool</h2><p>This free tool runs in your browser. Your entered values are not sent to a server by the calculator.</p></div>
+</section>
 </Layout>
-<script define:vars={{ inputs: tool.inputs }}>
-  const button = document.querySelector('#calculate');
-  const result = document.querySelector('#result');
-  button?.addEventListener('click', () => {
-    const values = Object.fromEntries(inputs.map(input => [input.key, Number(document.querySelector(`[data-key="${input.key}"]`)?.value || 0)]));
-    const key = location.pathname.split('/').filter(Boolean).pop();
-    const formulas = {
-      'percentage-calculator': () => `${(values.percent * values.number / 100).toLocaleString(undefined,{maximumFractionDigits:2})}`,
-      'percentage-change-calculator': () => values.old === 0 ? 'Original value cannot be 0.' : `${((values.new-values.old)/Math.abs(values.old)*100).toLocaleString(undefined,{maximumFractionDigits:2})}%`,
-      'discount-calculator': () => {const d=values.price*values.discount/100;return `Discount: ${d.toLocaleString(undefined,{maximumFractionDigits:2})} | Final price: ${(values.price-d).toLocaleString(undefined,{maximumFractionDigits:2})}`},
-      'profit-calculator': () => {const p=values.selling-values.cost;return `Profit: ${p.toLocaleString(undefined,{maximumFractionDigits:2})} | Profit %: ${values.cost ? (p/values.cost*100).toLocaleString(undefined,{maximumFractionDigits:2})+'%' : 'N/A'}`},
-      'margin-calculator': () => values.revenue===0?'Revenue cannot be 0.':`${((values.revenue-values.cost)/values.revenue*100).toLocaleString(undefined,{maximumFractionDigits:2})}% margin`,
-      'markup-calculator': () => {const m=values.cost*values.markup/100;return `Markup: ${m.toLocaleString(undefined,{maximumFractionDigits:2})} | Selling price: ${(values.cost+m).toLocaleString(undefined,{maximumFractionDigits:2})}`},
-      'ratio-calculator': () => {let a=Math.abs(values.a),b=Math.abs(values.b),x=a,y=b;while(y){const t=x%y;x=y;y=t}return x?`${a/x} : ${b/x}`:'Enter non-zero values.'},
-      'average-calculator': () => {const v=Object.values(values);return `${(v.reduce((a,b)=>a+b,0)/v.length).toLocaleString(undefined,{maximumFractionDigits:2})}`},
-      'fraction-calculator': () => {if(!values.b||!values.d)return 'Denominators cannot be 0.';const num=values.a*values.d+values.c*values.b,den=values.b*values.d;return `${num} / ${den} = ${(num/den).toLocaleString(undefined,{maximumFractionDigits:2})}`},
-      'tip-calculator': () => {const tip=values.bill*values.tip/100;return `Tip: ${tip.toLocaleString(undefined,{maximumFractionDigits:2})} | Total: ${(values.bill+tip).toLocaleString(undefined,{maximumFractionDigits:2})}`}
-    };
-    result.textContent = formulas[key]?.() ?? 'Calculation unavailable.';
-  });
+<script define:vars={{inputs:tool.inputs}}>
+const $=(k)=>document.querySelector(`[data-key="${k}"]`);const n=k=>Number($(k)?.value||0);const f=x=>Number(x).toLocaleString(undefined,{maximumFractionDigits:2});
+document.querySelector('#calculate')?.addEventListener('click',()=>{const key=location.pathname.split('/').filter(Boolean).pop();let out='Calculation unavailable.';
+const sum=inputs.map(x=>Number($(x.key)?.value)).filter(Number.isFinite);const avg=sum.length?sum.reduce((a,b)=>a+b,0)/sum.length:0;
+if(key==='percentage-calculator')out=f(n('percent')*n('number')/100);
+else if(key==='percentage-change-calculator')out=n('old')===0?'Original value cannot be 0.':`${f((n('new')-n('old'))/Math.abs(n('old'))*100)}%`;
+else if(key==='discount-calculator'){const d=n('price')*n('discount')/100;out=`Discount: ${f(d)} | Final price: ${f(n('price')-d)}`;}
+else if(key==='profit-calculator'){const p=n('selling')-n('cost');out=`Profit: ${f(p)} | Profit %: ${n('cost')?f(p/n('cost')*100)+'%':'N/A'}`;}
+else if(key==='margin-calculator')out=n('revenue')===0?'Revenue cannot be 0.':`${f((n('revenue')-n('cost'))/n('revenue')*100)}% margin`;
+else if(key==='markup-calculator'){const m=n('cost')*n('markup')/100;out=`Markup: ${f(m)} | Selling price: ${f(n('cost')+m)}`;}
+else if(key==='ratio-calculator'){let a=Math.abs(n('a')),b=Math.abs(n('b')),x=a,y=b;while(y){const t=x%y;x=y;y=t}out=x?`${f(a/x)} : ${f(b/x)}`:'Enter non-zero values.';}
+else if(key==='average-calculator'||key==='gpa-calculator')out=f(avg);
+else if(key==='fraction-calculator'){if(!n('b')||!n('d'))out='Denominators cannot be 0.';else{const num=n('a')*n('d')+n('c')*n('b'),den=n('b')*n('d');out=`${f(num)} / ${f(den)} = ${f(num/den)}`;}}
+else if(key==='tip-calculator'){const tip=n('bill')*n('tip')/100;out=`Tip: ${f(tip)} | Total: ${f(n('bill')+tip)}`;}
+else if(key==='sales-tax-calculator'){const tax=n('price')*n('tax')/100;out=`Tax: ${f(tax)} | Total: ${f(n('price')+tax)}`;}
+else if(key==='compound-interest-calculator'){const amount=n('frequency')>0?n('principal')*Math.pow(1+n('rate')/100/n('frequency'),n('frequency')*n('years')):0;out=`Final amount: ${f(amount)} | Interest: ${f(amount-n('principal'))}`;}
+else if(key==='simple-interest-calculator'){const interest=n('principal')*n('rate')/100*n('years');out=`Interest: ${f(interest)} | Total: ${f(n('principal')+interest)}`;}
+else if(key==='loan-payment-calculator'){const r=n('rate')/100/12,m=n('months'),p=n('amount');if(!m)out='Term must be greater than 0.';else if(!r)out=`Monthly payment: ${f(p/m)}`;else out=`Monthly payment: ${f(p*r*Math.pow(1+r,m)/(Math.pow(1+r,m)-1))}`;}
+else if(key==='bmi-calculator'){const h=n('height')/100;out=h>0?`BMI: ${f(n('weight')/(h*h))}`:'Height must be greater than 0.';}
+else if(key==='age-calculator')out=`Age: ${f(Math.max(0,n('currentYear')-n('birthYear')))} years`;
+else if(key==='time-duration-calculator')out=`Duration: ${f((n('end')-n('start')+24)%24)} hours`;
+else if(key==='unit-price-calculator')out=n('quantity')>0?`Unit price: ${f(n('price')/n('quantity'))}`:'Quantity must be greater than 0.';
+else if(key==='fuel-cost-calculator')out=n('efficiency')>0?`Fuel used: ${f(n('distance')/n('efficiency'))} L | Cost: ${f(n('distance')/n('efficiency')*n('price'))}`:'Efficiency must be greater than 0.';
+else if(key==='speed-distance-time-calculator')out=n('hours')>0?`Average speed: ${f(n('distance')/n('hours'))} km/h`:'Time must be greater than 0.';
+else if(key==='ohms-law-calculator')out=`Voltage: ${f(n('current')*n('resistance'))} V`;
+else if(key==='calories-burned-calculator')out=`Estimated calories: ${f(n('met')*3.5*n('weight')/200*n('minutes'))} kcal`;
+else if(key==='break-even-calculator'){const c=n('price')-n('variable');out=c>0?`Break-even units: ${f(n('fixed')/c)}`:'Price must exceed variable cost.';}
+document.querySelector('#result').textContent=out;});
 </script>

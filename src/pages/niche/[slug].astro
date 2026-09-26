@@ -1,65 +1,118 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { nicheTools } from '../../data/nicheTools';
-export function getStaticPaths(){return nicheTools.map(tool=>({params:{slug:tool.slug},props:{tool}}));}
+import { globalTools } from '../../data/globalTools';
+const allTools=[...nicheTools,...globalTools];
+export function getStaticPaths(){return allTools.map(tool=>({params:{slug:tool.slug},props:{tool}}));}
 const {tool}=Astro.props;
-const related=nicheTools.filter(t=>t.cluster===tool.cluster&&t.slug!==tool.slug).slice(0,5);
+const related=allTools.filter(t=>t.cluster===tool.cluster&&t.slug!==tool.slug).slice(0,6);
+const exampleValues=tool.inputs.map(i=>i.placeholder||'10').join(', ');
+const faq=[
+`What does this ${tool.title.toLowerCase()} calculate?`,
+`What assumptions does this ${tool.title.toLowerCase()} use?`,
+`Can I use this result for a professional or regulated decision?`
+];
+const schema={"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":tool.title,"applicationCategory":"BusinessApplication","operatingSystem":"Web","description":tool.description,"url":Astro.url.href,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":new URL('/',Astro.site||Astro.url).href},{"@type":"ListItem","position":2,"name":tool.cluster.replaceAll('-',' '),"item":new URL(`/niche/${tool.cluster}/`,Astro.site||Astro.url).href},{"@type":"ListItem","position":3,"name":tool.title,"item":Astro.url.href}]}]};
 ---
-<Layout title={`${tool.title} | ToolPlatform`} description={tool.description}>
+<Layout title={`${tool.title} | Free Online Calculator | ToolPlatform`} description={`${tool.description} Free browser calculator with clear assumptions, examples and related professional tools.`}>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
 <section class="tool-wrap container">
-<div class="breadcrumbs"><a href="/">Home</a> / <a href={`/niche/${tool.cluster}/`}>{tool.cluster.replaceAll('-',' ')}</a> / {tool.title}</div>
+<div class="breadcrumbs"><a href="/">Home</a> / <a href="/niche/">Niche tools</a> / <a href={`/niche/${tool.cluster}/`}>{tool.cluster.replaceAll('-',' ')}</a> / {tool.title}</div>
 <div class="tool-head"><div class="eyebrow">{tool.cluster.replaceAll('-',' ')}</div><h1>{tool.title}</h1><p>{tool.description}</p></div>
 <div class="tool-box"><div class="form-grid">{tool.inputs.map(input=><label>{input.label}{input.unit&&<small> ({input.unit})</small>}<input data-key={input.key} type="number" inputmode="decimal" placeholder={input.placeholder}/></label>)}</div><button id="calculate">Calculate</button><div class="result" id="result" aria-live="polite">Enter your values and tap Calculate.</div></div>
-<article class="prose" style="max-width:820px;margin-top:34px"><h2>How this {tool.title.toLowerCase()} works</h2><p>Enter the assumptions that match your project, then review the estimate. This tool is intended for planning and comparison; local codes, tariffs, engineering requirements, tax rules and manufacturer specifications can change the correct inputs.</p><h2>Use the result intelligently</h2><p>For professional work, verify the assumptions before purchasing materials, signing a quote, approving a design or making a compliance decision. Where standards or local rules apply, use the current official requirements.</p></article>
-{related.length>0&&<section style="margin-top:38px"><h2>More {tool.cluster.replaceAll('-',' ')} tools</h2><div class="tool-grid">{related.map(t=><a class="card" href={`/niche/${t.slug}`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div></section>}
+<article class="prose" style="max-width:820px;margin-top:20px"><h2>How the {tool.title.toLowerCase()} works</h2><p>This calculator takes the inputs above and applies a transparent planning formula. The result is an estimate, not a hidden score: you can change every assumption and immediately see how the result changes.</p><h2>Assumptions</h2><ul>{tool.inputs.map(i=><li><strong>{i.label}:</strong> you control this input. The default value is only an example and should be replaced with your actual project or business data.</li>)}</ul><h2>Example</h2><p>Try the pre-filled example values shown in the input boxes ({exampleValues}). Then change one variable at a time to see which assumption has the biggest effect on the result.</p><h2>When the result needs verification</h2><p>Use this tool for planning, estimation and comparison. For engineering, electrical, construction, tax, legal, medical, financial or regulatory decisions, verify the result against the current official rules, applicable standards, contracts, manufacturer documentation or a qualified professional.</p><h2>Frequently asked questions</h2>{faq.map(q=><div><h3>{q}</h3><p>{q.includes('professional')?'It can support planning, but it should not replace a required professional calculation, code check or official tax/regulatory determination.':q.includes('assumptions')?'The assumptions are the input values displayed in the calculator. Replace the example values with data that matches your location, project, business or equipment.':tool.description}</p></div>)}</article>
+{related.length>0&&<section style="margin-top:38px"><h2>Related {tool.cluster.replaceAll('-',' ')} tools</h2><div class="tool-grid">{related.map(t=><a class="card" href={`/niche/${t.slug}`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div></section>}
+<section style="margin-top:38px"><h2>Explore more professional tools</h2><div class="tool-grid"><a class="card" href="/niche/accounting/"><strong>Accounting</strong><span>Margins, working capital, DSCR and cash-cycle tools.</span></a><a class="card" href="/niche/tax/"><strong>Tax</strong><span>VAT, GST, sales-tax and tax-planning estimates.</span></a><a class="card" href="/niche/professional-services/"><strong>Professional services</strong><span>Pricing and profitability tools for service businesses.</span></a><a class="card" href="/niche/ecommerce/"><strong>Ecommerce</strong><span>ROAS, contribution margin and marketplace fee tools.</span></a></div></section>
 </section>
 </Layout>
-<script define:vars={{inputs:tool.inputs,formula:tool.formula}}>
+<script define:vars={{formula:tool.formula}}>
 const $=(s)=>document.querySelector(s); const button=$('#calculate'); const result=$('#result');
 const num=(k)=>Number(document.querySelector(`[data-key="${k}"]`)?.value||0); const has=(keys)=>keys.every(k=>{const v=document.querySelector(`[data-key="${k}"]`)?.value;return v!==''&&v!=null});
 const f=(x)=>Number.isFinite(x)?x.toLocaleString(undefined,{maximumFractionDigits:2}):'N/A'; const money=(x)=>f(x);
 button?.addEventListener('click',()=>{let out='Enter all required values.';
 if(formula==='solarPayback'&&has(['cost','incentive','annual','maintenance'])){const net=num('cost')-num('incentive');out=num('annual')>num('maintenance')?`Estimated payback: ${f(net/(num('annual')-num('maintenance')))} years`:'Annual savings must exceed maintenance.'}
 else if(formula==='batterySize'&&has(['daily','hours','dod','eff']))out=`Estimated battery nameplate: ${f(num('daily')*num('hours')/24/(num('dod')/100)/(num('eff')/100))} kWh`;
-else if(formula==='solarRoi'&&has(['cost','annual']))out=num('cost')>0?`Simple annual ROI: ${f(num('annual')/num('cost')*100)}%`:'Cost must be above 0.';
-else if(formula==='panelCount'&&has(['size','panel']))out=num('panel')>0?`Estimated panels: ${Math.ceil(num('size')*1000/num('panel'))}`:'Panel rating must be above 0.';
-else if(formula==='inverterSize'&&has(['array','ratio']))out=num('ratio')>0?`Estimated inverter size: ${f(num('array')/num('ratio'))} kW`:'Ratio must be above 0.';
+else if(formula==='solarRoi'&&has(['cost','annual']))out=`Simple annual ROI: ${f(num('annual')/num('cost')*100)}%`;
+else if(formula==='panelCount'&&has(['size','panel']))out=`Estimated panels: ${Math.ceil(num('size')*1000/num('panel'))}`;
+else if(formula==='inverterSize'&&has(['array','ratio']))out=`Estimated inverter size: ${f(num('array')/num('ratio'))} kW`;
 else if(formula==='solarSavings'&&has(['generation','rate']))out=`Estimated annual savings: ${money(num('generation')*num('rate'))}`;
-else if(formula==='evChargeCost'&&has(['battery','start','target','rate','loss']))out=`Energy from grid: ${f(num('battery')*(num('target')-num('start'))/100/(1-num('loss')/100))} kWh | Cost: ${money(num('battery')*(num('target')-num('start'))/100/(1-num('loss')/100)*num('rate'))}`;
-else if(formula==='evCharger'&&has(['range','eff','hours']))out=num('hours')>0?`Required average charger power: ${f(num('range')/100*num('eff')/num('hours'))} kW`:'Hours must be above 0.';
-else if(formula==='evTrip'&&has(['distance','eff','usable']))out=`Trip energy: ${f(num('distance')/100*num('eff'))} kWh | Idealized full-battery equivalents: ${f(num('distance')/100*num('eff')/num('usable'))}`;
+else if(formula==='evChargeCost'&&has(['battery','start','target','rate','loss'])){const k=num('battery')*(num('target')-num('start'))/100/(1-num('loss')/100);out=`Energy from grid: ${f(k)} kWh | Cost: ${money(k*num('rate'))}`}
+else if(formula==='evCharger'&&has(['range','eff','hours']))out=`Required average charger power: ${f(num('range')/100*num('eff')/num('hours'))} kW`;
+else if(formula==='evTrip'&&has(['distance','eff','usable']))out=`Trip energy: ${f(num('distance')/100*num('eff'))} kWh | Battery equivalents: ${f(num('distance')/100*num('eff')/num('usable'))}`;
 else if(formula==='evVsPetrol'&&has(['ev','electric','petrol','mileage']))out=`EV: ${money(num('ev')/100*num('electric'))}/100 km | Petrol: ${money(num('petrol')/num('mileage')*100)}/100 km`;
 else if(formula==='batteryDegradation'&&has(['capacity','rate','years']))out=`Estimated remaining capacity: ${f(num('capacity')*Math.pow(1-num('rate')/100,num('years')))} kWh`;
-else if(formula==='evTime'&&has(['capacity','start','target','power','eff']))out=num('power')>0?`Estimated charging time: ${f((num('capacity')*(num('target')-num('start'))/100)/(num('power')*(num('eff')/100)))} hours`:'Power must be above 0.';
-else if(formula==='acSize'&&has(['area','height','factor','climate']))out=`Estimated cooling load: ${f(num('area')*num('factor')*num('climate')*num('height')/10)} BTU/h | Approx. tons: ${f(num('area')*num('factor')*num('climate')*num('height')/10/12000)}`;
+else if(formula==='evTime'&&has(['capacity','start','target','power','eff']))out=`Estimated charging time: ${f((num('capacity')*(num('target')-num('start'))/100)/(num('power')*(num('eff')/100)))} hours`;
+else if(formula==='acSize'&&has(['area','height','factor','climate'])){const btu=num('area')*num('factor')*num('climate')*num('height')/10;out=`Estimated cooling load: ${f(btu)} BTU/h | Approx. tons: ${f(btu/12000)}`}
 else if(formula==='acCost'&&has(['power','hours','days','rate']))out=`Estimated monthly energy: ${f(num('power')*num('hours')*num('days'))} kWh | Cost: ${money(num('power')*num('hours')*num('days')*num('rate'))}`;
-else if(formula==='acRunning'&&has(['power','hours','rate']))out=`Daily cost: ${money(num('power')*num('hours')*num('rate'))} | Monthly (30 days): ${money(num('power')*num('hours')*num('rate')*30)}`;
-else if(formula==='heatPump'&&has(['heat','cop','electric']))out=num('cop')>0?`Estimated heat-pump electricity cost: ${money(num('heat')/num('cop')*num('electric'))}`:'COP must be above 0.';
+else if(formula==='acRunning'&&has(['power','hours','rate']))out=`Daily cost: ${money(num('power')*num('hours')*num('rate'))} | Monthly: ${money(num('power')*num('hours')*num('rate')*30)}`;
+else if(formula==='heatPump'&&has(['heat','cop','electric']))out=`Heat-pump electricity cost: ${money(num('heat')/num('cop')*num('electric'))}`;
 else if(formula==='airflow'&&has(['volume','ach']))out=`Required airflow: ${f(num('volume')*num('ach')/60)} CFM`;
-else if(formula==='ductArea'&&has(['cfm','velocity']))out=num('velocity')>0?`Required duct area: ${f(num('cfm')/num('velocity'))} sq ft`:'Velocity must be above 0.';
+else if(formula==='ductArea'&&has(['cfm','velocity']))out=`Required duct area: ${f(num('cfm')/num('velocity'))} sq ft`;
 else if(formula==='slab'&&has(['length','width','thickness','waste']))out=`Concrete: ${f(num('length')*num('width')*(num('thickness')/12)*(1+num('waste')/100)/27)} yd³`;
 else if(formula==='footing'&&has(['count','length','width','depth']))out=`Concrete: ${f(num('count')*num('length')*num('width')*num('depth')/27)} yd³`;
-else if(formula==='paint'&&has(['area','coverage','coats','waste']))out=num('coverage')>0?`Paint required: ${f(num('area')*num('coats')/num('coverage')*(1+num('waste')/100))} L`:'Coverage must be above 0.';
-else if(formula==='tiles'&&has(['area','tileArea','waste']))out=num('tileArea')>0?`Tiles required: ${Math.ceil(num('area')/num('tileArea')*(1+num('waste')/100))}`:'Tile area must be above 0.';
+else if(formula==='paint'&&has(['area','coverage','coats','waste']))out=`Paint required: ${f(num('area')*num('coats')/num('coverage')*(1+num('waste')/100))} L`;
+else if(formula==='tiles'&&has(['area','tileArea','waste']))out=`Tiles required: ${Math.ceil(num('area')/num('tileArea')*(1+num('waste')/100))}`;
 else if(formula==='bricks'&&has(['area','bricks','waste']))out=`Estimated bricks: ${Math.ceil(num('area')*num('bricks')*(1+num('waste')/100))}`;
 else if(formula==='boardFeet'&&has(['thickness','width','length','pieces']))out=`Board feet: ${f(num('thickness')*num('width')*num('length')*num('pieces')/12)}`;
 else if(formula==='gst'&&has(['value','rate']))out=`GST: ${money(num('value')*num('rate')/100)} | Invoice total: ${money(num('value')*(1+num('rate')/100))}`;
-else if(formula==='gstReverse'&&has(['price','rate']))out=num('rate')>-100?`Taxable value: ${money(num('price')/(1+num('rate')/100))} | GST: ${money(num('price')-num('price')/(1+num('rate')/100))}`:'Invalid rate.';
-else if(formula==='breakEven'&&has(['fixed','price','variable']))out=num('price')>num('variable')?`Break-even units: ${f(num('fixed')/(num('price')-num('variable')))}`:'Selling price must exceed variable cost.';
-else if(formula==='taxReserve'&&has(['income','rate','expenses']))out=`Estimated taxable base: ${money(Math.max(0,num('income')-num('expenses')))} | Reserve: ${money(Math.max(0,num('income')-num('expenses'))*num('rate')/100)}`;
+else if(formula==='gstReverse'&&has(['price','rate']))out=`Taxable value: ${money(num('price')/(1+num('rate')/100))} | GST: ${money(num('price')-num('price')/(1+num('rate')/100))}`;
+else if(formula==='breakEven'&&has(['fixed','price','variable']))out=`Break-even units: ${f(num('fixed')/(num('price')-num('variable')))}`;
+else if(formula==='taxReserve'&&has(['income','rate','expenses'])){const base=Math.max(0,num('income')-num('expenses'));out=`Estimated taxable base: ${money(base)} | Reserve: ${money(base*num('rate')/100)}`}
 else if(formula==='lateFee'&&has(['invoice','rate','days']))out=`Estimated late fee: ${money(num('invoice')*num('rate')/100*num('days')/365)}`;
 else if(formula==='orderProfit'&&has(['revenue','product','shipping','fees','ads']))out=`Profit/order: ${money(num('revenue')-num('product')-num('shipping')-num('fees')-num('ads'))}`;
 else if(formula==='voltageDrop'&&has(['current','resistance','length','phase']))out=`Estimated voltage drop: ${f(num('current')*num('resistance')*num('length')*num('phase'))} V`;
-else if(formula==='powerFactor'&&has(['kw','kva']))out=num('kva')>0?`Power factor: ${f(num('kw')/num('kva'))}`:'kVA must be above 0.';
+else if(formula==='powerFactor'&&has(['kw','kva']))out=`Power factor: ${f(num('kw')/num('kva'))}`;
 else if(formula==='pipeFlow'&&has(['diameter','velocity']))out=`Estimated flow: ${f(Math.PI*Math.pow(num('diameter')/1000,2)/4*num('velocity')*1000)} L/s`;
-else if(formula==='conduit'&&has(['wires','area','conduit']))out=num('conduit')>0?`Conduit fill: ${f(num('wires')*num('area')/num('conduit')*100)}%`:'Conduit area must be above 0.';
+else if(formula==='conduit'&&has(['wires','area','conduit']))out=`Conduit fill: ${f(num('wires')*num('area')/num('conduit')*100)}%`;
 else if(formula==='labor'&&has(['workers','hours','wage','overhead']))out=`Loaded labor cost: ${money(num('workers')*num('hours')*num('wage')*(1+num('overhead')/100))}`;
 else if(formula==='mulch'&&has(['area','depth']))out=`Mulch volume: ${f(num('area')*num('depth')/12/27)} yd³`;
-else if(formula==='toiletWater'&&has(['people','flushes','old','new','days']))out=`Old use: ${f(num('people')*num('flushes')*num('old')*num('days'))} L | New use: ${f(num('people')*num('flushes')*num('new')*num('days'))} L | Savings: ${f(num('people')*num('flushes')*(num('old')-num('new'))*num('days'))} L`;
+else if(formula==='toiletWater'&&has(['people','flushes','old','new','days']))out=`Old use: ${f(num('people')*num('flushes')*num('old')*num('days'))} L | New use: ${f(num('people')*num('flushes')*num('new')*num('days'))} L`;
 else if(formula==='septic'&&has(['people','waste','retention']))out=`Planning tank volume: ${f(num('people')*num('waste')*num('retention')/1000)} m³`;
-else if(formula==='drainfield'&&has(['flow','loading']))out=num('loading')>0?`Estimated area: ${f(num('flow')/num('loading'))} m²`:'Loading rate must be above 0.';
-else if(formula==='paper'&&has(['people','uses','sheets','sheetsRoll','price','days']))out=num('sheetsRoll')>0?`Estimated rolls: ${f(num('people')*num('uses')*num('sheets')*num('days')/num('sheetsRoll'))} | Cost: ${money(num('people')*num('uses')*num('sheets')*num('days')/num('sheetsRoll')*num('price'))}`:'Sheets/roll must be above 0.';
+else if(formula==='drainfield'&&has(['flow','loading']))out=`Estimated area: ${f(num('flow')/num('loading'))} m²`;
+else if(formula==='paper'&&has(['people','uses','sheets','sheetsRoll','price','days']))out=`Estimated rolls: ${f(num('people')*num('uses')*num('sheets')*num('days')/num('sheetsRoll'))} | Cost: ${money(num('people')*num('uses')*num('sheets')*num('days')/num('sheetsRoll')*num('price'))}`;
 else if(formula==='greywater'&&has(['people','litres']))out=`Estimated greywater: ${f(num('people')*num('litres'))} L/day`;
 else if(formula==='waterTank'&&has(['people','daily','reserve']))out=`Recommended storage estimate: ${f(num('people')*num('daily')*num('reserve'))} L`;
+else if(formula==='grossMargin'&&has(['revenue','cogs'])){const p=num('revenue')-num('cogs');out=`Gross profit: ${money(p)} | Gross margin: ${f(p/num('revenue')*100)}%`}
+else if(formula==='netMargin'&&has(['revenue','costs'])){const p=num('revenue')-num('costs');out=`Net profit: ${money(p)} | Net margin: ${f(p/num('revenue')*100)}%`}
+else if(formula==='operatingMargin'&&has(['revenue','opex'])){const p=num('revenue')-num('opex');out=`Operating profit: ${money(p)} | Operating margin: ${f(p/num('revenue')*100)}%`}
+else if(formula==='markupMargin'&&has(['cost','markup'])){const price=num('cost')*(1+num('markup')/100);out=`Selling price: ${money(price)} | Gross margin: ${f((price-num('cost'))/price*100)}%`}
+else if(formula==='dso'&&has(['receivables','sales','days']))out=`Estimated DSO: ${f(num('receivables')/num('sales')*num('days'))} days`;
+else if(formula==='inventoryTurnover'&&has(['cogs','inventory','days']))out=`Inventory turnover: ${f(num('cogs')/num('inventory'))}x | Inventory days: ${f(num('inventory')/num('cogs')*num('days'))}`;
+else if(formula==='ccc'&&has(['dio','dso','dpo']))out=`Cash conversion cycle: ${f(num('dio')+num('dso')-num('dpo'))} days`;
+else if(formula==='dscr'&&has(['income','debt']))out=`DSCR: ${f(num('income')/num('debt'))}x`;
+else if(formula==='workingCapital'&&has(['assets','liabilities']))out=`Working capital: ${money(num('assets')-num('liabilities'))} | Current ratio: ${f(num('assets')/num('liabilities'))}x`;
+else if(formula==='vat'&&has(['net','rate']))out=`VAT: ${money(num('net')*num('rate')/100)} | Total: ${money(num('net')*(1+num('rate')/100))}`;
+else if(formula==='salesTax'&&has(['price','rate']))out=`Sales tax: ${money(num('price')*num('rate')/100)} | Total: ${money(num('price')*(1+num('rate')/100))}`;
+else if(formula==='hst'&&has(['amount','rate']))out=`HST: ${money(num('amount')*num('rate')/100)} | Total: ${money(num('amount')*(1+num('rate')/100))}`;
+else if(formula==='gstInclusive'&&has(['total','rate'])){const base=num('total')/(1+num('rate')/100);out=`Pre-tax amount: ${money(base)} | GST: ${money(num('total')-base)}`}
+else if(formula==='taxExclusive'&&has(['amount','rate'])){const base=num('amount')/(1+num('rate')/100);out=`Tax-exclusive amount: ${money(base)} | Tax: ${money(num('amount')-base)}`}
+else if(formula==='discountTax'&&has(['price','discount','tax'])){const sale=num('price')*(1-num('discount')/100);out=`Discounted price: ${money(sale)} | Final after tax: ${money(sale*(1+num('tax')/100))}`}
+else if(formula==='freelanceTax'&&has(['invoice','expenses','rate'])){const p=Math.max(0,num('invoice')-num('expenses'));out=`Estimated profit base: ${money(p)} | Tax reserve: ${money(p*num('rate')/100)}`}
+else if(formula==='contractorTax'&&has(['revenue','costs','rate'])){const p=Math.max(0,num('revenue')-num('costs'));out=`Estimated profit: ${money(p)} | Tax reserve: ${money(p*num('rate')/100)}`}
+else if(formula==='consultRate'&&has(['income','hours','overhead']))out=`Target hourly rate: ${money((num('income')+num('overhead'))/num('hours'))}`;
+else if(formula==='freelanceRate'&&has(['takehome','expenses','tax','hours']))out=`Target hourly rate: ${money((num('takehome')+num('expenses'))/(num('hours')*(1-num('tax')/100)))}`;
+else if(formula==='lawRate'&&has(['comp','overhead','hours']))out=`Target billable rate: ${money((num('comp')+num('overhead'))/num('hours'))}/hour`;
+else if(formula==='agencyProfit'&&has(['revenue','labor','software','subcontract','overhead'])){const p=num('revenue')-num('labor')-num('software')-num('subcontract')-num('overhead');out=`Project profit: ${money(p)} | Margin: ${f(p/num('revenue')*100)}%`}
+else if(formula==='photoProfit'&&has(['price','editing','travel','assistant','other'])){const p=num('price')-num('editing')-num('travel')-num('assistant')-num('other');out=`Booking profit: ${money(p)} | Margin: ${f(p/num('price')*100)}%`}
+else if(formula==='cleaningPrice'&&has(['hours','wage','materials','travel','margin'])){const cost=num('hours')*num('wage')+num('materials')+num('travel');out=`Suggested price at target margin: ${money(cost/(1-num('margin')/100))}`}
+else if(formula==='salonProfit'&&has(['price','labor','materials','overhead'])){const p=num('price')-num('labor')-num('materials')-num('overhead');out=`Service profit: ${money(p)} | Margin: ${f(p/num('price')*100)}%`}
+else if(formula==='menuProfit'&&has(['price','ingredients','packaging','fees'])){const p=num('price')-num('ingredients')-num('packaging')-num('fees');out=`Contribution profit: ${money(p)} | Food cost: ${f(num('ingredients')/num('price')*100)}%`}
+else if(formula==='capRate'&&has(['noi','value']))out=`Cap rate: ${f(num('noi')/num('value')*100)}%`;
+else if(formula==='rentalCash'&&has(['rent','opex','debt']))out=`Monthly cash flow: ${money(num('rent')-num('opex')-num('debt'))}`;
+else if(formula==='commission'&&has(['price','rate']))out=`Commission: ${money(num('price')*num('rate')/100)}`;
+else if(formula==='rentBuy'&&has(['rent','years','buy']))out=`Rent over period: ${money(num('rent')*12*num('years'))} | Ownership cost: ${money(num('buy')*12*num('years'))}`;
+else if(formula==='fuelMile'&&has(['economy','price']))out=num('economy')>0?`Fuel cost per mile: ${money(num('price')/num('economy'))}`:'Fuel economy must be above 0.';
+else if(formula==='fleetFuel'&&has(['vehicles','miles','economy','price']))out=`Monthly fuel cost: ${money(num('vehicles')*num('miles')/num('economy')*num('price'))}`;
+else if(formula==='deliveryCost'&&has(['labor','fuel','fixed','orders']))out=num('orders')>0?`Delivery cost/order: ${money((num('labor')+num('fuel')+num('fixed'))/num('orders'))}`:'Orders must be above 0.';
+else if(formula==='loadUtil'&&has(['used','capacity','weight','max']))out=`Volume utilization: ${f(num('used')/num('capacity')*100)}% | Weight utilization: ${f(num('weight')/num('max')*100)}%`;
+else if(formula==='fertilizer'&&has(['area','rate']))out=`Fertilizer required: ${f(num('area')*num('rate'))} lb`;
+else if(formula==='seedRate'&&has(['area','rate']))out=`Seed required: ${f(num('area')*num('rate'))} lb`;
+else if(formula==='irrigation'&&has(['area','depth','eff']))out=`Estimated irrigation water: ${f(num('area')*4046.86*num('depth')/1000/(num('eff')/100))} L/day`;
+else if(formula==='feedCost'&&has(['animals','feed','price','days']))out=`Feed cost: ${money(num('animals')*num('feed')*num('price')*num('days'))} for ${num('days')} days`;
+else if(formula==='breakEvenRoas'&&has(['aov','product','fulfillment','fees'])){const contribution=num('aov')-num('product')-num('fulfillment')-num('fees');out=contribution>0?`Break-even ROAS: ${f(num('aov')/contribution)}x`:'Variable costs must be below revenue.'}
+else if(formula==='contribution'&&has(['revenue','product','shipping','fees','ads'])){const p=num('revenue')-num('product')-num('shipping')-num('fees')-num('ads');out=`Contribution profit: ${money(p)} | Margin: ${f(p/num('revenue')*100)}%`}
+else if(formula==='marketFee'&&has(['sale','commission','fixed','shipping'])){const fee=num('sale')*num('commission')/100+num('fixed')+num('shipping');out=`Total seller costs: ${money(fee)} | Net proceeds: ${money(num('sale')-fee)}`}
+else if(formula==='noShow'&&has(['appointments','rate','value']))out=`Estimated monthly lost revenue: ${money(num('appointments')*num('rate')/100*num('value'))}`;
+else if(formula==='practiceOverhead'&&has(['revenue','overhead']))out=`Practice overhead: ${f(num('overhead')/num('revenue')*100)}%`;
 result.textContent=out;});
 </script>

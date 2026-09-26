@@ -1,18 +1,19 @@
 ---
-const { title = 'Ozarbox – Free Online Calculators & Professional Tools', description = 'Ozarbox provides free, practical online calculators and professional tools for business, accounting, tax, construction, solar, EV and everyday decisions.' } = Astro.props;
+const { title = 'Ozarbox – Free Online Calculators & Professional Tools', description = 'Ozarbox provides free, practical online calculators and professional tools for business, accounting, tax, construction, solar, EV and everyday decisions.', robots = 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1' } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const siteRoot = Astro.site ?? Astro.url;
 const stripBase = (path:string) => path.startsWith(base) ? path.slice(base.length) : path;
 const canonicalPath = `${base.replace(/\/$/, '')}/${stripBase(Astro.url.pathname).replace(/^\//, '')}`.replace(/\/+/g, '/').replace(/\/$/, '') + '/';
 const canonical = new URL(canonicalPath, siteRoot);
 const siteName = 'Ozarbox';
+const blogUrl = 'https://ozarbox.blogspot.com/';
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="robots" content={robots} />
   <meta name="theme-color" content="#111827" />
   <title>{title}</title>
   <meta name="description" content={description} />
@@ -32,9 +33,9 @@ const siteName = 'Ozarbox';
   })}></script>
 </head>
 <body>
-  <header class="site-header"><div class="container nav"><a class="brand" href={base}>Ozar<span>box</span></a><nav><a href={base}>Home</a><a href={`${base}niche/`}>Tools</a><a href={`${base}about/`}>About</a></nav></div></header>
+  <header class="site-header"><div class="container nav"><a class="brand" href={base}>Ozar<span>box</span></a><nav><a href={base}>Home</a><a href={`${base}niche/`}>Tools</a><a href={blogUrl}>Blog</a><a href={`${base}about/`}>About</a></nav></div></header>
   <main><slot /></main>
-  <footer><div class="container footer"><div><strong>Ozarbox</strong><p>Simple, useful tools for real-world decisions.</p></div><div class="footer-links"><a href={`${base}privacy/`}>Privacy</a><a href={`${base}terms/`}>Terms</a><a href={`${base}disclaimer/`}>Disclaimer</a><a href={`${base}contact/`}>Contact</a></div></div></footer>
+  <footer><div class="container footer"><div><strong>Ozarbox</strong><p>Simple, useful tools for real-world decisions.</p></div><div class="footer-links"><a href={`${base}privacy/`}>Privacy</a><a href={`${base}terms/`}>Terms</a><a href={`${base}disclaimer/`}>Disclaimer</a><a href={`${base}contact/`}>Contact</a><a href={blogUrl}>Blog</a></div></div></footer>
 </body>
 </html>
 <style is:global>

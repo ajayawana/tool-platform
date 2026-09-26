@@ -5,10 +5,12 @@ import { globalTools } from '../../../data/globalTools';
 
 const base=import.meta.env.BASE_URL;
 const allTools = [...nicheTools, ...globalTools];
+const reservedClusters = new Set(['accounting','tax','professional-services']);
 
 export function getStaticPaths(){
   const clusters=[...new Set(allTools.map(t=>t.cluster))].sort();
-  return clusters.map(cluster=>({
+  const generatedClusters=clusters.filter(cluster=>!reservedClusters.has(cluster));
+  return generatedClusters.map(cluster=>({
     params:{cluster},
     props:{cluster,items:allTools.filter(t=>t.cluster===cluster),clusters}
   }));

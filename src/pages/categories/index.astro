@@ -1,0 +1,10 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { tools, categories } from '../../data/tools';
+---
+<Layout title="Tool Categories | ToolPlatform" description="Browse free online tools by category.">
+  <section class="container prose">
+    <div class="eyebrow">Browse</div><h1>Tool Categories</h1>
+    {categories.map(category => <section><h2>{category[0].toUpperCase()+category.slice(1)}</h2><div class="tools-grid">{tools.filter(t=>t.category===category).map(t=><a class="card" href={`/tools/${t.slug}/`}><h3>{t.title}</h3><p>{t.description}</p></a>)}</div></section>)}
+  </section>
+</Layout>

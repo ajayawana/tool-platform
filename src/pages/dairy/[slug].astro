@@ -1,0 +1,61 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { dairyTools } from '../../data/dairyTools';
+export function getStaticPaths() { return dairyTools.map(tool => ({ params: { slug: tool.slug }, props: { tool } })); }
+const { tool } = Astro.props;
+---
+<Layout title={`${tool.title} | Free Dairy Calculator`} description={tool.description}>
+  <section class="tool-wrap container">
+    <div class="breadcrumbs"><a href="/">Home</a> / <a href="/dairy/">Dairy Tools</a> / {tool.title}</div>
+    <div class="tool-head"><div class="eyebrow">Dairy & Buffalo</div><h1>{tool.title}</h1><p>{tool.description}</p></div>
+    <div class="tool-box">
+      <div class="form-grid">
+        {tool.inputs.map(input => <label>{input.label}<input data-key={input.key} type="number" inputmode="decimal" min="0" placeholder={input.placeholder} /></label>)}
+      </div>
+      <button id="calculate">Calculate</button>
+      <div class="result" id="result" aria-live="polite">Enter your values and tap Calculate.</div>
+    </div>
+    <div style="max-width:760px;margin-top:30px">
+      <h2>About this calculator</h2>
+      <p>This free tool runs in your browser. Your entered values are not sent to a server. Results are estimates for planning and comparison; they are not veterinary, nutritional, financial or legal advice.</p>
+      <p>For feed decisions, use the animal's actual condition, forage quality, milk yield and professional ration guidance where appropriate.</p>
+    </div>
+  </section>
+</Layout>
+<script define:vars={{ inputs: tool.inputs }}>
+  const button = document.querySelector('#calculate');
+  const result = document.querySelector('#result');
+  const fmt = (n) => Number.isFinite(n) ? n.toLocaleString(undefined,{maximumFractionDigits:2}) : 'N/A';
+  const rawValues = () => Object.fromEntries(inputs.map(i => [i.key, document.querySelector(`[data-key="${i.key}"]`)?.value ?? '']));
+  const v = (raw,k) => Number(raw[k] || 0);
+  const need = (raw, keys) => keys.every(k => raw[k] !== '');
+  const emi = (p, annual, months) => { const r=annual/100/12; return r ? p*r*Math.pow(1+r,months)/(Math.pow(1+r,months)-1) : p/months; };
+  button?.addEventListener('click', () => {
+    const raw=rawValues();
+    const n=k=>v(raw,k);
+    const key=location.pathname.split('/').filter(Boolean).pop();
+    let text='Enter all values.';
+    if(key==='buffalo-feed-calculator') {
+      if(need(raw,['weight','milk','dry','green'])) { const baseDry=Math.max(0,n('weight')*0.01); const conc=Math.max(0,n('milk')*0.4); text=`Planning estimate — dry fodder: ${fmt(baseDry)} kg/day | concentrate: ${fmt(conc)} kg/day | green fodder entered: ${fmt(n('green'))} kg/day. Total available fodder: ${fmt(n('dry')+n('green'))} kg/day.`; }
+    } else if(key==='buffalo-feed-cost-calculator') {
+      if(need(raw,['greenQty','greenPrice','dryQty','dryPrice','concQty','concPrice'])) { const daily=n('greenQty')*n('greenPrice')+n('dryQty')*n('dryPrice')+n('concQty')*n('concPrice'); text=`Estimated feed cost: ₹${fmt(daily)}/day | ₹${fmt(daily*30)}/30 days.`; }
+    } else if(key==='milk-profit-calculator') {
+      if(need(raw,['milk','milkPrice','feed','labour','other'])) { const revenue=n('milk')*n('milkPrice'), cost=n('feed')+n('labour')+n('other'), profit=revenue-cost; text=`Revenue: ₹${fmt(revenue)}/day | Cost: ₹${fmt(cost)}/day | Net operating result: ₹${fmt(profit)}/day | ₹${fmt(profit*30)}/30 days.`; }
+    } else if(key==='feed-cost-per-litre-calculator') {
+      if(need(raw,['feed','milk'])) text=n('milk')>0?`Feed cost per litre: ₹${fmt(n('feed')/n('milk'))}`:'Milk production must be above 0.';
+    } else if(key==='dairy-break-even-calculator') {
+      if(need(raw,['fixed','variable','price'])) { const contribution=n('price')-n('variable'); text=contribution<=0?'Milk price must exceed variable cost.':`Break-even milk volume: ${fmt(n('fixed')/contribution)} litres/day.`; }
+    } else if(key==='dairy-farm-profit-calculator') {
+      if(need(raw,['animals','milk','price','cost','other'])) { const revenue=n('animals')*n('milk')*n('price')*30, costs=n('animals')*n('cost')*30+n('other'), profit=revenue-cost; text=`Monthly milk revenue: ₹${fmt(revenue)} | Monthly estimated costs: ₹${fmt(costs)} | Estimated operating profit: ₹${fmt(profit)}.`; }
+    } else if(key==='dairy-startup-cost-calculator') {
+      if(need(raw,['animals','animalCost','shed','equipment','working'])) { const total=n('animals')*n('animalCost')+n('shed')+n('equipment')+n('working'); text=`Estimated initial investment: ₹${fmt(total)}.`; }
+    } else if(key==='cow-vs-buffalo-profit-calculator') {
+      if(need(raw,['cowMilk','cowPrice','cowFeed','buffMilk','buffPrice','buffFeed'])) { const cow=n('cowMilk')*n('cowPrice')-n('cowFeed'), buff=n('buffMilk')*n('buffPrice')-n('buffFeed'); text=`Cow estimated daily result: ₹${fmt(cow)} | Buffalo estimated daily result: ₹${fmt(buff)} | Difference: ₹${fmt(buff-cow)}/day.`; }
+    } else if(key==='dairy-loan-profit-calculator') {
+      if(need(raw,['loan','rate','months','profit'])) { const payment=emi(n('loan'),n('rate'),n('months')); text=`Estimated EMI: ₹${fmt(payment)}/month | Estimated operating profit: ₹${fmt(n('profit'))}/month | Profit left after EMI: ₹${fmt(n('profit')-payment)}/month.`; }
+    } else if(key==='buffalo-milk-feed-ratio-calculator') {
+      if(need(raw,['milk','feed'])) text=n('feed')>0?`Milk output per ₹1 of feed cost: ${fmt(n('milk')/n('feed'))} litres | Feed cost per litre: ₹${fmt(n('feed')/n('milk'))}`:'Feed cost must be above 0.';
+    }
+    result.textContent=text;
+  });
+</script>

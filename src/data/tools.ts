@@ -1,78 +1,29 @@
-export type ToolDefinition = {
-  slug: string;
-  title: string;
-  category: string;
-  description: string;
-  keywords: string[];
-  inputs: { key: string; label: string; type: 'number'; placeholder?: string }[];
-  calculate: (values: Record<string, number>) => string;
-};
-
-const n = (value: number) => Number.isFinite(value) ? value : 0;
-const fmt = (value: number) => new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(value);
-
-export const tools: ToolDefinition[] = [
-  {
-    slug: 'percentage-calculator', title: 'Percentage Calculator', category: 'calculators',
-    description: 'Calculate what a percentage of a number is.', keywords: ['percent','percentage','calculator'],
-    inputs: [{key:'percent',label:'Percentage',type:'number',placeholder:'20'},{key:'number',label:'Number',type:'number',placeholder:'250'}],
-    calculate: v => `${fmt(n(v.percent) * n(v.number) / 100)}`
-  },
-  {
-    slug: 'percentage-change-calculator', title: 'Percentage Change Calculator', category: 'calculators',
-    description: 'Find the percentage increase or decrease between two values.', keywords: ['percent change','increase','decrease'],
-    inputs: [{key:'old',label:'Original value',type:'number',placeholder:'100'},{key:'new',label:'New value',type:'number',placeholder:'125'}],
-    calculate: v => n(v.old) === 0 ? 'Original value cannot be 0.' : `${fmt((n(v.new)-n(v.old))/Math.abs(n(v.old))*100)}%`
-  },
-  {
-    slug: 'discount-calculator', title: 'Discount Calculator', category: 'calculators',
-    description: 'Calculate discount amount and final sale price.', keywords: ['discount','sale price','shopping'],
-    inputs: [{key:'price',label:'Original price',type:'number',placeholder:'1000'},{key:'discount',label:'Discount %',type:'number',placeholder:'20'}],
-    calculate: v => { const d=n(v.price)*n(v.discount)/100; return `Discount: ${fmt(d)} | Final price: ${fmt(n(v.price)-d)}`; }
-  },
-  {
-    slug: 'profit-calculator', title: 'Profit Calculator', category: 'calculators',
-    description: 'Calculate profit and profit percentage from cost and selling price.', keywords: ['profit','business','selling price'],
-    inputs: [{key:'cost',label:'Cost price',type:'number',placeholder:'500'},{key:'selling',label:'Selling price',type:'number',placeholder:'750'}],
-    calculate: v => { const p=n(v.selling)-n(v.cost); return `Profit: ${fmt(p)} | Profit %: ${n(v.cost) ? fmt(p/n(v.cost)*100)+'%' : 'N/A'}`; }
-  },
-  {
-    slug: 'margin-calculator', title: 'Margin Calculator', category: 'calculators',
-    description: 'Calculate profit margin from revenue and cost.', keywords: ['margin','profit margin','business'],
-    inputs: [{key:'revenue',label:'Revenue',type:'number',placeholder:'1000'},{key:'cost',label:'Cost',type:'number',placeholder:'600'}],
-    calculate: v => n(v.revenue) === 0 ? 'Revenue cannot be 0.' : `${fmt((n(v.revenue)-n(v.cost))/n(v.revenue)*100)}% margin`
-  },
-  {
-    slug: 'markup-calculator', title: 'Markup Calculator', category: 'calculators',
-    description: 'Calculate markup percentage and selling price from cost.', keywords: ['markup','pricing','business'],
-    inputs: [{key:'cost',label:'Cost',type:'number',placeholder:'500'},{key:'markup',label:'Markup %',type:'number',placeholder:'40'}],
-    calculate: v => { const m=n(v.cost)*n(v.markup)/100; return `Markup: ${fmt(m)} | Selling price: ${fmt(n(v.cost)+m)}`; }
-  },
-  {
-    slug: 'ratio-calculator', title: 'Ratio Calculator', category: 'calculators',
-    description: 'Simplify a ratio and calculate proportional values.', keywords: ['ratio','simplify ratio','proportion'],
-    inputs: [{key:'a',label:'First value',type:'number',placeholder:'24'},{key:'b',label:'Second value',type:'number',placeholder:'36'}],
-    calculate: v => { const a=Math.abs(n(v.a)), b=Math.abs(n(v.b)); let x=a,y=b; while(y){const t=x%y;x=y;y=t;} return x ? `${fmt(a/x)} : ${fmt(b/x)}` : 'Enter non-zero values.'; }
-  },
-  {
-    slug: 'average-calculator', title: 'Average Calculator', category: 'calculators',
-    description: 'Calculate the arithmetic mean of up to five numbers.', keywords: ['average','mean','math'],
-    inputs: [{key:'a',label:'Number 1',type:'number',placeholder:'10'},{key:'b',label:'Number 2',type:'number',placeholder:'20'},{key:'c',label:'Number 3',type:'number',placeholder:'30'},{key:'d',label:'Number 4',type:'number',placeholder:'40'},{key:'e',label:'Number 5',type:'number',placeholder:'50'}],
-    calculate: v => { const values=Object.values(v).filter(x=>Number.isFinite(x)); return values.length ? fmt(values.reduce((a,b)=>a+b,0)/values.length) : 'Enter values.'; }
-  },
-  {
-    slug: 'fraction-calculator', title: 'Fraction Calculator', category: 'calculators',
-    description: 'Add two fractions and get the decimal result.', keywords: ['fraction','fractions','math'],
-    inputs: [{key:'a',label:'Numerator 1',type:'number',placeholder:'1'},{key:'b',label:'Denominator 1',type:'number',placeholder:'2'},{key:'c',label:'Numerator 2',type:'number',placeholder:'1'},{key:'d',label:'Denominator 2',type:'number',placeholder:'4'}],
-    calculate: v => { const b=n(v.b),d=n(v.d); if(!b||!d)return 'Denominators cannot be 0.'; const num=n(v.a)*d+n(v.c)*b, den=b*d; return `${fmt(num)} / ${fmt(den)} = ${fmt(num/den)}`; }
-  },
-  {
-    slug: 'tip-calculator', title: 'Tip Calculator', category: 'calculators',
-    description: 'Calculate tip amount and total bill.', keywords: ['tip','gratuity','restaurant'],
-    inputs: [{key:'bill',label:'Bill amount',type:'number',placeholder:'1000'},{key:'tip',label:'Tip %',type:'number',placeholder:'10'}],
-    calculate: v => { const tip=n(v.bill)*n(v.tip)/100; return `Tip: ${fmt(tip)} | Total: ${fmt(n(v.bill)+tip)}`; }
-  }
+export type ToolDefinition = { slug:string; title:string; category:string; description:string; keywords:string[]; inputs:{key:string;label:string;type:'number';placeholder?:string}[] };
+const nums=(keys:string[],label:string,placeholder='10')=>keys.map((key,i)=>({key,label:`${label} ${i+1}`,type:'number' as const,placeholder}));
+export const tools:ToolDefinition[]=[
+{slug:'percentage-calculator',title:'Percentage Calculator',category:'calculators',description:'Calculate what a percentage of a number is.',keywords:['percent','percentage'],inputs:[{key:'percent',label:'Percentage',type:'number',placeholder:'20'},{key:'number',label:'Number',type:'number',placeholder:'250'}]},
+{slug:'percentage-change-calculator',title:'Percentage Change Calculator',category:'calculators',description:'Find the percentage increase or decrease between two values.',keywords:['percent change','increase','decrease'],inputs:[{key:'old',label:'Original value',type:'number',placeholder:'100'},{key:'new',label:'New value',type:'number',placeholder:'125'}]},
+{slug:'discount-calculator',title:'Discount Calculator',category:'calculators',description:'Calculate discount amount and final sale price.',keywords:['discount','sale price'],inputs:[{key:'price',label:'Original price',type:'number',placeholder:'1000'},{key:'discount',label:'Discount %',type:'number',placeholder:'20'}]},
+{slug:'profit-calculator',title:'Profit Calculator',category:'calculators',description:'Calculate profit and profit percentage from cost and selling price.',keywords:['profit','business'],inputs:[{key:'cost',label:'Cost price',type:'number',placeholder:'500'},{key:'selling',label:'Selling price',type:'number',placeholder:'750'}]},
+{slug:'margin-calculator',title:'Margin Calculator',category:'calculators',description:'Calculate profit margin from revenue and cost.',keywords:['margin','profit margin'],inputs:[{key:'revenue',label:'Revenue',type:'number',placeholder:'1000'},{key:'cost',label:'Cost',type:'number',placeholder:'600'}]},
+{slug:'markup-calculator',title:'Markup Calculator',category:'calculators',description:'Calculate markup percentage and selling price from cost.',keywords:['markup','pricing'],inputs:[{key:'cost',label:'Cost',type:'number',placeholder:'500'},{key:'markup',label:'Markup %',type:'number',placeholder:'40'}]},
+{slug:'ratio-calculator',title:'Ratio Calculator',category:'calculators',description:'Simplify a ratio.',keywords:['ratio','proportion'],inputs:[{key:'a',label:'First value',type:'number',placeholder:'24'},{key:'b',label:'Second value',type:'number',placeholder:'36'}]},
+{slug:'average-calculator',title:'Average Calculator',category:'calculators',description:'Calculate the arithmetic mean of up to five numbers.',keywords:['average','mean'],inputs:nums(['a','b','c','d','e'],'Number')},
+{slug:'fraction-calculator',title:'Fraction Calculator',category:'calculators',description:'Add two fractions and get the decimal result.',keywords:['fraction','math'],inputs:[{key:'a',label:'Numerator 1',type:'number',placeholder:'1'},{key:'b',label:'Denominator 1',type:'number',placeholder:'2'},{key:'c',label:'Numerator 2',type:'number',placeholder:'1'},{key:'d',label:'Denominator 2',type:'number',placeholder:'4'}]},
+{slug:'tip-calculator',title:'Tip Calculator',category:'calculators',description:'Calculate tip amount and total bill.',keywords:['tip','gratuity'],inputs:[{key:'bill',label:'Bill amount',type:'number',placeholder:'1000'},{key:'tip',label:'Tip %',type:'number',placeholder:'10'}]},
+{slug:'sales-tax-calculator',title:'Sales Tax Calculator',category:'calculators',description:'Calculate sales tax and total price.',keywords:['sales tax','tax'],inputs:[{key:'price',label:'Price',type:'number',placeholder:'1000'},{key:'tax',label:'Tax %',type:'number',placeholder:'18'}]},
+{slug:'compound-interest-calculator',title:'Compound Interest Calculator',category:'finance',description:'Estimate compound growth from principal, rate, time, and frequency.',keywords:['compound interest','investment'],inputs:[{key:'principal',label:'Principal',type:'number',placeholder:'10000'},{key:'rate',label:'Annual rate %',type:'number',placeholder:'8'},{key:'years',label:'Years',type:'number',placeholder:'10'},{key:'frequency',label:'Compounds per year',type:'number',placeholder:'12'}]},
+{slug:'simple-interest-calculator',title:'Simple Interest Calculator',category:'finance',description:'Calculate simple interest and total amount.',keywords:['simple interest','interest'],inputs:[{key:'principal',label:'Principal',type:'number',placeholder:'10000'},{key:'rate',label:'Annual rate %',type:'number',placeholder:'8'},{key:'years',label:'Years',type:'number',placeholder:'5'}]},
+{slug:'loan-payment-calculator',title:'Loan Payment Calculator',category:'finance',description:'Estimate monthly loan payment.',keywords:['loan','emi','payment'],inputs:[{key:'amount',label:'Loan amount',type:'number',placeholder:'500000'},{key:'rate',label:'Annual interest %',type:'number',placeholder:'8'},{key:'months',label:'Term in months',type:'number',placeholder:'60'}]},
+{slug:'bmi-calculator',title:'BMI Calculator',category:'health',description:'Calculate body mass index from height and weight.',keywords:['bmi','health'],inputs:[{key:'weight',label:'Weight (kg)',type:'number',placeholder:'60'},{key:'height',label:'Height (cm)',type:'number',placeholder:'165'}]},
+{slug:'age-calculator',title:'Age Calculator',category:'date-time',description:'Calculate age in years from birth year.',keywords:['age','birthday'],inputs:[{key:'birthYear',label:'Birth year',type:'number',placeholder:'2000'},{key:'currentYear',label:'Current year',type:'number',placeholder:'2026'}]},
+{slug:'time-duration-calculator',title:'Time Duration Calculator',category:'date-time',description:'Calculate duration between two times.',keywords:['time','duration'],inputs:[{key:'start',label:'Start hour',type:'number',placeholder:'9'},{key:'end',label:'End hour',type:'number',placeholder:'17'}]},
+{slug:'unit-price-calculator',title:'Unit Price Calculator',category:'everyday',description:'Calculate cost per unit.',keywords:['unit price','shopping'],inputs:[{key:'price',label:'Total price',type:'number',placeholder:'250'},{key:'quantity',label:'Quantity',type:'number',placeholder:'5'}]},
+{slug:'fuel-cost-calculator',title:'Fuel Cost Calculator',category:'everyday',description:'Estimate trip fuel cost.',keywords:['fuel','petrol','trip'],inputs:[{key:'distance',label:'Distance (km)',type:'number',placeholder:'300'},{key:'efficiency',label:'Efficiency (km/L)',type:'number',placeholder:'15'},{key:'price',label:'Fuel price/L',type:'number',placeholder:'100'}]},
+{slug:'speed-distance-time-calculator',title:'Speed Distance Time Calculator',category:'everyday',description:'Calculate average speed.',keywords:['speed','distance','time'],inputs:[{key:'distance',label:'Distance (km)',type:'number',placeholder:'120'},{key:'hours',label:'Time (hours)',type:'number',placeholder:'2'}]},
+{slug:'gpa-calculator',title:'GPA Calculator',category:'education',description:'Calculate average GPA from up to five grades.',keywords:['gpa','grades'],inputs:nums(['g1','g2','g3','g4','g5'],'Grade','3.5')},
+{slug:'ohms-law-calculator',title:"Ohm's Law Calculator",category:'science',description:'Calculate voltage from current and resistance.',keywords:['ohms law','voltage'],inputs:[{key:'current',label:'Current (A)',type:'number',placeholder:'2'},{key:'resistance',label:'Resistance (Ω)',type:'number',placeholder:'10'}]},
+{slug:'calories-burned-calculator',title:'Calories Burned Calculator',category:'health',description:'Estimate calories burned using weight, MET and duration.',keywords:['calories','exercise'],inputs:[{key:'weight',label:'Weight (kg)',type:'number',placeholder:'60'},{key:'met',label:'Activity MET',type:'number',placeholder:'5'},{key:'minutes',label:'Duration (minutes)',type:'number',placeholder:'30'}]},
+{slug:'break-even-calculator',title:'Break-Even Calculator',category:'business',description:'Calculate units required to cover fixed and variable costs.',keywords:['break even','business'],inputs:[{key:'fixed',label:'Fixed costs',type:'number',placeholder:'50000'},{key:'price',label:'Price per unit',type:'number',placeholder:'500'},{key:'variable',label:'Variable cost per unit',type:'number',placeholder:'300'}]}
 ];
-
-export const categories = [...new Set(tools.map(t => t.category))];
-export const getTool = (slug: string) => tools.find(t => t.slug === slug);
+export const categories=[...new Set(tools.map(t=>t.category))];

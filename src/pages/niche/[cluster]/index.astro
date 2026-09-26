@@ -2,17 +2,24 @@
 import Layout from '../../../layouts/Layout.astro';
 import { nicheTools } from '../../../data/nicheTools';
 import { globalTools } from '../../../data/globalTools';
-const allTools=[...nicheTools,...globalTools];
-const clusters=[...new Set(allTools.map(t=>t.cluster))].sort();
-export function getStaticPaths(){return clusters.map(cluster=>({params:{cluster},props:{cluster,items:allTools.filter(t=>t.cluster===cluster)}}));}
-const {cluster,items}=Astro.props;
+
+export function getStaticPaths(){
+  const allTools=[...nicheTools,...globalTools];
+  const clusters=[...new Set(allTools.map(t=>t.cluster))].sort();
+  return clusters.map(cluster=>({
+    params:{cluster},
+    props:{cluster,items:allTools.filter(t=>t.cluster===cluster),clusters}
+  }));
+}
+
+const {cluster,items,clusters}=Astro.props;
 const label=cluster.replaceAll('-',' ');
 const title=`${label} calculators & professional tools`;
 const description=`Free ${label} calculators and professional planning tools with transparent formulas, assumptions, examples and related tools.`;
 const faqs=[
 `What ${label} tools are available?`,
 `Are these ${label} calculators free to use?`,
-`Can I use these results for professional decisions?`
+`Can I use these ${label} results for professional decisions?`
 ];
 const schema={"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":title,"description":description,"url":Astro.url.href},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":new URL('/',Astro.site||Astro.url).href},{"@type":"ListItem","position":2,"name":"Niche tools","item":new URL('/niche/',Astro.site||Astro.url).href},{"@type":"ListItem","position":3,"name":label,"item":Astro.url.href}]}]};
 ---
@@ -30,6 +37,6 @@ const schema={"@context":"https://schema.org","@graph":[{"@type":"CollectionPage
 <h2>Frequently asked questions</h2>
 {faqs.map(q=><div><h3>{q}</h3><p>{q.includes('free')?'Yes. The calculators are designed to run in the browser without requiring a paid subscription.':q.includes('professional')?'They can support planning and estimation, but they should not replace a required code calculation, tax determination, professional design or other regulated review.':`This directory currently contains ${items.length} focused ${label} tools. Open a calculator above to see its inputs, formula explanation, assumptions, examples and related tools.`}</p></div>)}
 <h2>Explore every professional cluster</h2>
-<div class="tool-grid">{clusters.filter(c=>c!==cluster).map(c=><a class="card" href={`/niche/${c}/`}><strong>{c.replaceAll('-',' ')}</strong><span>{allTools.filter(t=>t.cluster===c).length} focused tools</span></a>)}</div>
+<div class="tool-grid">{clusters.filter(c=>c!==cluster).map(c=><a class="card" href={`/niche/${c}/`}><strong>{c.replaceAll('-',' ')}</strong><span>{[...nicheTools,...globalTools].filter(t=>t.cluster===c).length} focused tools</span></a>)}</div>
 </section>
 </Layout>

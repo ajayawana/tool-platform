@@ -18,6 +18,14 @@ const schema={"@context":"https://schema.org","@type":"WebApplication","name":"C
 </section>
 </Layout>
 <script>
-const n=(id)=>Number(document.getElementById(id).value||0); const money=(x)=>x.toLocaleString(undefined,{style:'currency',currency:'USD',maximumFractionDigits:2});
-document.getElementById('calculate')?.addEventListener('click',()=>{const lost=n('clients')*n('churn')/100; const monthly=lost*n('revenue'); const gap=monthly*n('months'); const gp=gap*n('margin')/100; document.getElementById('result').textContent=`Expected clients lost/month: ${lost.toFixed(2)} | Monthly revenue at risk: ${money(monthly)} | Replacement-gap revenue: ${money(gap)} | Gross-profit value at risk: ${money(gp)}`;});
+const input=(id:string): HTMLInputElement => {
+  const el=document.getElementById(id);
+  if (!(el instanceof HTMLInputElement)) throw new Error(`Expected input: ${id}`);
+  return el;
+};
+const n=(id:string):number=>Number(input(id).value||0);
+const money=(x:number):string=>x.toLocaleString(undefined,{style:'currency',currency:'USD',maximumFractionDigits:2});
+const result=document.getElementById('result');
+if (!result) throw new Error('Missing result element');
+document.getElementById('calculate')?.addEventListener('click',()=>{const lost=n('clients')*n('churn')/100; const monthly=lost*n('revenue'); const gap=monthly*n('months'); const gp=gap*n('margin')/100; result.textContent=`Expected clients lost/month: ${lost.toFixed(2)} | Monthly revenue at risk: ${money(monthly)} | Replacement-gap revenue: ${money(gap)} | Gross-profit value at risk: ${money(gp)}`;});
 </script>

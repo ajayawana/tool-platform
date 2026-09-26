@@ -1,0 +1,37 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import { professionalTools } from '../../../../data/professionalTools';
+const base=import.meta.env.BASE_URL;
+export function getStaticPaths(){return professionalTools.map(tool=>({params:{slug:tool.slug},props:{tool}}));}
+const {tool}=Astro.props;
+const related=professionalTools.filter(t=>t.slug!==tool.slug).slice(0,6);
+const exampleValues=tool.inputs.map(i=>i.placeholder).join(', ');
+const title=`${tool.title} | Free Professional Calculator`;
+const description=`${tool.description} Free browser calculator with transparent assumptions and examples.`;
+const schema={"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":tool.title,"applicationCategory":"BusinessApplication","operatingSystem":"Web","description":tool.description,"url":new URL(`${base}niche/professional-services/${tool.slug}/`,Astro.site||Astro.url).href,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":new URL(base,Astro.site||Astro.url).href},{"@type":"ListItem","position":2,"name":"Professional services","item":new URL(`${base}niche/professional-services/`,Astro.site||Astro.url).href},{"@type":"ListItem","position":3,"name":tool.title,"item":new URL(`${base}niche/professional-services/${tool.slug}/`,Astro.site||Astro.url).href}]}]};
+---
+<Layout title={`${title} | Ozarbox`} description={description}>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+<section class="tool-wrap container">
+<div class="breadcrumbs"><a href={base}>Home</a> / <a href={`${base}niche/professional-services/`}>Professional services</a> / {tool.title}</div>
+<div class="tool-head"><div class="eyebrow">Professional services calculator</div><h1>{tool.title}</h1><p>{tool.description}</p></div>
+<div class="tool-box"><div class="form-grid">{tool.inputs.map(input=><label>{input.label}{input.unit&&<small> ({input.unit})</small>}<input data-key={input.key} type="number" inputmode="decimal" placeholder={input.placeholder}/></label>)}</div><button id="calculate">Calculate</button><div class="result" id="result" aria-live="polite">Enter your values and tap Calculate.</div></div>
+<article class="prose" style="max-width:820px;margin-top:20px"><h2>How this calculator works</h2><p>This tool uses a transparent business formula based on your inputs. Replace the example values with your actual workload, costs, pricing and target income.</p><h2>Assumptions</h2><ul>{tool.inputs.map(i=><li><strong>{i.label}:</strong> the value is user-supplied and should match the same period and business basis.</li>)}</ul><h2>Example</h2><p>Try the example values ({exampleValues}) and then change one variable at a time to understand the sensitivity of the result.</p><h2>Decision note</h2><p>Use the output for planning and scenario analysis. Actual profitability depends on client mix, payment timing, scope changes, sales costs, taxes and other business factors.</p><h2>Frequently asked questions</h2><div><h3>Is this calculator free?</h3><p>Yes. It runs directly in the browser without a paid subscription.</p></div><div><h3>Does it guarantee a profitable price?</h3><p>No. It provides a transparent estimate from your assumptions. Validate the result against your actual business economics.</p></div></article>
+<section style="margin-top:38px"><h2>Related professional tools</h2><div class="tool-grid">{related.map(t=><a class="card" href={`${base}niche/professional-services/${t.slug}/`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div></section>
+</section>
+</Layout>
+<script define:vars={{formula:tool.formula}}>
+const $=(s)=>document.querySelector(s);const button=$('#calculate');const result=$('#result');const num=(k)=>Number(document.querySelector(`[data-key="${k}"]`)?.value||0);const has=(keys)=>keys.every(k=>{const v=document.querySelector(`[data-key="${k}"]`)?.value;return v!==''&&v!=null});const f=(x)=>Number.isFinite(x)?x.toLocaleString(undefined,{maximumFractionDigits:2}):'N/A';const money=(x)=>f(x);button?.addEventListener('click',()=>{let out='Enter all required values.';
+if(formula==='hourlyRate'&&has(['income','expenses','hours','billable'])){const available=num('hours')*num('billable')/100;out=available>0?`Required hourly rate: ${money((num('income')+num('expenses'))/available)}`:'Billable hours must be above zero.'}
+else if(formula==='dayRate'&&has(['income','expenses','days']))out=num('days')>0?`Required day rate: ${money((num('income')+num('expenses'))/num('days'))}`:'Billable days must be above zero.';
+else if(formula==='agencyBreakEven'&&has(['fixed','margin']))out=num('margin')>0?`Break-even monthly revenue: ${money(num('fixed')/(num('margin')/100))}`:'Gross margin must be above zero.';
+else if(formula==='projectMargin'&&has(['revenue','cost'])){const profit=num('revenue')-num('cost');out=`Project profit: ${money(profit)} | Margin: ${f(profit/num('revenue')*100)}%`}
+else if(formula==='utilization'&&has(['billable','available']))out=num('available')>0?`Billable utilization: ${f(num('billable')/num('available')*100)}%`:'Available hours must be above zero.';
+else if(formula==='clientProfit'&&has(['revenue','labor','overhead','tools'])){const p=num('revenue')-num('labor')-num('overhead')-num('tools');out=`Client profit: ${money(p)} | Margin: ${f(p/num('revenue')*100)}%`}
+else if(formula==='retainer'&&has(['hours','rate','overhead']))out=`Suggested monthly retainer: ${money(num('hours')*num('rate')*(1+num('overhead')/100))}`;
+else if(formula==='blended'&&has(['hours1','rate1','hours2','rate2'])){const h=num('hours1')+num('hours2');out=h>0?`Blended hourly rate: ${money((num('hours1')*num('rate1')+num('hours2')*num('rate2'))/h)}`:'Total hours must be above zero.'}
+else if(formula==='runway'&&has(['cash','monthly']))out=num('monthly')>0?`Estimated cash runway: ${f(num('cash')/num('monthly'))} months`:'Monthly burn must be above zero.';
+else if(formula==='hourBudget'&&has(['price','cost','rate']))out=num('rate')>0?`Allowable project hours: ${f((num('price')-num('cost'))/num('rate'))}`:'Hourly contribution target must be above zero.';
+else if(formula==='taxInclusiveRate'&&has(['netRate','tax']))out=num('tax')<100?`Client-facing hourly rate: ${money(num('netRate')/(1-num('tax')/100))}`:'Tax reserve must be below 100%.';
+result.textContent=out;});
+</script>

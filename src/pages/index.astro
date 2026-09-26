@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { tools } from '../data/tools';
+---
+<Layout title="Free Online Tools | ToolPlatform" description="Fast, free calculators and useful browser tools. No signup required.">
+  <section class="hero container">
+    <div class="eyebrow">Fast · Free · Private</div>
+    <h1>Useful tools.<br />No unnecessary friction.</h1>
+    <p>Simple calculators and utilities that run directly in your browser. No account required.</p>
+  </section>
+  <section class="container">
+    <div style="display:flex;justify-content:space-between;align-items:end;gap:20px"><div><div class="eyebrow">Calculators</div><h2>Popular tools</h2></div><a href="/categories/">View all →</a></div>
+    <div class="tools-grid">
+      {tools.map(tool => <a class="card" href={`/tools/${tool.slug}/`}><h3>{tool.title}</h3><p>{tool.description}</p></a>)}
+    </div>
+  </section>
+</Layout>

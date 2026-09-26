@@ -1,0 +1,37 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import { taxTools } from '../../../../data/taxTools';
+const base=import.meta.env.BASE_URL;
+export function getStaticPaths(){return taxTools.map(tool=>({params:{slug:tool.slug},props:{tool}}));}
+const {tool}=Astro.props;
+const related=taxTools.filter(t=>t.slug!==tool.slug).slice(0,6);
+const exampleValues=tool.inputs.map(i=>i.placeholder).join(', ');
+const title=`${tool.title} | Free Tax Calculator`;
+const description=`${tool.description} Free browser estimate with transparent assumptions and examples.`;
+const schema={"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":tool.title,"applicationCategory":"BusinessApplication","operatingSystem":"Web","description":tool.description,"url":new URL(`${base}niche/tax/${tool.slug}/`,Astro.site||Astro.url).href,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":new URL(base,Astro.site||Astro.url).href},{"@type":"ListItem","position":2,"name":"Tax","item":new URL(`${base}niche/tax/`,Astro.site||Astro.url).href},{"@type":"ListItem","position":3,"name":tool.title,"item":new URL(`${base}niche/tax/${tool.slug}/`,Astro.site||Astro.url).href}]}]};
+---
+<Layout title={`${title} | Ozarbox`} description={description}>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+<section class="tool-wrap container">
+<div class="breadcrumbs"><a href={base}>Home</a> / <a href={`${base}niche/tax/`}>Tax</a> / {tool.title}</div>
+<div class="tool-head"><div class="eyebrow">Tax planning estimate</div><h1>{tool.title}</h1><p>{tool.description}</p></div>
+<div class="tool-box"><div class="form-grid">{tool.inputs.map(input=><label>{input.label}{input.unit&&<small> ({input.unit})</small>}<input data-key={input.key} type="number" inputmode="decimal" placeholder={input.placeholder}/></label>)}</div><button id="calculate">Calculate</button><div class="result" id="result" aria-live="polite">Enter your values and tap Calculate.</div></div>
+<article class="prose" style="max-width:820px;margin-top:20px"><h2>How this tax calculator works</h2><p>This page applies a simple formula to the figures and tax rate you provide. It is intentionally transparent so you can inspect and change every assumption.</p><h2>Assumptions</h2><ul>{tool.inputs.map(i=><li><strong>{i.label}:</strong> replace the example value with the rate or amount that applies to your jurisdiction and tax year.</li>)}</ul><h2>Example</h2><p>Try the example values ({exampleValues}) and then change the tax rate to see how the estimate changes.</p><h2>Important</h2><p>Tax rules vary by jurisdiction and situation. This calculator is not tax advice and does not determine your legal tax liability. Verify important decisions with the relevant tax authority or a qualified tax professional.</p><h2>Frequently asked questions</h2><div><h3>Is this tax result official?</h3><p>No. It is a general planning estimate based on your inputs and assumptions.</p></div><div><h3>Can I change the tax rate?</h3><p>Yes. Enter the rate that applies to your jurisdiction, transaction and tax year.</p></div></article>
+<section style="margin-top:38px"><h2>Related tax tools</h2><div class="tool-grid">{related.map(t=><a class="card" href={`${base}niche/tax/${t.slug}/`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div></section>
+</section>
+</Layout>
+<script define:vars={{formula:tool.formula}}>
+const $=(s)=>document.querySelector(s);const button=$('#calculate');const result=$('#result');const num=(k)=>Number(document.querySelector(`[data-key="${k}"]`)?.value||0);const has=(keys)=>keys.every(k=>{const v=document.querySelector(`[data-key="${k}"]`)?.value;return v!==''&&v!=null});const f=(x)=>Number.isFinite(x)?x.toLocaleString(undefined,{maximumFractionDigits:2}):'N/A';const money=(x)=>f(x);button?.addEventListener('click',()=>{let out='Enter all required values.';
+if(formula==='vat'&&has(['net','rate']))out=`VAT: ${money(num('net')*num('rate')/100)} | Total: ${money(num('net')*(1+num('rate')/100))}`;
+else if(formula==='vatReverse'&&has(['gross','rate'])){const net=num('gross')/(1+num('rate')/100);out=`Net price: ${money(net)} | VAT: ${money(num('gross')-net)}`}
+else if(formula==='salesTax'&&has(['price','rate']))out=`Sales tax: ${money(num('price')*num('rate')/100)} | Total: ${money(num('price')*(1+num('rate')/100))}`;
+else if(formula==='effectiveRate'&&has(['tax','income']))out=`Effective tax rate: ${f(num('tax')/num('income')*100)}%`;
+else if(formula==='grossUp'&&has(['net','rate']))out=num('rate')<100?`Gross amount: ${money(num('net')/(1-num('rate')/100))} | Tax: ${money(num('net')/(1-num('rate')/100)-num('net'))}`:'Tax rate must be below 100%.';
+else if(formula==='withholding'&&has(['payment','rate']))out=`Withholding: ${money(num('payment')*num('rate')/100)} | Net payment: ${money(num('payment')*(1-num('rate')/100))}`;
+else if(formula==='selfEmployed'&&has(['income','expenses','rate'])){const baseIncome=Math.max(0,num('income')-num('expenses'));out=`Estimated taxable base: ${money(baseIncome)} | Reserve: ${money(baseIncome*num('rate')/100)}`}
+else if(formula==='capitalGain'&&has(['sale','basis','rate'])){const gain=Math.max(0,num('sale')-num('basis'));out=`Estimated gain: ${money(gain)} | Estimated tax: ${money(gain*num('rate')/100)}`}
+else if(formula==='payroll'&&has(['wages','rate']))out=`Estimated employer payroll tax: ${money(num('wages')*num('rate')/100)} | Total employer cost: ${money(num('wages')*(1+num('rate')/100))}`;
+else if(formula==='taxableProfit'&&has(['revenue','expenses','adjustments']))out=`Estimated taxable profit: ${money(num('revenue')-num('expenses')+num('adjustments'))}`;
+else if(formula==='afterTax'&&has(['profit','rate']))out=`Estimated tax: ${money(num('profit')*num('rate')/100)} | After-tax profit: ${money(num('profit')*(1-num('rate')/100))}`;
+result.textContent=out;});
+</script>

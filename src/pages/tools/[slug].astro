@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { tools, getTool } from '../../data/tools';
+export function getStaticPaths() { return tools.map(tool => ({ params: { slug: tool.slug }, props: { tool } })); }
+const { tool } = Astro.props;
+---
+<Layout title={`${tool.title} | ToolPlatform`} description={tool.description}>
+  <section class="tool-wrap container">
+    <div class="breadcrumbs"><a href="/">Home</a> / <a href="/categories/">Tools</a> / {tool.title}</div>
+    <div class="tool-head"><div class="eyebrow">{tool.category}</div><h1>{tool.title}</h1><p>{tool.description}</p></div>
+    <div class="tool-box">
+      <div class="form-grid">
+        {tool.inputs.map(input => <label>{input.label}<input data-key={input.key} type="number" inputmode="decimal" placeholder={input.placeholder} /></label>)}
+      </div>
+      <button id="calculate">Calculate</button>
+      <div class="result" id="result" aria-live="polite">Enter your values and tap Calculate.</div>
+    </div>
+    <div style="max-width:760px;margin-top:30px"><h2>About this calculator</h2><p>This free tool performs the calculation instantly in your browser. Your entered values are not sent to a server.</p></div>
+  </section>
+</Layout>
+<script define:vars={{ inputs: tool.inputs }}>
+  const button = document.querySelector('#calculate');
+  const result = document.querySelector('#result');
+  button?.addEventListener('click', () => {
+    const values = Object.fromEntries(inputs.map(input => [input.key, Number(document.querySelector(`[data-key="${input.key}"]`)?.value || 0)]));
+    const key = location.pathname.split('/').filter(Boolean).pop();
+    const formulas = {
+      'percentage-calculator': () => `${(values.percent * values.number / 100).toLocaleString(undefined,{maximumFractionDigits:2})}`,
+      'percentage-change-calculator': () => values.old === 0 ? 'Original value cannot be 0.' : `${((values.new-values.old)/Math.abs(values.old)*100).toLocaleString(undefined,{maximumFractionDigits:2})}%`,
+      'discount-calculator': () => {const d=values.price*values.discount/100;return `Discount: ${d.toLocaleString(undefined,{maximumFractionDigits:2})} | Final price: ${(values.price-d).toLocaleString(undefined,{maximumFractionDigits:2})}`},
+      'profit-calculator': () => {const p=values.selling-values.cost;return `Profit: ${p.toLocaleString(undefined,{maximumFractionDigits:2})} | Profit %: ${values.cost ? (p/values.cost*100).toLocaleString(undefined,{maximumFractionDigits:2})+'%' : 'N/A'}`},
+      'margin-calculator': () => values.revenue===0?'Revenue cannot be 0.':`${((values.revenue-values.cost)/values.revenue*100).toLocaleString(undefined,{maximumFractionDigits:2})}% margin`,
+      'markup-calculator': () => {const m=values.cost*values.markup/100;return `Markup: ${m.toLocaleString(undefined,{maximumFractionDigits:2})} | Selling price: ${(values.cost+m).toLocaleString(undefined,{maximumFractionDigits:2})}`},
+      'ratio-calculator': () => {let a=Math.abs(values.a),b=Math.abs(values.b),x=a,y=b;while(y){const t=x%y;x=y;y=t}return x?`${a/x} : ${b/x}`:'Enter non-zero values.'},
+      'average-calculator': () => {const v=Object.values(values);return `${(v.reduce((a,b)=>a+b,0)/v.length).toLocaleString(undefined,{maximumFractionDigits:2})}`},
+      'fraction-calculator': () => {if(!values.b||!values.d)return 'Denominators cannot be 0.';const num=values.a*values.d+values.c*values.b,den=values.b*values.d;return `${num} / ${den} = ${(num/den).toLocaleString(undefined,{maximumFractionDigits:2})}`},
+      'tip-calculator': () => {const tip=values.bill*values.tip/100;return `Tip: ${tip.toLocaleString(undefined,{maximumFractionDigits:2})} | Total: ${(values.bill+tip).toLocaleString(undefined,{maximumFractionDigits:2})}`}
+    };
+    result.textContent = formulas[key]?.() ?? 'Calculation unavailable.';
+  });
+</script>

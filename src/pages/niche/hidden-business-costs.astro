@@ -1,0 +1,32 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const tools = [
+  { href: '/niche/chair-hour-overhead-calculator/', title: 'Chair-Hour Overhead Calculator', text: 'Estimate fixed overhead per productive treatment-chair hour.' },
+  { href: '/niche/labor-burden-by-trade-calculator/', title: 'Labor Burden Calculator by Trade', text: 'Estimate loaded and productive hourly labor cost for trades.' },
+  { href: '/niche/contractor-bid-markup-calculator/', title: 'Contractor Bid & Markup Calculator', text: 'Build a bid from direct costs, contingency and target profit margin.' },
+  { href: '/niche/client-churn-cost-calculator/', title: 'Client Churn Cost Calculator', text: 'Estimate revenue and gross-profit value at risk from client churn.' },
+  { href: '/niche/clinic-no-show-revenue-calculator/', title: 'Clinic No-Show Revenue Calculator', text: 'Estimate monthly revenue lost from appointment no-shows.' },
+];
+const schema={"@context":"https://schema.org","@type":"CollectionPage","name":"Hidden Business Costs Calculators","description":"Free calculators for measuring hidden costs such as overhead, labor burden, churn and no-shows.","url":Astro.url.href};
+---
+<Layout title="Hidden Business Costs Calculators | Ozarbox" description="Free calculators for hidden business costs: chair-hour overhead, labor burden, contractor markup, client churn and no-show revenue loss.">
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+<section class="tool-wrap container">
+  <div class="breadcrumbs"><a href="/">Home</a> / <a href="/niche/">Niche tools</a> / Hidden business costs</div>
+  <div class="tool-head">
+    <div class="eyebrow">Business operations</div>
+    <h1>Hidden Business Costs Calculators</h1>
+    <p>Small percentage errors in labor, overhead, churn and missed appointments can quietly erase profit. Use these calculators to quantify the cost before making a pricing or operating decision.</p>
+  </div>
+  <div class="tool-grid" style="margin-top:30px">
+    {tools.map(tool=><a class="card" href={tool.href}><h2>{tool.title}</h2><span>{tool.text}</span></a>)}
+  </div>
+  <article class="prose">
+    <h2>Why measure hidden costs?</h2>
+    <p>Headline revenue is not the same as economic value. Productive capacity, employee burden, client retention and appointment attendance all affect the amount of revenue that actually turns into usable profit.</p>
+    <h2>How to use this cluster</h2>
+    <p>Start with the calculator closest to your problem, replace the example assumptions with your own figures, then compare the result with the related calculators. These tools are planning estimates and should be checked against your contracts, payroll rules, accounting records or professional advice where applicable.</p>
+    <h2>Related Ozarbox tools</h2>
+    <p><a href="/niche/accounting/">Accounting tools</a> · <a href="/niche/tax/">Tax tools</a> · <a href="/niche/professional-services/">Professional services tools</a> · <a href="/niche/">All niche tools</a></p>
+  </article>
+</section>

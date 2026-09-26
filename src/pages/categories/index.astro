@@ -1,10 +1,23 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { tools, categories } from '../../data/tools';
+import { nicheTools, type NicheTool } from '../../data/nicheTools';
+import { globalTools } from '../../data/globalTools';
+const base = import.meta.env.BASE_URL;
+const allTools:NicheTool[] = [...nicheTools, ...globalTools];
+const clusters = [...new Set(allTools.map(tool => tool.cluster))].sort();
 ---
-<Layout title="Tool Categories | ToolPlatform" description="Browse free online tools by category.">
+<Layout title="Tool Categories | Ozarbox" description="Browse Ozarbox free online calculators and professional tools by job, business and industry.">
   <section class="container prose">
-    <div class="eyebrow">Browse</div><h1>Tool Categories</h1>
-    {categories.map(category => <section><h2>{category[0].toUpperCase()+category.slice(1)}</h2><div class="tools-grid">{tools.filter(t=>t.category===category).map(t=><a class="card" href={`/tools/${t.slug}/`}><h3>{t.title}</h3><p>{t.description}</p></a>)}</div></section>)}
+    <div class="eyebrow">Browse</div>
+    <h1>Ozarbox Tool Categories</h1>
+    <p>Explore focused calculators and professional utilities by industry, profession and business need.</p>
+    {clusters.map(cluster => <section>
+      <h2>{cluster.replaceAll('-', ' ').replace(/\b\w/g, c => c.toUpperCase())}</h2>
+      <div class="tools-grid">
+        {allTools.filter(t => t.cluster === cluster).map(t => <a class="card" href={`${base}niche/${t.slug}/`}>
+          <h3>{t.title}</h3><p>{t.description}</p>
+        </a>)}
+      </div>
+    </section>)}
   </section>
 </Layout>

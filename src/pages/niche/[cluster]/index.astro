@@ -3,12 +3,33 @@ import Layout from '../../../layouts/Layout.astro';
 import { nicheTools } from '../../../data/nicheTools';
 import { globalTools } from '../../../data/globalTools';
 const allTools=[...nicheTools,...globalTools];
-const clusters=[...new Set(allTools.map(t=>t.cluster))];
+const clusters=[...new Set(allTools.map(t=>t.cluster))].sort();
 export function getStaticPaths(){return clusters.map(cluster=>({params:{cluster},props:{cluster,items:allTools.filter(t=>t.cluster===cluster)}}));}
 const {cluster,items}=Astro.props;
 const label=cluster.replaceAll('-',' ');
 const title=`${label} calculators & professional tools`;
+const description=`Free ${label} calculators and professional planning tools with transparent formulas, assumptions, examples and related tools.`;
+const faqs=[
+`What ${label} tools are available?`,
+`Are these ${label} calculators free to use?`,
+`Can I use these results for professional decisions?`
+];
+const schema={"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","name":title,"description":description,"url":Astro.url.href},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":new URL('/',Astro.site||Astro.url).href},{"@type":"ListItem","position":2,"name":"Niche tools","item":new URL('/niche/',Astro.site||Astro.url).href},{"@type":"ListItem","position":3,"name":label,"item":Astro.url.href}]}]};
 ---
-<Layout title={`${title} | ToolPlatform`} description={`Free ${label} calculators and professional planning tools. Fast, browser-based and designed for practical estimates.`}>
-<section class="container prose"><div class="eyebrow">Niche tools</div><h1>{title}</h1><p>Purpose-built tools for a specific workflow. Each calculator explains the inputs, assumptions and calculation so you can adapt it to your project, market and local requirements.</p><div class="tool-grid" style="margin-top:28px">{items.map(t=><a class="card" href={`/niche/${t.slug}`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div><h2 style="margin-top:42px">How to use these tools</h2><p>Start with the calculator that matches the job you are doing, enter your real project assumptions, then use the related tools on the result page to cross-check the decision. For regulated work, verify the estimate against current official rules, standards, contracts and manufacturer documentation.</p><h2>Explore another professional cluster</h2><div class="tool-grid">{clusters.filter(c=>c!==cluster).slice(0,8).map(c=><a class="card" href={`/niche/${c}/`}><strong>{c.replaceAll('-',' ')}</strong><span>Browse focused tools for {c.replaceAll('-',' ')}.</span></a>)}</div></section>
+<Layout title={`${title} | ToolPlatform`} description={description}>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+<section class="container prose">
+<div class="eyebrow">Niche tools · {items.length} tools</div>
+<h1>{title}</h1>
+<p>{description} These pages are designed around specific jobs and workflows rather than generic calculator categories, so you can move from one related calculation to the next without leaving the platform.</p>
+<div class="tool-grid" style="margin-top:28px">{items.map(t=><a class="card" href={`/niche/${t.slug}`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div>
+<h2 style="margin-top:42px">How to use these {label} tools</h2>
+<p>Choose the calculator that matches the decision you are making, replace the example inputs with your own data, and inspect the assumptions before relying on the result. Use related calculators to cross-check connected parts of the same workflow.</p>
+<h2>Why the result may need verification</h2>
+<p>These calculators are planning and estimation tools. Engineering, construction, electrical, tax, financial, legal, medical and other regulated work can depend on local rules, current standards, contracts, tariffs, manufacturer specifications or professional judgment. Verify important decisions against the applicable authoritative source.</p>
+<h2>Frequently asked questions</h2>
+{faqs.map(q=><div><h3>{q}</h3><p>{q.includes('free')?'Yes. The calculators are designed to run in the browser without requiring a paid subscription.':q.includes('professional')?'They can support planning and estimation, but they should not replace a required code calculation, tax determination, professional design or other regulated review.':`This directory currently contains ${items.length} focused ${label} tools. Open a calculator above to see its inputs, formula explanation, assumptions, examples and related tools.`}</p></div>)}
+<h2>Explore every professional cluster</h2>
+<div class="tool-grid">{clusters.filter(c=>c!==cluster).map(c=><a class="card" href={`/niche/${c}/`}><strong>{c.replaceAll('-',' ')}</strong><span>{allTools.filter(t=>t.cluster===c).length} focused tools</span></a>)}</div>
+</section>
 </Layout>

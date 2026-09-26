@@ -3,10 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import { tools } from '../data/tools';
 import { nicheTools } from '../data/nicheTools';
 import { globalTools } from '../data/globalTools';
+const base = import.meta.env.BASE_URL;
 const allTools=[...tools,...nicheTools,...globalTools];
 const clusters=[...new Set([...nicheTools,...globalTools].map(t=>t.cluster))].sort();
 ---
-<Layout title="Free Online Calculators & Professional Tools | ToolPlatform" description="Free, focused calculators and professional tools for accounting, tax, construction, solar, EV, HVAC, ecommerce, trades and more.">
+<Layout title="Ozarbox – Free Online Calculators & Professional Tools" description="Free, practical and easy-to-use online calculators and professional tools for accounting, tax, construction, solar, EV, business and everyday decisions.">
 <section class="hero container">
 <div class="eyebrow">Fast · Free · Focused</div>
 <h1>Useful tools for real-world decisions.</h1>
@@ -14,15 +15,15 @@ const clusters=[...new Set([...nicheTools,...globalTools].map(t=>t.cluster))].so
 <div class="search-wrap"><input id="tool-search" type="search" placeholder={`Search ${allTools.length} free tools...`} aria-label="Search tools" /></div>
 </section>
 <section class="container">
-<div style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap"><div><div class="eyebrow">Tool library</div><h2><span id="tool-count">{allTools.length}</span> tools</h2></div><a href="/niche/">Browse professional clusters →</a></div>
+<div style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap"><div><div class="eyebrow">Ozarbox tool library</div><h2><span id="tool-count">{allTools.length}</span> tools</h2></div><a href={`${base}niche/`}>Browse professional clusters →</a></div>
 <div class="tools-grid" id="tools-grid">
-{allTools.map(tool => <a class="card tool-card" data-search={`${tool.title} ${tool.description} ${tool.keywords.join(' ')}`} href={`/niche/${tool.slug}`}><h3>{tool.title}</h3><p>{tool.description}</p></a>)}
+{allTools.map(tool => <a class="card tool-card" data-search={`${tool.title} ${tool.description} ${tool.keywords.join(' ')}`} href={`${base}niche/${tool.slug}/`}><h3>{tool.title}</h3><p>{tool.description}</p></a>)}
 </div>
 <p id="no-results" hidden style="padding:30px 0;color:#6b7280">No tools matched your search.</p>
 </section>
 <section class="container" style="padding:50px 0">
 <div class="eyebrow">Professional clusters</div><h2>Find tools by job or industry</h2>
-<div class="tools-grid">{clusters.map(c=><a class="card" href={`/niche/${c}/`}><h3>{c.replaceAll('-',' ')}</h3><p>{[...nicheTools,...globalTools].filter(t=>t.cluster===c).length} focused tools</p></a>)}</div>
+<div class="tools-grid">{clusters.map(c=><a class="card" href={`${base}niche/${c}/`}><h3>{c.replaceAll('-',' ')}</h3><p>{[...nicheTools,...globalTools].filter(t=>t.cluster===c).length} focused tools</p></a>)}</div>
 </section>
 </Layout>
 <script define:vars={{ total: allTools.length }}>

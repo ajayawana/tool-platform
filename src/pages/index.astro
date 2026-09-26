@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { tools } from '../data/tools';
 import { nicheTools } from '../data/nicheTools';
 import { globalTools } from '../data/globalTools';
+import { accountingTools } from '../data/accountingTools';
 const base = import.meta.env.BASE_URL;
 const allTools=[...tools,...nicheTools,...globalTools];
 const clusters=[...new Set([...nicheTools,...globalTools].map(t=>t.cluster))].sort();
@@ -23,7 +24,13 @@ const clusters=[...new Set([...nicheTools,...globalTools].map(t=>t.cluster))].so
 </section>
 <section class="container" style="padding:50px 0">
 <div class="eyebrow">Professional clusters</div><h2>Find tools by job or industry</h2>
-<div class="tools-grid">{clusters.map(c=><a class="card" href={`${base}niche/${c}/`}><h3>{c.replaceAll('-',' ')}</h3><p>{[...nicheTools,...globalTools].filter(t=>t.cluster===c).length} focused tools</p></a>)}</div>
+<div class="tools-grid">{clusters.map(c=><a class="card" href={`${base}niche/${c}/`}><h3>{c.replaceAll('-',' ')}</h3><p>{[...nicheTools,...globalTools].filter(t=>t.cluster===c).length} focused tools</p></a>)}<a class="card" href={`${base}niche/accounting/`}><h3>Accounting</h3><p>{accountingTools.length} focused accounting tools</p></a></div>
+</section>
+<section class="container" style="padding:20px 0 50px">
+<div class="eyebrow">New cluster</div><h2>Accounting & business finance</h2>
+<p>Explore working capital, liquidity, cash conversion, inventory, receivables, leverage, DSCR, depreciation and business loan calculations.</p>
+<div class="tool-grid">{accountingTools.slice(0,6).map(tool=><a class="card" href={`${base}niche/accounting/${tool.slug}/`}><strong>{tool.title}</strong><span>{tool.description}</span></a>)}</div>
+<p style="margin-top:20px"><a href={`${base}niche/accounting/`}>Explore all accounting tools →</a></p>
 </section>
 </Layout>
 <script define:vars={{ total: allTools.length }}>

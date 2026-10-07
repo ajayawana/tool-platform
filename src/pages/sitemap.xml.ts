@@ -26,6 +26,7 @@ export const GET: APIRoute = ({ site }) => {
     '/niche/tax/',
     '/niche/professional-services/',
     '/niche/hidden-business-costs/',
+    ...clusters.filter((cluster) => !['accounting', 'tax', 'professional-services'].includes(cluster)).map((cluster) => '/niche/' + cluster + '/'),
     '/niche/chair-hour-overhead-calculator/',
     '/niche/labor-burden-by-trade-calculator/',
     '/niche/contractor-bid-markup-calculator/',

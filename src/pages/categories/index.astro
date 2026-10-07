@@ -1,23 +1,25 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { nicheTools, type NicheTool } from '../../data/nicheTools';
+import { tools } from '../../data/tools';
+import { nicheTools } from '../../data/nicheTools';
 import { globalTools } from '../../data/globalTools';
-const base = import.meta.env.BASE_URL;
-const allTools:NicheTool[] = [...nicheTools, ...globalTools];
-const clusters = [...new Set(allTools.map(tool => tool.cluster))].sort();
+import { accountingTools } from '../../data/accountingTools';
+import { taxTools } from '../../data/taxTools';
+import { professionalTools } from '../../data/professionalTools';
+import { dairyTools } from '../../data/dairyTools';
+import { researchTools } from '../../data/researchTools';
+const base=import.meta.env.BASE_URL;
+const groups=[
+{name:'Everyday calculators',desc:'Common calculations for money, maths, health, education and daily life.',items:tools.map(t=>({...t,href:base+'calculators/'+t.slug+'/'}))},
+{name:'Accounting',desc:'Liquidity, margins, working capital, debt coverage and finance.',items:accountingTools.map(t=>({...t,href:base+'niche/accounting/'+t.slug+'/'}))},
+{name:'Tax',desc:'VAT, GST, sales tax and tax-planning estimates.',items:taxTools.map(t=>({...t,href:base+'niche/tax/'+t.slug+'/'}))},
+{name:'Professional services',desc:'Freelancer, consultant, agency, law and service-business tools.',items:professionalTools.map(t=>({...t,href:base+'niche/professional-services/'+t.slug+'/'}))},
+{name:'Industry & trades',desc:'Solar, EV, HVAC, construction, trades and specialist tools.',items:[...nicheTools,...globalTools].map(t=>({...t,href:base+'niche/'+t.slug+'/'}))},
+{name:'Dairy & buffalo',desc:'Feed, milk economics, farm profit and planning.',items:dairyTools.map(t=>({...t,href:base+'dairy/'+t.slug+'/'}))},
+{name:'Research',desc:'Specialized business and professional analysis.',items:researchTools.map(t=>({...t,href:base+'research/'+t.slug+'/'}))}
+];
 ---
-<Layout title="Tool Categories | Ozarbox" description="Browse Ozarbox free online calculators and professional tools by job, business and industry.">
-  <section class="container prose">
-    <div class="eyebrow">Browse</div>
-    <h1>Ozarbox Tool Categories</h1>
-    <p>Explore focused calculators and professional utilities by industry, profession and business need.</p>
-    {clusters.map(cluster => <section>
-      <h2>{cluster.replaceAll('-', ' ').replace(/\b\w/g, c => c.toUpperCase())}</h2>
-      <div class="tools-grid">
-        {allTools.filter(t => t.cluster === cluster).map(t => <a class="card" href={`${base}niche/${t.slug}/`}>
-          <h3>{t.title}</h3><p>{t.description}</p>
-        </a>)}
-      </div>
-    </section>)}
-  </section>
-</Layout>
+<Layout title="All Ozarbox Calculators & Tools" description="Browse the complete Ozarbox library of free calculators and professional tools.">
+<section class="container prose"><div class="eyebrow">Complete library</div><h1>All calculators & tools</h1><p>Everything in one place. Choose a section, then pick the tool that matches your question.</p>
+{groups.map(g=><section style="margin-top:38px"><div class="section-heading"><div><h2>{g.name}</h2><p class="muted">{g.desc}</p></div><span class="muted">{g.items.length} tools</span></div><div class="tool-grid">{g.items.map(t=><a class="card" href={t.href}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div></section>)}
+</section></Layout>

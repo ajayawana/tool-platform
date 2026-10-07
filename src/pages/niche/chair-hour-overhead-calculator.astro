@@ -1,11 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+const base=import.meta.env.BASE_URL;
 const schema={"@context":"https://schema.org","@type":"WebApplication","name":"Chair-Hour Overhead Calculator","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"Estimate fixed overhead cost per productive treatment-chair hour.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"url":Astro.url.href};
 ---
 <Layout title="Chair-Hour Overhead Calculator | Ozarbox" description="Calculate overhead per productive chair hour using fixed overhead, chair count, working days, hours and utilization.">
 <script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
 <section class="tool-wrap container">
-<div class="breadcrumbs"><a href="/">Home</a> / <a href="/niche/hidden-business-costs/">Hidden business costs</a> / Chair-hour overhead</div>
+<div class="breadcrumbs"><a href={base}Home</a> / <a href={`${base}niche/hidden-business-costs/`}>Hidden business costs</a> / Chair-hour overhead</div>
 <div class="tool-head"><div class="eyebrow">Practice operations</div><h1>Chair-Hour Overhead Calculator</h1><p>Estimate how much fixed overhead your practice carries for each productive treatment-chair hour.</p></div>
 <div class="tool-box"><div class="form-grid">
 <label>Monthly fixed overhead<input id="overhead" type="number" value="30000" min="0" step="0.01" /></label>
@@ -14,7 +15,7 @@ const schema={"@context":"https://schema.org","@type":"WebApplication","name":"C
 <label>Available hours per chair/day<input id="hours" type="number" value="8" min="0.1" step="0.1" /></label>
 <label>Productive utilization<input id="utilization" type="number" value="70" min="1" max="100" step="0.1" /></label>
 </div><button id="calculate">Calculate overhead per chair hour</button><div class="result" id="result" aria-live="polite">Enter your values and tap Calculate.</div></div>
-<article class="prose"><h2>How the calculation works</h2><p><strong>Overhead per productive chair hour = monthly fixed overhead ÷ productive chair hours.</strong> Productive chair hours are chair count × working days × hours per chair × utilization.</p><h2>Assumptions</h2><ul><li>Fixed overhead includes costs that do not vary directly with each treatment.</li><li>Utilization converts scheduled capacity into realistically productive chair hours.</li><li>The result is an operating estimate, not a recommended treatment fee.</li></ul><h2>Example</h2><p>With $30,000 monthly overhead, 6 chairs, 22 days, 8 hours per chair and 70% utilization, the estimated overhead is about $16.23 per productive chair hour.</p><h2>Related tools</h2><p><a href="/niche/labor-burden-by-trade-calculator/">Labor Burden Calculator</a> · <a href="/niche/client-churn-cost-calculator/">Client Churn Cost Calculator</a> · <a href="/niche/clinic-no-show-revenue-calculator/">Clinic No-Show Revenue Calculator</a></p><h2>Important note</h2><p>Use this for planning and pricing analysis. For regulated healthcare reimbursement, accounting or contractual decisions, verify assumptions with current records and a qualified professional.</p></article>
+<article class="prose"><h2>How the calculation works</h2><p><strong>Overhead per productive chair hour = monthly fixed overhead ÷ productive chair hours.</strong> Productive chair hours are chair count × working days × hours per chair × utilization.</p><h2>Assumptions</h2><ul><li>Fixed overhead includes costs that do not vary directly with each treatment.</li><li>Utilization converts scheduled capacity into realistically productive chair hours.</li><li>The result is an operating estimate, not a recommended treatment fee.</li></ul><h2>Example</h2><p>With $30,000 monthly overhead, 6 chairs, 22 days, 8 hours per chair and 70% utilization, the estimated overhead is about $16.23 per productive chair hour.</p><h2>Related tools</h2><p><a href={`${base}niche/labor-burden-by-trade-calculator/`}>Labor Burden Calculator</a> · <a href={`${base}niche/client-churn-cost-calculator/`}>Client Churn Cost Calculator</a> · <a href={`${base}niche/clinic-no-show-revenue-calculator/`}>Clinic No-Show Revenue Calculator</a></p><h2>Important note</h2><p>Use this for planning and pricing analysis. For regulated healthcare reimbursement, accounting or contractual decisions, verify assumptions with current records and a qualified professional.</p></article>
 </section>
 </Layout>
 <script>

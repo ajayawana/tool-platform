@@ -4,6 +4,7 @@ import { nicheTools } from '../../data/nicheTools';
 import { globalTools } from '../../data/globalTools';
 const base=import.meta.env.BASE_URL;
 const allTools=[...nicheTools,...globalTools];
+const clusters=[...new Set(allTools.map(t=>t.cluster))].sort();
 export function getStaticPaths(){return allTools.map(tool=>({params:{slug:tool.slug},props:{tool}}));}
 const {tool}=Astro.props;
 const related=allTools.filter(t=>t.cluster===tool.cluster&&t.slug!==tool.slug).slice(0,6);

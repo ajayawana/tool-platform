@@ -8,46 +8,31 @@ import { taxTools } from '../data/taxTools';
 import { professionalTools } from '../data/professionalTools';
 import { dairyTools } from '../data/dairyTools';
 import { researchTools } from '../data/researchTools';
-const base = import.meta.env.BASE_URL;
-const allTools=[...tools,...nicheTools,...globalTools];
-const clusters=[...new Set([...nicheTools,...globalTools].map(t=>t.cluster))].sort();
+const base=import.meta.env.BASE_URL;
+const generic=tools.map(t=>({...t,href:base+'calculators/'+t.slug+'/',group:t.category}));
+const industry=[...nicheTools,...globalTools].map(t=>({...t,href:base+'niche/'+t.slug+'/',group:t.cluster}));
+const all=[...generic,...industry,...accountingTools.map(t=>({...t,href:base+'niche/accounting/'+t.slug+'/',group:'accounting'})),...taxTools.map(t=>({...t,href:base+'niche/tax/'+t.slug+'/',group:'tax'})),...professionalTools.map(t=>({...t,href:base+'niche/professional-services/'+t.slug+'/',group:'professional services'})),...dairyTools.map(t=>({...t,href:base+'dairy/'+t.slug+'/',group:'dairy & buffalo'})),...researchTools.map(t=>({...t,href:base+'research/'+t.slug+'/',group:'research'}))];
+const cats=[
+['🧮','Everyday calculators','Common calculations for money, maths, health, education and daily life.',base+'calculators/',generic.length],
+['💰','Money & finance','Loans, interest, savings, ROI and money decisions.',base+'calculators/',generic.filter(t=>t.category==='finance').length],
+['💼','Business','Profit, pricing, accounting, tax and service-business tools.',base+'niche/accounting/',accountingTools.length+taxTools.length+professionalTools.length],
+['📐','Math & science','Geometry, equations, physics and science tools.',base+'calculators/',generic.filter(t=>['math','science'].includes(t.category)).length],
+['❤️','Health & fitness','BMI, BMR, calories and everyday fitness calculations.',base+'calculators/',generic.filter(t=>t.category==='health').length],
+['🎓','Education','GPA, grades and study planning.',base+'calculators/',generic.filter(t=>t.category==='education').length],
+['🛠️','Professional & industry','Solar, EV, HVAC, construction and trade tools.',base+'niche/',industry.length],
+['🐃','Dairy & buffalo','Feed, milk profit, break-even and farm planning.',base+'dairy/',dairyTools.length],
+['🔎','Research','Specialized business and professional analysis.',base+'research/',researchTools.length]
+];
+const popular=[generic[0],generic[2],generic[10],generic[12],...industry.filter(t=>['solar-panel-payback-calculator','ev-charging-cost','concrete-slab-calculator','debt-service-coverage-ratio-calculator'].includes(t.slug))].filter(Boolean).slice(0,10);
 ---
-<Layout title="Ozarbox – Free Online Calculators & Professional Tools" description="Free, practical and easy-to-use online calculators and professional tools for accounting, tax, construction, solar, EV, business and everyday decisions.">
-<section class="hero container">
-<div class="eyebrow">Fast · Free · Focused</div>
-<h1>Useful tools for real-world decisions.</h1>
-<p>Purpose-built calculators and professional utilities that run directly in your browser. Clear inputs, transparent assumptions and related tools—without unnecessary friction.</p>
-<div class="search-wrap"><input id="tool-search" type="search" placeholder={`Search ${allTools.length} free tools...`} aria-label="Search tools" /></div>
-</section>
-<section class="container">
-<div style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap"><div><div class="eyebrow">Ozarbox tool library</div><h2><span id="tool-count">{allTools.length}</span> tools</h2></div><a href={`${base}niche/`}>Browse professional clusters →</a></div>
-<div class="tools-grid" id="tools-grid">
-{allTools.map(tool => <a class="card tool-card" data-search={`${tool.title} ${tool.description} ${tool.keywords.join(' ')}`} href={`${base}niche/${tool.slug}/`}><h3>{tool.title}</h3><p>{tool.description}</p></a>)}
-</div>
-<p id="no-results" hidden style="padding:30px 0;color:#6b7280">No tools matched your search.</p>
-</section>
-<section class="container" style="padding:50px 0">
-<div class="eyebrow">Professional clusters</div><h2>Find tools by job or industry</h2>
-<div class="tools-grid">{clusters.map(c=><a class="card" href={`${base}niche/${c}/`}><h3>{c.replaceAll('-',' ')}</h3><p>{[...nicheTools,...globalTools].filter(t=>t.cluster===c).length} focused tools</p></a>)}<a class="card" href={`${base}niche/accounting/`}><h3>Accounting</h3><p>{accountingTools.length} focused accounting tools</p></a><a class="card" href={`${base}niche/tax/`}><h3>Tax</h3><p>{taxTools.length} focused tax tools</p></a><a class="card" href={`${base}niche/professional-services/`}><h3>Professional services</h3><p>{professionalTools.length} focused business tools</p></a></div>
-</section>
-<section class="container" style="padding:20px 0 50px">
-<div class="eyebrow">Specialized tools</div><h2>Dairy & research calculators</h2>
-<p>Focused calculators for dairy and buffalo operations, plus research-oriented professional workflows.</p>
-<div class="tool-grid">
-<a class="card" href={`${base}dairy/`}><strong>Dairy & Buffalo</strong><span>{dairyTools.length} tools for feed cost, milk profit, break-even and farm planning.</span></a>
-<a class="card" href={`${base}research/`}><strong>Research Tools</strong><span>{researchTools.length} tools for specialized business and professional analysis.</span></a>
-</div>
-</section>
-<section class="container" style="padding:20px 0 50px">
-<div class="eyebrow">New professional clusters</div><h2>Accounting, tax & professional services</h2>
-<p>Ozarbox now includes dedicated clusters for business finance, global tax estimates and service-business pricing and profitability.</p>
-<div class="tool-grid"><a class="card" href={`${base}niche/accounting/`}><strong>Accounting</strong><span>{accountingTools.length} tools for liquidity, cash cycle, leverage, depreciation and finance.</span></a><a class="card" href={`${base}niche/tax/`}><strong>Tax</strong><span>{taxTools.length} tools for VAT, sales tax, withholding and tax estimates.</span></a><a class="card" href={`${base}niche/professional-services/`}><strong>Professional services</strong><span>{professionalTools.length} tools for freelancers, consultants and agencies.</span></a></div>
-</section>
-</Layout>
-<script define:vars={{ total: allTools.length }}>
-const search=document.querySelector('#tool-search');
-const cards=[...document.querySelectorAll('.tool-card')];
-const count=document.querySelector('#tool-count');
-const empty=document.querySelector('#no-results');
-search?.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();let visible=0;cards.forEach(card=>{const match=!q||(card.getAttribute('data-search')||'').toLowerCase().includes(q);card.hidden=!match;if(match)visible++;});if(count)count.textContent=String(q?visible:total);if(empty)empty.hidden=visible!==0;});
+<Layout title="Ozarbox – Free Online Calculators & Professional Tools" description="Free, practical calculators and professional tools for everyday life, money, business, construction, solar, EV, dairy and more.">
+<section class="home-hero"><div class="container hero-inner"><div class="eyebrow">Ozarbox · Free tools</div><h1>Find the right calculator in seconds.</h1><p>Choose a category, search by what you need, or start with a popular tool. No maze of menus.</p><div class="big-search"><span>🔎</span><input id="tool-search" type="search" placeholder="What do you want to calculate?" aria-label="Search all tools"></div><div class="quick-links"><a href="#categories">Browse categories</a><a href="#popular">Popular tools</a><a href={base+'categories/'}>All {all.length} tools</a></div></div></section>
+<section class="container section" id="categories"><div class="section-heading"><div><div class="eyebrow">Step 1</div><h2>What are you trying to do?</h2></div><span class="muted">{all.length} tools</span></div><div class="category-grid">{cats.map(c=><a class="category-card" href={c[3]}><div class="category-icon">{c[0]}</div><div><h3>{c[1]}</h3><p>{c[2]}</p><strong>{c[4]} tools →</strong></div></a>)}</div></section>
+<section class="container section" id="popular"><div class="section-heading"><div><div class="eyebrow">Step 2</div><h2>Start with a popular tool</h2></div><a href={base+'categories/'}>See all →</a></div><div class="popular-grid">{popular.map(t=><a class="popular-card" href={t.href}><span class="popular-badge">FREE</span><h3>{t.title}</h3><p>{t.description}</p><span class="use-link">Open calculator →</span></a>)}</div></section>
+<section class="container section" id="search-section"><div class="section-heading"><div><div class="eyebrow">Step 3</div><h2>Search the complete library</h2></div><span class="muted" id="search-count">{all.length}</span></div><div class="search-results">{all.map(t=><a class="search-result" data-search={t.title+' '+t.description+' '+(t.keywords||[]).join(' ')+' '+t.group} href={t.href}><strong>{t.title}</strong><span>{t.group.replaceAll('-',' ')} · {t.description}</span></a>)}</div><p id="no-results" hidden class="empty-state">Nothing found. Try “loan”, “solar”, “tax”, “profit”, “milk” or “GPA”.</p></section>
+<section class="container section"><div class="trust-box"><div><div class="eyebrow">Made for everyone</div><h2>Simple enough to use without instructions.</h2><p>Large labels, example values, clear buttons and one focused job per page.</p></div><a class="primary-button" href={base+'categories/'}>Browse everything</a></div></section>
+<script>
+const input=document.querySelector('#tool-search'),cards=[...document.querySelectorAll('.search-result')],count=document.querySelector('#search-count'),empty=document.querySelector('#no-results');
+input?.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();let n=0;cards.forEach(c=>{const ok=!q||(c.getAttribute('data-search')||'').toLowerCase().includes(q);c.hidden=!ok;if(ok)n++});if(count)count.textContent=String(n);if(empty)empty.hidden=n!==0;if(q)document.querySelector('#search-section')?.scrollIntoView({behavior:'smooth',block:'start'})});
 </script>
+</Layout>

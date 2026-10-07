@@ -1,12 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { dairyTools } from '../../data/dairyTools';
+const base=import.meta.env.BASE_URL;
 export function getStaticPaths() { return dairyTools.map(tool => ({ params: { slug: tool.slug }, props: { tool } })); }
 const { tool } = Astro.props;
 ---
 <Layout title={`${tool.title} | Free Dairy Calculator`} description={tool.description}>
   <section class="tool-wrap container">
-    <div class="breadcrumbs"><a href="/">Home</a> / <a href="/dairy/">Dairy Tools</a> / {tool.title}</div>
+    <div class="breadcrumbs"><a href={base}>Home</a> / <a href={`${base}dairy/`}>Dairy Tools</a> / {tool.title}</div>
     <div class="tool-head"><div class="eyebrow">Dairy & Buffalo</div><h1>{tool.title}</h1><p>{tool.description}</p></div>
     <div class="tool-box">
       <div class="form-grid">

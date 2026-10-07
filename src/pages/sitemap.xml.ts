@@ -6,6 +6,7 @@ import { accountingTools } from '../data/accountingTools';
 import { taxTools } from '../data/taxTools';
 import { professionalTools } from '../data/professionalTools';
 import { researchTools } from '../data/researchTools';
+import { tools as basicTools } from '../data/tools';
 
 const tools = [...nicheTools, ...globalTools];
 const clusters = [...new Set(tools.map((tool) => tool.cluster))];
@@ -17,6 +18,7 @@ export const GET: APIRoute = ({ site }) => {
     '/',
     '/niche/',
     '/categories/',
+    '/calculators/',
     '/about/',
     '/contact/',
     '/privacy/',
@@ -32,7 +34,7 @@ export const GET: APIRoute = ({ site }) => {
     '/niche/labor-burden-by-trade-calculator/',
     '/niche/contractor-bid-markup-calculator/',
     '/niche/client-churn-cost-calculator/',
-    ...[],
+    ...basicTools.map((tool) => `/calculators/${tool.slug}/`),
     ...tools.map((tool) => `/niche/${tool.slug}/`),
     ...accountingTools.map((tool) => `/niche/accounting/${tool.slug}/`),
     ...taxTools.map((tool) => `/niche/tax/${tool.slug}/`),

@@ -6,6 +6,8 @@ import { globalTools } from '../data/globalTools';
 import { accountingTools } from '../data/accountingTools';
 import { taxTools } from '../data/taxTools';
 import { professionalTools } from '../data/professionalTools';
+import { dairyTools } from '../data/dairyTools';
+import { researchTools } from '../data/researchTools';
 const base = import.meta.env.BASE_URL;
 const allTools=[...tools,...nicheTools,...globalTools];
 const clusters=[...new Set([...nicheTools,...globalTools].map(t=>t.cluster))].sort();
@@ -27,6 +29,14 @@ const clusters=[...new Set([...nicheTools,...globalTools].map(t=>t.cluster))].so
 <section class="container" style="padding:50px 0">
 <div class="eyebrow">Professional clusters</div><h2>Find tools by job or industry</h2>
 <div class="tools-grid">{clusters.map(c=><a class="card" href={`${base}niche/${c}/`}><h3>{c.replaceAll('-',' ')}</h3><p>{[...nicheTools,...globalTools].filter(t=>t.cluster===c).length} focused tools</p></a>)}<a class="card" href={`${base}niche/accounting/`}><h3>Accounting</h3><p>{accountingTools.length} focused accounting tools</p></a><a class="card" href={`${base}niche/tax/`}><h3>Tax</h3><p>{taxTools.length} focused tax tools</p></a><a class="card" href={`${base}niche/professional-services/`}><h3>Professional services</h3><p>{professionalTools.length} focused business tools</p></a></div>
+</section>
+<section class="container" style="padding:20px 0 50px">
+<div class="eyebrow">Specialized tools</div><h2>Dairy & research calculators</h2>
+<p>Focused calculators for dairy and buffalo operations, plus research-oriented professional workflows.</p>
+<div class="tool-grid">
+<a class="card" href={`${base}dairy/`}><strong>Dairy & Buffalo</strong><span>{dairyTools.length} tools for feed cost, milk profit, break-even and farm planning.</span></a>
+<a class="card" href={`${base}research/`}><strong>Research Tools</strong><span>{researchTools.length} tools for specialized business and professional analysis.</span></a>
+</div>
 </section>
 <section class="container" style="padding:20px 0 50px">
 <div class="eyebrow">New professional clusters</div><h2>Accounting, tax & professional services</h2>

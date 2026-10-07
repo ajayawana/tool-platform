@@ -1,0 +1,11 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { tools } from '../../data/tools';
+const base=import.meta.env.BASE_URL;
+const grouped=tools.reduce((a,t)=>{(a[t.category]??=[]).push(t);return a},{} as Record<string,typeof tools>);
+---
+<Layout title="Free Online Calculators | Ozarbox" description="Browse Ozarbox's free everyday calculators for finance, business, health, education, maths, science and daily life.">
+<section class="container prose"><div class="eyebrow">Everyday calculators · {tools.length} tools</div><h1>Free online calculators</h1><p>Simple calculators for common questions. Choose a category or search the full library.</p>
+<div class="tool-grid" style="margin-top:28px">{Object.entries(grouped).map(([cat,items])=><a class="card" href={'#'+cat}><strong>{cat.replaceAll('-',' ')}</strong><span>{items.length} calculators</span></a>)}</div>
+{Object.entries(grouped).map(([cat,items])=><section id={cat} style="margin-top:42px"><h2>{cat.replaceAll('-',' ')}</h2><div class="tool-grid">{items.map(t=><a class="card" href={base+'calculators/'+t.slug+'/'}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div></section>)}
+</section></Layout>

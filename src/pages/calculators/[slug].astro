@@ -16,7 +16,7 @@ const schema={'@context':'https://schema.org','@type':'WebApplication',name:tool
 <script define:vars={{slug:tool.slug,keys:tool.inputs.map(i=>i.key)}}>
 const get=k=>Number(document.querySelector('[data-key="'+k+'"]')?.value||0),f=x=>Number.isFinite(x)?x.toLocaleString(undefined,{maximumFractionDigits:2}):'—';
 document.querySelector('#calculate')?.addEventListener('click',()=>{
-const x=keys.map(get); const a=x[0]||0,b=x[1]||0,c=x[2]||0,d=x[3]||0,e=x[4]||0; let r='';
+const x=keys.map(get); const a=x[0]||0,b=x[1]||0,c=x[2]||0,d=x[3]||0; let r='';
 switch(slug){
 case 'percentage-calculator':r=f(a*b/100);break;
 case 'percentage-change-calculator':r=f((b-a)/a*100)+'% change';break;

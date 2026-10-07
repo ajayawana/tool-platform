@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { tools } from '../../data/tools';
+const base=import.meta.env.BASE_URL;
+export function getStaticPaths(){return tools.map(tool=>({params:{slug:tool.slug},props:{tool}}));}
+const {tool}=Astro.props;
+const schema={'@context':'https://schema.org','@type':'WebApplication',name:tool.title,applicationCategory:'UtilityApplication',operatingSystem:'Web',description:tool.description,url:Astro.url.href,offers:{'@type':'Offer',price:'0',priceCurrency:'USD'}};
+---
+<Layout title={tool.title+' | Free Calculator | Ozarbox'} description={tool.description+' Free online calculator with clear inputs and instant results.'}>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}></script>
+<section class="tool-wrap container"><div class="breadcrumbs"><a href={base}>Home</a> / <a href={base+'calculators/'}>Calculators</a> / {tool.title}</div>
+<div class="tool-head"><div class="eyebrow">{tool.category.replaceAll('-',' ')}</div><h1>{tool.title}</h1><p>{tool.description}</p></div>
+<div class="tool-box"><div class="form-grid">{tool.inputs.map(i=><label>{i.label}<input data-key={i.key} type="number" inputmode="decimal" placeholder={i.placeholder}/></label>)}</div><button id="calculate">Calculate</button><div class="result" id="result" aria-live="polite">Enter your values and tap Calculate.</div></div>
+<article class="prose" style="max-width:820px"><h2>How it works</h2><p>Enter your numbers and Ozarbox applies a transparent formula. Example values are only starting points.</p><h2>Important note</h2><p>Results are estimates for planning and comparison. Verify regulated, medical, tax, financial or engineering decisions against the applicable official source.</p></article></section>
+</Layout>
+<script define:vars={{slug:tool.slug,keys:tool.inputs.map(i=>i.key)}}>
+const get=k=>Number(document.querySelector('[data-key="'+k+'"]')?.value||0),f=x=>Number.isFinite(x)?x.toLocaleString(undefined,{maximumFractionDigits:2}):'—';
+document.querySelector('#calculate')?.addEventListener('click',()=>{
+const x=keys.map(get); const a=x[0]||0,b=x[1]||0,c=x[2]||0,d=x[3]||0,e=x[4]||0; let r='';
+switch(slug){
+case 'percentage-calculator':r=f(a*b/100);break;
+case 'percentage-change-calculator':r=f((b-a)/a*100)+'% change';break;
+case 'discount-calculator':r='Discount: '+f(a*b/100)+' | Final: '+f(a*(1-b/100));break;
+case 'profit-calculator':r='Profit: '+f(b-a)+' | Profit %: '+f((b-a)/a*100)+'%';break;
+case 'margin-calculator':r='Profit: '+f(a-b)+' | Margin: '+f((a-b)/a*100)+'%';break;
+case 'markup-calculator':r='Selling price: '+f(a*(1+b/100));break;
+case 'ratio-calculator':{let p=a,q=b;while(q){[p,q]=[q,p%q]}r=(a/Math.abs(p))+' : '+(b/Math.abs(p));break}
+case 'average-calculator':r='Average: '+f(x.reduce((s,n)=>s+n,0)/x.length);break;
+case 'fraction-calculator':r='Result: '+f(a/b+c/d);break;
+case 'tip-calculator':r='Tip: '+f(a*b/100)+' | Total: '+f(a*(1+b/100));break;
+case 'sales-tax-calculator':case 'vat-calculator':r='Tax: '+f(a*b/100)+' | Total: '+f(a*(1+b/100));break;
+case 'compound-interest-calculator':r='Future value: '+f(a*Math.pow(1+b/100,c*d));break;
+case 'simple-interest-calculator':case 'savings-interest-calculator':r='Interest: '+f(a*b/100*c)+' | Total: '+f(a*(1+b/100*c));break;
+case 'loan-payment-calculator':case 'mortgage-payment-calculator':{const rate=b/1200,months=slug==='mortgage-payment-calculator'?c*12:c;r='Monthly payment: '+f(rate?a*rate/(1-Math.pow(1+rate,-months)):a/months);break}
+case 'bmi-calculator':r='BMI: '+f(a/Math.pow(b/100,2));break;
+case 'age-calculator':r='Age: '+f(b-a)+' years';break;
+case 'time-duration-calculator':r='Duration: '+f(b-a)+' hours';break;
+case 'unit-price-calculator':r='Unit price: '+f(a/b);break;
+case 'fuel-cost-calculator':r='Fuel cost: '+f(a/b*c);break;
+case 'speed-distance-time-calculator':r='Average speed: '+f(a/b)+' km/h';break;
+case 'gpa-calculator':r='Average GPA: '+f(x.reduce((s,n)=>s+n,0)/x.length);break;
+case 'ohms-law-calculator':r='Voltage: '+f(a*b)+' V';break;
+case 'calories-burned-calculator':r='Estimated calories: '+f(a*b*c/60)+' kcal';break;
+case 'break-even-calculator':r='Break-even units: '+f(a/(b-c));break;
+case 'savings-goal-calculator':r='Monthly saving needed: '+f((a-b)/c);break;
+case 'cagr-calculator':r='CAGR: '+f((Math.pow(b/a,1/c)-1)*100)+'%';break;
+case 'roi-calculator':r='ROI: '+f((a-b)/b*100)+'%';break;
+case 'commission-calculator':r='Commission: '+f(a*b/100);break;
+case 'conversion-rate-calculator':r='Conversion rate: '+f(a/b*100)+'%';break;
+case 'roas-calculator':r='ROAS: '+f(a/b)+'x';break;
+case 'hourly-rate-calculator':r='Hourly rate: '+f(a/(b*c));break;
+case 'debt-to-income-calculator':r='DTI: '+f(a/b*100)+'%';break;
+case 'bmr-calculator':r='Estimated BMR: '+f(10*a+6.25*b-5*c+5)+' kcal/day';break;
+case 'temperature-converter':r=f(a*9/5+32)+' °F | '+f(a+273.15)+' K';break;
+case 'electricity-cost-calculator':r='Energy: '+f(a*b*c/1000)+' kWh | Cost: '+f(a*b*c/1000*d);break;
+case 'pace-calculator':r=f(b/a)+' min/km';break;
+case 'weighted-grade-calculator':r='Weighted grade: '+f((a*b+c*d)/100);break;
+case 'study-time-calculator':r='Daily study time: '+f(a/b)+' hours';break;
+case 'pythagorean-theorem-calculator':r='Hypotenuse: '+f(Math.sqrt(a*a+b*b));break;
+case 'circle-area-calculator':r='Area: '+f(Math.PI*a*a)+' | Circumference: '+f(2*Math.PI*a);break;
+case 'triangle-area-calculator':r='Area: '+f(a*b/2);break;
+case 'rectangle-area-calculator':r='Area: '+f(a*b)+' | Perimeter: '+f(2*(a+b));break;
+case 'cube-volume-calculator':r='Volume: '+f(a*a*a)+' | Surface area: '+f(6*a*a);break;
+case 'quadratic-equation-calculator':{const disc=b*b-4*a*c;r=disc<0?'No real roots':'Roots: '+f((-b+Math.sqrt(disc))/(2*a))+', '+f((-b-Math.sqrt(disc))/(2*a));break}
+case 'hcf-lcm-calculator':{let p=Math.abs(a),q=Math.abs(b);while(q){[p,q]=[q,p%q]}r='HCF: '+p+' | LCM: '+Math.abs(a*b/p);break}
+case 'percentage-reverse-calculator':r='Original value: '+f(a/(b/100));break;
+case 'gross-profit-calculator':r='Gross profit: '+f(a-b)+' | Margin: '+f((a-b)/a*100)+'%';break;
+case 'salary-tax-take-home-calculator':r='Estimated take-home: '+f(a*(1-b/100));break;
+default:r='Enter your values and tap Calculate.';
+}
+document.querySelector('#result').textContent=r;
+});
+</script>

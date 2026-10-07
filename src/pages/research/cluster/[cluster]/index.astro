@@ -1,9 +1,10 @@
 ---
 import Layout from '../../../../layouts/Layout.astro';
 import { researchTools } from '../../../../data/researchTools';
+const base=import.meta.env.BASE_URL;
 export function getStaticPaths(){const clusters=[...new Set(researchTools.map(t=>t.cluster))];return clusters.map(cluster=>({params:{cluster},props:{cluster,tools:researchTools.filter(t=>t.cluster===cluster)}}));}
 const {cluster,tools}=Astro.props;
 ---
 <Layout title={`${cluster.replaceAll('-',' ')} calculators | Ozarbox`} description={`Free ${cluster.replaceAll('-',' ')} calculators with transparent assumptions and practical examples.`}>
-<main class="container" style="padding:32px 0 60px"><div class="breadcrumbs"><a href="/">Home</a> / <a href="/research/">Research tools</a> / {cluster.replaceAll('-',' ')}</div><header class="tool-head"><div class="eyebrow">Niche tool cluster</div><h1>{cluster.replaceAll('-',' ')} calculators</h1><p>Focused tools for this professional niche, with clear inputs, formulas, assumptions and related internal links.</p></header><div class="tool-grid">{tools.map(t=><a class="card" href={`/research/${t.slug}/`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div></main>
+<main class="container" style="padding:32px 0 60px"><div class="breadcrumbs"><a href={base}Home</a> / <a href={`${base}research/`}>Research tools</a> / {cluster.replaceAll('-',' ')}</div><header class="tool-head"><div class="eyebrow">Niche tool cluster</div><h1>{cluster.replaceAll('-',' ')} calculators</h1><p>Focused tools for this professional niche, with clear inputs, formulas, assumptions and related internal links.</p></header><div class="tool-grid">{tools.map(t=><a class="card" href={`${base}research/${t.slug}/`}><strong>{t.title}</strong><span>{t.description}</span></a>)}</div></main>
 </Layout>

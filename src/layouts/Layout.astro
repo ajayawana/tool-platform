@@ -6,7 +6,6 @@ const stripBase = (path:string) => path.startsWith(base) ? path.slice(base.lengt
 const canonicalPath = `${base.replace(/\/$/, '')}/${stripBase(Astro.url.pathname).replace(/^\//, '')}`.replace(/\/+/g, '/').replace(/\/$/, '') + '/';
 const canonical = new URL(canonicalPath, siteRoot);
 const siteName = 'Ozarbox';
-const blogUrl = 'https://ozarbox.blogspot.com/';
 ---
 <!doctype html>
 <html lang="en">
@@ -33,9 +32,9 @@ const blogUrl = 'https://ozarbox.blogspot.com/';
   })}></script>
 </head>
 <body>
-  <header class="site-header"><div class="container nav"><a class="brand" href={base}>Ozar<span>box</span></a><nav><a href={base}>Home</a><a href={`${base}niche/`}>Tools</a><a href={blogUrl}>Blog</a><a href={`${base}about/`}>About</a></nav></div></header>
+  <header class="site-header"><div class="container nav"><a class="brand" href={base}>Ozar<span>box</span></a><nav><a href={base}>Home</a><a href={`${base}niche/`}>Tools</a><a href={`${base}about/`}>About</a></nav></div></header>
   <main><slot /></main>
-  <footer><div class="container footer"><div><strong>Ozarbox</strong><p>Simple, useful tools for real-world decisions.</p></div><div class="footer-links"><a href={`${base}privacy/`}>Privacy</a><a href={`${base}terms/`}>Terms</a><a href={`${base}disclaimer/`}>Disclaimer</a><a href={`${base}contact/`}>Contact</a><a href={blogUrl}>Blog</a></div></div></footer>
+  <footer><div class="container footer"><div><strong>Ozarbox</strong><p>Simple, useful tools for real-world decisions.</p></div><div class="footer-links"><a href={`${base}privacy/`}>Privacy</a><a href={`${base}terms/`}>Terms</a><a href={`${base}disclaimer/`}>Disclaimer</a><a href={`${base}contact/`}>Contact</a></div></div></footer>
 </body>
 </html>
 <style is:global>

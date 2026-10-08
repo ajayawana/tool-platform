@@ -1,8 +1,16 @@
 name: Ozarbox Gemini AI Developer
 
 on:
-  issues:
-    types: [opened, reopened, edited]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: "Issue number containing the Ozarbox command"
+        required: true
+        type: string
+      command:
+        description: "Command to execute"
+        required: true
+        type: string
 
 permissions:
   contents: write

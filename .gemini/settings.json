@@ -1,0 +1,28 @@
+{
+  "agents": {
+    "overrides": {
+      "browser_agent": {
+        "enabled": true
+      }
+    },
+    "browser": {
+      "sessionMode": "isolated",
+      "headless": true,
+      "allowedDomains": [
+        "google.com",
+        "*.google.com",
+        "bing.com",
+        "*.bing.com",
+        "github.com",
+        "*.github.com",
+        "reddit.com",
+        "*.reddit.com"
+      ],
+      "maxActionsPerTask": 60,
+      "blockFileUploads": true
+    }
+  },
+  "privacy": {
+    "usageStatisticsEnabled": false
+  }
+}

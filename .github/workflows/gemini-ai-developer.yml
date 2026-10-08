@@ -1,0 +1,94 @@
+name: Ozarbox Gemini AI Developer
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  gemini-developer:
+    if: contains(github.event.issue.title, '[AI]') || contains(github.event.issue.body, '[AI]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Gemini CLI
+        run: npm install -g @google/gemini-cli@latest
+
+      - name: Run Gemini coding agent
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-2.5-flash
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          set -euo pipefail
+          cat > /tmp/ozarbox-task.txt <<'EOF'
+          You are the autonomous coding agent for Ozarbox.
+
+          Read AGENTS.md first and follow it strictly.
+
+          TASK TITLE:
+          $ISSUE_TITLE
+
+          TASK:
+          $ISSUE_BODY
+
+          Work directly in the checked-out repository.
+
+          Requirements:
+          - Inspect the existing architecture before changing anything.
+          - Implement the requested task completely.
+          - Reuse existing Ozarbox patterns.
+          - Do not delete or weaken existing functionality.
+          - Keep the site accessible, fast, simple and SEO-friendly.
+          - Run npm install if needed.
+          - Run npm run check.
+          - Run npm run build.
+          - Fix failures instead of ignoring them.
+          - Do not expose secrets.
+          - Do not modify GitHub billing, permissions or security settings.
+          - Do not merge a pull request.
+          - When finished, leave the working tree containing only the intended changes.
+          EOF
+          gemini --yolo --model "$GEMINI_MODEL" --prompt "$(cat /tmp/ozarbox-task.txt)"
+
+      - name: Verify build
+        run: |
+          npm install
+          npm run check
+          npm run build
+
+      - name: Create branch and pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: |
+          set -euo pipefail
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "Gemini made no file changes."
+            exit 0
+          fi
+          BRANCH="ai/issue-${ISSUE_NUMBER}"
+          git checkout -b "$BRANCH"
+          git config user.name "Ozarbox AI"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "ai: implement issue #${ISSUE_NUMBER}"
+          git push --set-upstream origin "$BRANCH"
+          gh pr create --base main --head "$BRANCH" --title "AI: ${ISSUE_TITLE}" --body "Implemented automatically by Gemini. Original issue: #${ISSUE_NUMBER}. Automated checks: npm run check and npm run build. Please review before merging."

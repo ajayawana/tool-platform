@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   gemini-developer:
-    if: contains(github.event.issue.title, '[AI]') || contains(github.event.issue.body, '[AI]')
+    if: ${{ inputs.issue_number != '' && inputs.command != '' }}
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
@@ -43,8 +43,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: gemini-3.7-flash
           GEMINI_CLI_TRUST_WORKSPACE: "true"
-          ISSUE_TITLE: ${{ github.event.issue.title }}
-          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_TITLE: Ozarbox manual command
+          ISSUE_BODY: ${{ inputs.command }}
         run: |
           set -euo pipefail
           {
@@ -79,8 +79,8 @@ jobs:
       - name: Create branch and pull request
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
-          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+          ISSUE_TITLE: Ozarbox manual command
         run: |
           set -euo pipefail
           if git diff --quiet && git diff --cached --quiet; then

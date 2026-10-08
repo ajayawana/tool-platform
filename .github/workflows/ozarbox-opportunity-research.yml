@@ -28,7 +28,7 @@ jobs:
       - name: Research and create implementation opportunity
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-2.5-flash
+          GEMINI_MODEL: gemini-3.7-flash
           GEMINI_CLI_TRUST_WORKSPACE: "true"
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

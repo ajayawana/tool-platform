@@ -14,6 +14,7 @@ jobs:
     if: contains(github.event.issue.title, '[AI]') || contains(github.event.issue.body, '[AI]')
     runs-on: ubuntu-latest
     timeout-minutes: 45
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -33,39 +34,33 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: gemini-2.5-flash
+          GEMINI_CLI_TRUST_WORKSPACE: "true"
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: |
           set -euo pipefail
-          cat > /tmp/ozarbox-task.txt <<'EOF'
-          You are the autonomous coding agent for Ozarbox.
+          {
+            printf '%s\n\n' "You are the autonomous coding agent for Ozarbox."
+            printf '%s\n' "Read AGENTS.md first and follow it strictly."
+            printf '%s\n' "TASK TITLE:"
+            printf '%s\n' "$ISSUE_TITLE"
+            printf '%s\n' "TASK:"
+            printf '%s\n' "$ISSUE_BODY"
+            printf '%s\n' ""
+            printf '%s\n' "Work directly in the checked-out repository."
+            printf '%s\n' "Implement the task completely."
+            printf '%s\n' "Inspect architecture before changing anything."
+            printf '%s\n' "Reuse existing Ozarbox patterns."
+            printf '%s\n' "Do not break existing functionality."
+            printf '%s\n' "Run npm install if needed, then npm run check and npm run build."
+            printf '%s\n' "Fix failures instead of ignoring them."
+            printf '%s\n' "Do not expose secrets."
+            printf '%s\n' "Do not modify GitHub billing, permissions or security settings."
+            printf '%s\n' "Do not merge a pull request."
+            printf '%s\n' "When finished, leave only intended changes."
+          } > /tmp/ozarbox-task.txt
 
-          Read AGENTS.md first and follow it strictly.
-
-          TASK TITLE:
-          $ISSUE_TITLE
-
-          TASK:
-          $ISSUE_BODY
-
-          Work directly in the checked-out repository.
-
-          Requirements:
-          - Inspect the existing architecture before changing anything.
-          - Implement the requested task completely.
-          - Reuse existing Ozarbox patterns.
-          - Do not delete or weaken existing functionality.
-          - Keep the site accessible, fast, simple and SEO-friendly.
-          - Run npm install if needed.
-          - Run npm run check.
-          - Run npm run build.
-          - Fix failures instead of ignoring them.
-          - Do not expose secrets.
-          - Do not modify GitHub billing, permissions or security settings.
-          - Do not merge a pull request.
-          - When finished, leave the working tree containing only the intended changes.
-          EOF
-          gemini --yolo --model "$GEMINI_MODEL" --prompt "$(cat /tmp/ozarbox-task.txt)"
+          gemini --approval-mode=yolo --model "$GEMINI_MODEL" --prompt "$(cat /tmp/ozarbox-task.txt)"
 
       - name: Verify build
         run: |

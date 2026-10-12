@@ -1,4 +1,4 @@
-name: Ozarbox Gemini AI Developer
+name: Ozarbox OpenCode + Groq Developer
 
 on:
   workflow_dispatch:
@@ -15,15 +15,65 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  issues: write
+  issues: read
+
+# Never run two coding agents at the same time.
+concurrency:
+  group: ozarbox-opencode-groq-developer
+  cancel-in-progress: false
 
 jobs:
-  gemini-developer:
+  opencode-developer:
     if: ${{ inputs.issue_number != '' && inputs.command != '' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 20
 
     steps:
+      - name: Check required Groq secret
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GROQ_API_KEY:-}" ]; then
+            echo "::error::Missing GROQ_API_KEY. Add it in Settings > Secrets and variables > Actions before running this workflow."
+            exit 1
+          fi
+
+      - name: Enforce one run per rolling 24 hours
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          CURRENT_RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          # Fail closed if GitHub cannot be queried. This guard counts every prior
+          # dispatch, including failed/cancelled agent runs, because those may use API quota.
+          gh api "repos/${GH_REPO}/actions/workflows/gemini-ai-developer.yml/runs?event=workflow_dispatch&per_page=100" > /tmp/workflow-runs.json
+          python3 - <<'PY'
+          import json, os, sys
+          from datetime import datetime, timedelta, timezone
+
+          with open("/tmp/workflow-runs.json", encoding="utf-8") as f:
+              data = json.load(f)
+          now = datetime.now(timezone.utc)
+          cutoff = now - timedelta(hours=24)
+          current = str(os.environ["CURRENT_RUN_ID"])
+          recent = []
+          for run in data.get("workflow_runs", []):
+              if str(run.get("id")) == current:
+                  continue
+              created = datetime.fromisoformat(run["created_at"].replace("Z", "+00:00"))
+              if created >= cutoff:
+                  recent.append((created, run.get("id"), run.get("conclusion") or run.get("status")))
+          if recent:
+              newest = max(recent)
+              print("Quota safety stop: a prior workflow dispatch exists within the last 24 hours.")
+              print(f"Prior run ID: {newest[1]}, created: {newest[0].isoformat()}, state: {newest[2]}")
+              print("Wait until 24 hours after that run before trying again.")
+              sys.exit(1)
+          print("Quota guard passed: no prior dispatch in the rolling 24-hour window.")
+          PY
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -35,44 +85,53 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install Gemini CLI
-        run: npm install -g @google/gemini-cli@latest
+      - name: Install project dependencies
+        run: npm install
 
-      - name: Run Gemini coding agent
+      - name: Install OpenCode
+        run: |
+          set -euo pipefail
+          curl -fsSL https://opencode.ai/install | bash
+          echo "$HOME/.opencode/bin" >> "$GITHUB_PATH"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          command -v opencode || true
+
+      - name: Run OpenCode with strict usage limits
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-3.7-flash
-          GEMINI_CLI_TRUST_WORKSPACE: "true"
-          ISSUE_TITLE: Ozarbox manual command
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENCODE_DISABLE_AUTOUPDATE: "true"
+          OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX: "2048"
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
           ISSUE_BODY: ${{ inputs.command }}
         run: |
           set -euo pipefail
+          if ! command -v opencode >/dev/null 2>&1; then
+            echo "::error::OpenCode binary was not found after installation."
+            exit 1
+          fi
           {
             printf '%s\n\n' "You are the autonomous coding agent for Ozarbox."
-            printf '%s\n' "Read AGENTS.md first and follow it strictly."
-            printf '%s\n' "TASK TITLE:"
-            printf '%s\n' "$ISSUE_TITLE"
+            printf '%s\n' "Read AGENTS.md first if it exists, and follow its instructions."
             printf '%s\n' "TASK:"
             printf '%s\n' "$ISSUE_BODY"
             printf '%s\n' ""
-            printf '%s\n' "Work directly in the checked-out repository."
-            printf '%s\n' "Implement the task completely."
-            printf '%s\n' "Inspect architecture before changing anything."
-            printf '%s\n' "Reuse existing Ozarbox patterns."
-            printf '%s\n' "Do not break existing functionality."
-            printf '%s\n' "Run npm install if needed, then npm run check and npm run build."
-            printf '%s\n' "Fix failures instead of ignoring them."
-            printf '%s\n' "Do not expose secrets."
-            printf '%s\n' "Do not modify GitHub billing, permissions or security settings."
-            printf '%s\n' "Do not merge a pull request."
-            printf '%s\n' "When finished, leave only intended changes."
+            printf '%s\n' "Inspect the existing architecture before editing."
+            printf '%s\n' "Prioritize repairing existing functionality; do not create new tools unless explicitly requested."
+            printf '%s\n' "Make only focused, necessary changes."
+            printf '%s\n' "Do not run web research or launch subagents."
+            printf '%s\n' "Do not expose secrets or change GitHub settings."
+            printf '%s\n' "Do not merge any pull request."
+            printf '%s\n' "The workflow has a strict request/token budget. Stop after the smallest complete implementation."
+            printf '%s\n' "The workflow will run npm run check and npm run build after you finish."
           } > /tmp/ozarbox-task.txt
 
-          gemini --approval-mode=yolo --model "$GEMINI_MODEL" --prompt "$(cat /tmp/ozarbox-task.txt)"
+          # The repository config limits the agent to 4 iterations and disables subagents.
+          # timeout is a final safety net; no automatic fallback provider is configured.
+          timeout --signal=TERM --kill-after=30s 12m opencode run --auto --model groq/openai/gpt-oss-120b --agent build --title "Ozarbox issue #${ISSUE_NUMBER}" "$(cat /tmp/ozarbox-task.txt)"
 
       - name: Verify build
         run: |
-          npm install
+          set -euo pipefail
           npm run check
           npm run build
 
@@ -84,7 +143,7 @@ jobs:
         run: |
           set -euo pipefail
           if git diff --quiet && git diff --cached --quiet; then
-            echo "Gemini made no file changes."
+            echo "OpenCode made no file changes."
             exit 0
           fi
           BRANCH="ai/issue-${ISSUE_NUMBER}"
@@ -94,5 +153,5 @@ jobs:
           git add -A
           git commit -m "ai: implement issue #${ISSUE_NUMBER}"
           git push --set-upstream origin "$BRANCH"
-          PR_URL=$(gh pr create --base main --head "$BRANCH" --title "AI: ${ISSUE_TITLE}" --body "Implemented automatically by Gemini. Original issue: #${ISSUE_NUMBER}. Automated checks: npm run check and npm run build.")
+          PR_URL=$(gh pr create --base main --head "$BRANCH" --title "AI: ${ISSUE_TITLE}" --body "Implemented automatically by OpenCode + Groq. Original issue: #${ISSUE_NUMBER}. Automated checks: npm run check and npm run build. Not auto-merged.")
           echo "Created PR: $PR_URL"

@@ -102,7 +102,7 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           OPENCODE_DISABLE_AUTOUPDATE: "true"
-          OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX: "2048"
+          OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX: "1024"
           ISSUE_NUMBER: ${{ inputs.issue_number }}
           ISSUE_BODY: ${{ inputs.command }}
         run: |

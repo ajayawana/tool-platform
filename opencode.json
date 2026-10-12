@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "groq/openai/gpt-oss-120b",
+  "agent": {
+    "build": {
+      "steps": 4
+    }
+  },
+  "permission": {
+    "task": "deny",
+    "websearch": "deny",
+    "webfetch": "deny"
+  }
+}

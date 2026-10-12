@@ -11,8 +11,8 @@
         "openai/gpt-oss-120b": {
           "name": "GPT OSS 120B (quota-capped)",
           "limit": {
-            "context": 32768,
-            "output": 2048
+            "context": 6000,
+            "output": 1024
           }
         }
       }

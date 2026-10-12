@@ -47,34 +47,35 @@ jobs:
           CURRENT_RUN_ID: ${{ github.run_id }}
         run: |
           set -euo pipefail
-          # Fail closed if GitHub cannot be queried. This guard counts every prior
-          # dispatch, including failed/cancelled agent runs, because those may use API quota.
+          # Only count runs that actually started the coding-agent step. Missing-secret
+          # failures and guard-blocked runs do not consume the daily Groq budget.
           gh api "repos/${GH_REPO}/actions/workflows/opencode-groq-developer.yml/runs?event=workflow_dispatch&per_page=100" > /tmp/workflow-runs.json
-          python3 - <<'PY'
-          import json, os, sys
+          python3 - <<'PY' > /tmp/recent-run-ids.txt
+          import json, os
           from datetime import datetime, timedelta, timezone
 
           with open("/tmp/workflow-runs.json", encoding="utf-8") as f:
               data = json.load(f)
-          now = datetime.now(timezone.utc)
-          cutoff = now - timedelta(hours=24)
+          cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
           current = str(os.environ["CURRENT_RUN_ID"])
-          recent = []
           for run in data.get("workflow_runs", []):
               if str(run.get("id")) == current:
                   continue
               created = datetime.fromisoformat(run["created_at"].replace("Z", "+00:00"))
               if created >= cutoff:
-                  recent.append((created, run.get("id"), run.get("conclusion") or run.get("status")))
-          if recent:
-              newest = max(recent)
-              print("Quota safety stop: a prior workflow dispatch exists within the last 24 hours.")
-              print(f"Prior run ID: {newest[1]}, created: {newest[0].isoformat()}, state: {newest[2]}")
-              print("Wait until 24 hours after that run before trying again.")
-              sys.exit(1)
-          print("Quota guard passed: no prior dispatch in the rolling 24-hour window.")
+                  print(run["id"])
           PY
 
+          while IFS= read -r prior_run_id; do
+            [ -n "$prior_run_id" ] || continue
+            gh api "repos/${GH_REPO}/actions/runs/${prior_run_id}/jobs?per_page=100" > /tmp/prior-jobs.json
+            if jq -e '[.jobs[].steps[]? | select(.name == "Run OpenCode with strict usage limits" and (.status == "in_progress" or .status == "completed"))] | length > 0' /tmp/prior-jobs.json >/dev/null; then
+              echo "Quota safety stop: coding agent already started in workflow run ${prior_run_id} within the last 24 hours."
+              echo "Wait until 24 hours after that run before trying again."
+              exit 1
+            fi
+          done < /tmp/recent-run-ids.txt
+          echo "Quota guard passed: no coding-agent run started in the rolling 24-hour window."
       - name: Checkout repository
         uses: actions/checkout@v4
         with:

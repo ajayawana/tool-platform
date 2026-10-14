@@ -20,7 +20,7 @@
   },
   "agent": {
     "build": {
-      "steps": 4
+      "steps": 12
     }
   },
   "permission": {

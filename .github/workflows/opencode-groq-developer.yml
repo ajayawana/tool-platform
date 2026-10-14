@@ -27,7 +27,6 @@ jobs:
   opencode-developer:
     if: ${{ inputs.issue_number != '' && inputs.command != '' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 20
 
     steps:
       - name: Check required Groq secret
@@ -123,13 +122,13 @@ jobs:
             printf '%s\n' "Do not run web research or launch subagents."
             printf '%s\n' "Do not expose secrets or change GitHub settings."
             printf '%s\n' "Do not merge any pull request."
-            printf '%s\n' "The workflow has a strict request/token budget. Stop after the smallest complete implementation."
+            printf '%s\n' "Complete the requested task thoroughly, not just by planning or summarizing. Make the smallest correct code changes, run checks, and fix any failures."
             printf '%s\n' "The workflow will run npm run check and npm run build after you finish."
           } > /tmp/ozarbox-task.txt
 
-          # The repository config limits the agent to 4 iterations and disables subagents.
-          # timeout is a final safety net; no automatic fallback provider is configured.
-          timeout --signal=TERM --kill-after=30s 12m opencode run --auto --model groq/openai/gpt-oss-120b --agent build --title "Ozarbox issue #${ISSUE_NUMBER}" "$(cat /tmp/ozarbox-task.txt)"
+          # No custom agent-step or shell timeout is imposed. Provider token caps and
+          # the rolling 24-hour run guard remain enabled to reduce free-tier quota risk.
+          opencode run --auto --model groq/openai/gpt-oss-120b --agent build --title "Ozarbox issue #${ISSUE_NUMBER}" "$(cat /tmp/ozarbox-task.txt)"
 
       - name: Verify build
         run: |

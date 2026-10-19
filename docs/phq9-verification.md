@@ -43,6 +43,7 @@ The original paper's published performance estimates relate to its study sample 
 ## 4. Automated verification included
 
 The Node test suite covers:
+- Exact English item text and all four response labels are locked by regression tests.
 - All ten endpoints of the five severity bands: 0, 4, 5, 9, 10, 14, 15, 19, 20 and 27.
 - Minimum and maximum score.
 - Each of the nine missing-item positions, multiple missing items and the rule that incomplete responses never produce a total.

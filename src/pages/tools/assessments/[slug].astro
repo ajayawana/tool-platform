@@ -1,16 +1,15 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import { BRIEF_ASSESSMENTS, BRIEF_RESPONSE_OPTIONS } from '../../../lib/brief-assessments.js';
+import { BRIEF_ASSESSMENTS, BRIEF_RESPONSE_OPTIONS, type BriefAssessment, type BriefAssessmentResult } from '../../../lib/brief-assessments.js';
 
 export function getStaticPaths() {
-  return Object.keys(BRIEF_ASSESSMENTS).map((slug) => ({
-    params: { slug },
-    props: { instrument: BRIEF_ASSESSMENTS[slug] },
+  return Object.values(BRIEF_ASSESSMENTS).map((instrument) => ({
+    params: { slug: instrument.id },
+    props: { instrument },
   }));
 }
 const { instrument } = Astro.props;
 const base = import.meta.env.BASE_URL;
-const route = base + 'tools/assessments/' + instrument.id + '/';
 ---
 <Layout title={instrument.officialName + ' | Ozarbox'} description={instrument.purpose + '. Private, browser-based screening with transparent deterministic scoring and clear limitations.'} robots="index,follow,max-image-preview:large">
   <section class="container tool-wrap" aria-labelledby="page-title">
@@ -143,7 +142,7 @@ const route = base + 'tools/assessments/' + instrument.id + '/';
       return selected && instrument?.functionalImpact ? instrument.functionalImpact.options[Number(selected.value)] : null;
     }
 
-    function renderResult(scored, responses) {
+    function renderResult(scored: BriefAssessmentResult, _responses: Array<number | null>) {
       if (!instrument || !results) return;
       const scoreValue = document.querySelector<HTMLElement>('#score-value');
       const scoreBand = document.querySelector<HTMLElement>('#score-band');

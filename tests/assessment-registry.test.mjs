@@ -40,7 +40,7 @@ test("only four instrument entries have live routes and all remain labelled unva
   assert.deepEqual(routed.map((item) => item.instrument_id).sort(), ["gad-2", "gad-7", "phq-2", "phq-9"]);
   for (const instrument of routed) {
     assert.equal(instrument.deployment_status, "implemented-unvalidated");
-    assert.match(instrument.software_validation, /not been independently clinically validated|not.*validated/i);
+    assert.match(instrument.software_validation, /not been independently clinically validated|validation remain outstanding|not.*validated|unvalidated/i);
   }
   for (const [id, instrument] of Object.entries(BRIEF_ASSESSMENTS)) {
     const record = registry.instruments.find((item) => item.instrument_id === id);

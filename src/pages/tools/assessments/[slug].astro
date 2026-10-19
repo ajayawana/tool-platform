@@ -3,9 +3,9 @@ import Layout from '../../../layouts/Layout.astro';
 import { BRIEF_ASSESSMENTS, BRIEF_RESPONSE_OPTIONS } from '../../../lib/brief-assessments.js';
 import { PUBLIC_DOMAIN_ASSESSMENTS } from '../../../lib/public-domain-assessments.js';
 
-const ASSESSMENTS = Object.freeze({ ...BRIEF_ASSESSMENTS, ...PUBLIC_DOMAIN_ASSESSMENTS });
 export function getStaticPaths() {
-  return Object.values(ASSESSMENTS).map((instrument) => ({
+  const assessments = { ...BRIEF_ASSESSMENTS, ...PUBLIC_DOMAIN_ASSESSMENTS };
+  return Object.values(assessments).map((instrument) => ({
     params: { slug: instrument.id },
     props: { instrument },
   }));

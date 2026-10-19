@@ -2379,14 +2379,15 @@
       "administration_mode": "self-report",
       "language": "English",
       "recall_period": "Past two weeks",
-      "permission_status": "Source permission documented for the exact short-screen family/version; still requires local governance review.",
-      "content_rights": "Public-domain status reported for GAD-7/GAD-2; exact version and setting-specific use still need review.",
+      "permission_status": "Measure reproduction permitted as stated in NICE guideline appendix; local implementation/governance review still required.",
+      "content_rights": "NICE guideline appendix states no permission required to reproduce, translate, display or distribute the GAD-2 form; the cited parent book remains copyrighted, so use the measure with attribution and do not reproduce the book itself.",
       "scoring_specification": "Deterministic total 0-6 using first two GAD-7 items; >=3 commonly used screening threshold. Not diagnostic; threshold requires clinician/context review.",
       "evidence_status": "Primary/authoritative source available; software clinical validation remains outstanding.",
       "evidence_sources": [
         "https://pubmed.ncbi.nlm.nih.gov/17339617/",
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC11934853/",
-        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care"
+        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
+        "https://www.ncbi.nlm.nih.gov/books/NBK92248/"
       ],
       "safety_rules": [
         "Positive result is not a diagnosis; follow up with a clinician when symptoms, impairment or concern persist.",
@@ -2424,7 +2425,9 @@
       "evidence_status": "Primary/authoritative source available; software clinical validation remains outstanding.",
       "evidence_sources": [
         "https://pubmed.ncbi.nlm.nih.gov/16717171/",
-        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care"
+        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7306644/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11934853/"
       ],
       "safety_rules": [
         "Positive result is not a diagnosis; follow up with a clinician when symptoms, impairment or concern persist.",
@@ -4173,7 +4176,8 @@
       "evidence_sources": [
         "https://pubmed.ncbi.nlm.nih.gov/14583691/",
         "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
-        "https://cde.nlm.nih.gov/formView?tinyId=mJsGoMU1m"
+        "https://cde.nlm.nih.gov/formView?tinyId=mJsGoMU1m",
+        "https://www.nih.gov/node/19936"
       ],
       "safety_rules": [
         "Positive result is not a diagnosis; follow up with a clinician when symptoms, impairment or concern persist.",

@@ -192,6 +192,7 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
     import { scorePublicDomainAssessment, getPublicDomainAssessment } from '../../../lib/public-domain-assessments.js';
 
     type AssessmentResult = { instrumentId: string; kind?: string; complete: boolean; missingItems: readonly number[]; total: number | null; maxScore?: number; interpretation: string | null; band?: string | null; screenPositive?: boolean | null; positiveThreshold?: number; clusters?: Readonly<Record<string, number>>; thresholdRange?: Readonly<{ min: number; max: number }>; exposure?: string; symptomResponses?: readonly string[]; summary?: readonly { event: string; responses: readonly string[] }[] };
+    type CompletedAssessmentResult = Omit<AssessmentResult, 'complete' | 'total' | 'interpretation'> & { complete: true; total: number; interpretation: string | null };
     type FunctionalImpactSpec = { label: string; options: string[]; note: string };
 
 

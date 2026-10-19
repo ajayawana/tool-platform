@@ -11,7 +11,7 @@ const countsByDomain = domains.map((domain) => ({
   count: instruments.filter((item) => item.domains.some((d) => d.id === domain.id)).length,
 }));
 type DeploymentStatus = 'implemented-unvalidated' | 'catalogue-only' | 'permission-review' | 'restricted' | 'disabled';
-const labelForStatus = (status: DeploymentStatus): string => ({
+const labelForStatus = (status: string): string => ({
   'implemented-unvalidated': 'Available · unvalidated',
   'catalogue-only': 'Catalogue only',
   'permission-review': 'Permission / clinical review',

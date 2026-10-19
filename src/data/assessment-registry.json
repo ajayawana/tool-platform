@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "purpose": "Ozarbox psychological assessment catalogue and implementation gate. Inclusion in this registry is not evidence of clinical validity, authorization to reproduce content, or permission to use a measure for patient care.",
+  "purpose": "Ozarbox psychological assessment catalogue and implementation gate. Inclusion in this registry is not evidence of clinical validity, permission to reproduce content, or authorization to use a measure for patient care.",
   "statuses": [
     "implemented-unvalidated",
     "catalogue-only",

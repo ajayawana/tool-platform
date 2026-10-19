@@ -1,0 +1,395 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { PHQ9_ITEMS, PHQ9_RESPONSE_OPTIONS } from '../../lib/phq9-scoring.js';
+const base = import.meta.env.BASE_URL;
+---
+<Layout title="PHQ-9 Depression Symptom Screening | Ozarbox" description="Complete the official nine-item PHQ-9 symptom screening questionnaire privately in your browser. This screening is not a diagnosis." robots="index,follow,max-image-preview:large">
+  <main class="container phq9-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={base}>Home</a> / <a href={base + 'categories/'}>Tools</a> / PHQ-9 screening</nav>
+    <header class="phq9-header">
+      <p class="eyebrow">Mental wellbeing · Screening tool</p>
+      <h1>PHQ-9 depression symptom screening</h1>
+      <p class="intro">A private, browser-based version of the Patient Health Questionnaire-9 (PHQ-9), a widely used measure of depressive-symptom frequency over the past two weeks.</p>
+      <div class="notice notice-neutral">
+        <strong>Important to know</strong>
+        <p>This questionnaire can help describe symptoms and support a conversation with a qualified health professional. It does not diagnose depression, assess every aspect of mental health, or replace professional care. Ozarbox has not been clinically validated or endorsed by the instrument's authors.</p>
+      </div>
+    </header>
+
+    <section class="privacy-strip" aria-label="Privacy summary">
+      <span aria-hidden="true">🔒</span>
+      <div><strong>Private by design</strong><p>Your answers are processed in this browser. They are not sent to an Ozarbox server by this tool. Results are not saved unless you explicitly choose to save a minimal score history on this device.</p></div>
+    </section>
+
+    <section class="assessment-card" aria-labelledby="instructions-heading">
+      <div class="card-heading">
+        <div><p class="eyebrow">Assessment</p><h2 id="instructions-heading">Before you begin</h2></div>
+        <span class="time-chip">About 2–5 minutes</span>
+      </div>
+      <p>Over the last 2 weeks, how often have you been bothered by any of the following problems?</p>
+      <p>Select one answer for each item. Answer based on your experience, rather than how you think you should feel. Please complete all nine items to calculate a total score.</p>
+      <div class="response-key" aria-label="Response options and values">
+        {PHQ9_RESPONSE_OPTIONS.map((option) => <div class="response-key-item"><span class="score-pill">{option.value}</span><span>{option.label}</span></div>)}
+      </div>
+      <div class="progress-area">
+        <div class="progress-copy"><span id="progress-label">0 of 9 items answered</span><span id="progress-percent">0%</span></div>
+        <div class="progress-track" role="progressbar" aria-label="Assessment completion" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div>
+      </div>
+
+      <form id="phq9-form" novalidate>
+        <div id="validation-message" class="validation-message" role="alert" tabindex="-1" hidden></div>
+        <div class="items-list">
+          {PHQ9_ITEMS.map((item, index) => <fieldset class="question" id={'question-' + (index + 1)} data-question={index + 1}>
+            <legend><span class="question-number">Item {index + 1} of 9</span><span class="question-text">{item}</span></legend>
+            <div class="answer-options" role="radiogroup" aria-label={'Item ' + (index + 1) + ' response'}>
+              {PHQ9_RESPONSE_OPTIONS.map((option) => <label class="answer-option" for={'q' + (index + 1) + '-' + option.value}>
+                <input id={'q' + (index + 1) + '-' + option.value} type="radio" name={'q' + (index + 1)} value={option.value} />
+                <span class="custom-radio" aria-hidden="true"></span><span class="answer-label">{option.label}</span>
+              </label>)}
+            </div>
+          </fieldset>)}
+        </div>
+
+        <fieldset class="question difficulty-question" id="difficulty-question" hidden>
+          <legend><span class="question-number">Follow-up · Not included in the score</span><span class="question-text">If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?</span></legend>
+          <div class="answer-options difficulty-options" role="radiogroup" aria-label="Difficulty caused by these problems">
+            {['Not difficult at all', 'Somewhat difficult', 'Very difficult', 'Extremely difficult'].map((label, index) => <label class="answer-option" for={'difficulty-' + index}>
+              <input id={'difficulty-' + index} type="radio" name="difficulty" value={String(index)} />
+              <span class="custom-radio" aria-hidden="true"></span><span class="answer-label">{label}</span>
+            </label>)}
+          </div>
+          <p class="field-help">This optional follow-up is not part of the PHQ-9 total score.</p>
+        </fieldset>
+
+        <div class="form-actions">
+          <button class="primary-button" type="submit">Calculate my score</button>
+          <button class="secondary-button" type="reset" id="reset-button">Start over</button>
+        </div>
+        <p class="field-help">No name, email, account, or contact details are requested.</p>
+      </form>
+    </section>
+
+    <section id="results" class="results-card" aria-labelledby="results-heading" hidden>
+      <div class="results-top"><div><p class="eyebrow">Your result</p><h2 id="results-heading">PHQ-9 screening result</h2></div><button type="button" class="secondary-button print-button" id="print-button">Print / Save PDF</button></div>
+      <div class="score-summary">
+        <div class="score-circle"><span id="score-total">—</span><span class="score-denominator">out of 27</span></div>
+        <div><p class="result-kicker">Symptom-severity screening result</p><h3 id="severity-label">—</h3><p id="severity-description"></p></div>
+      </div>
+      <p class="result-caution">This score describes symptom frequency only. It is not a diagnosis and should be interpreted alongside your circumstances, functioning, medical history and a conversation with a qualified professional. A low score does not rule out a mental health concern.</p>
+
+      <section id="safety-section" class="safety-card" aria-labelledby="safety-heading" hidden>
+        <p class="eyebrow">Important follow-up · Separate from the score</p>
+        <h3 id="safety-heading">Thank you for answering honestly.</h3>
+        <p>Your response to item 9 indicates thoughts of being better off dead or of hurting yourself at least some of the time. This does not tell us whether you are in immediate danger, so we will not assume. Your safety matters, and you deserve support.</p>
+        <fieldset class="safety-question">
+          <legend>Are you in immediate danger right now, or do you feel you might act on these thoughts?</legend>
+          <div class="answer-options safety-options">
+            <label class="answer-option" for="safety-yes"><input id="safety-yes" type="radio" name="immediate-safety" value="yes"><span class="custom-radio" aria-hidden="true"></span><span class="answer-label">Yes</span></label>
+            <label class="answer-option" for="safety-no"><input id="safety-no" type="radio" name="immediate-safety" value="no"><span class="custom-radio" aria-hidden="true"></span><span class="answer-label">No</span></label>
+            <label class="answer-option" for="safety-unsure"><input id="safety-unsure" type="radio" name="immediate-safety" value="unsure"><span class="custom-radio" aria-hidden="true"></span><span class="answer-label">I'm not sure</span></label>
+          </div>
+        </fieldset>
+        <div id="safety-advice" class="safety-advice" role="alert" aria-live="assertive">Choose the option that best describes how you feel right now. If you cannot stay safe, seek urgent in-person help now.</div>
+        <div class="crisis-resources">
+          <p><strong>If you may act on these thoughts or cannot stay safe:</strong> contact your local emergency service now, go to the nearest emergency department, and if possible stay with someone you trust and move away from anything you could use to hurt yourself.</p>
+          <p><strong>In India:</strong> call <a href="https://112.gov.in/" target="_blank" rel="noopener noreferrer">112 for emergency assistance</a>. You can also call <a href="https://www.dghs.mohfw.gov.in/national-mental-health-programme.php" target="_blank" rel="noopener noreferrer">Tele-MANAS at 14416</a> for free, 24/7 mental-health support.</p>
+          <p>If you are elsewhere, use your local emergency number or a verified crisis service in your country. If there is no immediate danger, please still contact a mental-health professional or trusted person promptly and tell them what you have been experiencing.</p>
+        </div>
+      </section>
+
+      <section class="next-steps" aria-labelledby="next-steps-heading">
+        <h3 id="next-steps-heading">Suggested next steps</h3>
+        <ul>
+          <li>Consider sharing this result with a qualified doctor or mental-health professional, especially if symptoms are persistent, worsening, or affecting daily life.</li>
+          <li>Discuss your symptoms, functioning, physical health, medications, sleep, stressors and any periods of unusually elevated mood with the professional. The questionnaire cannot assess these on its own.</li>
+          <li>If you feel unsafe or your situation changes, seek urgent support regardless of this score.</li>
+        </ul>
+      </section>
+
+      <section class="history-save" aria-labelledby="save-heading">
+        <h3 id="save-heading">Compare scores over time (optional)</h3>
+        <p>You can keep a small score history on this device to compare future PHQ-9 totals. Nothing is saved until you tick the consent box and press “Save score”. The history contains only date, total score, severity band and whether item 9 was positive—not your answers, name, or contact details. It stays in this browser's local storage, is not encrypted, and may be visible to anyone who uses this device.</p>
+        <label class="consent-label" for="save-consent"><input type="checkbox" id="save-consent"><span>I understand and consent to saving this minimal PHQ-9 score history on this device.</span></label>
+        <div class="form-actions save-actions"><button type="button" id="save-score-button" class="primary-button" disabled>Save score on this device</button><button type="button" id="clear-history-button" class="secondary-button">Delete saved history</button></div>
+        <p id="save-status" class="field-help" role="status" aria-live="polite"></p>
+        <div id="history-panel" class="history-panel" hidden><h4>Saved score history</h4><p class="field-help">This list is stored only in this browser. Use “Delete saved history” to remove it.</p><ol id="history-list"></ol></div>
+      </section>
+    </section>
+
+    <section class="information-grid" aria-label="About this assessment">
+      <article class="info-card"><h2>What this tool can and cannot do</h2><p>The PHQ-9 is a screening and symptom-severity measure. A score can help structure a conversation or monitor change, but it cannot establish a diagnosis, determine the cause of symptoms, or replace clinical judgement. Results may be affected by context, medical conditions, language, culture and the population in which the tool is used.</p></article>
+      <article class="info-card"><h2>Confidentiality and data handling</h2><p>Answers and scoring are handled locally in your browser. The tool does not send responses to an Ozarbox server or use an AI model. Closing the page clears unsaved answers. Score history is optional and stored locally only after explicit consent; you can delete it at any time. Avoid saving on shared devices. Browser storage is not a secure medical record.</p></article>
+      <article class="info-card"><h2>Repeat use</h2><p>Repeating the PHQ-9 can help you and a clinician discuss changes over time when administration conditions are comparable. Compare scores with context, not in isolation; do not treat a change as proof of improvement or deterioration. If item 9 is positive, respond to that separately each time.</p></article>
+    </section>
+
+    <section class="sources-card" aria-labelledby="sources-heading">
+      <h2 id="sources-heading">Instrument sources and attribution</h2>
+      <p>The PHQ-9 was developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. Published sources state that permission is not required to reproduce, translate, display or distribute the PHQ instruments.</p>
+      <ul>
+        <li><a href="https://doi.org/10.1046/j.1525-1497.2001.016009606.x" target="_blank" rel="noopener noreferrer">Kroenke K, Spitzer RL, Williams JBW. The PHQ-9: Validity of a brief depression severity measure. Journal of General Internal Medicine. 2001;16:606–613.</a></li>
+        <li><a href="https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care" target="_blank" rel="noopener noreferrer">Pfizer's 2010 public-access announcement for PHQ and GAD instruments.</a></li>
+        <li><a href="https://cde.nlm.nih.gov/formView?tinyId=mJsGoMU1m" target="_blank" rel="noopener noreferrer">U.S. National Library of Medicine Common Data Elements: PHQ-9.</a></li>
+        <li><a href="https://www.dghs.mohfw.gov.in/national-mental-health-programme.php" target="_blank" rel="noopener noreferrer">India Ministry of Health and Family Welfare / DGHS: Tele-MANAS support information.</a> · <a href="https://112.gov.in/" target="_blank" rel="noopener noreferrer">Government of India emergency response number 112.</a></li>
+      </ul>
+      <p class="attribution">Ozarbox is an independent implementation and is not affiliated with, endorsed by, or clinically validated by the instrument developers or Pfizer. The original instrument's validation does not establish the validity, reliability, clinical suitability, or regulatory status of this website.</p>
+    </section>
+    <p class="back-link"><a href={base}>← Back to Ozarbox</a> · <a href={base + 'privacy/'}>Privacy policy</a> · <a href={base + 'disclaimer/'}>Disclaimer</a></p>
+  </main>
+
+  <script>
+    import { scorePhq9, getSafetyFollowUp } from '../../lib/phq9-scoring.js';
+
+    const form = document.querySelector('#phq9-form');
+    const resultPanel = document.querySelector('#results');
+    const validation = document.querySelector('#validation-message');
+    const progressBar = document.querySelector('#progress-bar');
+    const progressFill = document.querySelector('#progress-fill');
+    const progressLabel = document.querySelector('#progress-label');
+    const progressPercent = document.querySelector('#progress-percent');
+    const difficultyQuestion = document.querySelector('#difficulty-question');
+    const safetySection = document.querySelector('#safety-section');
+    const safetyAdvice = document.querySelector('#safety-advice');
+    const consent = document.querySelector('#save-consent');
+    const saveButton = document.querySelector('#save-score-button');
+    const saveStatus = document.querySelector('#save-status');
+    const historyPanel = document.querySelector('#history-panel');
+    const historyList = document.querySelector('#history-list');
+    const STORAGE_KEY = 'ozarbox.phq9.score-history.v1';
+    let currentResult = null;
+
+    const getResponses = () => Array.from({ length: 9 }, (_, index) => {
+      const selected = form.querySelector('input[name="q' + (index + 1) + '"]:checked');
+      return selected ? Number(selected.value) : null;
+    });
+
+    const updateProgress = () => {
+      const responses = getResponses();
+      const count = responses.filter((value) => value !== null).length;
+      const percent = Math.round((count / 9) * 100);
+      progressLabel.textContent = count + ' of 9 items answered';
+      progressPercent.textContent = percent + '%';
+      progressBar.setAttribute('aria-valuenow', String(count));
+      progressFill.style.width = percent + '%';
+      difficultyQuestion.hidden = !responses.some((value) => value !== null && value > 0);
+    };
+
+    const getHistory = () => {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+        if (!Array.isArray(parsed)) return [];
+        return parsed.filter((entry) => entry && typeof entry.date === 'string' &&
+          Number.isInteger(entry.total) && entry.total >= 0 && entry.total <= 27 &&
+          typeof entry.severity === 'string' && typeof entry.item9Positive === 'boolean').slice(-30);
+      } catch {
+        return [];
+      }
+    };
+
+    const renderHistory = () => {
+      const history = getHistory();
+      historyList.replaceChildren();
+      history.forEach((entry) => {
+        const li = document.createElement('li');
+        const date = document.createElement('time');
+        date.dateTime = entry.date;
+        date.textContent = new Date(entry.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+        const summary = document.createElement('span');
+        summary.textContent = 'Score ' + entry.total + '/27 · ' + entry.severity + (entry.item9Positive ? ' · item 9 positive' : '');
+        li.append(date, document.createTextNode(' — '), summary);
+        historyList.append(li);
+      });
+      historyPanel.hidden = history.length === 0;
+    };
+
+    form.addEventListener('change', updateProgress);
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const result = scorePhq9(getResponses());
+      if (!result.complete) {
+        validation.hidden = false;
+        validation.textContent = 'Please answer all nine PHQ-9 items before calculating your score. Unanswered items: ' + result.missingItems.join(', ') + '. No total has been calculated.';
+        const firstMissing = document.querySelector('#question-' + result.missingItems[0]);
+        firstMissing?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        firstMissing?.querySelector('input')?.focus({ preventScroll: true });
+        validation.focus({ preventScroll: true });
+        return;
+      }
+
+      validation.hidden = true;
+      currentResult = result;
+      document.querySelector('#score-total').textContent = String(result.total);
+      document.querySelector('#severity-label').textContent = result.severity;
+      const descriptions = {
+        'Minimal': 'Your responses fall in the minimal symptom-severity range. If you remain concerned about how you feel, you can still seek support.',
+        'Mild': 'Your responses fall in the mild symptom-severity range. Consider monitoring how you feel and discussing persistent or troubling symptoms with a professional.',
+        'Moderate': 'Your responses fall in the moderate symptom-severity range. Consider arranging a conversation with a qualified health professional.',
+        'Moderately severe': 'Your responses fall in the moderately severe symptom-severity range. A timely conversation with a qualified health professional is recommended.',
+        'Severe': 'Your responses fall in the severe symptom-severity range. Please seek a timely, comprehensive assessment from a qualified health professional.'
+      };
+      document.querySelector('#severity-description').textContent = descriptions[result.severity];
+      safetySection.hidden = !result.requiresSafetyFollowUp;
+      safetyAdvice.textContent = 'Choose the option that best describes how you feel right now. If you cannot stay safe, seek urgent in-person help now.';
+      form.querySelectorAll('input[name="immediate-safety"]').forEach((input) => { input.checked = false; });
+      saveStatus.textContent = '';
+      saveButton.disabled = !consent.checked;
+      resultPanel.hidden = false;
+      resultPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.querySelector('#results-heading').focus?.({ preventScroll: true });
+      renderHistory();
+    });
+
+    document.querySelectorAll('input[name="immediate-safety"]').forEach((input) => {
+      input.addEventListener('change', () => {
+        if (!currentResult || !currentResult.requiresSafetyFollowUp) return;
+        const followUp = getSafetyFollowUp(Number(getResponses()[8]), input.value);
+        if (followUp.status === 'urgent') {
+          safetyAdvice.textContent = 'Please get urgent help now. Contact your local emergency number or go to the nearest emergency department. If you are in India, call 112. If possible, stay with someone you trust and move away from anything you could use to hurt yourself.';
+        } else if (followUp.status === 'prompt-support') {
+          safetyAdvice.textContent = 'Thank you for telling us. Even if you do not feel in immediate danger, please contact a mental-health professional or someone you trust promptly and tell them about these thoughts. If your safety changes, seek urgent help.';
+        }
+      });
+    });
+
+    consent.addEventListener('change', () => {
+      saveButton.disabled = !consent.checked || !currentResult;
+      if (!consent.checked) saveStatus.textContent = 'No new score will be saved unless you give consent.';
+    });
+
+    saveButton.addEventListener('click', () => {
+      if (!consent.checked || !currentResult) {
+        saveStatus.textContent = 'Please complete the consent step before saving.';
+        return;
+      }
+      try {
+        const history = getHistory();
+        history.push({
+          date: new Date().toISOString(),
+          total: currentResult.total,
+          severity: currentResult.severity,
+          item9Positive: currentResult.item9Positive
+        });
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(history.slice(-30)));
+        saveStatus.textContent = 'Score saved on this device only. No item-level answers or identifying details were saved.';
+        renderHistory();
+      } catch {
+        saveStatus.textContent = 'This browser could not save the score. You can still print or save a PDF of the result.';
+      }
+    });
+
+    document.querySelector('#clear-history-button').addEventListener('click', () => {
+      try {
+        localStorage.removeItem(STORAGE_KEY);
+        renderHistory();
+        saveStatus.textContent = 'Saved score history deleted from this browser.';
+      } catch {
+        saveStatus.textContent = 'This browser did not allow deletion. Clear this site’s local storage in browser settings.';
+      }
+    });
+
+    document.querySelector('#print-button').addEventListener('click', () => window.print());
+
+    form.addEventListener('reset', () => {
+      window.setTimeout(() => {
+        resultPanel.hidden = true;
+        validation.hidden = true;
+        currentResult = null;
+        saveButton.disabled = true;
+        consent.checked = false;
+        saveStatus.textContent = '';
+        updateProgress();
+        document.querySelector('#phq9-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 0);
+    });
+
+    updateProgress();
+    renderHistory();
+  </script>
+
+  <style>
+    .phq9-page{max-width:1000px;padding-top:28px;padding-bottom:10px}
+    .phq9-header{max-width:850px;margin:10px auto 24px}
+    .phq9-header h1{font-size:clamp(2.1rem,5.5vw,3.5rem);line-height:1.08;letter-spacing:-.035em;margin:.3rem 0 1rem}
+    .phq9-header .intro{font-size:1.12rem;color:#475569;max-width:800px}
+    .notice{border-radius:14px;padding:17px 19px;margin:22px 0;border:1px solid}
+    .notice p{margin:.25rem 0 0}
+    .notice-neutral{background:#eff6ff;border-color:#bfdbfe;color:#1e3a8a}
+    .privacy-strip{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;margin:20px 0 28px;border:1px solid #bbf7d0;border-radius:15px;background:#f0fdf4}
+    .privacy-strip>span{font-size:1.5rem}
+    .privacy-strip p{margin:.15rem 0 0;color:#166534}
+    .assessment-card,.results-card,.info-card,.sources-card{background:#fff;border:1px solid #dbe3ee;border-radius:20px;padding:clamp(18px,3.5vw,32px);margin:24px 0;box-shadow:0 5px 22px #0f172a08}
+    .card-heading,.results-top{display:flex;justify-content:space-between;align-items:center;gap:18px}
+    .card-heading h2,.results-top h2{margin:.15rem 0;font-size:1.8rem;line-height:1.2}
+    .time-chip{border:1px solid #cbd5e1;border-radius:999px;padding:7px 12px;font-size:.85rem;color:#475569;white-space:nowrap}
+    .response-key{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:22px 0 26px}
+    .response-key-item{display:flex;gap:8px;align-items:center;padding:10px;border-radius:10px;background:#f8fafc;font-size:.9rem}
+    .score-pill{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;flex:0 0 26px;border-radius:50%;background:#dbeafe;color:#1d4ed8;font-weight:850}
+    .progress-area{margin:22px 0}
+    .progress-copy{display:flex;justify-content:space-between;gap:12px;font-size:.9rem;font-weight:750;color:#475569;margin-bottom:7px}
+    .progress-track{height:9px;background:#e2e8f0;border-radius:999px;overflow:hidden}
+    #progress-fill{display:block;width:0;height:100%;background:#2563eb;transition:width .15s ease}
+    .items-list{border-top:1px solid #e2e8f0}
+    .question{min-width:0;margin:0;padding:24px 0;border:0;border-bottom:1px solid #e2e8f0}
+    .question legend{display:block;width:100%;padding:0;margin-bottom:15px}
+    .question-number{display:block;color:#2563eb;text-transform:uppercase;font-size:.76rem;letter-spacing:.07em;font-weight:850;margin-bottom:6px}
+    .question-text{display:block;font-size:1.1rem;font-weight:780;line-height:1.5;color:#0f172a}
+    .answer-options{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+    .answer-option{display:flex;align-items:center;gap:9px;padding:12px 10px;border:1px solid #cbd5e1;border-radius:12px;background:#fff;cursor:pointer;font-weight:600;line-height:1.3;min-height:54px;transition:border-color .12s ease,background .12s ease}
+    .answer-option:hover{border-color:#60a5fa;background:#f8fbff}
+    .answer-option:has(input:checked){border-color:#2563eb;background:#eff6ff;box-shadow:inset 0 0 0 1px #2563eb}
+    .answer-option:focus-within{outline:3px solid #93c5fd;outline-offset:2px}
+    .answer-option input{width:20px;height:20px;flex:0 0 20px;margin:0;accent-color:#1d4ed8}
+    .custom-radio{display:none}
+    .answer-label{font-size:.91rem}
+    .difficulty-question{margin-top:18px;padding:22px;border:1px dashed #cbd5e1;border-radius:14px;background:#f8fafc}
+    .field-help{font-size:.88rem;color:#64748b;margin:.7rem 0}
+    .form-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:24px}
+    .form-actions button,.results-top button{margin:0;min-height:48px}
+    .primary-button,.secondary-button{display:inline-flex;align-items:center;justify-content:center;border-radius:11px;padding:12px 18px;font:inherit;font-weight:800;cursor:pointer;text-decoration:none}
+    .primary-button{background:#1d4ed8;color:#fff;border:2px solid #1d4ed8}
+    .primary-button:hover{background:#1e40af;border-color:#1e40af}
+    .primary-button:disabled{opacity:.5;cursor:not-allowed}
+    .secondary-button{background:#fff;color:#1e293b;border:1px solid #cbd5e1}
+    .secondary-button:hover{background:#f8fafc;border-color:#94a3b8}
+    .validation-message{background:#fff1f2;border:1px solid #fda4af;color:#9f1239;border-radius:12px;padding:14px;margin:16px 0}
+    .results-card{border-top:5px solid #2563eb}
+    .score-summary{display:flex;align-items:center;gap:22px;padding:24px 0}
+    .score-circle{width:112px;height:112px;flex:0 0 112px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:7px solid #bfdbfe;border-radius:50%;background:#eff6ff;color:#1e3a8a}
+    #score-total{font-size:2.1rem;font-weight:900;line-height:1.1}
+    .score-denominator{font-size:.8rem}
+    .result-kicker{margin:0;color:#64748b;font-size:.85rem;font-weight:750}
+    #severity-label{font-size:1.7rem;margin:.15rem 0}
+    #severity-description{margin:0;color:#475569}
+    .result-caution{padding:15px 17px;border-radius:12px;background:#f8fafc;border:1px solid #e2e8f0;color:#334155}
+    .safety-card{margin:22px 0;padding:22px;border:2px solid #fca5a5;border-radius:16px;background:#fff7f7}
+    .safety-card h3{font-size:1.4rem;margin:.2rem 0 .6rem;color:#991b1b}
+    .safety-question{border:0;padding:0;margin:18px 0}
+    .safety-question legend{font-weight:850;font-size:1.05rem;margin-bottom:12px}
+    .safety-options{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .safety-advice{padding:15px;border-radius:11px;background:#fee2e2;color:#7f1d1d;font-weight:700;margin:15px 0}
+    .crisis-resources{border-top:1px solid #fecaca;padding-top:10px}
+    .crisis-resources a{color:#991b1b;font-weight:800}
+    .next-steps{margin:26px 0}
+    .next-steps h3,.history-save h3{font-size:1.25rem;margin-bottom:8px}
+    .next-steps li{margin:.55rem 0}
+    .history-save{padding:20px 0;border-top:1px solid #e2e8f0;margin-top:26px}
+    .consent-label{display:flex;align-items:flex-start;gap:11px;padding:14px;border:1px solid #cbd5e1;border-radius:12px;background:#f8fafc;font-weight:650}
+    .consent-label input{width:22px;height:22px;flex:0 0 22px;margin:2px 0 0;accent-color:#1d4ed8}
+    .history-panel{margin-top:20px;padding:16px;border-radius:12px;background:#f8fafc;border:1px solid #e2e8f0}
+    .history-panel h4{margin:0}
+    .history-panel li{padding:7px 0}
+    .information-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:26px 0}
+    .info-card{margin:0;padding:22px}
+    .info-card h2{font-size:1.15rem;line-height:1.3;margin:0 0 9px}
+    .info-card p{font-size:.94rem;color:#475569;margin:0}
+    .sources-card h2{font-size:1.4rem;margin:0 0 10px}
+    .sources-card li{margin:.65rem 0}
+    .sources-card a,.back-link a{color:#1d4ed8;text-underline-offset:3px}
+    .attribution{border-top:1px solid #e2e8f0;padding-top:14px;color:#64748b;font-size:.9rem}
+    .back-link{margin:30px 0;color:#64748b}
+    [hidden]{display:none!important}
+    @media(max-width:760px){.response-key{grid-template-columns:repeat(2,minmax(0,1fr))}.answer-options{grid-template-columns:repeat(2,minmax(0,1fr))}.information-grid{grid-template-columns:1fr}.score-summary{align-items:flex-start}.card-heading,.results-top{align-items:flex-start;flex-direction:column}.time-chip{white-space:normal}}
+    @media(max-width:420px){.phq9-page{width:calc(100% - 20px)}.assessment-card,.results-card,.info-card,.sources-card{padding:16px;border-radius:15px}.answer-options{grid-template-columns:1fr}.answer-option{min-height:48px}.safety-options{grid-template-columns:1fr}.score-summary{gap:14px}.score-circle{width:90px;height:90px;flex-basis:90px;border-width:5px}#score-total{font-size:1.8rem}.save-actions{align-items:stretch;flex-direction:column}.save-actions button{width:100%}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+    @media print{.site-header,footer,.breadcrumbs,.form-actions,.privacy-strip,.phq9-header,.assessment-card,.history-save,.back-link,.print-button{display:none!important}.phq9-page{width:100%;max-width:none;padding:0}.results-card{display:block!important;border:0;box-shadow:none}.safety-card{break-inside:avoid}.information-grid{grid-template-columns:1fr}.info-card,.sources-card{break-inside:avoid;box-shadow:none}}
+  </style>
+</Layout>

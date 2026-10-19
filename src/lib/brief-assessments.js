@@ -3,6 +3,40 @@
  * Items are not paraphrased in this file. No network, AI, local storage or diagnostic inference.
  * PHQ/GAD public-access source: Pfizer 2010 announcement linked in the instrument registry.
  */
+export type BriefAssessmentResult = Readonly<{
+  instrumentId: string;
+  complete: boolean;
+  missingItems: readonly number[];
+  total: number | null;
+  maxScore?: number;
+  interpretation: string | null;
+  band?: string | null;
+  screenPositive: boolean | null;
+  positiveThreshold?: number;
+}>;
+
+export type BriefAssessment = Readonly<{
+  id: string;
+  officialName: string;
+  purpose: string;
+  instructions: string;
+  recallPeriod: string;
+  items: readonly string[];
+  responseOptions: readonly Readonly<{ value: number; label: string }>[];
+  maxScore: number;
+  scoringMethod: string;
+  positiveThreshold: number;
+  positiveThresholdLabel: string;
+  limitations: string;
+  lowResult: string;
+  highResult?: string;
+  nextSteps: string;
+  sources: readonly string[];
+  statusText: string;
+  bands?: readonly Readonly<{ min: number; max: number; label: string }>[];
+  functionalImpact?: Readonly<{ label: string; options: readonly string[]; note: string }>;
+}>;
+
 export const BRIEF_RESPONSE_OPTIONS = Object.freeze([
   Object.freeze({ value: 0, label: "Not at all" }),
   Object.freeze({ value: 1, label: "Several days" }),
@@ -12,7 +46,7 @@ export const BRIEF_RESPONSE_OPTIONS = Object.freeze([
 
 const commonInstructions = "Over the last 2 weeks, how often have you been bothered by any of the following problems?";
 
-export const BRIEF_ASSESSMENTS = Object.freeze({
+export const BRIEF_ASSESSMENTS: Readonly<Record<string, BriefAssessment>> = Object.freeze({
   "phq-2": Object.freeze({
     id: "phq-2",
     officialName: "Patient Health Questionnaire-2 (PHQ-2)",
@@ -111,7 +145,7 @@ export const BRIEF_ASSESSMENTS = Object.freeze({
   })
 });
 
-export function getBriefAssessment(instrumentId) {
+export function getBriefAssessment(instrumentId: string): BriefAssessment {
   const instrument = BRIEF_ASSESSMENTS[instrumentId];
   if (!instrument) throw new RangeError("Unknown brief assessment: " + instrumentId);
   return instrument;
@@ -121,7 +155,7 @@ export function getBriefAssessment(instrumentId) {
  * Scores one brief screen without imputation. Returns complete:false for unanswered items.
  * Values must be integer response codes 0 through 3.
  */
-export function scoreBriefAssessment(instrumentId, responses) {
+export function scoreBriefAssessment(instrumentId: string, responses: Array<number | null | undefined | "">): BriefAssessmentResult {
   const instrument = getBriefAssessment(instrumentId);
   if (!Array.isArray(responses) || responses.length !== instrument.items.length) {
     throw new TypeError(instrument.officialName + " requires exactly " + instrument.items.length + " response positions.");

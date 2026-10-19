@@ -3,18 +3,6 @@
  * Items are not paraphrased in this file. No network, AI, local storage or diagnostic inference.
  * PHQ/GAD public-access source: Pfizer 2010 announcement linked in the instrument registry.
  */
-export type BriefAssessmentResult = {
-  instrumentId: string;
-  complete: boolean;
-  missingItems: readonly number[];
-  total: number | null;
-  maxScore?: number;
-  interpretation: string | null;
-  band?: string | null;
-  screenPositive?: boolean | null;
-  positiveThreshold?: number;
-};
-
 export const BRIEF_RESPONSE_OPTIONS = Object.freeze([
   Object.freeze({ value: 0, label: "Not at all" }),
   Object.freeze({ value: 1, label: "Several days" }),

@@ -139,26 +139,27 @@ const base = import.meta.env.BASE_URL;
   <script>
     import { scorePhq9, getSafetyFollowUp } from '../../lib/phq9-scoring.js';
 
-    const form = document.querySelector('#phq9-form');
-    const resultPanel = document.querySelector('#results');
-    const validation = document.querySelector('#validation-message');
-    const progressBar = document.querySelector('#progress-bar');
-    const progressFill = document.querySelector('#progress-fill');
-    const progressLabel = document.querySelector('#progress-label');
-    const progressPercent = document.querySelector('#progress-percent');
-    const difficultyQuestion = document.querySelector('#difficulty-question');
-    const safetySection = document.querySelector('#safety-section');
-    const safetyAdvice = document.querySelector('#safety-advice');
-    const consent = document.querySelector('#save-consent');
-    const saveButton = document.querySelector('#save-score-button');
-    const saveStatus = document.querySelector('#save-status');
-    const historyPanel = document.querySelector('#history-panel');
-    const historyList = document.querySelector('#history-list');
+    function mustGet<T extends Element>(selector: string): T { const element = document.querySelector<T>(selector); if (!element) throw new Error('Missing required assessment element: ' + selector); return element; }
+    const form = mustGet<HTMLFormElement>('#phq9-form');
+    const resultPanel = mustGet<HTMLElement>('#results');
+    const validation = mustGet<HTMLElement>('#validation-message');
+    const progressBar = mustGet<HTMLElement>('#progress-bar');
+    const progressFill = mustGet<HTMLElement>('#progress-fill');
+    const progressLabel = mustGet<HTMLElement>('#progress-label');
+    const progressPercent = mustGet<HTMLElement>('#progress-percent');
+    const difficultyQuestion = mustGet<HTMLFieldSetElement>('#difficulty-question');
+    const safetySection = mustGet<HTMLElement>('#safety-section');
+    const safetyAdvice = mustGet<HTMLElement>('#safety-advice');
+    const consent = mustGet<HTMLInputElement>('#save-consent');
+    const saveButton = mustGet<HTMLButtonElement>('#save-score-button');
+    const saveStatus = mustGet<HTMLElement>('#save-status');
+    const historyPanel = mustGet<HTMLElement>('#history-panel');
+    const historyList = mustGet<HTMLOListElement>('#history-list');
     const STORAGE_KEY = 'ozarbox.phq9.score-history.v1';
     let currentResult = null;
 
     const getResponses = () => Array.from({ length: 9 }, (_, index) => {
-      const selected = form.querySelector('input[name="q' + (index + 1) + '"]:checked');
+      const selected = form.querySelector<HTMLInputElement>('input[name="q' + (index + 1) + '"]:checked');
       return selected ? Number(selected.value) : null;
     });
 
@@ -208,17 +209,17 @@ const base = import.meta.env.BASE_URL;
       if (!result.complete) {
         validation.hidden = false;
         validation.textContent = 'Please answer all nine PHQ-9 items before calculating your score. Unanswered items: ' + result.missingItems.join(', ') + '. No total has been calculated.';
-        const firstMissing = document.querySelector('#question-' + result.missingItems[0]);
+        const firstMissing = mustGet<HTMLFieldSetElement>('#question-' + result.missingItems[0]);
         firstMissing?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        firstMissing?.querySelector('input')?.focus({ preventScroll: true });
+        firstMissing.querySelector<HTMLInputElement>('input')?.focus({ preventScroll: true });
         validation.focus({ preventScroll: true });
         return;
       }
 
       validation.hidden = true;
       currentResult = result;
-      document.querySelector('#score-total').textContent = String(result.total);
-      document.querySelector('#severity-label').textContent = result.severity;
+      mustGet<HTMLElement>('#score-total').textContent = String(result.total);
+      mustGet<HTMLElement>('#severity-label').textContent = result.severity;
       const descriptions = {
         'Minimal': 'Your responses fall in the minimal symptom-severity range. If you remain concerned about how you feel, you can still seek support.',
         'Mild': 'Your responses fall in the mild symptom-severity range. Consider monitoring how you feel and discussing persistent or troubling symptoms with a professional.',
@@ -226,19 +227,19 @@ const base = import.meta.env.BASE_URL;
         'Moderately severe': 'Your responses fall in the moderately severe symptom-severity range. A timely conversation with a qualified health professional is recommended.',
         'Severe': 'Your responses fall in the severe symptom-severity range. Please seek a timely, comprehensive assessment from a qualified health professional.'
       };
-      document.querySelector('#severity-description').textContent = descriptions[result.severity];
+      mustGet<HTMLElement>('#severity-description').textContent = descriptions[result.severity];
       safetySection.hidden = !result.requiresSafetyFollowUp;
       safetyAdvice.textContent = 'Choose the option that best describes how you feel right now. If you cannot stay safe, seek urgent in-person help now.';
-      form.querySelectorAll('input[name="immediate-safety"]').forEach((input) => { input.checked = false; });
+      form.querySelectorAll<HTMLInputElement>('input[name="immediate-safety"]').forEach((input) => { input.checked = false; });
       saveStatus.textContent = '';
       saveButton.disabled = !consent.checked;
       resultPanel.hidden = false;
       resultPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      document.querySelector('#results-heading').focus?.({ preventScroll: true });
+      mustGet<HTMLHeadingElement>('#results-heading').focus({ preventScroll: true });
       renderHistory();
     });
 
-    document.querySelectorAll('input[name="immediate-safety"]').forEach((input) => {
+    document.querySelectorAll<HTMLInputElement>('input[name="immediate-safety"]').forEach((input) => {
       input.addEventListener('change', () => {
         if (!currentResult || !currentResult.requiresSafetyFollowUp) return;
         const followUp = getSafetyFollowUp(Number(getResponses()[8]), input.value);
@@ -275,7 +276,7 @@ const base = import.meta.env.BASE_URL;
       }
     });
 
-    document.querySelector('#clear-history-button').addEventListener('click', () => {
+    mustGet<HTMLButtonElement>('#clear-history-button').addEventListener('click', () => {
       try {
         localStorage.removeItem(STORAGE_KEY);
         renderHistory();
@@ -285,7 +286,7 @@ const base = import.meta.env.BASE_URL;
       }
     });
 
-    document.querySelector('#print-button').addEventListener('click', () => window.print());
+    mustGet<HTMLButtonElement>('#print-button').addEventListener('click', () => window.print());
 
     form.addEventListener('reset', () => {
       window.setTimeout(() => {
@@ -296,7 +297,7 @@ const base = import.meta.env.BASE_URL;
         consent.checked = false;
         saveStatus.textContent = '';
         updateProgress();
-        document.querySelector('#phq9-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        form.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 0);
     });
 

@@ -70,3 +70,9 @@ test("privacy policy does not claim to store item 9 status", () => {
   assert.match(privacy, /date, total score, and severity band/);
   assert.doesNotMatch(privacy, /whether item 9 was positive/);
 });
+
+test("positive item 9 reveals safety support immediately and handles the safety answer without requiring a total", () => {
+  assert.match(page, /const item9Positive = responses\[8\] !== null && responses\[8\] > 0;\s+safetySection\.hidden = !item9Positive;/);
+  assert.match(page, /const item9Score = getResponses\(\)\[8\];\s+if \(item9Score === null \|\| item9Score <= 0\) return;/);
+  assert.doesNotMatch(page, /if \(!currentResult \|\| !currentResult\.requiresSafetyFollowUp\) return;/);
+});

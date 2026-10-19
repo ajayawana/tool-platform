@@ -45,6 +45,18 @@ test("privacy and consent disclosures are present and no user identity fields ar
   assert.match(page, /localStorage/);
 });
 
+test("item 9 safety follow-up is visible even when another core item is unanswered", () => {
+  const incompleteBranch = page.slice(
+    page.indexOf("if (!result.complete)"),
+    page.indexOf("const scoreTotal = Number(result.total)")
+  );
+  assert.match(incompleteBranch, /if \(item9Positive\)/);
+  assert.match(incompleteBranch, /resultPanel\.hidden = false/);
+  assert.match(incompleteBranch, /safetySection\.hidden = false/);
+  assert.match(incompleteBranch, /#results-heading').textContent = 'Safety follow-up'/);
+  assert.match(incompleteBranch, /\.score-summary').hidden = true/);
+});
+
 test("official source attribution, limitations, and India support references are visible", () => {
   assert.match(page, /Kroenke K, Spitzer RL, Williams JBW/);
   assert.match(page, /not been clinically validated/);

@@ -83,6 +83,8 @@ const route = base + 'tools/assessments/' + instrument.id + '/';
       <p class="eyebrow">Your result</p>
       <h2 id="results-heading" tabindex="-1">Screening result</h2>
       <div class="score-row"><p class="score" id="score-value"></p><p id="score-band" class="score-band"></p></div>
+      <p id="result-date" class="muted"></p>
+      <p class="print-only">Screening result only. This does not diagnose a condition and is not a substitute for professional assessment.</p>
       <p id="result-summary" class="result-summary" aria-live="polite"></p>
       <h3>What this result can tell you</h3>
       <p id="result-meaning"></p>
@@ -95,7 +97,7 @@ const route = base + 'tools/assessments/' + instrument.id + '/';
         <button type="button" id="print-result">Print / Save as PDF</button>
         <button type="button" id="retake" class="secondary-button">Retake assessment</button>
         <a href={base + 'assessments/'} class="exit-link">Return to assessment centre</a>
-        {instrument.id !== 'phq-9' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
+        {instrument.id === 'phq-2' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
       </div>
     </section>
 
@@ -150,9 +152,11 @@ const route = base + 'tools/assessments/' + instrument.id + '/';
       const limitation = document.querySelector<HTMLElement>('#result-limitations');
       const nextSteps = document.querySelector<HTMLElement>('#result-next-steps');
       const functional = document.querySelector<HTMLElement>('#functional-result');
+      const resultDate = document.querySelector<HTMLElement>('#result-date');
 
       if (scoreValue) scoreValue.textContent = scored.total + ' / ' + instrument.maxScore;
       if (scoreBand) scoreBand.textContent = scored.interpretation;
+      if (resultDate) resultDate.textContent = 'Generated on ' + new Date().toLocaleDateString() + '. Answers and results are not saved by this page.';
       if (summary) {
         if (instrument.id === 'gad-7') {
           summary.textContent = scored.screenPositive
@@ -248,7 +252,7 @@ const route = base + 'tools/assessments/' + instrument.id + '/';
     .secondary-button{background:#e2e8f0;color:#0f172a}
     .exit-link{display:inline-block;padding:10px 4px;color:#1d4ed8;font-weight:800;text-decoration:underline}
     .score-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-    .score{font-size:2.2rem;font-weight:900;line-height:1.2;margin:8px 0}
+    .print-only{display:none}.score{font-size:2.2rem;font-weight:900;line-height:1.2;margin:8px 0}
     .score-band{padding:7px 12px;border-radius:999px;background:#eff6ff;color:#1e40af;font-weight:800}
     .result-summary{font-size:1.1rem;font-weight:750}
     .source-panel{max-width:860px;padding:30px 0}
@@ -258,6 +262,6 @@ const route = base + 'tools/assessments/' + instrument.id + '/';
     [hidden]{display:none!important}
     @media(max-width:600px){.options{grid-template-columns:1fr}.question{padding:15px}.notice{padding:16px}.form-actions button,.result-actions button{width:100%}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
-    @media print{.site-header,footer,.form-actions,.result-actions,.breadcrumbs,.notice,.assessment-box,.source-panel{display:none!important}.tool-wrap{padding:0}.results-box{display:block!important;border:0;box-shadow:none;padding:0;max-width:none}.results-box[hidden]{display:none!important}body{background:#fff;color:#000;font-size:12pt}.score-band{border:1px solid #888;background:#fff;color:#000}}
+    @media print{.site-header,footer,.form-actions,.result-actions,.breadcrumbs,.notice,.assessment-box{display:none!important}.source-panel{display:block!important}.print-only{display:block!important}.tool-wrap{padding:0}.results-box{display:block!important;border:0;box-shadow:none;padding:0;max-width:none}.results-box[hidden]{display:none!important}body{background:#fff;color:#000;font-size:12pt}.score-band{border:1px solid #888;background:#fff;color:#000}}
   </style>
 </Layout>

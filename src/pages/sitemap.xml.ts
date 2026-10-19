@@ -24,6 +24,7 @@ export const GET: APIRoute = ({ site }) => {
     '/privacy/',
     '/terms/',
     '/disclaimer/',
+    '/tools/phq-9/',
     '/dairy/',
     '/niche/accounting/',
     '/niche/tax/',

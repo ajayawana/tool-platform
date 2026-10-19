@@ -14,6 +14,9 @@ test("assessment centre and every implemented short-screen route are linked into
     "'/tools/assessments/phq-2/'",
     "'/tools/assessments/gad-7/'",
     "'/tools/assessments/gad-2/'",
+    "'/tools/assessments/pcl-5/'",
+    "'/tools/assessments/pc-ptsd-5/'",
+    "'/tools/assessments/lec-5/'",
   ]) assert.ok(sitemap.includes(route), "sitemap missing " + route);
 });
 
@@ -35,7 +38,9 @@ test("catalogue supports browser-only search, domain and deployment-status filte
 });
 
 test("catalogue clearly distinguishes catalogue-only entries from usable assessment routes", () => {
-  assert.match(catalogue, /No questionnaire or score is provided for this entry/);
+  assert.match(catalogue, /No questionnaire or score is provided by Ozarbox for this entry/);
+  assert.match(catalogue, /instrument.access_url/);
+  assert.match(catalogue, /instrument.access_label/);
   assert.match(catalogue, /not a claim of clinical validation or institutional approval/i);
   assert.match(catalogue, /Ozarbox does not monitor patient answers, alert a clinician/);
   assert.match(catalogue, /permission.*evidence.*qualification/i);

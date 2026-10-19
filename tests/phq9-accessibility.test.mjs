@@ -76,3 +76,12 @@ test("positive item 9 reveals safety support immediately and handles the safety 
   assert.match(page, /const item9Score = getResponses\(\)\[8\];\s+if \(item9Score === null \|\| item9Score <= 0\) return;/);
   assert.doesNotMatch(page, /if \(!currentResult \|\| !currentResult\.requiresSafetyFollowUp\) return;/);
 });
+
+test("item-9 safety follow-up is inside the results region so it remains visible with the result", () => {
+  const resultsStart = page.indexOf('<section id="results"');
+  const safetyStart = page.indexOf('<section id="safety-section"');
+  const resultsEnd = page.indexOf('</section>', page.indexOf('<section class="history-save"'));
+  assert.ok(resultsStart >= 0, "results section exists");
+  assert.ok(safetyStart > resultsStart, "safety follow-up appears after the results section starts");
+  assert.ok(resultsEnd > safetyStart, "safety follow-up appears before the results section ends");
+});

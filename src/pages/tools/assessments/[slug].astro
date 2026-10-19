@@ -2,6 +2,8 @@
 import Layout from '../../../layouts/Layout.astro';
 import { BRIEF_ASSESSMENTS, BRIEF_RESPONSE_OPTIONS } from '../../../lib/brief-assessments.js';
 import { PUBLIC_DOMAIN_ASSESSMENTS } from '../../../lib/public-domain-assessments.js';
+import type { BriefAssessmentResult } from '../../../lib/brief-assessments.js';
+import type { PublicDomainAssessmentResult } from '../../../lib/public-domain-assessments.js';
 
 export function getStaticPaths() {
   const assessments = { ...BRIEF_ASSESSMENTS, ...PUBLIC_DOMAIN_ASSESSMENTS };
@@ -17,6 +19,8 @@ const questionCount = instrument.kind === 'exposure-checklist' ? instrument.even
   : instrument.kind === 'yes-no-branch' ? instrument.items.length + 1
   : instrument.items.length;
 const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
+const hasFunctionalImpact = 'functionalImpact' in instrument && Boolean(instrument.functionalImpact);
+const functionalImpact = hasFunctionalImpact ? instrument.functionalImpact : null;
 ---
 <Layout title={instrument.officialName + ' | Ozarbox'} description={instrument.purpose + '. Browser-only assessment with deterministic scoring or an explicitly unscored exposure summary.'} robots="index,follow,max-image-preview:large">
   <section class="container tool-wrap" aria-labelledby="page-title">
@@ -115,19 +119,19 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
           </>
         )}
 
-        {instrument.functionalImpact && (
+        {functionalImpact && (
           <fieldset class="question functional-impact" id="functional-impact">
             <legend>Daily-life impact (not included in the score)</legend>
-            <p>{instrument.functionalImpact.label}</p>
+            <p>{functionalImpact.label}</p>
             <div class="options">
-              {instrument.functionalImpact.options.map((option, index) => (
+              {functionalImpact.options.map((option: string, index: number) => (
                 <label class="option">
                   <input type="radio" name="functional-impact" value={index} />
                   <span>{option}</span>
                 </label>
               ))}
             </div>
-            <p class="muted">{instrument.functionalImpact.note}</p>
+            <p class="muted">{functionalImpact.note}</p>
           </fieldset>
         )}
 
@@ -207,7 +211,7 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
     const fieldsets = [...document.querySelectorAll<HTMLFieldSetElement>('#assessment-form fieldset[data-question]')];
     const exposureFieldsets = [...document.querySelectorAll<HTMLFieldSetElement>('#assessment-form fieldset.exposure-question')];
 
-    function readResponses() {
+    function readResponses(): Array<number | string | string[] | null> {
       if (kind === 'exposure-checklist') {
         return exposureFieldsets.map((fieldset) => [...fieldset.querySelectorAll<HTMLInputElement>('input[type="checkbox"]:checked')].map((input) => input.value));
       }
@@ -218,13 +222,13 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
       });
     }
 
-    function answeredCount(responses) {
+    function answeredCount(responses: Array<number | string | string[] | null>): number {
       if (kind === 'exposure-checklist') return responses.filter((value) => Array.isArray(value) && value.length > 0).length;
       if (kind === 'yes-no-branch' && responses[0] === 'no') return 1;
       return responses.filter((value) => value !== null && value !== undefined && value !== '').length;
     }
 
-    function updateProgress() {
+    function updateProgress(): void {
       const responses = readResponses();
       const answered = answeredCount(responses);
       const exposure = kind === 'yes-no-branch' ? responses[0] : null;
@@ -240,7 +244,7 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
       }
     }
 
-    function updateBranch() {
+    function updateBranch(): void {
       if (kind !== 'yes-no-branch') return;
       const exposure = exposureQuestion?.querySelector<HTMLInputElement>('input[type="radio"]:checked')?.value;
       const show = exposure === 'yes';
@@ -260,12 +264,12 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
       updateProgress();
     }
 
-    function selectedFunctionalImpact() {
+    function selectedFunctionalImpact(): string | null {
       const selected = document.querySelector<HTMLInputElement>('input[name="functional-impact"]:checked');
-      return selected && instrument?.functionalImpact ? instrument.functionalImpact.options[Number(selected.value)] : null;
+      return selected && functionalImpact ? functionalImpact.options[Number(selected.value)] : null;
     }
 
-    function setListItems(container, entries) {
+    function setListItems(container: HTMLElement | null, entries: string[]): void {
       if (!container) return;
       container.replaceChildren();
       for (const entry of entries) {
@@ -275,7 +279,7 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
       }
     }
 
-    function renderResult(scored) {
+    function renderResult(scored: BriefAssessmentResult | PublicDomainAssessmentResult): void {
       if (!instrument || !results) return;
       const scoreValue = document.querySelector<HTMLElement>('#score-value');
       const scoreBand = document.querySelector<HTMLElement>('#score-band');
@@ -353,7 +357,7 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
       if (exposureSummary) {
         const showSummary = instrument.id === 'lec-5' && Array.isArray(scored.summary);
         exposureSummary.hidden = !showSummary;
-        if (showSummary) setListItems(document.querySelector<HTMLElement>('#exposure-summary-list'), scored.summary.map((row) => row.event + ': ' + row.responses.join('; ')));
+        if (showSummary) setListItems(document.querySelector<HTMLElement>('#exposure-summary-list'), scored.summary.map((row: { event: string; responses: string[] }) => row.event + ': ' + row.responses.join('; ')));
       }
 
       if (functional) {
@@ -377,11 +381,11 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
       event.preventDefault();
       if (!instrument || !validation) return;
       const responses = readResponses();
-      let scored;
+      let scored: BriefAssessmentResult | PublicDomainAssessmentResult;
       try {
         scored = kind === 'likert' && ['phq-2', 'gad-7', 'gad-2'].includes(instrument.id)
-          ? scoreBriefAssessment(instrument.id, responses)
-          : scorePublicDomainAssessment(instrument.id, responses);
+          ? scoreBriefAssessment(instrument.id, responses as Array<number | null>)
+          : scorePublicDomainAssessment(instrument.id, responses as never);
       } catch (error) {
         validation.textContent = error instanceof Error ? error.message : 'The response values could not be checked. Please review your answers.';
         validation.hidden = false;

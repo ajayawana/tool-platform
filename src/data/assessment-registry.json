@@ -2374,12 +2374,13 @@
       "language": "English",
       "recall_period": "Past two weeks",
       "permission_status": "Source permission documented for the exact short-screen family/version; still requires local governance review.",
-      "content_rights": "Derived from the first two GAD-7 items; GAD-7 has public-access documentation. The short-form threshold and local use still need clinician review.",
+      "content_rights": "Public-domain status reported for GAD-7/GAD-2; exact version and setting-specific use still need review.",
       "scoring_specification": "Deterministic total 0-6 using first two GAD-7 items; >=3 commonly used screening threshold. Not diagnostic; threshold requires clinician/context review.",
       "evidence_status": "Primary/authoritative source available; software clinical validation remains outstanding.",
       "evidence_sources": [
-        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
-        "https://pubmed.ncbi.nlm.nih.gov/17339617/"
+        "https://pubmed.ncbi.nlm.nih.gov/17339617/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11934853/",
+        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care"
       ],
       "safety_rules": [
         "Positive result is not a diagnosis; follow up with a clinician when symptoms, impairment or concern persist.",
@@ -2412,12 +2413,12 @@
       "language": "English",
       "recall_period": "Past two weeks",
       "permission_status": "Source permission documented for the exact short-screen family/version; still requires local governance review.",
-      "content_rights": "Pfizer states public access without copyright restriction and at no charge for GAD-7; this does not validate this website.",
+      "content_rights": "Public-domain status reported in published sources; exact version, translation and institutional terms still need review.",
       "scoring_specification": "Deterministic total 0-21, each response 0-3; standard symptom bands 0-4, 5-9, 10-14, 15-21; >=10 commonly used threshold for further assessment. Not diagnostic.",
       "evidence_status": "Primary/authoritative source available; software clinical validation remains outstanding.",
       "evidence_sources": [
-        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
-        "https://pubmed.ncbi.nlm.nih.gov/16717171/"
+        "https://pubmed.ncbi.nlm.nih.gov/16717171/",
+        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care"
       ],
       "safety_rules": [
         "Positive result is not a diagnosis; follow up with a clinician when symptoms, impairment or concern persist.",
@@ -4156,12 +4157,13 @@
       "language": "English",
       "recall_period": "Past two weeks",
       "permission_status": "Source permission documented for the exact short-screen family/version; still requires local governance review.",
-      "content_rights": "PHQ family public-access announcement states no copyright restriction and no charge; exact implementation still needs local clinical validation.",
+      "content_rights": "Public-access PHQ-family documentation; verify exact form and local terms before clinical use.",
       "scoring_specification": "Deterministic total 0-6, each response 0-3; commonly used positive screen threshold >=3. Not diagnostic.",
       "evidence_status": "Primary/authoritative source available; software clinical validation remains outstanding.",
       "evidence_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/14583691/",
         "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
-        "https://pubmed.ncbi.nlm.nih.gov/14583691/"
+        "https://cde.nlm.nih.gov/formView?tinyId=mJsGoMU1m"
       ],
       "safety_rules": [
         "Positive result is not a diagnosis; follow up with a clinician when symptoms, impairment or concern persist.",

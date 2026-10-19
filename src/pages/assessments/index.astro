@@ -10,7 +10,8 @@ const countsByDomain = domains.map((domain) => ({
   ...domain,
   count: instruments.filter((item) => item.domains.some((d) => d.id === domain.id)).length,
 }));
-const labelForStatus = (status) => ({
+type DeploymentStatus = 'implemented-unvalidated' | 'catalogue-only' | 'permission-review' | 'restricted' | 'disabled';
+const labelForStatus = (status: DeploymentStatus): string => ({
   'implemented-unvalidated': 'Available · unvalidated',
   'catalogue-only': 'Catalogue only',
   'permission-review': 'Permission / clinical review',
@@ -81,8 +82,7 @@ const labelForStatus = (status) => ({
         {instruments.map((instrument) => {
           const domainIds = instrument.domains.map((domain) => domain.id).join(' ');
           const domainLabels = instrument.domains.map((domain) => domain.label).join(' ');
-          const sourceText = instrument.evidence_sources.length ? instrument.evidence_sources.join(' ') : '';
-          return (
+                    return (
             <article
               class="instrument-card"
               data-instrument-id={instrument.instrument_id}

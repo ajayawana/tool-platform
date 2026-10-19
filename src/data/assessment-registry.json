@@ -104,7 +104,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "academic-motivation-scale",
@@ -134,7 +138,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ace-iii",
@@ -164,7 +172,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "adhd-rating-scale-5",
@@ -194,7 +206,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "adi-r",
@@ -224,7 +240,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "adis-5",
@@ -254,7 +274,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ados-2",
@@ -284,7 +308,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "altman-self-rating-mania-scale-asrm",
@@ -314,7 +342,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "aq-autism-spectrum-quotient",
@@ -344,7 +376,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "asi-3",
@@ -374,7 +410,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "asq-3",
@@ -404,7 +444,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "asq-se-2",
@@ -434,7 +478,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "asrs-v1-1",
@@ -464,7 +512,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "assist",
@@ -494,7 +546,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "World Health Organization",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "audit",
@@ -524,7 +580,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "World Health Organization",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "audit-c",
@@ -554,7 +614,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "bai",
@@ -584,7 +648,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "basc-3",
@@ -614,7 +682,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "bdi-ii",
@@ -644,7 +716,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "bergen-social-media-addiction-scale",
@@ -674,7 +750,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "bes-binge-eating-scale",
@@ -704,7 +784,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "bfi-2",
@@ -734,7 +818,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "boston-naming-test",
@@ -764,7 +852,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "brief-resilience-scale",
@@ -794,7 +886,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "brief-2",
@@ -824,7 +920,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "brown-add-scales",
@@ -854,7 +954,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "bsi",
@@ -884,7 +988,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "bsi-18",
@@ -914,7 +1022,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "c-ssrs",
@@ -944,7 +1056,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "cage-aid",
@@ -974,7 +1090,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "caps-5",
@@ -1004,7 +1124,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Professional-use / rights review required"
+      "license_status": "Professional-use / rights review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "career-adapt-abilities-scale",
@@ -1034,7 +1158,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "career-decision-making-difficulties-questionnaire",
@@ -1064,7 +1192,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "cbcl",
@@ -1094,7 +1226,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "cd-risc",
@@ -1124,7 +1260,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "cdi-2",
@@ -1154,7 +1294,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ces-d",
@@ -1184,7 +1328,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "cia-clinical-impairment-assessment",
@@ -1214,7 +1362,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "cidi",
@@ -1244,7 +1396,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "compulsive-buying-scale",
@@ -1274,7 +1430,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "conflict-tactics-scales",
@@ -1304,7 +1464,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "conners-scales",
@@ -1334,7 +1498,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "connor-davidson-social-support-scale-variants",
@@ -1364,7 +1532,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "copenhagen-burnout-inventory",
@@ -1394,7 +1566,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "core-om",
@@ -1424,7 +1600,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "csi-couples-satisfaction-index",
@@ -1454,7 +1634,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "cvlt",
@@ -1484,7 +1668,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "d-kefs",
@@ -1514,7 +1702,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "das-revised-dyadic-adjustment-scale",
@@ -1544,7 +1736,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "dass-21",
@@ -1574,7 +1770,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "dast-10",
@@ -1604,7 +1804,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "dcdq",
@@ -1634,7 +1838,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "des-ii",
@@ -1664,7 +1872,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "digit-span",
@@ -1694,7 +1906,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "diva-5",
@@ -1724,7 +1940,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "docs",
@@ -1754,7 +1974,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "dss-b",
@@ -1784,7 +2008,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ecr-r",
@@ -1814,7 +2042,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ede-q",
@@ -1844,7 +2076,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "eq-5d",
@@ -1874,7 +2110,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ess-epworth-sleepiness-scale",
@@ -1904,7 +2144,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "experiences-in-close-relationships-scales",
@@ -1934,7 +2178,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "faces-iv",
@@ -1964,7 +2212,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "fagerstrom-test",
@@ -1994,7 +2246,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "family-apgar",
@@ -2024,7 +2280,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "flourishing-scale",
@@ -2054,7 +2314,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "fq-fear-questionnaire",
@@ -2084,7 +2348,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "gad-2",
@@ -2118,7 +2386,11 @@
       "software_validation": "Automated code tests run in CI; this website has not been independently clinically validated. Manual accessibility evaluation remains outstanding.",
       "route": "/tools/assessments/gad-2/",
       "scoring_version": "Deterministic total 0-6 using first two GAD-7 items; >=3 commonly used screening threshold. Not diagnostic; threshold requires clinician/context review.",
-      "license_status": "Source permission documented for the exact short-screen family/version; still requires local governance review."
+      "license_status": "Source permission documented for the exact short-screen family/version; still requires local governance review.",
+      "author_or_developer": "Kroenke, Spitzer, Williams, Monahan and Löwe (2007)",
+      "language_validation_status": "English-only module. No local-language translation or local norm validation is claimed.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation."
     },
     {
       "instrument_id": "gad-7",
@@ -2152,7 +2424,11 @@
       "software_validation": "Automated code tests run in CI; this website has not been independently clinically validated. Manual accessibility evaluation remains outstanding.",
       "route": "/tools/assessments/gad-7/",
       "scoring_version": "Deterministic total 0-21, each response 0-3; standard symptom bands 0-4, 5-9, 10-14, 15-21; >=10 commonly used threshold for further assessment. Not diagnostic.",
-      "license_status": "Source permission documented for the exact short-screen family/version; still requires local governance review."
+      "license_status": "Source permission documented for the exact short-screen family/version; still requires local governance review.",
+      "author_or_developer": "Spitzer, Kroenke, Williams and Löwe (2006)",
+      "language_validation_status": "English-only module. No local-language translation or local norm validation is claimed.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation."
     },
     {
       "instrument_id": "general-self-efficacy-scale",
@@ -2182,7 +2458,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ghq-12",
@@ -2212,7 +2492,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "hads",
@@ -2242,7 +2526,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "hcl-32",
@@ -2272,7 +2560,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "hexaco-pi-r",
@@ -2302,7 +2594,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "holland-riasec-measures",
@@ -2332,7 +2628,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "icg-inventory-of-complicated-grief",
@@ -2362,7 +2662,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ies-r",
@@ -2392,7 +2696,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "iip-32",
@@ -2422,7 +2730,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "internet-gaming-disorder-scale",
@@ -2452,7 +2764,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ipip-scales",
@@ -2482,7 +2798,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "isi-insomnia-severity-index",
@@ -2512,7 +2832,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "itq",
@@ -2542,7 +2866,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "k-sads-pl",
@@ -2572,7 +2900,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "k10",
@@ -2602,7 +2934,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "k6",
@@ -2632,7 +2968,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "kbit-2",
@@ -2662,7 +3002,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "learning-and-study-strategies-inventory",
@@ -2692,7 +3036,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "lec-5",
@@ -2722,7 +3070,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Public domain content, but professional-use/governance gate remains"
+      "license_status": "Public domain content, but professional-use/governance gate remains",
+      "author_or_developer": "U.S. National Center for PTSD; see linked official measure page",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "lsas",
@@ -2752,7 +3104,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "lsns-6",
@@ -2782,7 +3138,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "m-chat-r-f",
@@ -2812,7 +3172,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "maslach-burnout-inventory",
@@ -2842,7 +3206,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "mcmi-iv",
@@ -2872,7 +3240,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "mdq",
@@ -2902,7 +3274,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "meaning-in-life-questionnaire",
@@ -2932,7 +3308,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "mfq",
@@ -2962,7 +3342,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "mini",
@@ -2992,7 +3376,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "mini-spin",
@@ -3022,7 +3410,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "mmpi-3",
@@ -3052,7 +3444,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "mmse",
@@ -3082,7 +3478,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "moca",
@@ -3112,7 +3512,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "motivated-strategies-for-learning-questionnaire",
@@ -3142,7 +3546,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "msi-bpd",
@@ -3172,7 +3580,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "mspss",
@@ -3202,7 +3614,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "neo-pi-3",
@@ -3232,7 +3648,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "o-net-interest-profiler",
@@ -3262,7 +3682,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "oci-r",
@@ -3292,7 +3716,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "oq-45-2",
@@ -3322,7 +3750,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "pai",
@@ -3352,7 +3784,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "panas",
@@ -3382,7 +3818,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "parenting-scale",
@@ -3412,7 +3852,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "parenting-stress-index",
@@ -3442,7 +3886,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "pas-panic-and-agoraphobia-scale",
@@ -3472,7 +3920,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "pc-ptsd-5",
@@ -3502,7 +3954,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Public domain content, but professional-use/governance gate remains"
+      "license_status": "Public domain content, but professional-use/governance gate remains",
+      "author_or_developer": "U.S. National Center for PTSD",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "pcl-5",
@@ -3532,7 +3988,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Public domain content, but professional-use/governance gate remains"
+      "license_status": "Public domain content, but professional-use/governance gate remains",
+      "author_or_developer": "Weathers and colleagues; U.S. National Center for PTSD (2013)",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "pdss",
@@ -3562,7 +4022,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "pedsql",
@@ -3592,7 +4056,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "perceived-stress-scale-pss-10",
@@ -3622,7 +4090,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "pg-13-r",
@@ -3652,7 +4124,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "phq-2",
@@ -3686,7 +4162,11 @@
       "software_validation": "Automated code tests run in CI; this website has not been independently clinically validated. Manual accessibility evaluation remains outstanding.",
       "route": "/tools/assessments/phq-2/",
       "scoring_version": "Deterministic total 0-6, each response 0-3; commonly used positive screen threshold >=3. Not diagnostic.",
-      "license_status": "Source permission documented for the exact short-screen family/version; still requires local governance review."
+      "license_status": "Source permission documented for the exact short-screen family/version; still requires local governance review.",
+      "author_or_developer": "Kroenke, Spitzer and Williams (2003)",
+      "language_validation_status": "English-only module. No local-language translation or local norm validation is claimed.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation."
     },
     {
       "instrument_id": "phq-9",
@@ -3721,7 +4201,11 @@
       "software_validation": "Automated code tests run in CI; this website has not been independently clinically validated. Manual accessibility evaluation remains outstanding.",
       "route": "/tools/phq-9/",
       "scoring_version": "Deterministic PHQ-9 scoring engine; automated tests present.",
-      "license_status": "Source permission documented for the exact short-screen family/version; still requires local governance review."
+      "license_status": "Source permission documented for the exact short-screen family/version; still requires local governance review.",
+      "author_or_developer": "Kroenke, Spitzer and Williams (2001)",
+      "language_validation_status": "English-only module. No local-language translation or local norm validation is claimed.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation."
     },
     {
       "instrument_id": "pid-5",
@@ -3751,7 +4235,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "problem-gambling-severity-index-pgsi",
@@ -3781,7 +4269,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "psc",
@@ -3811,7 +4303,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "psqi",
@@ -3841,7 +4337,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "pss-i-5",
@@ -3871,7 +4371,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "pswq",
@@ -3901,7 +4405,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "qids-sr",
@@ -3931,7 +4439,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "raads-r",
@@ -3961,7 +4473,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "raven-s-progressive-matrices",
@@ -3991,7 +4507,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ravlt",
@@ -4021,7 +4541,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "rbans",
@@ -4051,7 +4575,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "rcads",
@@ -4081,7 +4609,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "relationship-assessment-scale",
@@ -4111,7 +4643,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "rey-complex-figure-test",
@@ -4141,7 +4677,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "rosenberg-self-esteem-scale",
@@ -4171,7 +4711,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "sapas",
@@ -4201,7 +4745,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "satisfaction-with-life-scale",
@@ -4231,7 +4779,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "sbq-r",
@@ -4261,7 +4813,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "scan",
@@ -4291,7 +4847,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "scared",
@@ -4321,7 +4881,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "scid-5-cv",
@@ -4351,7 +4915,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "scid-5-pd",
@@ -4381,7 +4949,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "scl-90-r",
@@ -4411,7 +4983,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "scoff",
@@ -4441,7 +5017,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "scq",
@@ -4471,7 +5051,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "sdq-strengths-and-difficulties-questionnaire",
@@ -4501,7 +5085,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "sf-36-sf-12",
@@ -4531,7 +5119,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "sheehan-disability-scale-sds",
@@ -4561,7 +5153,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "sitbi",
@@ -4591,7 +5187,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "snap-iv",
@@ -4621,7 +5221,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "spin",
@@ -4651,7 +5255,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "srs-2",
@@ -4681,7 +5289,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "stanford-binet",
@@ -4711,7 +5323,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "stop-bang",
@@ -4741,7 +5357,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "strong-interest-inventory",
@@ -4771,7 +5391,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "stroop-tests",
@@ -4801,7 +5425,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "symbol-digit-modalities-test",
@@ -4831,7 +5459,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "tomm",
@@ -4861,7 +5493,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "trail-making-test",
@@ -4891,7 +5527,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "trf",
@@ -4921,7 +5561,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ucla-loneliness-scale",
@@ -4951,7 +5595,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "utrecht-work-engagement-scale",
@@ -4981,7 +5629,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "vanderbilt-scales",
@@ -5011,7 +5663,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "vineland-3",
@@ -5041,7 +5697,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "wais",
@@ -5071,7 +5731,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "who-5",
@@ -5101,7 +5765,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Professional-use / rights review required"
+      "license_status": "Professional-use / rights review required",
+      "author_or_developer": "WHO-5; copyright assigned to WHO in 2024",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "whodas-2-0",
@@ -5131,7 +5799,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "World Health Organization",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "whoqol-bref",
@@ -5161,7 +5833,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "wisc",
@@ -5191,7 +5867,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "wisconsin-card-sorting-test",
@@ -5221,7 +5901,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "woodcock-johnson",
@@ -5251,7 +5935,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "work-and-social-adjustment-scale",
@@ -5281,7 +5969,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "work-related-stress-measures",
@@ -5311,7 +6003,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "wppsi",
@@ -5341,7 +6037,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required"
+      "license_status": "Permission / rights-holder review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "y-bocs",
@@ -5371,7 +6071,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Professional-use / rights review required"
+      "license_status": "Professional-use / rights review required",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ymrs",
@@ -5401,7 +6105,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
       "instrument_id": "ysr",
@@ -5431,7 +6139,11 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content."
+      "license_status": "Not yet verified; do not reproduce item content.",
+      "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
+      "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
+      "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
+      "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     }
   ]
 }

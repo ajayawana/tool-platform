@@ -79,25 +79,7 @@ const base = import.meta.env.BASE_URL;
       </div>
       <p class="result-caution">This score describes symptom frequency only. It is not a diagnosis and should be interpreted alongside your circumstances, functioning, medical history and a conversation with a qualified professional. A low score does not rule out a mental health concern.</p>
 
-    <section id="safety-section" class="safety-card" aria-labelledby="safety-heading" hidden>
-        <p class="eyebrow">Important follow-up · Separate from the score</p>
-        <h3 id="safety-heading">Thank you for answering honestly.</h3>
-        <p>Your response to item 9 indicates thoughts of being better off dead or of hurting yourself at least some of the time. This does not tell us whether you are in immediate danger, so we will not assume. Your safety matters, and you deserve support.</p>
-        <fieldset class="safety-question">
-          <legend>Are you in immediate danger right now, or do you feel you might act on these thoughts?</legend>
-          <div class="answer-options safety-options">
-            <label class="answer-option" for="safety-yes"><input id="safety-yes" type="radio" name="immediate-safety" value="yes"><span class="custom-radio" aria-hidden="true"></span><span class="answer-label">Yes</span></label>
-            <label class="answer-option" for="safety-no"><input id="safety-no" type="radio" name="immediate-safety" value="no"><span class="custom-radio" aria-hidden="true"></span><span class="answer-label">No</span></label>
-            <label class="answer-option" for="safety-unsure"><input id="safety-unsure" type="radio" name="immediate-safety" value="unsure"><span class="custom-radio" aria-hidden="true"></span><span class="answer-label">I'm not sure</span></label>
-          </div>
-        </fieldset>
-        <div id="safety-advice" class="safety-advice" role="alert" aria-live="assertive">Choose the option that best describes how you feel right now. If you cannot stay safe, seek urgent in-person help now.</div>
-        <div class="crisis-resources">
-          <p><strong>If you may act on these thoughts or cannot stay safe:</strong> contact your local emergency service now, go to the nearest emergency department, and if possible stay with someone you trust and move away from anything you could use to hurt yourself.</p>
-          <p><strong>In India:</strong> call <a href="https://112.gov.in/" target="_blank" rel="noopener noreferrer">112 for emergency assistance</a>. You can also call <a href="https://www.dghs.mohfw.gov.in/national-mental-health-programme.php" target="_blank" rel="noopener noreferrer">Tele-MANAS at 14416</a> for free, 24/7 mental-health support.</p>
-          <p>If you are elsewhere, use your local emergency number or a verified crisis service in your country. If there is no immediate danger, please still contact a mental-health professional or trusted person promptly and tell them what you have been experiencing.</p>
-        </div>
-      </section>
+
 
         <section class="next-steps" aria-labelledby="next-steps-heading">
         <h3 id="next-steps-heading">Suggested next steps</h3>
@@ -117,6 +99,26 @@ const base = import.meta.env.BASE_URL;
         <div id="history-panel" class="history-panel" hidden><h4>Saved score history</h4><p class="field-help">This list is stored only in this browser. Use “Delete saved history” to remove it.</p><ol id="history-list"></ol></div>
       </section>
     </section>
+
+    <section id="safety-section" class="safety-card" aria-labelledby="safety-heading" hidden>
+        <p class="eyebrow">Important follow-up · Separate from the score</p>
+        <h3 id="safety-heading" tabindex="-1">Thank you for answering honestly.</h3>
+        <p>Your response to item 9 indicates thoughts of being better off dead or of hurting yourself at least some of the time. This does not tell us whether you are in immediate danger, so we will not assume. Your safety matters, and you deserve support.</p>
+        <fieldset class="safety-question">
+          <legend>Are you in immediate danger right now, or do you feel you might act on these thoughts?</legend>
+          <div class="answer-options safety-options">
+            <label class="answer-option" for="safety-yes"><input id="safety-yes" type="radio" name="immediate-safety" value="yes"><span class="custom-radio" aria-hidden="true"></span><span class="answer-label">Yes</span></label>
+            <label class="answer-option" for="safety-no"><input id="safety-no" type="radio" name="immediate-safety" value="no"><span class="custom-radio" aria-hidden="true"></span><span class="answer-label">No</span></label>
+            <label class="answer-option" for="safety-unsure"><input id="safety-unsure" type="radio" name="immediate-safety" value="unsure"><span class="custom-radio" aria-hidden="true"></span><span class="answer-label">I'm not sure</span></label>
+          </div>
+        </fieldset>
+        <div id="safety-advice" class="safety-advice" role="alert" aria-live="assertive">Choose the option that best describes how you feel right now. If you cannot stay safe, seek urgent in-person help now.</div>
+        <div class="crisis-resources">
+          <p><strong>If you may act on these thoughts or cannot stay safe:</strong> contact your local emergency service now, go to the nearest emergency department, and if possible stay with someone you trust and move away from anything you could use to hurt yourself.</p>
+          <p><strong>In India:</strong> call <a href="https://112.gov.in/" target="_blank" rel="noopener noreferrer">112 for emergency assistance</a>. You can also call <a href="https://www.dghs.mohfw.gov.in/national-mental-health-programme.php" target="_blank" rel="noopener noreferrer">Tele-MANAS at 14416</a> for free, 24/7 mental-health support.</p>
+          <p>If you are elsewhere, use your local emergency number or a verified crisis service in your country. If there is no immediate danger, please still contact a mental-health professional or trusted person promptly and tell them what you have been experiencing.</p>
+        </div>
+      </section>
 
     <section class="information-grid" aria-label="About this assessment">
       <article class="info-card"><h2>What this tool can and cannot do</h2><p>The PHQ-9 is a screening and symptom-severity measure. A score can help structure a conversation or monitor change, but it cannot establish a diagnosis, determine the cause of symptoms, or replace clinical judgement. Results may be affected by context, medical conditions, language, culture and the population in which the tool is used.</p></article>
@@ -159,6 +161,7 @@ const base = import.meta.env.BASE_URL;
     const historyList = mustGet<HTMLOListElement>('#history-list');
     const STORAGE_KEY = 'ozarbox.phq9.score-history.v1';
     let currentResult: { total: number; severity: string; item9Positive: boolean; requiresSafetyFollowUp: boolean } | null = null;
+    let safetyWasVisible = false;
 
     const getResponses = () => Array.from({ length: 9 }, (_, index) => {
       const selected = form.querySelector<HTMLInputElement>('input[name="q' + (index + 1) + '"]:checked');
@@ -176,9 +179,13 @@ const base = import.meta.env.BASE_URL;
       difficultyQuestion.hidden = !responses.some((value) => value !== null && value > 0);
       const item9Positive = responses[8] !== null && responses[8] > 0;
       safetySection.hidden = !item9Positive;
-      if (item9Positive) {
+      if (!item9Positive) {
+        document.querySelectorAll<HTMLInputElement>('input[name="immediate-safety"]').forEach((input) => { input.checked = false; });
         safetyAdvice.textContent = 'Choose the option that best describes how you feel right now. If you cannot stay safe, seek urgent in-person help now.';
+      } else if (!safetyWasVisible) {
+        safetySection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
+      safetyWasVisible = item9Positive;
     };
 
     const getHistory = () => {
@@ -258,8 +265,13 @@ const base = import.meta.env.BASE_URL;
       saveStatus.textContent = '';
       saveButton.disabled = !consent.checked;
       resultPanel.hidden = false;
-      resultPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      mustGet<HTMLHeadingElement>('#results-heading').focus({ preventScroll: true });
+      if (result.requiresSafetyFollowUp) {
+        safetySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        mustGet<HTMLHeadingElement>('#safety-heading').focus({ preventScroll: true });
+      } else {
+        resultPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        mustGet<HTMLHeadingElement>('#results-heading').focus({ preventScroll: true });
+      }
       renderHistory();
     });
 

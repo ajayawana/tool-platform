@@ -533,12 +533,13 @@
       "administration_mode": "self-report or informant form; exact form must be verified",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Permission / rights-holder review required",
-      "content_rights": "WHO instrument; verify terms and permission for the intended website and use before reproducing content.",
+      "permission_status": "Permission review required",
+      "content_rights": "WHO tool/mannual reuse rights must be checked for this website's use; link to official materials instead of embedding questionnaire content pending rights decision.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Official source linked; usage conditions still require review for this website and intended users.",
+      "evidence_status": "Rights holder/official source located; no online item content is enabled pending permission and governance review.",
       "evidence_sources": [
-        "https://tdr.who.int/publications/i/item/978924159938-2"
+        "https://tdr.who.int/publications/i/item/978924159938-2",
+        "https://www.who.int/about/policies/publishing/copyright"
       ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
@@ -548,7 +549,7 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required",
+      "license_status": "Permission review required",
       "author_or_developer": "World Health Organization",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
@@ -569,12 +570,13 @@
       "administration_mode": "self-report or informant form; exact form must be verified",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Permission / rights-holder review required",
-      "content_rights": "WHO manual states reuse is not for sale/commercial purposes; catalogue-only pending legal determination/permission.",
+      "permission_status": "Permission review required",
+      "content_rights": "WHO material may be governed by non-commercial licence terms; commercial use may require permission. Link to official manual rather than clone while intended use/permission is unresolved.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Official source linked; usage conditions still require review for this website and intended users.",
+      "evidence_status": "Rights holder/official source located; no online item content is enabled pending permission and governance review.",
       "evidence_sources": [
-        "https://www.who.int/publications/i/item/WHO-MSD-MSB-01.6a"
+        "https://www.who.int/publications/i/item/WHO-MSD-MSB-01.6a",
+        "https://www.who.int/about/policies/publishing/copyright"
       ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
@@ -584,7 +586,7 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required",
+      "license_status": "Permission review required",
       "author_or_developer": "World Health Organization",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
@@ -639,11 +641,13 @@
       "administration_mode": "self-report or informant form; exact form must be verified",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Permission / rights-holder review required",
-      "content_rights": "Commercial/proprietary instrument; obtain from the rights holder and confirm qualifications.",
+      "permission_status": "Permission review required",
+      "content_rights": "Pearson Clinical Assessment policies require written permission for reproduction of copyrighted test materials and restrict access to protected content. Catalogue-only until permission and qualifications are confirmed.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Rights holder/official source located; no online item content is enabled pending permission and governance review.",
+      "evidence_sources": [
+        "https://www.pearsonclinical.in/legal/permissions-and-licensing.html"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
@@ -652,7 +656,7 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required",
+      "license_status": "Permission review required",
       "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
@@ -707,11 +711,13 @@
       "administration_mode": "self-report or informant form; exact form must be verified",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Permission / rights-holder review required",
-      "content_rights": "Commercial/proprietary instrument; obtain from the rights holder and confirm qualifications.",
+      "permission_status": "Permission review required",
+      "content_rights": "Pearson Clinical Assessment India lists BDI-II as Qualification Level B and proprietary. Test content and norms require publisher permission; do not reproduce in a public-facing clone.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Rights holder/official source located; no online item content is enabled pending permission and governance review.",
+      "evidence_sources": [
+        "https://www.pearsonclinical.in/products/programs/beck-depression-inventory.html"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
@@ -720,7 +726,7 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required",
+      "license_status": "Permission review required",
       "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
@@ -3166,20 +3172,22 @@
       "administration_mode": "self-report or informant form; exact form must be verified",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Not yet verified; do not reproduce item content.",
-      "content_rights": "Do not reproduce items or scoring keys until the exact version, terms, and permitted administration mode are verified.",
+      "permission_status": "Permission review required",
+      "content_rights": "The official M-CHAT-R/F permissions page states a license agreement is required to post it on a website or distribute an electronic form. Catalogue entry only pending a licence.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Source and instrument-specific implementation audit outstanding.",
-      "evidence_sources": [],
+      "evidence_status": "Rights holder/official source located; no online item content is enabled pending permission and governance review.",
+      "evidence_sources": [
+        "https://www.mchatscreen.com/mchat-rf/"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
       ],
-      "deployment_status": "catalogue-only",
+      "deployment_status": "permission-review",
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content.",
+      "license_status": "Permission review required",
       "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
@@ -3438,11 +3446,13 @@
       "administration_mode": "self-report or informant form; exact form must be verified",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Permission / rights-holder review required",
-      "content_rights": "Commercial/proprietary, secure test materials; no public clone.",
+      "permission_status": "Permission review required",
+      "content_rights": "Pearson states protected psychological test content, norms and secure materials require appropriate access and written permission for reproduction. Catalogue-only; no public clone.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Rights holder/official source located; no online item content is enabled pending permission and governance review.",
+      "evidence_sources": [
+        "https://www.pearsonclinical.in/legal/permissions-and-licensing.html"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
@@ -3451,7 +3461,7 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required",
+      "license_status": "Permission review required",
       "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
@@ -5084,20 +5094,22 @@
       "administration_mode": "self-report or informant form; exact form must be verified",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Not yet verified; do not reproduce item content.",
-      "content_rights": "Do not reproduce items or scoring keys until the exact version, terms, and permitted administration mode are verified.",
+      "permission_status": "Permission review required",
+      "content_rights": "Youthinmind states SDQ is copyrighted, not public domain, and electronic versions require prior authorization. Catalogue entry only; no online item reproduction before authorization.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Source and instrument-specific implementation audit outstanding.",
-      "evidence_sources": [],
+      "evidence_status": "Rights holder/official source located; no online item content is enabled pending permission and governance review.",
+      "evidence_sources": [
+        "https://www.sdqinfo.org/"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
       ],
-      "deployment_status": "catalogue-only",
+      "deployment_status": "permission-review",
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content.",
+      "license_status": "Permission review required",
       "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
@@ -5730,11 +5742,13 @@
       "administration_mode": "clinician-administered / restricted or professional workflow",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Permission / rights-holder review required",
-      "content_rights": "Commercial/proprietary and qualification-controlled; catalogue/authorized workflow only.",
+      "permission_status": "Permission review required",
+      "content_rights": "Pearson test materials/norms are proprietary and qualification-controlled; do not reproduce secure items, norms or scoring keys on a public website.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Rights holder/official source located; no online item content is enabled pending permission and governance review.",
+      "evidence_sources": [
+        "https://www.pearsonclinical.in/legal/permissions-and-licensing.html"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
@@ -5743,7 +5757,7 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required",
+      "license_status": "Permission review required",
       "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
@@ -5764,12 +5778,13 @@
       "administration_mode": "self-report or informant form; exact form must be verified",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Professional-use / rights review required",
-      "content_rights": "WHO publishes an open-access product; verify exact terms for commercial website reuse before embedding items.",
+      "permission_status": "Permission review required",
+      "content_rights": "WHO-5 2024 edition carries CC BY-NC-SA 3.0 IGO terms. Since Ozarbox is a public website and its commercial status/use context is not established here, keep as link-only until legal review confirms compatibility or WHO permission is obtained.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Official source linked; usage conditions still require review for this website and intended users.",
+      "evidence_status": "Rights holder/official source located; no online item content is enabled pending permission and governance review.",
       "evidence_sources": [
-        "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01"
+        "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
+        "https://cdn.who.int/media/docs/default-source/mental-health/who-5_english-original4da539d6ed4b49389e3afe47cda2326a.pdf"
       ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
@@ -5779,7 +5794,7 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Professional-use / rights review required",
+      "license_status": "Permission review required",
       "author_or_developer": "WHO-5; copyright assigned to WHO in 2024",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
@@ -5800,10 +5815,10 @@
       "administration_mode": "self-report or informant form; exact form must be verified",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Permission / rights-holder review required",
-      "content_rights": "WHO instrument and scoring materials; verify exact version, licence and terms for intended web reuse before implementation.",
+      "permission_status": "Permission review required",
+      "content_rights": "WHO classification/material terms vary by item/version; exact reuse rights for this website and intended use must be confirmed with WHO before embedding or scoring.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Official source linked; usage conditions still require review for this website and intended users.",
+      "evidence_status": "Rights holder/official source located; no online item content is enabled pending permission and governance review.",
       "evidence_sources": [
         "https://www.who.int/classifications/international-classification-of-functioning-disability-and-health/who-disability-assessment-schedule"
       ],
@@ -5815,7 +5830,7 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required",
+      "license_status": "Permission review required",
       "author_or_developer": "World Health Organization",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
@@ -5870,11 +5885,13 @@
       "administration_mode": "clinician-administered / restricted or professional workflow",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Permission / rights-holder review required",
-      "content_rights": "Commercial/proprietary and qualification-controlled; catalogue/authorized workflow only.",
+      "permission_status": "Permission review required",
+      "content_rights": "Pearson test materials/norms are proprietary and qualification-controlled; do not reproduce secure items, norms or scoring keys on a public website.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Rights holder/official source located; no online item content is enabled pending permission and governance review.",
+      "evidence_sources": [
+        "https://www.pearsonclinical.in/legal/permissions-and-licensing.html"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
@@ -5883,7 +5900,7 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required",
+      "license_status": "Permission review required",
       "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
@@ -6040,11 +6057,13 @@
       "administration_mode": "clinician-administered / restricted or professional workflow",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Permission / rights-holder review required",
-      "content_rights": "Commercial/proprietary and qualification-controlled; catalogue/authorized workflow only.",
+      "permission_status": "Permission review required",
+      "content_rights": "Pearson test materials/norms are proprietary and qualification-controlled; do not reproduce secure items, norms or scoring keys on a public website.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Rights holder/official source located; no online item content is enabled pending permission and governance review.",
+      "evidence_sources": [
+        "https://www.pearsonclinical.in/legal/permissions-and-licensing.html"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
@@ -6053,7 +6072,7 @@
       "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Permission / rights-holder review required",
+      "license_status": "Permission review required",
       "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",

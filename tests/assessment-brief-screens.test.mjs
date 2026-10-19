@@ -1,7 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
 import { BRIEF_ASSESSMENTS, BRIEF_RESPONSE_OPTIONS, getBriefAssessment, scoreBriefAssessment } from "../src/lib/brief-assessments.js";
 
 const expectedItems = {

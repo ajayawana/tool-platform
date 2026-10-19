@@ -4,7 +4,6 @@ import { readFileSync } from "node:fs";
 import { BRIEF_ASSESSMENTS } from "../src/lib/brief-assessments.js";
 
 const registry = JSON.parse(readFileSync(new URL("../src/data/assessment-registry.json", import.meta.url), "utf8"));
-const normalise = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
 test("registry has the full set of assessment domains and unique instrument IDs", () => {
   assert.equal(registry.schema_version, "2.0.0");

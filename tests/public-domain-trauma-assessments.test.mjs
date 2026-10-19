@@ -141,7 +141,7 @@ test("assessment route supports conditional branching, sensitive-content exit, f
   assert.match(page, /The official instructions say to stop here/);
   assert.match(page, /exposure-checklist/);
   assert.match(page, /No total score or severity band is defined/);
-  assert.match(page, /You can skip any item, pause or exit|You can pause, skip any item or exit/);
+  assert.match(page, /You may pause or exit at any time|You may leave without completing it/);
   assert.match(page, /resultsHeading\?\.focus\(\)/);
   assert.match(page, /Exit assessment/);
   assert.match(page, /Print \/ Save as PDF/);

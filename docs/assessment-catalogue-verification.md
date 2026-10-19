@@ -1,6 +1,6 @@
 # Ozarbox psychological assessment catalogue — verification and permission report
 
-**Status at pull request submission (19 October 2026):** The master catalogue and three additional short-screen implementations are proposed in PR #16. PHQ-9 remains the existing route. The proposed new modules are PHQ-2, GAD-7 and GAD-2. All four are marked `implemented-unvalidated`, not clinically validated. Other measures remain catalogue-only or permission-review entries until instrument-specific evidence, content rights, intended use and clinical governance are completed. After merge, confirm the main-branch deployment and inspect the live routes separately; a passing build or CI is not proof of live interaction or clinical readiness.
+**Status after merge (19 October 2026):** PR #16 is merged into `main` at commit `c5b2cafd5c66801889ed522fb4645bc0a8fc29dd`. The post-merge Build check (`npm test`, `npm run check`, `npm run build`), production Build, CodeQL Advanced and GitHub Pages deployment all completed successfully for that commit. The catalogue and PHQ-2/GAD-7/GAD-2 routes are included in the deployed source. This does not prove manual browser interaction, screen-reader accessibility, independent clinical validation, regulatory compliance or institutional readiness.
 
 ## What the catalogue means
 

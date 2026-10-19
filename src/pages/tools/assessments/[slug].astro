@@ -171,7 +171,7 @@ const base = import.meta.env.BASE_URL;
           ? scored.screenPositive
             ? 'The GAD-7 total is at or above a commonly used threshold for further assessment. The symptom-range label describes the responses on this questionnaire; it does not determine the cause or establish a disorder.'
             : 'The symptom-range label describes the responses you reported in the past two weeks. It should be considered alongside your concerns, context and day-to-day functioning.'
-          : scored.screenPositive ? instrument.highResult : instrument.lowResult;
+          : scored.screenPositive ? (instrument.highResult ?? instrument.lowResult) : instrument.lowResult;
       }
       if (limitation) limitation.textContent = instrument.limitations;
       if (nextSteps) nextSteps.textContent = instrument.nextSteps;

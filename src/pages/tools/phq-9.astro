@@ -108,7 +108,7 @@ const base = import.meta.env.BASE_URL;
 
       <section class="history-save" aria-labelledby="save-heading">
         <h3 id="save-heading">Compare scores over time (optional)</h3>
-        <p>You can keep a small score history on this device to compare future PHQ-9 totals. Nothing is saved until you tick the consent box and press “Save score”. The history contains only date, total score, severity band and whether item 9 was positive—not your answers, name, or contact details. It stays in this browser's local storage, is not encrypted, and may be visible to anyone who uses this device.</p>
+        <p>You can keep a small score history on this device to compare future PHQ-9 totals. Nothing is saved until you tick the consent box and press “Save score”. The history contains only date, total score, severity band not your answers or identifying details. It stays in this browser's local storage, is not encrypted, and may be visible to anyone who uses this device.</p>
         <label class="consent-label" for="save-consent"><input type="checkbox" id="save-consent"><span>I understand and consent to saving this minimal PHQ-9 score history on this device.</span></label>
         <div class="form-actions save-actions"><button type="button" id="save-score-button" class="primary-button" disabled>Save score on this device</button><button type="button" id="clear-history-button" class="secondary-button">Delete saved history</button></div>
         <p id="save-status" class="field-help" role="status" aria-live="polite"></p>
@@ -179,7 +179,7 @@ const base = import.meta.env.BASE_URL;
         if (!Array.isArray(parsed)) return [];
         return parsed.filter((entry) => entry && typeof entry.date === 'string' &&
           Number.isInteger(entry.total) && entry.total >= 0 && entry.total <= 27 &&
-          typeof entry.severity === 'string' && typeof entry.item9Positive === 'boolean').slice(-30);
+          typeof entry.severity === 'string').slice(-30);
       } catch {
         return [];
       }
@@ -194,7 +194,7 @@ const base = import.meta.env.BASE_URL;
         date.dateTime = entry.date;
         date.textContent = new Date(entry.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
         const summary = document.createElement('span');
-        summary.textContent = 'Score ' + entry.total + '/27 · ' + entry.severity + (entry.item9Positive ? ' · item 9 positive' : '');
+        summary.textContent = 'Score ' + entry.total + '/27 · ' + entry.severity;
         li.append(date, document.createTextNode(' — '), summary);
         historyList.append(li);
       });
@@ -265,8 +265,7 @@ const base = import.meta.env.BASE_URL;
         history.push({
           date: new Date().toISOString(),
           total: currentResult.total,
-          severity: currentResult.severity,
-          item9Positive: currentResult.item9Positive
+          severity: currentResult.severity
         });
         localStorage.setItem(STORAGE_KEY, JSON.stringify(history.slice(-30)));
         saveStatus.textContent = 'Score saved on this device only. No item-level answers or identifying details were saved.';

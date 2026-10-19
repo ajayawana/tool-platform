@@ -15,15 +15,11 @@ export function getStaticPaths() {
 const { instrument } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const instrumentId: string = instrument.id;
-type BriefAssessmentResult = { instrumentId: string; kind?: string; complete: boolean; missingItems: readonly number[]; total: number | null; maxScore?: number; interpretation: string | null; band?: string | null; screenPositive?: boolean | null; positiveThreshold?: number; clusters?: Readonly<Record<string, number>>; thresholdRange?: Readonly<{min: number; max: number}>; exposure?: string; symptomResponses?: readonly string[]; summary?: readonly {event:string; responses:readonly string[]}[] };
-type PublicDomainAssessmentResult = BriefAssessmentResult;
 const isLikert = !instrument.kind || instrument.kind === 'likert';
 const questionCount = instrument.kind === 'exposure-checklist' ? instrument.events.length
   : instrument.kind === 'yes-no-branch' ? instrument.items.length + 1
   : instrument.items.length;
 const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
-const hasFunctionalImpact = 'functionalImpact' in instrument && Boolean(instrument.functionalImpact);
-const functionalImpact: { label: string; options: string[]; note: string } | null = hasFunctionalImpact ? instrument.functionalImpact as { label: string; options: string[]; note: string } : null;
 ---
 <Layout title={instrument.officialName + ' | Ozarbox'} description={instrument.purpose + '. Browser-only assessment with deterministic scoring or an explicitly unscored exposure summary.'} robots="index,follow,max-image-preview:large">
   <section class="container tool-wrap" aria-labelledby="page-title">
@@ -175,7 +171,7 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
         <button type="button" id="print-result">Print / Save as PDF</button>
         <button type="button" id="retake" class="secondary-button">Retake assessment</button>
         <a href={base + 'assessments/'} class="exit-link">Return to assessment centre</a>
-        {instrumentId === 'phq-2' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
+        {activeInstrumentId === 'phq-2' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
         {instrument.id === 'pcl-5' && <a href={base + 'tools/assessments/pc-ptsd-5/'} class="exit-link">Open brief PC-PTSD-5 screen</a>}
       </div>
     </section>
@@ -194,6 +190,10 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
     import { scoreBriefAssessment, getBriefAssessment } from '../../../lib/brief-assessments.js';
     import { scorePublicDomainAssessment, getPublicDomainAssessment } from '../../../lib/public-domain-assessments.js';
 
+    type AssessmentResult = { instrumentId: string; kind?: string; complete: boolean; missingItems: readonly number[]; total: number | null; maxScore?: number; interpretation: string | null; band?: string | null; screenPositive?: boolean | null; positiveThreshold?: number; clusters?: Readonly<Record<string, number>>; thresholdRange?: Readonly<{ min: number; max: number }>; exposure?: string; symptomResponses?: readonly string[]; summary?: readonly { event: string; responses: readonly string[] }[] };
+    type FunctionalImpactSpec = { label: string; options: string[]; note: string };
+
+
     const form = document.querySelector<HTMLFormElement>('#assessment-form');
     const validation = document.querySelector<HTMLElement>('#validation-message');
     const progress = document.querySelector<HTMLProgressElement>('#progress');
@@ -208,6 +208,10 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
         ? getBriefAssessment(instrumentId)
         : getPublicDomainAssessment(instrumentId))
       : null;
+    const functionalImpact = instrument && 'functionalImpact' in instrument
+      ? (instrument as { functionalImpact?: FunctionalImpactSpec }).functionalImpact ?? null
+      : null;
+    const activeInstrumentId = instrument?.id ?? instrumentId ?? '';
     const symptomQuestions = document.querySelector<HTMLElement>('#symptom-questions');
     const branchMessage = document.querySelector<HTMLElement>('#branch-message');
     const exposureQuestion = document.querySelector<HTMLFieldSetElement>('#question-1');
@@ -282,7 +286,7 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
       }
     }
 
-    function renderResult(scored: BriefAssessmentResult | PublicDomainAssessmentResult): void {
+    function renderResult(scored: AssessmentResult): void {
       if (!instrument || !results) return;
       const scoreValue = document.querySelector<HTMLElement>('#score-value');
       const scoreBand = document.querySelector<HTMLElement>('#score-band');
@@ -384,11 +388,11 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
       event.preventDefault();
       if (!instrument || !validation) return;
       const responses = readResponses();
-      let scored: BriefAssessmentResult | PublicDomainAssessmentResult;
+      let scored: AssessmentResult;
       try {
-        scored = kind === 'likert' && ['phq-2', 'gad-7', 'gad-2'].includes(instrumentId)
-          ? scoreBriefAssessment(instrumentId, responses as Array<number | null>)
-          : scorePublicDomainAssessment(instrumentId, responses as never);
+        scored = kind === 'likert' && ['phq-2', 'gad-7', 'gad-2'].includes(activeInstrumentId)
+          ? scoreBriefAssessment(activeInstrumentId, responses as Array<number | null>)
+          : scorePublicDomainAssessment(activeInstrumentId, responses as never);
       } catch (error) {
         validation.textContent = error instanceof Error ? error.message : 'The response values could not be checked. Please review your answers.';
         validation.hidden = false;

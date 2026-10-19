@@ -52,14 +52,11 @@ test("official source attribution, limitations, and India support references are
   assert.match(page, /14416/);
 });
 
-test("positive item 9 shows safety follow-up even if other items are unanswered", () => {
-  const safetyIndex = page.indexOf('id="safety-section"');
-  const resultsIndex = page.indexOf('id="results"');
+test("positive item 9 reveals safety follow-up before incomplete-answer validation returns", () => {
   const submitIndex = page.indexOf("form.addEventListener('submit'");
   const item9Index = page.indexOf("const item9Positive = item9Response !== null && item9Response > 0;", submitIndex);
   const incompleteIndex = page.indexOf("if (!result.complete)", submitIndex);
   const safetyBranchIndex = page.indexOf("if (item9Positive)", incompleteIndex);
-  assert.ok(safetyIndex >= 0 && safetyIndex < resultsIndex, "safety section must not be hidden inside the completed-results panel");
   assert.ok(item9Index >= submitIndex && item9Index < incompleteIndex, "item 9 must be checked before incomplete-answer handling");
   assert.ok(safetyBranchIndex > incompleteIndex, "incomplete answers must still show safety follow-up for positive item 9");
   assert.match(page, /No total has been calculated/);

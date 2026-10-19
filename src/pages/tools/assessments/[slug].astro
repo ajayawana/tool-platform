@@ -37,7 +37,7 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
 
     <section class="tool-box assessment-box" aria-labelledby="instructions-heading">
       <h2 id="instructions-heading">Instructions</h2>
-      <p>{instrument.instructions}</p>
+      {instrument.kind !== 'yes-no-branch' && <p>{instrument.instructions}</p>}
       <p><strong>Recall period:</strong> {instrument.recallPeriod}.</p>
       {instrument.kind === 'exposure-checklist'
         ? <p>For each event, select the response(s) that apply. This checklist has no total score. You may leave without completing it.</p>
@@ -48,7 +48,7 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
         <progress id="progress" value="0" max={questionCount} aria-label="Questionnaire completion"></progress>
       </div>
 
-      <form id="assessment-form" data-instrument={instrument.id} data-kind={instrument.kind || 'likert'} novalidate>
+      <form id="assessment-form" data-instrument={instrument.id} data-kind={instrument.kind || 'likert'} data-question-count={questionCount} novalidate>
         {isLikert && instrument.items.map((item, index) => (
           <fieldset class="question" id={'question-' + (index + 1)} data-question={index + 1}>
             <legend><span class="question-number">Question {index + 1} of {instrument.items.length}</span>{item}</legend>
@@ -195,6 +195,7 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
     const resultsHeading = document.querySelector<HTMLElement>('#results-heading');
     const instrumentId = form?.dataset.instrument;
     const kind = form?.dataset.kind || 'likert';
+    const totalQuestionCount = Number(form?.dataset.questionCount || 0);
     const instrument = instrumentId
       ? (kind === 'likert' && ['phq-2', 'gad-7', 'gad-2'].includes(instrumentId)
         ? getBriefAssessment(instrumentId)
@@ -227,7 +228,7 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
       const responses = readResponses();
       const answered = answeredCount(responses);
       const exposure = kind === 'yes-no-branch' ? responses[0] : null;
-      const max = exposure === 'no' ? 1 : questionCount;
+      const max = exposure === 'no' ? 1 : totalQuestionCount;
       if (progress) {
         progress.max = max;
         progress.value = Math.min(answered, max);

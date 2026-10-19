@@ -1,6 +1,6 @@
 # Ozarbox psychological assessment catalogue — verification and permission report
 
-**Status:** Master catalogue and three additional short-screen implementations are on branch `feat/assessment-catalogue-and-core-screens`; they are not yet merged. PHQ-9 remains the existing route. The new modules are PHQ-2, GAD-7 and GAD-2. All four are marked `implemented-unvalidated`, not clinically validated. Other measures remain catalogue-only or permission-review entries until instrument-specific evidence, content rights, intended use and clinical governance are completed.
+**Status at pull request submission (19 October 2026):** The master catalogue and three additional short-screen implementations are proposed in PR #16. PHQ-9 remains the existing route. The proposed new modules are PHQ-2, GAD-7 and GAD-2. All four are marked `implemented-unvalidated`, not clinically validated. Other measures remain catalogue-only or permission-review entries until instrument-specific evidence, content rights, intended use and clinical governance are completed. After merge, confirm the main-branch deployment and inspect the live routes separately; a passing build or CI is not proof of live interaction or clinical readiness.
 
 ## What the catalogue means
 

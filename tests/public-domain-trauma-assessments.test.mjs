@@ -103,8 +103,8 @@ test("PC-PTSD-5 requires all five symptom answers only after exposure is endorse
 
 test("PC-PTSD-5 rejects malformed arrays and invalid yes/no values", () => {
   assert.throws(() => scorePublicDomainAssessment("pc-ptsd-5", ["yes"]), TypeError);
-  assert.throws(() => scorePublicDomainAssessment("pc-ptsd-5", ["maybe", "no", "no", "no", "no", "no"]), TypeError);
-  assert.throws(() => scorePublicDomainAssessment("pc-ptsd-5", ["yes", "maybe", "no", "no", "no", "no"]), TypeError);
+  assert.throws(() => scorePublicDomainAssessment("pc-ptsd-5", ["maybe", "no", "no", "no", "no", "no"]), RangeError);
+  assert.throws(() => scorePublicDomainAssessment("pc-ptsd-5", ["yes", "maybe", "no", "no", "no", "no"]), RangeError);
 });
 
 test("LEC-5 is a 17-event exposure inventory with no total score", () => {

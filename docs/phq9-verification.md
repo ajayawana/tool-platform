@@ -1,6 +1,6 @@
 # Ozarbox PHQ-9 module — source and verification report
 
-**Status (updated 19 October 2026):** The module is merged into `main`. The safety-follow-up visibility correction is also merged. GitHub Actions reports 21/21 automated tests passing, successful Astro validation, successful production build, and successful CodeQL analysis. The GitHub Pages deployment workflow completed successfully for the safety correction. Live browser-based usability, screen-reader, and clinical validation have not been performed. This document does not certify clinical validity, regulatory compliance, or suitability for institutional deployment.
+**Status (updated 19 October 2026):** The module is merged into `main`. The safety-follow-up visibility correction is also merged. GitHub Actions reports 22/22 automated tests passing, successful Astro validation, successful production build, and successful CodeQL analysis. The GitHub Pages deployment workflow completed successfully for the safety correction. Live browser-based usability, screen-reader, and clinical validation have not been performed. This document does not certify clinical validity, regulatory compliance, or suitability for institutional deployment.
 
 ## 1. Source and permissions review
 

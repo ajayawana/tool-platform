@@ -1,6 +1,6 @@
 # Ozarbox PHQ-9 module — source and verification report
 
-**Status:** Implementation proposed on branch `feat/phq9-assessment-module`. Automated verification is pending the pull-request CI run. This document does not certify clinical validity, regulatory compliance, or suitability for institutional deployment.
+**Status (updated 19 October 2026):** The module is merged into `main`. The safety-follow-up visibility correction is also merged. GitHub Actions reports 21/21 automated tests passing, successful Astro validation, successful production build, and successful CodeQL analysis. The GitHub Pages deployment workflow completed successfully for the safety correction. Live browser-based usability, screen-reader, and clinical validation have not been performed. This document does not certify clinical validity, regulatory compliance, or suitability for institutional deployment.
 
 ## 1. Source and permissions review
 
@@ -51,7 +51,7 @@ The Node test suite covers:
 - Item 9 positive at a low total, item 9 positive at a high total, item 9 zero at a high total, and the pending / urgent / prompt-support safety branches.
 - Source-level accessibility/disclosure checks for fieldsets and legends, labelled native radio controls, progress and live-region semantics, focus visibility, responsive breakpoints, reduced-motion support, consent, privacy copy, source attribution and emergency-support references.
 
-GitHub Actions is configured to run `npm test`, `npm run check`, and `npm run build` on pull requests to `main`.
+GitHub Actions ran `npm test` (21 passed, 0 failed), `npm run check`, and `npm run build` successfully on the safety-correction pull request. CodeQL Advanced completed successfully. The GitHub Pages deployment workflow for the merged safety correction also completed successfully. Build and static-analysis results do not substitute for manual interaction, accessibility, or clinical review.
 
 ## 5. Accessibility and release verification status
 

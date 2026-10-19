@@ -20,7 +20,7 @@ const questionCount = instrument.kind === 'exposure-checklist' ? instrument.even
   : instrument.items.length;
 const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
 const hasFunctionalImpact = 'functionalImpact' in instrument && Boolean(instrument.functionalImpact);
-const functionalImpact = hasFunctionalImpact ? instrument.functionalImpact : null;
+const functionalImpact: { label: string; options: string[]; note: string } | null = hasFunctionalImpact ? instrument.functionalImpact as { label: string; options: string[]; note: string } : null;
 ---
 <Layout title={instrument.officialName + ' | Ozarbox'} description={instrument.purpose + '. Browser-only assessment with deterministic scoring or an explicitly unscored exposure summary.'} robots="index,follow,max-image-preview:large">
   <section class="container tool-wrap" aria-labelledby="page-title">

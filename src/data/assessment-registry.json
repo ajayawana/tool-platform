@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Governance catalogue for psychological assessment instruments. Registry metadata is not evidence of clinical validation or permission to reproduce an instrument.",
+  "statuses": [
+    "catalogue-only",
+    "implementation-pending-evidence",
+    "restricted",
+    "disabled",
+    "implemented-unvalidated"
+  ],
+  "instruments": [
+    {
+      "instrument_id": "phq-9",
+      "official_name": "Patient Health Questionnaire-9",
+      "version": "English PHQ-9; exact item wording in src/lib/phq9-scoring.js",
+      "domain": "depression symptoms",
+      "population": "Adults in established PHQ-9 contexts; suitability must be reviewed for local population",
+      "administration_mode": "self-report",
+      "language": "English",
+      "license_status": "Published NLM CDE and Pfizer sources state no permission is required to reproduce, translate, display or distribute; confirm local institutional terms",
+      "scoring_version": "phq9-scoring.js; deterministic total 0-27; severity bands documented",
+      "evidence_sources": [
+        "https://doi.org/10.1046/j.1525-1497.2001.016009606.x",
+        "https://cde.nlm.nih.gov/formView?tinyId=mJsGoMU1m",
+        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care"
+      ],
+      "safety_rules": [
+        "Any item 9 response above zero triggers separate follow-up irrespective of total score",
+        "The immediate-safety prompt is not a validated risk assessment",
+        "A no response does not establish safety",
+        "No clinician monitoring or alerting"
+      ],
+      "deployment_status": "implemented-unvalidated",
+      "software_validation": "Automated tests exist; live browser interaction, manual accessibility and clinical workflow validation remain outstanding"
+    },
+    {
+      "instrument_id": "gad-7",
+      "official_name": "Generalized Anxiety Disorder-7",
+      "version": "Must verify exact source/version before implementation",
+      "domain": "anxiety symptoms",
+      "population": "Verify intended population and local applicability",
+      "administration_mode": "self-report",
+      "language": "English pending version review",
+      "license_status": "Published Pfizer announcement says GAD-7 was made available without copyright restriction and at no charge; confirm instrument version, exact wording and institutional terms",
+      "scoring_version": "Not implemented; obtain authoritative scoring spec and add independent reference calculations first",
+      "evidence_sources": [
+        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care"
+      ],
+      "safety_rules": [
+        "Non-diagnostic interpretation; do not infer diagnosis from score alone"
+      ],
+      "deployment_status": "implementation-pending-evidence",
+      "software_validation": "Not implemented"
+    },
+    {
+      "instrument_id": "phq-2",
+      "official_name": "Patient Health Questionnaire-2",
+      "version": "Must verify exact source/version before implementation",
+      "domain": "depression screening",
+      "population": "Verify intended population and local applicability",
+      "administration_mode": "self-report",
+      "language": "English pending version review",
+      "license_status": "PHQ family has published public-access documentation; verify exact version and wording before reproduction",
+      "scoring_version": "Not implemented; official scoring source and reference cases required",
+      "evidence_sources": [
+        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
+        "https://cde.nlm.nih.gov/"
+      ],
+      "safety_rules": [
+        "A screen is not a diagnosis and does not replace a clinical interview"
+      ],
+      "deployment_status": "implementation-pending-evidence",
+      "software_validation": "Not implemented"
+    },
+    {
+      "instrument_id": "other-instruments-template",
+      "official_name": "Unverified instrument placeholder",
+      "version": "Unassigned",
+      "domain": "Unassigned",
+      "population": "Unverified",
+      "administration_mode": "Unverified",
+      "language": "Unverified",
+      "license_status": "Unverified; do not reproduce content",
+      "scoring_version": "None",
+      "evidence_sources": [],
+      "safety_rules": [
+        "Instrument disabled pending evidence, permissions and governance"
+      ],
+      "deployment_status": "disabled",
+      "software_validation": "Not implemented"
+    }
+  ]
+}

@@ -4,23 +4,6 @@
  * No network access, AI scoring or client-side persistence. This module's implementation
  * has not been independently clinically validated.
  */
-export type PublicDomainAssessmentResult = {
-  instrumentId: string;
-  kind: string;
-  complete: boolean;
-  missingItems: readonly number[];
-  total: number | null;
-  maxScore?: number;
-  interpretation: string | null;
-  clusters?: Readonly<Record<string, number>>;
-  thresholdRange?: Readonly<{min: number; max: number}>;
-  exposure?: string;
-  screenPositive?: boolean;
-  positiveThreshold?: number;
-  symptomResponses?: readonly string[];
-  summary?: readonly {event: string; responses: readonly string[]}[];
-};
-
 export const PTSD_LIKERT_OPTIONS = Object.freeze([
   Object.freeze({ value: 0, label: "Not at all" }),
   Object.freeze({ value: 1, label: "A little bit" }),

@@ -1,4 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Privacy Policy | Ozarbox"><section class="container prose"><div class="eyebrow">Legal</div><h1>Privacy Policy</h1><p>Ozarbox is designed to minimize data collection. Calculator inputs are processed in the browser and are not intentionally transmitted to a server by the calculator pages.</p><p>Before launch, this page will be updated with the final hosting, analytics, cookies, advertising, and contact details.</p></section></Layout>
+<Layout title="Privacy Policy | Ozarbox" description="How Ozarbox handles calculator inputs and optional PHQ-9 score history.">
+  <section class="container prose">
+    <div class="eyebrow">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p>Ozarbox is designed to minimize data collection. Calculator inputs are processed in the browser and are not intentionally transmitted to a server by the calculator pages.</p>
+    <h2>PHQ-9 assessment</h2>
+    <p>The PHQ-9 tool processes your answers and calculates the score locally in your browser. It does not send your responses to an Ozarbox server, use an AI model, or ask for your name, email address, account, or contact details. Unsaved answers are not deliberately retained after you leave the page.</p>
+    <p>Score history is optional. It is stored in your browser's local storage only after you tick a clear consent box and press the save button. The history contains only the date, total score, and severity band. It does not store item-level answers or direct identifiers. Anyone with access to the same browser profile or device may be able to view local storage; it is not an encrypted medical record. You can delete the saved history from the PHQ-9 page.</p>
+    <p>Local browser storage may be removed by your browser or device settings. Do not save sensitive results on a shared device. For urgent support, use the contact options displayed by the assessment; the tool does not monitor your answers or alert a clinician.</p>
+    <h2>Scope</h2>
+    <p>This policy describes the handling built into the PHQ-9 assessment module. It is not a guarantee about unrelated hosting infrastructure, browser extensions, or network-level logs. Ozarbox does not claim that this tool is a secure clinical record system.</p>
+  </section>
+</Layout>

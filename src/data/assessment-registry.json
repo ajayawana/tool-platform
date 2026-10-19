@@ -1972,7 +1972,8 @@
       "scoring_specification": "Deterministic total 0-6 using first two GAD-7 items; >=3 commonly used screening threshold. Not diagnostic; threshold requires clinician/context review.",
       "evidence_status": "Primary/authoritative source available; software clinical validation remains outstanding.",
       "evidence_sources": [
-        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care"
+        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
+        "https://pubmed.ncbi.nlm.nih.gov/17339617/"
       ],
       "safety_rules": [
         "Positive result is not a diagnosis; follow up with a clinician when symptoms, impairment or concern persist.",
@@ -2003,7 +2004,8 @@
       "scoring_specification": "Deterministic total 0-21, each response 0-3; standard symptom bands 0-4, 5-9, 10-14, 15-21; >=10 commonly used threshold for further assessment. Not diagnostic.",
       "evidence_status": "Primary/authoritative source available; software clinical validation remains outstanding.",
       "evidence_sources": [
-        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care"
+        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
+        "https://pubmed.ncbi.nlm.nih.gov/16717171/"
       ],
       "safety_rules": [
         "Positive result is not a diagnosis; follow up with a clinician when symptoms, impairment or concern persist.",
@@ -3434,7 +3436,8 @@
       "scoring_specification": "Deterministic total 0-6, each response 0-3; commonly used positive screen threshold >=3. Not diagnostic.",
       "evidence_status": "Primary/authoritative source available; software clinical validation remains outstanding.",
       "evidence_sources": [
-        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care"
+        "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
+        "https://pubmed.ncbi.nlm.nih.gov/14583691/"
       ],
       "safety_rules": [
         "Positive result is not a diagnosis; follow up with a clinician when symptoms, impairment or concern persist.",

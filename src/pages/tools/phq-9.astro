@@ -242,6 +242,15 @@ const base = import.meta.env.BASE_URL;
         validation.hidden = false;
         validation.textContent = 'Please answer all nine PHQ-9 items before calculating your score. Unanswered items: ' + result.missingItems.join(', ') + '. No total has been calculated.';
         if (item9Positive) {
+          // Keep the safety pathway visible even when other PHQ-9 items are incomplete.
+          resultPanel.hidden = false;
+          mustGet<HTMLHeadingElement>('#results-heading').textContent = 'Safety follow-up';
+          mustGet<HTMLElement>('.score-summary').hidden = true;
+          mustGet<HTMLElement>('.result-caution').hidden = true;
+          mustGet<HTMLElement>('.next-steps').hidden = true;
+          mustGet<HTMLElement>('.history-save').hidden = true;
+          mustGet<HTMLButtonElement>('#print-button').hidden = true;
+          safetySection.hidden = false;
           safetySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
           mustGet<HTMLHeadingElement>('#safety-heading').focus({ preventScroll: true });
         } else {
@@ -253,6 +262,12 @@ const base = import.meta.env.BASE_URL;
       }
 
       validation.hidden = true;
+      mustGet<HTMLHeadingElement>('#results-heading').textContent = 'PHQ-9 screening result';
+      mustGet<HTMLElement>('.score-summary').hidden = false;
+      mustGet<HTMLElement>('.result-caution').hidden = false;
+      mustGet<HTMLElement>('.next-steps').hidden = false;
+      mustGet<HTMLElement>('.history-save').hidden = false;
+      mustGet<HTMLButtonElement>('#print-button').hidden = false;
       const scoreTotal = Number(result.total);
       const severity = String(result.severity);
       currentResult = { total: scoreTotal, severity, item9Positive: result.item9Positive, requiresSafetyFollowUp: result.requiresSafetyFollowUp };
@@ -335,6 +350,12 @@ const base = import.meta.env.BASE_URL;
     form.addEventListener('reset', () => {
       window.setTimeout(() => {
         resultPanel.hidden = true;
+        mustGet<HTMLHeadingElement>('#results-heading').textContent = 'PHQ-9 screening result';
+        mustGet<HTMLElement>('.score-summary').hidden = false;
+        mustGet<HTMLElement>('.result-caution').hidden = false;
+        mustGet<HTMLElement>('.next-steps').hidden = false;
+        mustGet<HTMLElement>('.history-save').hidden = false;
+        mustGet<HTMLButtonElement>('#print-button').hidden = false;
         safetySection.hidden = true;
         document.querySelectorAll<HTMLInputElement>('input[name="immediate-safety"]').forEach((input) => { input.checked = false; });
         validation.hidden = true;

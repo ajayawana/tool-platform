@@ -217,9 +217,11 @@ const base = import.meta.env.BASE_URL;
       }
 
       validation.hidden = true;
-      currentResult = result;
-      mustGet<HTMLElement>('#score-total').textContent = String(result.total);
-      mustGet<HTMLElement>('#severity-label').textContent = result.severity;
+      const scoreTotal = Number(result.total);
+      const severity = String(result.severity);
+      currentResult = { total: scoreTotal, severity, item9Positive: result.item9Positive, requiresSafetyFollowUp: result.requiresSafetyFollowUp };
+      mustGet<HTMLElement>('#score-total').textContent = String(scoreTotal);
+      mustGet<HTMLElement>('#severity-label').textContent = severity;
       const descriptions: Record<string, string> = {
         'Minimal': 'Your responses fall in the minimal symptom-severity range. If you remain concerned about how you feel, you can still seek support.',
         'Mild': 'Your responses fall in the mild symptom-severity range. Consider monitoring how you feel and discussing persistent or troubling symptoms with a professional.',
@@ -227,7 +229,7 @@ const base = import.meta.env.BASE_URL;
         'Moderately severe': 'Your responses fall in the moderately severe symptom-severity range. A timely conversation with a qualified health professional is recommended.',
         'Severe': 'Your responses fall in the severe symptom-severity range. Please seek a timely, comprehensive assessment from a qualified health professional.'
       };
-      mustGet<HTMLElement>('#severity-description').textContent = descriptions[result.severity];
+      mustGet<HTMLElement>('#severity-description').textContent = descriptions[severity] || 'Discuss your responses with a qualified health professional.';
       safetySection.hidden = !result.requiresSafetyFollowUp;
       safetyAdvice.textContent = 'Choose the option that best describes how you feel right now. If you cannot stay safe, seek urgent in-person help now.';
       document.querySelectorAll<HTMLInputElement>('input[name="immediate-safety"]').forEach((input) => { input.checked = false; });
@@ -242,7 +244,9 @@ const base = import.meta.env.BASE_URL;
     document.querySelectorAll<HTMLInputElement>('input[name="immediate-safety"]').forEach((input) => {
       input.addEventListener('change', () => {
         if (!currentResult || !currentResult.requiresSafetyFollowUp) return;
-        const followUp = getSafetyFollowUp(Number(getResponses()[8]), input.value);
+        const answer = input.value;
+        if (answer !== 'yes' && answer !== 'no' && answer !== 'unsure') return;
+        const followUp = getSafetyFollowUp(Number(getResponses()[8]), answer);
         if (followUp.status === 'urgent') {
           safetyAdvice.textContent = 'Please get urgent help now. Contact your local emergency number or go to the nearest emergency department. If you are in India, call 112. If possible, stay with someone you trust and move away from anything you could use to hurt yourself.';
         } else if (followUp.status === 'prompt-support') {

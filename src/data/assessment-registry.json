@@ -536,8 +536,10 @@
       "permission_status": "Permission / rights-holder review required",
       "content_rights": "WHO instrument; verify terms and permission for the intended website and use before reproducing content.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Official source linked; usage conditions still require review for this website and intended users.",
+      "evidence_sources": [
+        "https://tdr.who.int/publications/i/item/978924159938-2"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
@@ -570,8 +572,10 @@
       "permission_status": "Permission / rights-holder review required",
       "content_rights": "WHO manual states reuse is not for sale/commercial purposes; catalogue-only pending legal determination/permission.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Official source linked; usage conditions still require review for this website and intended users.",
+      "evidence_sources": [
+        "https://www.who.int/publications/i/item/WHO-MSD-MSB-01.6a"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
@@ -3060,8 +3064,10 @@
       "permission_status": "Public domain content, but professional-use/governance gate remains",
       "content_rights": "Public domain / not copyrighted per National Center for PTSD; intended for qualified health professionals/researchers; keep catalogue-only until appropriate access/governance exists.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Official source linked; usage conditions still require review for this website and intended users.",
+      "evidence_sources": [
+        "https://www.ptsd.va.gov/professional/assessment/te-measures/life_events_checklist.asp"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
@@ -3944,8 +3950,10 @@
       "permission_status": "Public domain content, but professional-use/governance gate remains",
       "content_rights": "Public domain / not copyrighted per National Center for PTSD; intended for qualified health professionals/researchers; keep catalogue-only until appropriate access/governance exists.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Official source linked; usage conditions still require review for this website and intended users.",
+      "evidence_sources": [
+        "https://www.ptsd.va.gov/professional/assessment/screens/pc-ptsd.asp"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
@@ -3978,8 +3986,10 @@
       "permission_status": "Public domain content, but professional-use/governance gate remains",
       "content_rights": "Public domain / not copyrighted per National Center for PTSD; intended for qualified health professionals/researchers; keep catalogue-only until appropriate access/governance exists.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Official source linked; usage conditions still require review for this website and intended users.",
+      "evidence_sources": [
+        "https://www.ptsd.va.gov/professional/assessment/adult-sr/ptsd-checklist.asp"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
@@ -5755,8 +5765,10 @@
       "permission_status": "Professional-use / rights review required",
       "content_rights": "WHO publishes an open-access product; verify exact terms for commercial website reuse before embedding items.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Official source linked; usage conditions still require review for this website and intended users.",
+      "evidence_sources": [
+        "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
@@ -5789,8 +5801,10 @@
       "permission_status": "Permission / rights-holder review required",
       "content_rights": "WHO instrument and scoring materials; verify exact version, licence and terms for intended web reuse before implementation.",
       "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Rights note recorded as a conservative gate; exact edition and formal use approval still require instrument-specific verification.",
-      "evidence_sources": [],
+      "evidence_status": "Official source linked; usage conditions still require review for this website and intended users.",
+      "evidence_sources": [
+        "https://www.who.int/classifications/international-classification-of-functioning-disability-and-health/who-disability-assessment-schedule"
+      ],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."

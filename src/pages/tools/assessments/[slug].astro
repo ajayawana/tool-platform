@@ -20,6 +20,7 @@ const questionCount = instrument.kind === 'exposure-checklist' ? instrument.even
   : instrument.kind === 'yes-no-branch' ? instrument.items.length + 1
   : instrument.items.length;
 const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
+const functionalImpact: { label: string; options: string[]; note: string } | null = 'functionalImpact' in instrument ? (instrument.functionalImpact as { label: string; options: string[]; note: string }) : null;
 ---
 <Layout title={instrument.officialName + ' | Ozarbox'} description={instrument.purpose + '. Browser-only assessment with deterministic scoring or an explicitly unscored exposure summary.'} robots="index,follow,max-image-preview:large">
   <section class="container tool-wrap" aria-labelledby="page-title">
@@ -171,7 +172,7 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
         <button type="button" id="print-result">Print / Save as PDF</button>
         <button type="button" id="retake" class="secondary-button">Retake assessment</button>
         <a href={base + 'assessments/'} class="exit-link">Return to assessment centre</a>
-        {activeInstrumentId === 'phq-2' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
+        {instrument.id === 'phq-2' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
         {instrument.id === 'pcl-5' && <a href={base + 'tools/assessments/pc-ptsd-5/'} class="exit-link">Open brief PC-PTSD-5 screen</a>}
       </div>
     </section>
@@ -286,7 +287,7 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
       }
     }
 
-    function renderResult(scored: AssessmentResult): void {
+    function renderResult(scored: CompletedAssessmentResult): void {
       if (!instrument || !results) return;
       const scoreValue = document.querySelector<HTMLElement>('#score-value');
       const scoreBand = document.querySelector<HTMLElement>('#score-band');
@@ -351,7 +352,7 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
       if (clusterSection) {
         const showClusters = instrument.id === 'pcl-5' && Boolean(scored.clusters);
         clusterSection.hidden = !showClusters;
-        if (showClusters) {
+        if (showClusters && scored.clusters) {
           setListItems(document.querySelector<HTMLElement>('#cluster-list'), [
             'Cluster B (items 1–5): ' + scored.clusters.B + ' / 20',
             'Cluster C (items 6–7): ' + scored.clusters.C + ' / 8',
@@ -364,7 +365,7 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
       if (exposureSummary) {
         const showSummary = instrument.id === 'lec-5' && Array.isArray(scored.summary);
         exposureSummary.hidden = !showSummary;
-        if (showSummary) setListItems(document.querySelector<HTMLElement>('#exposure-summary-list'), scored.summary.map((row: { event: string; responses: string[] }) => row.event + ': ' + row.responses.join('; ')));
+        if (showSummary && scored.summary) setListItems(document.querySelector<HTMLElement>('#exposure-summary-list'), scored.summary.map((row: { event: string; responses: readonly string[] }) => row.event + ': ' + row.responses.join('; ')));
       }
 
       if (functional) {
@@ -406,8 +407,12 @@ const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
         firstMissing?.querySelector<HTMLInputElement>('input')?.focus({ preventScroll: true });
         return;
       }
+      if (scored.total === null) {
+        validation.textContent = 'No total score is defined for this instrument; only a response summary will be shown.';
+        validation.hidden = true;
+      }
       validation.hidden = true;
-      renderResult(scored);
+      renderResult(scored as CompletedAssessmentResult);
     });
 
     form?.addEventListener('reset', () => {

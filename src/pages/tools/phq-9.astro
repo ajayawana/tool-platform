@@ -69,6 +69,16 @@ const base = import.meta.env.BASE_URL;
       </form>
     </section>
 
+
+
+    <section id="results" class="results-card" aria-labelledby="results-heading" hidden>
+      <div class="results-top"><div><p class="eyebrow">Your result</p><h2 id="results-heading" tabindex="-1">PHQ-9 screening result</h2></div><button type="button" class="secondary-button print-button" id="print-button">Print / Save PDF</button></div>
+      <div class="score-summary">
+        <div class="score-circle"><span id="score-total">—</span><span class="score-denominator">out of 27</span></div>
+        <div><p class="result-kicker">Symptom-severity screening result</p><h3 id="severity-label">—</h3><p id="severity-description"></p></div>
+      </div>
+      <p class="result-caution">This score describes symptom frequency only. It is not a diagnosis and should be interpreted alongside your circumstances, functioning, medical history and a conversation with a qualified professional. A low score does not rule out a mental health concern.</p>
+
     <section id="safety-section" class="safety-card" aria-labelledby="safety-heading" hidden>
         <p class="eyebrow">Important follow-up · Separate from the score</p>
         <h3 id="safety-heading">Thank you for answering honestly.</h3>
@@ -88,14 +98,6 @@ const base = import.meta.env.BASE_URL;
           <p>If you are elsewhere, use your local emergency number or a verified crisis service in your country. If there is no immediate danger, please still contact a mental-health professional or trusted person promptly and tell them what you have been experiencing.</p>
         </div>
       </section>
-
-    <section id="results" class="results-card" aria-labelledby="results-heading" hidden>
-      <div class="results-top"><div><p class="eyebrow">Your result</p><h2 id="results-heading" tabindex="-1">PHQ-9 screening result</h2></div><button type="button" class="secondary-button print-button" id="print-button">Print / Save PDF</button></div>
-      <div class="score-summary">
-        <div class="score-circle"><span id="score-total">—</span><span class="score-denominator">out of 27</span></div>
-        <div><p class="result-kicker">Symptom-severity screening result</p><h3 id="severity-label">—</h3><p id="severity-description"></p></div>
-      </div>
-      <p class="result-caution">This score describes symptom frequency only. It is not a diagnosis and should be interpreted alongside your circumstances, functioning, medical history and a conversation with a qualified professional. A low score does not rule out a mental health concern.</p>
 
         <section class="next-steps" aria-labelledby="next-steps-heading">
         <h3 id="next-steps-heading">Suggested next steps</h3>

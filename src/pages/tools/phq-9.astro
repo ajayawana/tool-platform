@@ -172,6 +172,11 @@ const base = import.meta.env.BASE_URL;
       progressBar.setAttribute('aria-valuenow', String(count));
       progressFill.style.width = percent + '%';
       difficultyQuestion.hidden = !responses.some((value) => value !== null && value > 0);
+      const item9Positive = responses[8] !== null && responses[8] > 0;
+      safetySection.hidden = !item9Positive;
+      if (item9Positive) {
+        safetyAdvice.textContent = 'Choose the option that best describes how you feel right now. If you cannot stay safe, seek urgent in-person help now.';
+      }
     };
 
     const getHistory = () => {
@@ -202,7 +207,14 @@ const base = import.meta.env.BASE_URL;
       historyPanel.hidden = history.length === 0;
     };
 
-    form.addEventListener('change', updateProgress);
+    form.addEventListener('change', (event) => {
+      if (event.target instanceof HTMLInputElement && event.target.name.startsWith('q')) {
+        currentResult = null;
+        resultPanel.hidden = true;
+        saveButton.disabled = true;
+      }
+      updateProgress();
+    });
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       const responses = getResponses();
@@ -251,10 +263,11 @@ const base = import.meta.env.BASE_URL;
 
     document.querySelectorAll<HTMLInputElement>('input[name="immediate-safety"]').forEach((input) => {
       input.addEventListener('change', () => {
-        if (!currentResult || !currentResult.requiresSafetyFollowUp) return;
+        const item9Score = getResponses()[8];
+        if (item9Score === null || item9Score <= 0) return;
         const answer = input.value;
         if (answer !== 'yes' && answer !== 'no' && answer !== 'unsure') return;
-        const followUp = getSafetyFollowUp(Number(getResponses()[8]), answer);
+        const followUp = getSafetyFollowUp(item9Score, answer);
         if (followUp.status === 'urgent') {
           safetyAdvice.textContent = 'Please get urgent help now. Contact your local emergency number or go to the nearest emergency department. If you are in India, call 112. If possible, stay with someone you trust and move away from anything you could use to hurt yourself.';
         } else if (followUp.status === 'prompt-support') {

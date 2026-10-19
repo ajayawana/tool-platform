@@ -182,16 +182,18 @@ export function scorePublicDomainAssessment(instrumentId, responses) {
       throw new TypeError(instrument.officialName + " requires the exposure response and five symptom-response positions.");
     }
     const exposure = responses[0];
-    if (exposure !== "yes" && exposure !== "no") {
+    if (exposure === null || exposure === undefined || exposure === "") {
       return Object.freeze({ instrumentId, kind: instrument.kind, complete: false, missingItems: Object.freeze([1]), total: null, interpretation: null });
     }
+    if (exposure !== "yes" && exposure !== "no") throw new RangeError("The lifetime exposure response must be yes or no.");
     if (exposure === "no") {
       return Object.freeze({ instrumentId, kind: instrument.kind, complete: true, missingItems: Object.freeze([]), exposure: "no", total: 0, maxScore: instrument.maxScore, interpretation: "Exposure not endorsed; official instructions stop here", symptomResponses: Object.freeze([]), screenPositive: false });
     }
     const symptomResponses = responses.slice(1);
     const missingItems = [];
     symptomResponses.forEach((value, index) => {
-      if (value !== "yes" && value !== "no") missingItems.push(index + 2);
+      if (value === null || value === undefined || value === "") missingItems.push(index + 2);
+      else if (value !== "yes" && value !== "no") throw new RangeError("Symptom response for item " + (index + 1) + " must be yes or no.");
     });
     if (missingItems.length) return Object.freeze({ instrumentId, kind: instrument.kind, complete: false, missingItems: Object.freeze(missingItems), total: null, interpretation: null });
     const total = symptomResponses.filter((value) => value === "yes").length;

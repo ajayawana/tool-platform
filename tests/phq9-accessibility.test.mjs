@@ -77,11 +77,13 @@ test("positive item 9 reveals safety support immediately and handles the safety 
   assert.doesNotMatch(page, /if \(!currentResult \|\| !currentResult\.requiresSafetyFollowUp\) return;/);
 });
 
-test("item-9 safety follow-up is inside the results region so it remains visible with the result", () => {
+test("item-9 safety follow-up is outside hidden results so it can appear with incomplete answers", () => {
   const resultsStart = page.indexOf('<section id="results"');
+  const resultsEnd = page.indexOf('    </section>\n\n    <section id="safety-section"');
   const safetyStart = page.indexOf('<section id="safety-section"');
-  const resultsEnd = page.indexOf('</section>', page.indexOf('<section class="history-save"'));
   assert.ok(resultsStart >= 0, "results section exists");
-  assert.ok(safetyStart > resultsStart, "safety follow-up appears after the results section starts");
-  assert.ok(resultsEnd > safetyStart, "safety follow-up appears before the results section ends");
+  assert.ok(resultsEnd > resultsStart, "results section closes before the safety follow-up");
+  assert.ok(safetyStart > resultsEnd, "safety follow-up is separate from the results visibility state");
+  assert.match(page, /const item9Positive = responses\[8\] !== null && responses\[8\] > 0;\s*safetySection\.hidden = !item9Positive;/);
+  assert.match(page, /if \(result\.requiresSafetyFollowUp\) \{\s*safetySection\.scrollIntoView/);
 });

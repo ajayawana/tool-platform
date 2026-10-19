@@ -92,3 +92,8 @@ test("positive item 9 clearly states the limits of the web safety prompt for cli
   assert.match(page, /Answering “No” does not establish that you are safe or rule out suicide risk/);
   assert.match(page, /A “No” answer does not establish that you are safe or complete a risk assessment/);
 });
+
+
+test("editing an answer clears stale missing-response validation", () => {
+  assert.match(page, /if \(event\.target instanceof HTMLInputElement && event\.target\.name\.startsWith\('q'\)\) \{\s*currentResult = null;\s*resultPanel\.hidden = true;\s*validation\.hidden = true;\s*validation\.textContent = '';\s*saveButton\.disabled = true;/);
+});

@@ -156,7 +156,7 @@ const base = import.meta.env.BASE_URL;
     const historyPanel = mustGet<HTMLElement>('#history-panel');
     const historyList = mustGet<HTMLOListElement>('#history-list');
     const STORAGE_KEY = 'ozarbox.phq9.score-history.v1';
-    let currentResult = null;
+    let currentResult: { total: number; severity: string; item9Positive: boolean; requiresSafetyFollowUp: boolean } | null = null;
 
     const getResponses = () => Array.from({ length: 9 }, (_, index) => {
       const selected = form.querySelector<HTMLInputElement>('input[name="q' + (index + 1) + '"]:checked');
@@ -220,7 +220,7 @@ const base = import.meta.env.BASE_URL;
       currentResult = result;
       mustGet<HTMLElement>('#score-total').textContent = String(result.total);
       mustGet<HTMLElement>('#severity-label').textContent = result.severity;
-      const descriptions = {
+      const descriptions: Record<string, string> = {
         'Minimal': 'Your responses fall in the minimal symptom-severity range. If you remain concerned about how you feel, you can still seek support.',
         'Mild': 'Your responses fall in the mild symptom-severity range. Consider monitoring how you feel and discussing persistent or troubling symptoms with a professional.',
         'Moderate': 'Your responses fall in the moderate symptom-severity range. Consider arranging a conversation with a qualified health professional.',
@@ -230,7 +230,7 @@ const base = import.meta.env.BASE_URL;
       mustGet<HTMLElement>('#severity-description').textContent = descriptions[result.severity];
       safetySection.hidden = !result.requiresSafetyFollowUp;
       safetyAdvice.textContent = 'Choose the option that best describes how you feel right now. If you cannot stay safe, seek urgent in-person help now.';
-      form.querySelectorAll<HTMLInputElement>('input[name="immediate-safety"]').forEach((input) => { input.checked = false; });
+      document.querySelectorAll<HTMLInputElement>('input[name="immediate-safety"]').forEach((input) => { input.checked = false; });
       saveStatus.textContent = '';
       saveButton.disabled = !consent.checked;
       resultPanel.hidden = false;
@@ -291,6 +291,8 @@ const base = import.meta.env.BASE_URL;
     form.addEventListener('reset', () => {
       window.setTimeout(() => {
         resultPanel.hidden = true;
+        safetySection.hidden = true;
+        document.querySelectorAll<HTMLInputElement>('input[name="immediate-safety"]').forEach((input) => { input.checked = false; });
         validation.hidden = true;
         currentResult = null;
         saveButton.disabled = true;

@@ -31,6 +31,14 @@ The implementation keeps the official nine item prompts and response labels unch
 
 The original paper's published performance estimates relate to its study sample and do not validate this web implementation. Ozarbox's implementation has not been clinically validated, psychometrically evaluated, or endorsed by the instrument developers.
 
+## Clinical safety guidance and non-negotiable limitation
+
+A non-zero PHQ-9 item 9 response must not be treated as a complete suicide-risk assessment. The website now explicitly states that it does not alert clinicians, monitor patient responses, or provide a validated suicide-risk assessment. A “No” answer to its simple immediate-safety prompt does not establish safety or rule out risk. In clinical use, the responsible clinician must review a positive response and follow the organisation's validated brief suicide safety assessment, documentation, escalation, and follow-up pathway. This module is not suitable as the sole tool for clinical triage or risk disposition.
+
+Clinical references:
+- Clinical Pathway for Suicide Risk Screening in Adult Primary Care Settings: Special Recommendations: https://pmc.ncbi.nlm.nih.gov/articles/PMC9489622/
+- NIMH Adult Outpatient Brief Suicide Safety Assessment Guide: https://www.nimh.nih.gov/research/research-conducted-at-nimh/asq-toolkit-materials/adult-outpatient/adult-outpatient-brief-suicide-safety-assessment-guide
+
 ## 3. Data minimization
 
 - All answers and score calculations are handled in the browser.
@@ -64,4 +72,4 @@ No formal WCAG conformance claim is made. No clinical validation, institutional 
 - India emergency response: 112 — Government of India ERSS: https://112.gov.in/
 - India Tele-MANAS mental-health support: 14416 or 1800-89-14416 — Directorate General of Health Services, Ministry of Health and Family Welfare: https://www.dghs.mohfw.gov.in/national-mental-health-programme.php
 
-The page also directs users outside India to their local emergency number or a verified crisis service in their country.
+The page also directs users outside India to their local emergency number or a verified crisis service in their country. It explicitly warns that the immediate-safety prompt is not a validated risk assessment and that the website does not alert clinicians.

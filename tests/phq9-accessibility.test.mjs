@@ -84,3 +84,11 @@ test("item-9 safety follow-up is outside hidden results so it can appear with in
   assert.match(page, /const item9Positive = responses\[8\] !== null && responses\[8\] > 0;\s*safetySection\.hidden = !item9Positive;/);
   assert.match(page, /if \(result\.requiresSafetyFollowUp\) \{\s*safetySection\.scrollIntoView/);
 });
+
+test("positive item 9 clearly states the limits of the web safety prompt for clinical use", () => {
+  assert.match(page, /PHQ-9 item 9 alone is not a complete suicide-risk assessment/);
+  assert.match(page, /This website does not alert a clinician, monitor responses, or provide a validated suicide-risk assessment/);
+  assert.match(page, /tell the clinician or staff member now/);
+  assert.match(page, /Answering “No” does not establish that you are safe or rule out suicide risk/);
+  assert.match(page, /A “No” answer does not establish that you are safe or complete a risk assessment/);
+});

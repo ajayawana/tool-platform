@@ -70,7 +70,7 @@ const base = import.meta.env.BASE_URL;
     </section>
 
     <section id="results" class="results-card" aria-labelledby="results-heading" hidden>
-      <div class="results-top"><div><p class="eyebrow">Your result</p><h2 id="results-heading">PHQ-9 screening result</h2></div><button type="button" class="secondary-button print-button" id="print-button">Print / Save PDF</button></div>
+      <div class="results-top"><div><p class="eyebrow">Your result</p><h2 id="results-heading" tabindex="-1">PHQ-9 screening result</h2></div><button type="button" class="secondary-button print-button" id="print-button">Print / Save PDF</button></div>
       <div class="score-summary">
         <div class="score-circle"><span id="score-total">—</span><span class="score-denominator">out of 27</span></div>
         <div><p class="result-kicker">Symptom-severity screening result</p><h3 id="severity-label">—</h3><p id="severity-description"></p></div>
@@ -108,7 +108,7 @@ const base = import.meta.env.BASE_URL;
 
       <section class="history-save" aria-labelledby="save-heading">
         <h3 id="save-heading">Compare scores over time (optional)</h3>
-        <p>You can keep a small score history on this device to compare future PHQ-9 totals. Nothing is saved until you tick the consent box and press “Save score”. The history contains only date, total score, severity band not your answers or identifying details. It stays in this browser's local storage, is not encrypted, and may be visible to anyone who uses this device.</p>
+        <p>You can keep a small score history on this device to compare future PHQ-9 totals. Nothing is saved until you tick the consent box and press “Save score”. The history contains only date, total score, severity band—not your answers or identifying details. It stays in this browser's local storage, is not encrypted, and may be visible to anyone who uses this device.</p>
         <label class="consent-label" for="save-consent"><input type="checkbox" id="save-consent"><span>I understand and consent to saving this minimal PHQ-9 score history on this device.</span></label>
         <div class="form-actions save-actions"><button type="button" id="save-score-button" class="primary-button" disabled>Save score on this device</button><button type="button" id="clear-history-button" class="secondary-button">Delete saved history</button></div>
         <p id="save-status" class="field-help" role="status" aria-live="polite"></p>

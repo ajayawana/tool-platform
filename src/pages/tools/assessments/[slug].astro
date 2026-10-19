@@ -172,7 +172,7 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
         <button type="button" id="print-result">Print / Save as PDF</button>
         <button type="button" id="retake" class="secondary-button">Retake assessment</button>
         <a href={base + 'assessments/'} class="exit-link">Return to assessment centre</a>
-        {instrument.id === 'phq-2' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
+        {String(instrument.id) === 'phq-2' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
         {instrument.id === 'pcl-5' && <a href={base + 'tools/assessments/pc-ptsd-5/'} class="exit-link">Open brief PC-PTSD-5 screen</a>}
       </div>
     </section>

@@ -103,9 +103,11 @@ const base = import.meta.env.BASE_URL;
     <section id="safety-section" class="safety-card" aria-labelledby="safety-heading" hidden>
         <p class="eyebrow">Important follow-up · Separate from the score</p>
         <h3 id="safety-heading" tabindex="-1">Thank you for answering honestly.</h3>
-        <p>Your response to item 9 indicates thoughts of being better off dead or of hurting yourself at least some of the time. This does not tell us whether you are in immediate danger, so we will not assume. Your safety matters, and you deserve support.</p>
+        <p>Your response to item 9 is a positive screen for thoughts of death or self-harm. It does not, by itself, tell us whether you are in immediate danger. Your safety matters, and you deserve support.</p>
+        <div class="clinical-safety-note"><strong>Important for clinical use:</strong> PHQ-9 item 9 alone is not a complete suicide-risk assessment. This website does not alert a clinician, monitor responses, or provide a validated suicide-risk assessment. If you are completing this in a clinic, tell the clinician or staff member now so they can follow their safety protocol and complete an appropriate follow-up assessment. Do not leave a person with a positive response without arranging the follow-up required by your clinical setting.</div>
         <fieldset class="safety-question">
           <legend>Are you in immediate danger right now, or do you feel you might act on these thoughts?</legend>
+          <p class="field-help">This question is only a prompt to seek support; it is not a validated risk assessment. Answering “No” does not establish that you are safe or rule out suicide risk.</p>
           <div class="answer-options safety-options">
             <label class="answer-option" for="safety-yes"><input id="safety-yes" type="radio" name="immediate-safety" value="yes"><span class="custom-radio" aria-hidden="true"></span><span class="answer-label">Yes</span></label>
             <label class="answer-option" for="safety-no"><input id="safety-no" type="radio" name="immediate-safety" value="no"><span class="custom-radio" aria-hidden="true"></span><span class="answer-label">No</span></label>
@@ -285,7 +287,7 @@ const base = import.meta.env.BASE_URL;
         if (followUp.status === 'urgent') {
           safetyAdvice.textContent = 'Please get urgent help now. Contact your local emergency number or go to the nearest emergency department. If you are in India, call 112. If possible, stay with someone you trust and move away from anything you could use to hurt yourself.';
         } else if (followUp.status === 'prompt-support') {
-          safetyAdvice.textContent = 'Thank you for telling us. Even if you do not feel in immediate danger, please contact a mental-health professional or someone you trust promptly and tell them about these thoughts. If your safety changes, seek urgent help.';
+          safetyAdvice.textContent = 'Thank you for telling us. A “No” answer does not establish that you are safe or complete a risk assessment. Please contact a mental-health professional or someone you trust promptly, tell them about these thoughts, and ask for a proper assessment. If your safety changes or you cannot stay safe, seek urgent help.';
         }
       });
     });
@@ -403,6 +405,7 @@ const base = import.meta.env.BASE_URL;
     .result-caution{padding:15px 17px;border-radius:12px;background:#f8fafc;border:1px solid #e2e8f0;color:#334155}
     .safety-card{margin:22px 0;padding:22px;border:2px solid #fca5a5;border-radius:16px;background:#fff7f7}
     .safety-card h3{font-size:1.4rem;margin:.2rem 0 .6rem;color:#991b1b}
+    .clinical-safety-note{padding:14px 16px;margin:16px 0;border:1px solid #fca5a5;border-radius:11px;background:#fff;color:#7f1d1d;line-height:1.55}
     .safety-question{border:0;padding:0;margin:18px 0}
     .safety-question legend{font-weight:850;font-size:1.05rem;margin-bottom:12px}
     .safety-options{grid-template-columns:repeat(3,minmax(0,1fr))}

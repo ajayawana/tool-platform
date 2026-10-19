@@ -76,3 +76,45 @@ Do not label any module clinically validated because its source instrument has v
 - **M-CHAT-R/F:** the official permissions page says website posting or electronic distribution requires a licence agreement. The catalogue remains link-only pending licence. See [M-CHAT-R/F permissions](https://www.mchatscreen.com/mchat-rf/).
 - **WHO-5:** the WHO-published 2024 form specifies CC BY-NC-SA 3.0 IGO, which allows non-commercial use, not assumed use in a commercial website. Ozarbox therefore does not embed the items pending legal clearance or permission. See [official WHO PDF](https://cdn.who.int/media/docs/default-source/mental-health/who-5_english-original4da539d6ed4b49389e3afe47cda2326a.pdf) and [WHO copyright policy](https://www.who.int/about/policies/publishing/copyright).
 - **Pearson clinical tests:** Pearson Clinical Assessment India requires written consent for reproduction of its test materials and describes qualification restrictions; the catalogue does not reproduce those instruments or norms. See [Pearson permissions](https://www.pearsonclinical.in/legal/permissions-and-licensing.html) and [BDI-II product/qualification page](https://www.pearsonclinical.in/products/programs/beck-depression-inventory.html).
+
+
+## Expansion branch: additional public-domain trauma assessments and gated-instrument access
+
+**Branch status:** `feat/open-authorized-screening-instruments` is a proposed change, not yet merged. Three separate VA National Center for PTSD public-domain measures have been added as standalone modules. All are marked `implemented-unvalidated`, and none is described as a diagnosis or independently clinically validated website.
+
+### PCL-5 — clinician-interpreted symptom measure
+- 20 past-month symptom items; response codes 0–4; total range 0–80.
+- Deterministic sum plus symptom-cluster sums: B (items 1–5), C (6–7), D (8–14), E (15–20).
+- A commonly cited probable-PTSD cutoff range is 31–33, but the VA says the appropriate cutoff depends on purpose/population and interpretation should be by a clinician.
+- Official references: [PCL-5 source and use guidance](https://www.ptsd.va.gov/professional/assessment/adult-sr/ptsd-checklist.asp), [official standard form (29 August 2023)](https://www.ptsd.va.gov/professional/assessment/documents/PCL5_Standard_form.PDF), [validation paper](https://doi.org/10.1002/jts.22059).
+
+### PC-PTSD-5 — branched primary-care screen
+- The first question asks about lifetime exposure to a potentially traumatic event. If the response is No, the flow stops and returns 0 as directed by the source; symptom questions are not displayed or enabled.
+- If Yes, five symptom questions refer to the past month; the score counts Yes responses (0–5).
+- A cutoff of 4 is commonly used in some primary-care samples, but the VA notes sensitivity/specificity trade-offs, including potential false negatives in women. This is never a diagnosis.
+- Official references: [VA source and use guidance](https://www.ptsd.va.gov/professional/assessment/screens/pc-ptsd.asp), [official form](https://www.ptsd.va.gov/professional/assessment/documents/pc-ptsd5-screen.pdf), [validation paper](https://doi.org/10.1007/s11606-016-3703-5).
+
+### LEC-5 — exposure inventory, deliberately unscored
+- Standard self-report checklist of 17 lifetime event categories and how the event was experienced.
+- It produces a response summary only. It does not compute a total, symptom severity, PTSD likelihood or diagnosis; the VA notes that psychometric data for LEC-5 itself are not currently available.
+- It avoids free-text or graphic event narratives. Users are told they may skip/pause/exit and should not enter names or identifying information.
+- Official references: [VA source and administration guidance](https://www.ptsd.va.gov/professional/assessment/te-measures/life_events_checklist.asp), [official extended self-report PDF](https://www.ptsd.va.gov/professional/assessment/documents/LEC5_Extended_Self-report.PDF), [LEC validation paper](https://doi.org/10.1177/1073191104269954).
+
+The VA pages describe these public-domain measures as intended for qualified health professionals and researchers. Therefore these public-domain modules are **not** advertised as replacements for clinician-administered diagnosis. Every result states that the independent Ozarbox implementation has not been clinically validated; the website does not monitor responses or alert clinicians.
+
+## Access pathways for the other permission-review entries
+
+The registry now provides a visible official-access, publisher or licence route for all remaining 31 entries. This does **not** imply permission for Ozarbox to copy questionnaire items. Routes point users to the rights holder or authoritative source for access, licensing, training or the official interactive version. Examples:
+- [AUDIT free official interactive site](https://auditscreen.org/check-your-drinking/) — its terms describe non-commercial use; Ozarbox does not clone the form while this website's applicable use rights are unresolved.
+- [ASSIST official WHO source](https://www.who.int/publications/i/item/978924159938-2) — embedded form remains gated pending a specific reuse-rights determination.
+- [M-CHAT-R/F official permissions](https://www.mchatscreen.com/mchat-rf/) — the rights holder requires a licence agreement to post or distribute an electronic form.
+- [SDQ official website](https://www.sdqinfo.org/) — the rights holder says electronic versions require prior authorisation.
+- [WHO-5 official English form](https://cdn.who.int/media/docs/default-source/mental-health/who-5_english-original4da539d6ed4b49389e3afe47cda2326a.pdf) — its current licence is CC BY-NC-SA 3.0 IGO; commercial compatibility has not been established.
+- [EuroQol registration/licensing](https://registration.euroqol.org/) for EQ-5D, and [Pearson's permission policy](https://www.pearsonclinical.in/legal/permissions-and-licensing.html) for protected Pearson tests.
+- Other entries link to their respective publisher or official VA/WHO/rights-holder portals.
+
+The public site cannot enforce administrator qualifications, protect secure test stimuli/norms, provide an auditable clinician record, or run an institution's response protocols. Proprietary inventories, secure cognitive tests, diagnostic interviews and clinician-rated measures remain unhosted until explicit rights, role/access controls and the required clinical workflow are in place.
+
+## Test additions in this branch
+
+New tests cover PCL-5 item/response and score boundaries, missing and invalid responses, cluster totals, PC-PTSD-5 skip branch and threshold behavior, LEC-5's no-total-score behavior, all missing exposure positions, mutually exclusive LEC responses, privacy-oriented structure, official access links, and the new sitemap routes. Automated checks are not manual accessibility testing, independent psychometric validation, legal advice or clinical readiness certification.

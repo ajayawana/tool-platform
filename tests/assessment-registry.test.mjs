@@ -88,3 +88,20 @@ test("registry makes clear that catalogue presence does not confer instrument ri
   assert.match(registry.purpose, /not evidence of clinical validity/i);
   assert.match(registry.purpose, /permission to reproduce content/i);
 });
+
+test("known rights-controlled public electronic forms remain disabled with official permissions sources", () => {
+  const cases = [
+    ["m-chat-r-f", /license agreement|required/i, "https:\/\/www.mchatscreen.com\/mchat-rf\/"],
+    ["sdq-strengths-and-difficulties-questionnaire", /electronic versions require prior authorization|copyrighted/i, "https:\/\/www.sdqinfo.org\/"],
+    ["who-5", /CC BY-NC-SA|non-commercial/i, "https:\/\/cdn.who.int\/media\/docs\/default-source\/mental-health\/who-5_english-original4da539d6ed4b49389e3afe47cda2326a.pdf"],
+    ["bdi-ii", /proprietary|Qualification Level B|permission/i, "https:\/\/www.pearsonclinical.in\/products\/programs\/beck-depression-inventory.html"],
+  ];
+  for (const [id, rightsPattern, source] of cases) {
+    const item = registry.instruments.find((instrument) => instrument.instrument_id === id);
+    assert.ok(item, "missing rights-controlled instrument " + id);
+    assert.equal(item.route ?? null, null);
+    assert.equal(item.deployment_status, "permission-review");
+    assert.match(item.content_rights, rightsPattern);
+    assert.ok(item.evidence_sources.includes(source), id + " must link an official permissions source");
+  }
+});

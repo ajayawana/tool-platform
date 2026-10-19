@@ -4,11 +4,11 @@ import { PHQ9_ITEMS, PHQ9_RESPONSE_OPTIONS } from '../../lib/phq9-scoring.js';
 const base = import.meta.env.BASE_URL;
 ---
 <Layout title="PHQ-9 Depression Symptom Screening | Ozarbox" description="Complete the official nine-item PHQ-9 symptom screening questionnaire privately in your browser. This screening is not a diagnosis." robots="index,follow,max-image-preview:large">
-  <main class="container phq9-page">
+  <section class="container phq9-page" aria-labelledby="page-title">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={base}>Home</a> / <a href={base + 'categories/'}>Tools</a> / PHQ-9 screening</nav>
     <header class="phq9-header">
       <p class="eyebrow">Mental wellbeing · Screening tool</p>
-      <h1>PHQ-9 depression symptom screening</h1>
+      <h1 id="page-title">PHQ-9 depression symptom screening</h1>
       <p class="intro">A private, browser-based version of the Patient Health Questionnaire-9 (PHQ-9), a widely used measure of depressive-symptom frequency over the past two weeks.</p>
       <div class="notice notice-neutral">
         <strong>Important to know</strong>
@@ -134,7 +134,7 @@ const base = import.meta.env.BASE_URL;
       <p class="attribution">Ozarbox is an independent implementation and is not affiliated with, endorsed by, or clinically validated by the instrument developers or Pfizer. The original instrument's validation does not establish the validity, reliability, clinical suitability, or regulatory status of this website.</p>
     </section>
     <p class="back-link"><a href={base}>← Back to Ozarbox</a> · <a href={base + 'privacy/'}>Privacy policy</a> · <a href={base + 'disclaimer/'}>Disclaimer</a></p>
-  </main>
+  </section>
 
   <script>
     import { scorePhq9, getSafetyFollowUp } from '../../lib/phq9-scoring.js';
@@ -396,6 +396,6 @@ const base = import.meta.env.BASE_URL;
     @media(max-width:760px){.response-key{grid-template-columns:repeat(2,minmax(0,1fr))}.answer-options{grid-template-columns:repeat(2,minmax(0,1fr))}.information-grid{grid-template-columns:1fr}.score-summary{align-items:flex-start}.card-heading,.results-top{align-items:flex-start;flex-direction:column}.time-chip{white-space:normal}}
     @media(max-width:420px){.phq9-page{width:calc(100% - 20px)}.assessment-card,.results-card,.info-card,.sources-card{padding:16px;border-radius:15px}.answer-options{grid-template-columns:1fr}.answer-option{min-height:48px}.safety-options{grid-template-columns:1fr}.score-summary{gap:14px}.score-circle{width:90px;height:90px;flex-basis:90px;border-width:5px}#score-total{font-size:1.8rem}.save-actions{align-items:stretch;flex-direction:column}.save-actions button{width:100%}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
-    @media print{.site-header,footer,.breadcrumbs,.form-actions,.privacy-strip,.phq9-header,.assessment-card,.history-save,.back-link,.print-button{display:none!important}.phq9-page{width:100%;max-width:none;padding:0}.results-card{display:block!important;border:0;box-shadow:none}.safety-card{break-inside:avoid}.information-grid{grid-template-columns:1fr}.info-card,.sources-card{break-inside:avoid;box-shadow:none}}
+    @media print{.site-header,footer,.breadcrumbs,.form-actions,.privacy-strip,.phq9-header,.assessment-card,.history-save,.back-link,.print-button{display:none!important}.phq9-page{width:100%;max-width:none;padding:0}.results-card{border:0;box-shadow:none}.safety-card{break-inside:avoid}.information-grid{grid-template-columns:1fr}.info-card,.sources-card{break-inside:avoid;box-shadow:none}}
   </style>
 </Layout>

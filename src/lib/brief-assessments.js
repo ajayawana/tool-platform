@@ -34,6 +34,7 @@ export const BRIEF_ASSESSMENTS = Object.freeze({
     nextSteps: "Consider discussing your symptoms, duration, daily functioning, medical history and any concerns with a qualified health professional. A clinician may use PHQ-9 or another appropriate assessment as part of a broader evaluation.",
     sources: Object.freeze([
       "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
+      "https://pubmed.ncbi.nlm.nih.gov/14583691/",
       "https://cde.nlm.nih.gov/formView?tinyId=mJsGoMU1m"
     ]),
     statusText: "English self-report screen. The instrument family has public-access documentation; this particular website module has not been independently clinically validated."
@@ -75,10 +76,11 @@ export const BRIEF_ASSESSMENTS = Object.freeze({
       note: "This is a functional-impact follow-up and is not included in the GAD-7 score."
     }),
     limitations: "The GAD-7 measures self-reported anxiety symptoms; it cannot establish an anxiety disorder or explain the cause of symptoms. Physical health conditions, medications, stressors, other mental-health conditions, culture and language can affect responses. A clinician evaluates duration, impairment, context and alternative explanations.",
-    lowResult: "This total is in the minimal symptom range. It does not rule out an anxiety condition or other concerns if symptoms, impairment or worry persist.",
+    lowResult: "This total is below a commonly used threshold for further assessment. The symptom-range label above may still indicate mild symptoms; it does not rule out an anxiety condition or other concerns if symptoms, impairment or worry persist.",
     nextSteps: "Review how long the symptoms have been present and whether they affect sleep, work, study, relationships or daily activities. Consider discussing ongoing symptoms or impairment with a qualified health professional.",
     sources: Object.freeze([
-      "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care"
+      "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
+      "https://pubmed.ncbi.nlm.nih.gov/16717171/"
     ]),
     statusText: "English self-report measure. The GAD-7 has public-access documentation; this particular website module has not been independently clinically validated."
   }),
@@ -102,7 +104,8 @@ export const BRIEF_ASSESSMENTS = Object.freeze({
     highResult: "This score is at or above a commonly used GAD-2 screening threshold. Further assessment may be appropriate; this result does not diagnose an anxiety disorder.",
     nextSteps: "If symptoms continue, affect everyday life or concern you, consider a fuller assessment such as GAD-7 and a conversation with a qualified health professional.",
     sources: Object.freeze([
-      "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care"
+      "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
+      "https://pubmed.ncbi.nlm.nih.gov/17339617/"
     ]),
     statusText: "English two-item screen derived from the GAD-7 items. The short-screen implementation and its use still require local clinical governance and evaluation."
   })

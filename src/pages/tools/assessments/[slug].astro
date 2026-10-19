@@ -1,6 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import { BRIEF_ASSESSMENTS } from '../../../lib/brief-assessments.js';
+import { BRIEF_ASSESSMENTS, BRIEF_RESPONSE_OPTIONS } from '../../../lib/brief-assessments.js';
 
 export function getStaticPaths() {
   return Object.keys(BRIEF_ASSESSMENTS).map((slug) => ({

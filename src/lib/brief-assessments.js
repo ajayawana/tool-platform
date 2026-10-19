@@ -107,7 +107,7 @@ export const BRIEF_ASSESSMENTS = Object.freeze({
       "https://www.pfizer.com/news/press-release/press-release-detail/pfizer_to_offer_free_public_access_to_mental_health_assessment_tools_to_improve_diagnosis_and_patient_care",
       "https://pubmed.ncbi.nlm.nih.gov/17339617/"
     ]),
-    statusText: "English two-item screen derived from the GAD-7 items. The short-screen implementation and its use still require local clinical governance and evaluation."
+    statusText: "English two-item screen derived from the GAD-7 items. This website implementation has not been independently clinically validated and still requires local clinical governance and evaluation."
   })
 });
 

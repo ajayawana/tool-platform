@@ -2331,7 +2331,7 @@
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
-      "instrument_id": "fear-questionnaire",
+      "instrument_id": "fq-fear-questionnaire",
       "official_name": "FQ (Fear Questionnaire)",
       "main_purpose": "Phobic avoidance",
       "domains": [
@@ -3913,7 +3913,7 @@
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified."
     },
     {
-      "instrument_id": "panic-and-agoraphobia-scale",
+      "instrument_id": "pas-panic-and-agoraphobia-scale",
       "official_name": "PAS (Panic and Agoraphobia Scale)",
       "main_purpose": "Panic and agoraphobia symptoms",
       "domains": [

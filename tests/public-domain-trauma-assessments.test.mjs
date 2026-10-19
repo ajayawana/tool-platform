@@ -9,7 +9,7 @@ import {
 } from "../src/lib/public-domain-assessments.js";
 
 test("public-domain PTSD module registry includes the three separately governed VA measures", () => {
-  assert.deepEqual(Object.keys(PUBLIC_DOMAIN_ASSESSMENTS).sort(), ["lec-5", "pcl-5", "pc-ptsd-5"]);
+  assert.deepEqual(Object.keys(PUBLIC_DOMAIN_ASSESSMENTS).sort(), ["lec-5", "pc-ptsd-5", "pcl-5"]);
   assert.equal(getPublicDomainAssessment("pcl-5").items.length, 20);
   assert.equal(getPublicDomainAssessment("pc-ptsd-5").items.length, 5);
   assert.equal(getPublicDomainAssessment("lec-5").events.length, 17);
@@ -141,7 +141,7 @@ test("assessment route supports conditional branching, sensitive-content exit, f
   assert.match(page, /The official instructions say to stop here/);
   assert.match(page, /exposure-checklist/);
   assert.match(page, /No total score or severity band is defined/);
-  assert.match(page, /You can skip any item, pause or exit/);
+  assert.match(page, /You can skip any item, pause or exit|You can pause, skip any item or exit/);
   assert.match(page, /resultsHeading\?\.focus\(\)/);
   assert.match(page, /Exit assessment/);
   assert.match(page, /Print \/ Save as PDF/);

@@ -1,0 +1,267 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { BRIEF_ASSESSMENTS, BRIEF_RESPONSE_OPTIONS } from '../../../lib/brief-assessments.js';
+
+export function getStaticPaths() {
+  return Object.values(BRIEF_ASSESSMENTS).map((instrument) => ({
+    params: { slug: instrument.id },
+    props: { instrument },
+  }));
+}
+const { instrument } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<Layout title={instrument.officialName + ' | Ozarbox'} description={instrument.purpose + '. Private, browser-based screening with transparent deterministic scoring and clear limitations.'} robots="index,follow,max-image-preview:large">
+  <section class="container tool-wrap" aria-labelledby="page-title">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={base}>Home</a> / <a href={base + 'assessments/'}>Psychological assessments</a> / {instrument.id.toUpperCase()}</nav>
+    <header class="tool-head">
+      <p class="eyebrow">Ozarbox · Psychological assessment</p>
+      <h1 id="page-title">{instrument.officialName}</h1>
+      <p>{instrument.purpose}. This is a self-report screening measure, not a diagnostic interview.</p>
+    </header>
+
+    <div class="notice notice-warning" role="note">
+      <h2>Before you begin</h2>
+      <p>This tool can help you describe recent symptoms and prepare for a conversation with a qualified health professional. It cannot diagnose a condition, determine its cause, or replace professional assessment.</p>
+      <p><strong>Privacy:</strong> Answers and scoring stay in this page's browser session. This module does not use AI, send answers to an Ozarbox assessment endpoint, or save answers or scores to local storage. Leaving or refreshing the page clears your unsaved answers.</p>
+      <p><strong>Safety:</strong> This screen does not assess suicide risk and is not monitored. If you are in immediate danger or may act on thoughts of harming yourself or someone else, stop and seek immediate local emergency or in-person support. Do not wait for this tool or assume a clinician has seen your answers.</p>
+    </div>
+
+    <section class="tool-box assessment-box" aria-labelledby="instructions-heading">
+      <h2 id="instructions-heading">Instructions</h2>
+      <p>{instrument.instructions}</p>
+      <p><strong>Recall period:</strong> {instrument.recallPeriod}.</p>
+      <p>Choose one response for each item. Answer based on your experience, not on what you think an answer should be. You may exit at any time.</p>
+
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Progress</span><span id="progress-text" aria-live="polite">0 of {instrument.items.length} answered</span></div>
+        <progress id="progress" value="0" max={instrument.items.length} aria-label="Questionnaire completion"></progress>
+      </div>
+
+      <form id="assessment-form" data-instrument={instrument.id} novalidate>
+        {instrument.items.map((item, index) => (
+          <fieldset class="question" id={'question-' + (index + 1)} data-question={index + 1}>
+            <legend><span class="question-number">Question {index + 1} of {instrument.items.length}</span>{item}</legend>
+            <div class="options">
+              {BRIEF_RESPONSE_OPTIONS.map((option) => (
+                <label class="option">
+                  <input type="radio" name={'q' + (index + 1)} value={option.value} required />
+                  <span>{option.label}</span>
+                </label>
+              ))}
+            </div>
+          </fieldset>
+        ))}
+
+        {instrument.functionalImpact && (
+          <fieldset class="question functional-impact" id="functional-impact">
+            <legend>Daily-life impact (not included in the score)</legend>
+            <p>{instrument.functionalImpact.label}</p>
+            <div class="options">
+              {instrument.functionalImpact.options.map((option, index) => (
+                <label class="option">
+                  <input type="radio" name="functional-impact" value={index} />
+                  <span>{option}</span>
+                </label>
+              ))}
+            </div>
+            <p class="muted">{instrument.functionalImpact.note}</p>
+          </fieldset>
+        )}
+
+        <div id="validation-message" class="validation-message" role="alert" aria-live="assertive" hidden></div>
+        <div class="form-actions">
+          <button type="submit">Calculate screening score</button>
+          <button type="reset" class="secondary-button">Clear answers</button>
+          <a class="exit-link" href={base + 'assessments/'}>Exit assessment</a>
+        </div>
+      </form>
+    </section>
+
+    <section id="results" class="tool-box results-box" aria-labelledby="results-heading" hidden>
+      <p class="eyebrow">Your result</p>
+      <h2 id="results-heading" tabindex="-1">Screening result</h2>
+      <div class="score-row"><p class="score" id="score-value"></p><p id="score-band" class="score-band"></p></div>
+      <p id="result-date" class="muted"></p>
+      <p class="print-only">Screening result only. This does not diagnose a condition and is not a substitute for professional assessment.</p>
+      <p id="result-summary" class="result-summary" aria-live="polite"></p>
+      <h3>What this result can tell you</h3>
+      <p id="result-meaning"></p>
+      <h3>What this result cannot tell you</h3>
+      <p id="result-limitations">{instrument.limitations}</p>
+      <h3>What to consider next</h3>
+      <p id="result-next-steps">{instrument.nextSteps}</p>
+      <p id="functional-result" hidden></p>
+      <div class="result-actions">
+        <button type="button" id="print-result">Print / Save as PDF</button>
+        <button type="button" id="retake" class="secondary-button">Retake assessment</button>
+        <a href={base + 'assessments/'} class="exit-link">Return to assessment centre</a>
+        {instrument.id === 'phq-2' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
+      </div>
+    </section>
+
+    <section class="source-panel" aria-labelledby="sources-heading">
+      <h2 id="sources-heading">Instrument and scoring provenance</h2>
+      <p>{instrument.statusText}</p>
+      <p><strong>Scoring method:</strong> {instrument.scoringMethod}</p>
+      <ul>
+        {instrument.sources.map((source) => <li><a href={source} target="_blank" rel="noopener noreferrer">{source}</a></li>)}
+      </ul>
+      <p>Ozarbox is an independent tool publisher and is not endorsed by the instrument developers, authors, publishers, or health authorities. A technically correct score does not make this website a clinically validated medical device or substitute for professional assessment.</p>
+    </section>
+  </section>
+  <script>
+    import { scoreBriefAssessment, getBriefAssessment } from '../../../lib/brief-assessments.js';
+    import type { BriefAssessmentResult } from '../../../lib/brief-assessments.js';
+
+    const form = document.querySelector<HTMLFormElement>('#assessment-form');
+    const validation = document.querySelector<HTMLElement>('#validation-message');
+    const progress = document.querySelector<HTMLProgressElement>('#progress');
+    const progressText = document.querySelector<HTMLElement>('#progress-text');
+    const results = document.querySelector<HTMLElement>('#results');
+    const resultsHeading = document.querySelector<HTMLElement>('#results-heading');
+    const instrumentId = form?.dataset.instrument;
+    const instrument = instrumentId ? getBriefAssessment(instrumentId) : null;
+    const fieldsets = [...document.querySelectorAll<HTMLFieldSetElement>('#assessment-form fieldset[data-question]')];
+
+    function readResponses() {
+      return fieldsets.map((fieldset) => {
+        const checked = fieldset.querySelector<HTMLInputElement>('input[type="radio"]:checked');
+        return checked ? Number(checked.value) : null;
+      });
+    }
+
+    function updateProgress() {
+      const responses = readResponses();
+      const answered = responses.filter((value) => value !== null).length;
+      if (progress) progress.value = answered;
+      if (progressText && instrument) progressText.textContent = answered + ' of ' + instrument.items.length + ' answered';
+    }
+
+    function selectedFunctionalImpact() {
+      const selected = document.querySelector<HTMLInputElement>('input[name="functional-impact"]:checked');
+      return selected && instrument?.functionalImpact ? instrument.functionalImpact.options[Number(selected.value)] : null;
+    }
+
+    function renderResult(scored: BriefAssessmentResult, _responses: Array<number | null>) {
+      if (!instrument || !results) return;
+      const scoreValue = document.querySelector<HTMLElement>('#score-value');
+      const scoreBand = document.querySelector<HTMLElement>('#score-band');
+      const summary = document.querySelector<HTMLElement>('#result-summary');
+      const meaning = document.querySelector<HTMLElement>('#result-meaning');
+      const limitation = document.querySelector<HTMLElement>('#result-limitations');
+      const nextSteps = document.querySelector<HTMLElement>('#result-next-steps');
+      const functional = document.querySelector<HTMLElement>('#functional-result');
+      const resultDate = document.querySelector<HTMLElement>('#result-date');
+
+      if (scoreValue) scoreValue.textContent = scored.total + ' / ' + instrument.maxScore;
+      if (scoreBand) scoreBand.textContent = scored.interpretation ?? 'Screening result';
+      if (resultDate) resultDate.textContent = 'Generated on ' + new Date().toLocaleDateString() + '. Answers and results are not saved by this page.';
+      if (summary) {
+        if (instrument.id === 'gad-7') {
+          summary.textContent = scored.screenPositive
+            ? 'Your score is at or above a commonly used threshold for further assessment. This is a screening result, not a diagnosis.'
+            : instrument.lowResult;
+        } else {
+          summary.textContent = scored.screenPositive ? (instrument.highResult ?? instrument.lowResult) : instrument.lowResult;
+        }
+      }
+      if (meaning) {
+        meaning.textContent = instrument.id === 'gad-7'
+          ? scored.screenPositive
+            ? 'The GAD-7 total is at or above a commonly used threshold for further assessment. The symptom-range label describes the responses on this questionnaire; it does not determine the cause or establish a disorder.'
+            : 'The symptom-range label describes the responses you reported in the past two weeks. It should be considered alongside your concerns, context and day-to-day functioning.'
+          : scored.screenPositive ? (instrument.highResult ?? instrument.lowResult) : instrument.lowResult;
+      }
+      if (limitation) limitation.textContent = instrument.limitations;
+      if (nextSteps) nextSteps.textContent = instrument.nextSteps;
+      if (functional) {
+        const impact = selectedFunctionalImpact();
+        functional.hidden = !impact;
+        functional.textContent = impact ? 'Daily-life impact response (not scored): ' + impact + '.' : '';
+      }
+      results.hidden = false;
+      resultsHeading?.focus();
+    }
+
+    form?.addEventListener('change', (event) => {
+      if ((event.target as HTMLElement)?.matches('input[type="radio"]')) {
+        updateProgress();
+        if (validation) validation.hidden = true;
+      }
+    });
+
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!instrument || !validation) return;
+      const responses = readResponses();
+      const scored = scoreBriefAssessment(instrument.id, responses);
+      if (!scored.complete) {
+        validation.textContent = 'Please answer all ' + instrument.items.length + ' required questions before calculating a score. Unanswered questions: ' + scored.missingItems.join(', ') + '. No score has been calculated.';
+        validation.hidden = false;
+        const firstMissing = fieldsets[scored.missingItems[0] - 1];
+        firstMissing?.scrollIntoView({ behavior: 'auto', block: 'center' });
+        firstMissing?.querySelector<HTMLInputElement>('input')?.focus({ preventScroll: true });
+        return;
+      }
+      validation.hidden = true;
+      renderResult(scored, responses);
+    });
+
+    form?.addEventListener('reset', () => {
+      window.setTimeout(() => {
+        if (validation) {
+          validation.hidden = true;
+          validation.textContent = '';
+        }
+        if (results) results.hidden = true;
+        updateProgress();
+      }, 0);
+    });
+
+    document.querySelector<HTMLButtonElement>('#retake')?.addEventListener('click', () => {
+      form?.reset();
+      fieldsets[0]?.querySelector<HTMLInputElement>('input')?.focus();
+      document.querySelector('#instructions-heading')?.scrollIntoView({ behavior: 'auto', block: 'start' });
+    });
+
+    document.querySelector<HTMLButtonElement>('#print-result')?.addEventListener('click', () => window.print());
+    updateProgress();
+  </script>
+  <style>
+    .notice{margin-top:24px;padding:20px 22px;border-radius:16px;border:1px solid #dbeafe;background:#eff6ff;max-width:860px}
+    .notice h2{font-size:1.2rem;margin-top:0}
+    .notice p{margin:.6rem 0}
+    .notice-warning{background:#fffaf0;border-color:#fed7aa;color:#7c2d12}
+    .assessment-box,.results-box{max-width:860px;margin-top:24px}
+    .progress-wrap{margin:24px 0;padding:14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px}
+    .progress-label{display:flex;justify-content:space-between;gap:12px;font-weight:750;font-size:.92rem}
+    progress{width:100%;height:12px;margin-top:8px;accent-color:#2563eb}
+    .question{border:1px solid #e2e8f0;border-radius:16px;padding:18px;margin:22px 0;min-width:0}
+    .question legend{font-size:1.1rem;font-weight:800;padding:0 6px;max-width:100%}
+    .question-number{display:block;color:#1d4ed8;font-size:.79rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+    .options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+    .option{display:flex;align-items:center;gap:12px;border:1px solid #cbd5e1;border-radius:12px;padding:12px;background:#fff;font-weight:600;min-height:52px;cursor:pointer}
+    .option:has(input:checked){border-color:#2563eb;background:#eff6ff}
+    .option input{width:20px;height:20px;flex:0 0 auto;accent-color:#1d4ed8;margin:0}
+    .functional-impact{background:#fafafa}
+    .muted{color:#64748b;font-size:.92rem}
+    .validation-message{padding:14px;border:2px solid #b91c1c;background:#fef2f2;border-radius:12px;color:#7f1d1d;font-weight:700}
+    .form-actions,.result-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .form-actions button,.result-actions button{margin:0}
+    .secondary-button{background:#e2e8f0;color:#0f172a}
+    .exit-link{display:inline-block;padding:10px 4px;color:#1d4ed8;font-weight:800;text-decoration:underline}
+    .score-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+    .print-only{display:none}.score{font-size:2.2rem;font-weight:900;line-height:1.2;margin:8px 0}
+    .score-band{padding:7px 12px;border-radius:999px;background:#eff6ff;color:#1e40af;font-weight:800}
+    .result-summary{font-size:1.1rem;font-weight:750}
+    .source-panel{max-width:860px;padding:30px 0}
+    .source-panel h2{font-size:1.35rem}
+    .source-panel a{overflow-wrap:anywhere}
+    button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #f59e0b;outline-offset:3px}
+    [hidden]{display:none!important}
+    @media(max-width:600px){.options{grid-template-columns:1fr}.question{padding:15px}.notice{padding:16px}.form-actions button,.result-actions button{width:100%}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+    @media print{.site-header,footer,.form-actions,.result-actions,.breadcrumbs,.notice,.assessment-box{display:none!important}.source-panel{display:block!important}.print-only{display:block!important}.tool-wrap{padding:0}.results-box{display:block!important;border:0;box-shadow:none;padding:0;max-width:none}.results-box[hidden]{display:none!important}body{background:#fff;color:#000;font-size:12pt}.score-band{border:1px solid #888;background:#fff;color:#000}}
+  </style>
+</Layout>

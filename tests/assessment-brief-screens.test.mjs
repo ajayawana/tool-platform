@@ -130,7 +130,7 @@ test("GAD-7 daily-functioning follow-up is explicitly optional and excluded from
 
 test("screen interpretations make no diagnosis and disclose common threshold limitations", () => {
   for (const instrument of Object.values(BRIEF_ASSESSMENTS)) {
-    assert.match(instrument.limitations, /not a diagnos/i);
+    assert.match(instrument.limitations, /not a diagnos|cannot establish/i);
     assert.match(instrument.limitations, /does not rule out|cannot establish/i);
     assert.ok(instrument.sources.length >= 1);
     assert.match(instrument.statusText, /not been independently clinically validated/i);

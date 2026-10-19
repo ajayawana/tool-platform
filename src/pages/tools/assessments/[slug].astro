@@ -14,6 +14,7 @@ export function getStaticPaths() {
 }
 const { instrument } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const instrumentId: string = instrument.id;
 const isLikert = !instrument.kind || instrument.kind === 'likert';
 const questionCount = instrument.kind === 'exposure-checklist' ? instrument.events.length
   : instrument.kind === 'yes-no-branch' ? instrument.items.length + 1
@@ -172,7 +173,7 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
         <button type="button" id="print-result">Print / Save as PDF</button>
         <button type="button" id="retake" class="secondary-button">Retake assessment</button>
         <a href={base + 'assessments/'} class="exit-link">Return to assessment centre</a>
-        {instrument.id === 'phq-2' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
+        {instrumentId === 'phq-2' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
         {instrument.id === 'pcl-5' && <a href={base + 'tools/assessments/pc-ptsd-5/'} class="exit-link">Open brief PC-PTSD-5 screen</a>}
       </div>
     </section>
@@ -383,9 +384,9 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
       const responses = readResponses();
       let scored: BriefAssessmentResult | PublicDomainAssessmentResult;
       try {
-        scored = kind === 'likert' && ['phq-2', 'gad-7', 'gad-2'].includes(instrument.id)
-          ? scoreBriefAssessment(instrument.id, responses as Array<number | null>)
-          : scorePublicDomainAssessment(instrument.id, responses as never);
+        scored = kind === 'likert' && ['phq-2', 'gad-7', 'gad-2'].includes(instrumentId)
+          ? scoreBriefAssessment(instrumentId, responses as Array<number | null>)
+          : scorePublicDomainAssessment(instrumentId, responses as never);
       } catch (error) {
         validation.textContent = error instanceof Error ? error.message : 'The response values could not be checked. Please review your answers.';
         validation.hidden = false;

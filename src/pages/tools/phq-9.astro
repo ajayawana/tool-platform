@@ -69,15 +69,7 @@ const base = import.meta.env.BASE_URL;
       </form>
     </section>
 
-    <section id="results" class="results-card" aria-labelledby="results-heading" hidden>
-      <div class="results-top"><div><p class="eyebrow">Your result</p><h2 id="results-heading" tabindex="-1">PHQ-9 screening result</h2></div><button type="button" class="secondary-button print-button" id="print-button">Print / Save PDF</button></div>
-      <div class="score-summary">
-        <div class="score-circle"><span id="score-total">—</span><span class="score-denominator">out of 27</span></div>
-        <div><p class="result-kicker">Symptom-severity screening result</p><h3 id="severity-label">—</h3><p id="severity-description"></p></div>
-      </div>
-      <p class="result-caution">This score describes symptom frequency only. It is not a diagnosis and should be interpreted alongside your circumstances, functioning, medical history and a conversation with a qualified professional. A low score does not rule out a mental health concern.</p>
-
-      <section id="safety-section" class="safety-card" aria-labelledby="safety-heading" hidden>
+    <section id="safety-section" class="safety-card" aria-labelledby="safety-heading" hidden>
         <p class="eyebrow">Important follow-up · Separate from the score</p>
         <h3 id="safety-heading">Thank you for answering honestly.</h3>
         <p>Your response to item 9 indicates thoughts of being better off dead or of hurting yourself at least some of the time. This does not tell us whether you are in immediate danger, so we will not assume. Your safety matters, and you deserve support.</p>
@@ -97,7 +89,15 @@ const base = import.meta.env.BASE_URL;
         </div>
       </section>
 
-      <section class="next-steps" aria-labelledby="next-steps-heading">
+    <section id="results" class="results-card" aria-labelledby="results-heading" hidden>
+      <div class="results-top"><div><p class="eyebrow">Your result</p><h2 id="results-heading" tabindex="-1">PHQ-9 screening result</h2></div><button type="button" class="secondary-button print-button" id="print-button">Print / Save PDF</button></div>
+      <div class="score-summary">
+        <div class="score-circle"><span id="score-total">—</span><span class="score-denominator">out of 27</span></div>
+        <div><p class="result-kicker">Symptom-severity screening result</p><h3 id="severity-label">—</h3><p id="severity-description"></p></div>
+      </div>
+      <p class="result-caution">This score describes symptom frequency only. It is not a diagnosis and should be interpreted alongside your circumstances, functioning, medical history and a conversation with a qualified professional. A low score does not rule out a mental health concern.</p>
+
+        <section class="next-steps" aria-labelledby="next-steps-heading">
         <h3 id="next-steps-heading">Suggested next steps</h3>
         <ul>
           <li>Consider sharing this result with a qualified doctor or mental-health professional, especially if symptoms are persistent, worsening, or affecting daily life.</li>
@@ -205,14 +205,24 @@ const base = import.meta.env.BASE_URL;
     form.addEventListener('change', updateProgress);
     form.addEventListener('submit', (event) => {
       event.preventDefault();
-      const result = scorePhq9(getResponses());
+      const responses = getResponses();
+      const item9Response = responses[8];
+      const item9Positive = item9Response !== null && item9Response > 0;
+      safetySection.hidden = !item9Positive;
+      safetyAdvice.textContent = 'Choose the option that best describes how you feel right now. If you cannot stay safe, seek urgent in-person help now.';
+      document.querySelectorAll<HTMLInputElement>('input[name="immediate-safety"]').forEach((input) => { input.checked = false; });
+      const result = scorePhq9(responses);
       if (!result.complete) {
         validation.hidden = false;
         validation.textContent = 'Please answer all nine PHQ-9 items before calculating your score. Unanswered items: ' + result.missingItems.join(', ') + '. No total has been calculated.';
-        const firstMissing = mustGet<HTMLFieldSetElement>('#question-' + result.missingItems[0]);
-        firstMissing?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        firstMissing.querySelector<HTMLInputElement>('input')?.focus({ preventScroll: true });
-        validation.focus({ preventScroll: true });
+        if (item9Positive) {
+          safetySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          mustGet<HTMLHeadingElement>('#safety-heading').focus({ preventScroll: true });
+        } else {
+          const firstMissing = mustGet<HTMLFieldSetElement>('#question-' + result.missingItems[0]);
+          firstMissing.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          firstMissing.querySelector<HTMLInputElement>('input')?.focus({ preventScroll: true });
+        }
         return;
       }
 
@@ -231,8 +241,6 @@ const base = import.meta.env.BASE_URL;
       };
       mustGet<HTMLElement>('#severity-description').textContent = descriptions[severity] || 'Discuss your responses with a qualified health professional.';
       safetySection.hidden = !result.requiresSafetyFollowUp;
-      safetyAdvice.textContent = 'Choose the option that best describes how you feel right now. If you cannot stay safe, seek urgent in-person help now.';
-      document.querySelectorAll<HTMLInputElement>('input[name="immediate-safety"]').forEach((input) => { input.checked = false; });
       saveStatus.textContent = '';
       saveButton.disabled = !consent.checked;
       resultPanel.hidden = false;

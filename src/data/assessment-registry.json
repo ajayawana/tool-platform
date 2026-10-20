@@ -112,7 +112,15 @@
       "access_url": "https://www.wpspublish.com/",
       "access_label": "Open publisher access and licensing",
       "open_alternative_route": "/tools/open-assessments/abas-3/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "academic-motivation-scale",
@@ -129,26 +137,40 @@
       "administration_mode": "self-report or informant form; exact form must be verified",
       "language": "English version not yet individually source-verified; no translations enabled by this registry.",
       "recall_period": "Verify against the exact instrument manual/source.",
-      "permission_status": "Not yet verified; do not reproduce item content.",
+      "permission_status": "Official source states research purposes only; no commercial use clearance recorded.",
       "content_rights": "Do not reproduce items or scoring keys until the exact version, terms, and permitted administration mode are verified.",
-      "scoring_specification": "Not implemented. No score is generated for catalogue-only entries.",
-      "evidence_status": "Source and instrument-specific implementation audit outstanding.",
+      "scoring_specification": "For each of the seven source-defined four-item subscales, calculate the arithmetic mean of its four 1–7 responses. Descriptive subscale averages only; no norms, diagnosis, or validated global score.",
+      "evidence_status": "Official source PDF located and used; source groups and response anchors transcribed. Website implementation and intended-population validity remain unvalidated.",
       "evidence_sources": [],
       "safety_rules": [
         "Do not diagnose or recommend treatment from a score alone.",
         "No automated scoring implemented while evidence or permission remains unresolved."
       ],
-      "deployment_status": "catalogue-only",
-      "software_validation": "Catalogue metadata only; no module or scoring engine implemented.",
+      "deployment_status": "implemented-unvalidated",
+      "software_validation": "Digitized from the official LRCS source PDF; automated scoring uses the seven four-item groupings printed in the source. Website implementation is not independently psychometrically validated.",
       "route": null,
       "scoring_version": "Not implemented. No score is generated for catalogue-only entries.",
-      "license_status": "Not yet verified; do not reproduce item content.",
+      "license_status": "Research purposes only per source site; commercial permission not verified.",
       "author_or_developer": "Not yet verified in this registry; confirm the author/developer from the exact official edition.",
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/academic-motivation-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open original reflection guide",
+      "source_pdf": {
+        "status": "official-source-pdf-used",
+        "label": "Official PDF used · research purposes only",
+        "source_url": "https://lrcs.uqam.ca/wp-content/uploads/2017/08/emec_en.pdf",
+        "source_name": "Academic Motivation Scale (AMS-C 28), College Version — Research Laboratory on Social Behavior, UQAM",
+        "version": "AMS-C 28 College Version; authors listed as Vallerand et al.; 1992–1993",
+        "use_rights": "The official LRCS scales page labels these materials for research purposes only and requests citation. This web implementation is for non-commercial research/educational use only; obtain separate permission before commercial use or adaptation beyond the source terms.",
+        "implementation_status": "implemented-from-official-source-pdf",
+        "implemented_from": "https://lrcs.uqam.ca/wp-content/uploads/2017/08/emec_en.pdf",
+        "citation": "Vallerand, R. J., Pelletier, L. G., Blais, M. R., Brière, N. M., Senécal, C., & Vallières, É. F. (1992). The Academic Motivation Scale: A measure of intrinsic, extrinsic, and amotivation in education. Educational and Psychological Measurement, 52(4), 1003–1017. https://doi.org/10.1177/0013164492052004025",
+        "route": "/tools/source-assessments/academic-motivation-scale/"
+      },
+      "access_url": "https://lrcs.uqam.ca/wp-content/uploads/2017/08/emec_en.pdf",
+      "access_label": "Official AMS-C 28 PDF used by this implementation (external)"
     },
     {
       "instrument_id": "ace-iii",
@@ -184,7 +206,19 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/ace-iii/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "official-source-pdf-found-not-used",
+        "label": "Official PDF found · not used",
+        "source_url": "https://www.sydney.edu.au/brain-mind/our-clinics/dementia-test.html",
+        "source_name": "University of Sydney FRONTIER ACE-III resource page (English India version listed)",
+        "version": "User-uploaded Indian English copy is dated 07/03/2013; exact equivalence to the current official download not confirmed.",
+        "use_rights": "The official resource page says resources are for non-commercial purposes and describes ACE-III as clinician-administered; professional administration/training and version-specific review are required before a public interactive implementation.",
+        "implementation_status": "not-implemented",
+        "reason": "Clinical administration, version matching, and rights/use review remain unresolved."
+      },
+      "access_url": "https://www.sydney.edu.au/brain-mind/our-clinics/dementia-test.html",
+      "access_label": "Official ACE-III source and PDF versions (external)"
     },
     {
       "instrument_id": "adhd-rating-scale-5",
@@ -222,7 +256,15 @@
       "access_url": "https://www.guilford.com/",
       "access_label": "Open publisher access and licensing",
       "open_alternative_route": "/tools/open-assessments/adhd-rating-scale-5/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "adi-r",
@@ -260,7 +302,15 @@
       "access_url": "https://www.wpspublish.com/",
       "access_label": "Open publisher access and licensing",
       "open_alternative_route": "/tools/open-assessments/adi-r/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "adis-5",
@@ -296,7 +346,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/adis-5/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "ados-2",
@@ -334,7 +392,15 @@
       "access_url": "https://www.wpspublish.com/",
       "access_label": "Open publisher access and licensing",
       "open_alternative_route": "/tools/open-assessments/ados-2/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "altman-self-rating-mania-scale-asrm",
@@ -370,7 +436,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/altman-self-rating-mania-scale-asrm/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "aq-autism-spectrum-quotient",
@@ -406,7 +480,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/aq-autism-spectrum-quotient/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "asi-3",
@@ -442,7 +524,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/asi-3/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "asq-3",
@@ -478,7 +568,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/asq-3/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "asq-se-2",
@@ -514,7 +612,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/asq-se-2/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "asrs-v1-1",
@@ -550,7 +656,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/asrs-v1-1/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "assist",
@@ -591,7 +705,15 @@
       "access_url": "https://www.who.int/publications/i/item/978924159938-2",
       "access_label": "Open official WHO source and permissions terms",
       "open_alternative_route": "/tools/open-assessments/assist/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "audit",
@@ -632,7 +754,15 @@
       "access_url": "https://www.who.int/publications/i/item/978924159938-2",
       "access_label": "Official WHO AUDIT guidance and source (external)",
       "open_alternative_route": "/tools/open-assessments/audit/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "audit-c",
@@ -668,7 +798,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/audit-c/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "bai",
@@ -708,7 +846,15 @@
       "access_url": "https://www.pearsonclinical.in/products/programs/beck-anxiety-inventory.html",
       "access_label": "Open publisher page and purchase/licensing details",
       "open_alternative_route": "/tools/open-assessments/bai/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "basc-3",
@@ -744,7 +890,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/basc-3/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "bdi-ii",
@@ -784,7 +938,15 @@
       "access_url": "https://www.pearsonclinical.in/products/programs/beck-depression-inventory.html",
       "access_label": "Open publisher page and purchase/licensing details",
       "open_alternative_route": "/tools/open-assessments/bdi-ii/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "bergen-social-media-addiction-scale",
@@ -820,7 +982,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/bergen-social-media-addiction-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "bes-binge-eating-scale",
@@ -856,7 +1026,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/bes-binge-eating-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "bfi-2",
@@ -892,7 +1070,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/bfi-2/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "boston-naming-test",
@@ -928,7 +1114,15 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/boston-naming-test/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "brief-resilience-scale",
@@ -964,7 +1158,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/brief-resilience-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "brief-2",
@@ -1000,7 +1202,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/brief-2/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "brown-add-scales",
@@ -1036,7 +1246,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/brown-add-scales/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "bsi",
@@ -1074,7 +1292,15 @@
       "access_url": "https://www.pearsonclinical.com/",
       "access_label": "Open publisher portal for access and permissions",
       "open_alternative_route": "/tools/open-assessments/bsi/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "bsi-18",
@@ -1110,7 +1336,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/bsi-18/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "c-ssrs",
@@ -1146,7 +1380,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/c-ssrs/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "cage-aid",
@@ -1182,7 +1424,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/cage-aid/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "caps-5",
@@ -1220,7 +1470,15 @@
       "access_url": "https://www.ptsd.va.gov/professional/assessment/adult-int/caps.asp",
       "access_label": "Open official VA measure and clinician access requirements",
       "open_alternative_route": "/tools/open-assessments/caps-5/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "career-adapt-abilities-scale",
@@ -1256,7 +1514,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/career-adapt-abilities-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "career-decision-making-difficulties-questionnaire",
@@ -1292,7 +1558,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/career-decision-making-difficulties-questionnaire/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "cbcl",
@@ -1328,7 +1602,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/cbcl/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "cd-risc",
@@ -1364,7 +1646,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/cd-risc/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "cdi-2",
@@ -1400,7 +1690,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/cdi-2/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "ces-d",
@@ -1436,7 +1734,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/ces-d/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "cia-clinical-impairment-assessment",
@@ -1472,7 +1778,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/cia-clinical-impairment-assessment/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "cidi",
@@ -1508,7 +1822,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/cidi/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "compulsive-buying-scale",
@@ -1544,7 +1866,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/compulsive-buying-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "conflict-tactics-scales",
@@ -1580,7 +1910,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/conflict-tactics-scales/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "conners-scales",
@@ -1618,7 +1956,15 @@
       "access_url": "https://mhs.com/",
       "access_label": "Open publisher portal for access and permissions",
       "open_alternative_route": "/tools/open-assessments/conners-scales/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "connor-davidson-social-support-scale-variants",
@@ -1654,7 +2000,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/connor-davidson-social-support-scale-variants/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "copenhagen-burnout-inventory",
@@ -1690,7 +2044,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/copenhagen-burnout-inventory/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "core-om",
@@ -1726,7 +2088,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/core-om/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "csi-couples-satisfaction-index",
@@ -1762,7 +2132,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/csi-couples-satisfaction-index/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "cvlt",
@@ -1798,7 +2176,15 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/cvlt/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "d-kefs",
@@ -1834,7 +2220,15 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/d-kefs/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "das-revised-dyadic-adjustment-scale",
@@ -1870,7 +2264,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/das-revised-dyadic-adjustment-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "dass-21",
@@ -1906,7 +2308,18 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/dass-21/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "official-source-pdf-found-not-used",
+        "label": "Official PDF found · not used",
+        "source_url": "https://dass.psy.unsw.edu.au/down.htm",
+        "source_name": "UNSW DASS official download page",
+        "version": "DASS-21 response form; exact digital implementation not yet built.",
+        "use_rights": "The official site permits copying without restriction but says the scales may not be modified or sold for profit; digitization terms need review before interactive implementation.",
+        "implementation_status": "not-implemented"
+      },
+      "access_url": "https://dass.psy.unsw.edu.au/down.htm",
+      "access_label": "Official DASS download and use terms (external)"
     },
     {
       "instrument_id": "dast-10",
@@ -1942,7 +2355,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/dast-10/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "dcdq",
@@ -1978,7 +2399,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/dcdq/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "des-ii",
@@ -2014,7 +2443,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/des-ii/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "digit-span",
@@ -2050,7 +2487,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/digit-span/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "diva-5",
@@ -2086,7 +2531,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/diva-5/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "docs",
@@ -2122,7 +2575,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/docs/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "dss-b",
@@ -2158,7 +2619,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/dss-b/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "ecr-r",
@@ -2194,7 +2663,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/ecr-r/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "ede-q",
@@ -2230,7 +2707,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/ede-q/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "eq-5d",
@@ -2268,7 +2753,15 @@
       "access_url": "https://registration.euroqol.org/",
       "access_label": "Open official registration and licensing portal",
       "open_alternative_route": "/tools/open-assessments/eq-5d/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "ess-epworth-sleepiness-scale",
@@ -2304,7 +2797,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/ess-epworth-sleepiness-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "experiences-in-close-relationships-scales",
@@ -2340,7 +2841,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/experiences-in-close-relationships-scales/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "faces-iv",
@@ -2376,7 +2885,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/faces-iv/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "fagerstrom-test",
@@ -2412,7 +2929,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/fagerstrom-test/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "family-apgar",
@@ -2448,7 +2973,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/family-apgar/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "flourishing-scale",
@@ -2484,7 +3017,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/flourishing-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "fq-fear-questionnaire",
@@ -2520,7 +3061,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/fq-fear-questionnaire/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "gad-2",
@@ -2560,7 +3109,15 @@
       "author_or_developer": "Kroenke, Spitzer, Williams, Monahan and Löwe (2007)",
       "language_validation_status": "English-only module. No local-language translation or local norm validation is claimed.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
-      "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation."
+      "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation.",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "gad-7",
@@ -2600,7 +3157,15 @@
       "author_or_developer": "Spitzer, Kroenke, Williams and Löwe (2006)",
       "language_validation_status": "English-only module. No local-language translation or local norm validation is claimed.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
-      "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation."
+      "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation.",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "general-self-efficacy-scale",
@@ -2636,7 +3201,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/general-self-efficacy-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "ghq-12",
@@ -2672,7 +3245,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/ghq-12/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "hads",
@@ -2708,7 +3289,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/hads/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "hcl-32",
@@ -2744,7 +3333,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/hcl-32/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "hexaco-pi-r",
@@ -2780,7 +3377,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/hexaco-pi-r/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "holland-riasec-measures",
@@ -2816,7 +3421,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/holland-riasec-measures/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "icg-inventory-of-complicated-grief",
@@ -2852,7 +3465,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/icg-inventory-of-complicated-grief/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "ies-r",
@@ -2888,7 +3509,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/ies-r/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "iip-32",
@@ -2924,7 +3553,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/iip-32/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "internet-gaming-disorder-scale",
@@ -2960,7 +3597,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/internet-gaming-disorder-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "ipip-scales",
@@ -2996,7 +3641,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/ipip-scales/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "isi-insomnia-severity-index",
@@ -3032,7 +3685,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/isi-insomnia-severity-index/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "itq",
@@ -3068,7 +3729,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/itq/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "k-sads-pl",
@@ -3104,7 +3773,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/k-sads-pl/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "k10",
@@ -3140,7 +3817,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/k10/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "k6",
@@ -3176,7 +3861,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/k6/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "kbit-2",
@@ -3212,7 +3905,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/kbit-2/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "learning-and-study-strategies-inventory",
@@ -3248,7 +3949,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/learning-and-study-strategies-inventory/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "lec-5",
@@ -3290,7 +3999,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Exposure only—not PTSD symptoms, diagnosis, severity or risk. This website implementation is not independently clinically validated.",
       "access_url": "https://www.ptsd.va.gov/professional/assessment/te-measures/life_events_checklist.asp",
-      "access_label": "Open official source and administration guidance"
+      "access_label": "Open official source and administration guidance",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "lsas",
@@ -3326,7 +4043,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/lsas/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "lsns-6",
@@ -3362,7 +4087,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/lsns-6/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "m-chat-r-f",
@@ -3402,7 +4135,15 @@
       "access_url": "https://www.mchatscreen.com/license-inquiry/",
       "access_label": "Official M-CHAT licence inquiry and permissions (external)",
       "open_alternative_route": "/tools/open-assessments/m-chat-r-f/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "maslach-burnout-inventory",
@@ -3440,7 +4181,15 @@
       "access_url": "https://www.mindgarden.com/117-maslach-burnout-inventory-mbi",
       "access_label": "Open rights-holder forms and licence options",
       "open_alternative_route": "/tools/open-assessments/maslach-burnout-inventory/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "mcmi-iv",
@@ -3476,7 +4225,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/mcmi-iv/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "mdq",
@@ -3512,7 +4269,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/mdq/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "meaning-in-life-questionnaire",
@@ -3548,7 +4313,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/meaning-in-life-questionnaire/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "mfq",
@@ -3584,7 +4357,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/mfq/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "mini",
@@ -3620,7 +4401,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/mini/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "mini-spin",
@@ -3656,7 +4445,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/mini-spin/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "mmpi-3",
@@ -3696,7 +4493,15 @@
       "access_url": "https://www.pearsonclinical.in/legal/permissions-and-licensing.html",
       "access_label": "Open publisher permissions and licensing",
       "open_alternative_route": "/tools/open-assessments/mmpi-3/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "mmse",
@@ -3732,7 +4537,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/mmse/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "moca",
@@ -3768,7 +4581,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/moca/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "motivated-strategies-for-learning-questionnaire",
@@ -3804,7 +4625,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/motivated-strategies-for-learning-questionnaire/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "msi-bpd",
@@ -3840,7 +4669,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/msi-bpd/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "mspss",
@@ -3876,7 +4713,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/mspss/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "neo-pi-3",
@@ -3914,7 +4759,15 @@
       "access_url": "https://www.parinc.com/",
       "access_label": "Open publisher portal for access and permissions",
       "open_alternative_route": "/tools/open-assessments/neo-pi-3/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "o-net-interest-profiler",
@@ -3950,7 +4803,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/o-net-interest-profiler/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "oci-r",
@@ -3986,7 +4847,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/oci-r/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "oq-45-2",
@@ -4022,7 +4891,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/oq-45-2/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "pai",
@@ -4060,7 +4937,15 @@
       "access_url": "https://www.parinc.com/",
       "access_label": "Open publisher portal for access and permissions",
       "open_alternative_route": "/tools/open-assessments/pai/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "panas",
@@ -4096,7 +4981,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/panas/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "parenting-scale",
@@ -4132,7 +5025,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/parenting-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "parenting-stress-index",
@@ -4168,7 +5069,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/parenting-stress-index/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "pas-panic-and-agoraphobia-scale",
@@ -4204,7 +5113,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/pas-panic-and-agoraphobia-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "pc-ptsd-5",
@@ -4246,7 +5163,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "A positive screen is not a PTSD diagnosis and requires further assessment. This website implementation is not independently clinically validated.",
       "access_url": "https://www.ptsd.va.gov/professional/assessment/screens/pc-ptsd.asp",
-      "access_label": "Open official source and administration guidance"
+      "access_label": "Open official source and administration guidance",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "pcl-5",
@@ -4288,7 +5213,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "This website implementation is not independently clinically validated. Result is not a diagnosis; clinical interpretation is required.",
       "access_url": "https://www.ptsd.va.gov/professional/assessment/adult-sr/ptsd-checklist.asp",
-      "access_label": "Open official source and administration guidance"
+      "access_label": "Open official source and administration guidance",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "pdss",
@@ -4324,7 +5257,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/pdss/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "pedsql",
@@ -4360,7 +5301,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/pedsql/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "perceived-stress-scale-pss-10",
@@ -4396,7 +5345,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/perceived-stress-scale-pss-10/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "pg-13-r",
@@ -4432,7 +5389,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/pg-13-r/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "phq-2",
@@ -4472,7 +5437,15 @@
       "author_or_developer": "Kroenke, Spitzer and Williams (2003)",
       "language_validation_status": "English-only module. No local-language translation or local norm validation is claimed.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
-      "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation."
+      "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation.",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "phq-9",
@@ -4511,7 +5484,15 @@
       "author_or_developer": "Kroenke, Spitzer and Williams (2001)",
       "language_validation_status": "English-only module. No local-language translation or local norm validation is claimed.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
-      "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation."
+      "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation.",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "pid-5",
@@ -4547,7 +5528,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/pid-5/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "problem-gambling-severity-index-pgsi",
@@ -4583,7 +5572,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/problem-gambling-severity-index-pgsi/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "psc",
@@ -4619,7 +5616,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/psc/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "psqi",
@@ -4655,7 +5660,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/psqi/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "pss-i-5",
@@ -4691,7 +5704,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/pss-i-5/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "pswq",
@@ -4727,7 +5748,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/pswq/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "qids-sr",
@@ -4763,7 +5792,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/qids-sr/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "raads-r",
@@ -4799,7 +5836,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/raads-r/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "raven-s-progressive-matrices",
@@ -4835,7 +5880,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/raven-s-progressive-matrices/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "ravlt",
@@ -4871,7 +5924,15 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/ravlt/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "rbans",
@@ -4907,7 +5968,15 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/rbans/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "rcads",
@@ -4943,7 +6012,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/rcads/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "relationship-assessment-scale",
@@ -4979,7 +6056,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/relationship-assessment-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "rey-complex-figure-test",
@@ -5015,7 +6100,15 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/rey-complex-figure-test/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "rosenberg-self-esteem-scale",
@@ -5051,7 +6144,18 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/rosenberg-self-esteem-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "official-source-found-not-used",
+        "label": "Official source found · PDF/use review pending",
+        "source_url": "https://socy.umd.edu/about-us/rosenberg-self-esteem-scale",
+        "source_name": "University of Maryland Sociology Department",
+        "version": "Version and exact downloadable form to be checked before implementation.",
+        "use_rights": "The University of Maryland page states the scale is in the public domain; exact form, attribution and scoring still require review before implementation.",
+        "implementation_status": "not-implemented"
+      },
+      "access_url": "https://socy.umd.edu/about-us/rosenberg-self-esteem-scale",
+      "access_label": "Public-domain status and source (external)"
     },
     {
       "instrument_id": "sapas",
@@ -5087,7 +6191,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/sapas/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "satisfaction-with-life-scale",
@@ -5123,7 +6235,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/satisfaction-with-life-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "sbq-r",
@@ -5159,7 +6279,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/sbq-r/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "scan",
@@ -5195,7 +6323,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/scan/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "scared",
@@ -5231,7 +6367,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/scared/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "scid-5-cv",
@@ -5269,7 +6413,15 @@
       "access_url": "https://www.appi.org/",
       "access_label": "Open APA Publishing access and permissions",
       "open_alternative_route": "/tools/open-assessments/scid-5-cv/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "scid-5-pd",
@@ -5307,7 +6459,15 @@
       "access_url": "https://www.appi.org/",
       "access_label": "Open APA Publishing access and permissions",
       "open_alternative_route": "/tools/open-assessments/scid-5-pd/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "scl-90-r",
@@ -5345,7 +6505,15 @@
       "access_url": "https://www.pearsonclinical.com/",
       "access_label": "Open publisher portal for access and permissions",
       "open_alternative_route": "/tools/open-assessments/scl-90-r/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "scoff",
@@ -5381,7 +6549,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/scoff/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "scq",
@@ -5417,7 +6593,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/scq/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "sdq-strengths-and-difficulties-questionnaire",
@@ -5457,7 +6641,15 @@
       "access_url": "https://www.sdqinfo.org/",
       "access_label": "Open official forms and electronic-use permission guidance",
       "open_alternative_route": "/tools/open-assessments/sdq-strengths-and-difficulties-questionnaire/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "sf-36-sf-12",
@@ -5495,7 +6687,15 @@
       "access_url": "https://www.optum.com/",
       "access_label": "Open rights-holder access and licensing",
       "open_alternative_route": "/tools/open-assessments/sf-36-sf-12/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "sds",
@@ -5531,7 +6731,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/sds/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "sitbi",
@@ -5567,7 +6775,15 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/sitbi/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "snap-iv",
@@ -5603,7 +6819,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/snap-iv/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "spin",
@@ -5639,7 +6863,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/spin/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "srs-2",
@@ -5675,7 +6907,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/srs-2/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "stanford-binet",
@@ -5713,7 +6953,15 @@
       "access_url": "https://riversideinsights.com/",
       "access_label": "Open publisher portal for access and permissions",
       "open_alternative_route": "/tools/open-assessments/stanford-binet/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "stop-bang",
@@ -5749,7 +6997,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/stop-bang/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "strong-interest-inventory",
@@ -5785,7 +7041,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/strong-interest-inventory/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "stroop-tests",
@@ -5821,7 +7085,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/stroop-tests/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "symbol-digit-modalities-test",
@@ -5857,7 +7129,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/symbol-digit-modalities-test/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "tomm",
@@ -5893,7 +7173,15 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/tomm/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "trail-making-test",
@@ -5929,7 +7217,15 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/trail-making-test/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "trf",
@@ -5965,7 +7261,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/trf/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "ucla-loneliness-scale",
@@ -6001,7 +7305,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/ucla-loneliness-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "utrecht-work-engagement-scale",
@@ -6037,7 +7349,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/utrecht-work-engagement-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "vanderbilt-scales",
@@ -6073,7 +7393,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/vanderbilt-scales/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "vineland-3",
@@ -6111,7 +7439,15 @@
       "access_url": "https://www.pearsonclinical.com/",
       "access_label": "Open publisher portal for access and permissions",
       "open_alternative_route": "/tools/open-assessments/vineland-3/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "wais",
@@ -6151,7 +7487,15 @@
       "access_url": "https://www.pearsonclinical.in/legal/permissions-and-licensing.html",
       "access_label": "Open publisher permissions and licensing",
       "open_alternative_route": "/tools/open-assessments/wais/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "who-5",
@@ -6192,7 +7536,15 @@
       "access_url": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
       "access_label": "Official WHO-5 publication and licence information (external)",
       "open_alternative_route": "/tools/open-assessments/who-5/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "whodas-2-0",
@@ -6232,7 +7584,15 @@
       "access_url": "https://www.who.int/classifications/international-classification-of-functioning-disability-and-health/who-disability-assessment-schedule",
       "access_label": "Open official WHO source and reuse information",
       "open_alternative_route": "/tools/open-assessments/whodas-2-0/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "whoqol-bref",
@@ -6268,7 +7628,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/whoqol-bref/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "wisc",
@@ -6308,7 +7676,15 @@
       "access_url": "https://www.pearsonclinical.in/legal/permissions-and-licensing.html",
       "access_label": "Open publisher permissions and licensing",
       "open_alternative_route": "/tools/open-assessments/wisc/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "wisconsin-card-sorting-test",
@@ -6344,7 +7720,15 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/wisconsin-card-sorting-test/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "woodcock-johnson",
@@ -6382,7 +7766,15 @@
       "access_url": "https://riversideinsights.com/",
       "access_label": "Open publisher portal for access and permissions",
       "open_alternative_route": "/tools/open-assessments/woodcock-johnson/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "work-and-social-adjustment-scale",
@@ -6418,7 +7810,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/work-and-social-adjustment-scale/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "work-related-stress-measures",
@@ -6454,7 +7854,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/work-related-stress-measures/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "wppsi",
@@ -6494,7 +7902,15 @@
       "access_url": "https://www.pearsonclinical.in/legal/permissions-and-licensing.html",
       "access_label": "Open publisher permissions and licensing",
       "open_alternative_route": "/tools/open-assessments/wppsi/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "y-bocs",
@@ -6532,7 +7948,15 @@
       "access_url": "https://pubmed.ncbi.nlm.nih.gov/?term=Yale-Brown+Obsessive+Compulsive+Scale",
       "access_label": "Find primary publications and clinician-use information",
       "open_alternative_route": "/tools/open-assessments/y-bocs/",
-      "open_alternative_label": "Open original reflection alternative"
+      "open_alternative_label": "Open original reflection alternative",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "ymrs",
@@ -6568,7 +7992,15 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/ymrs/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     },
     {
       "instrument_id": "ysr",
@@ -6604,7 +8036,15 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "open_alternative_route": "/tools/open-assessments/ysr/",
-      "open_alternative_label": "Open free original reflection guide"
+      "open_alternative_label": "Open free original reflection guide",
+      "source_pdf": {
+        "status": "not-yet-researched",
+        "label": "PDF source not yet verified",
+        "source_url": null,
+        "version": null,
+        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
+        "implementation_status": "not-implemented"
+      }
     }
   ]
 }

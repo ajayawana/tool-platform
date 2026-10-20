@@ -1,0 +1,56 @@
+{
+  "id": "ces-d",
+  "title": "Center for Epidemiologic Studies Depression Scale (CES-D)",
+  "sourceUrl": "https://www.nih.gov/node/20171",
+  "sourceName": "National Institutes of Health — CES-D Common Data Element; Copyright: No",
+  "citation": "Radloff, L. S. (1977). The CES-D Scale: A self-report depression scale for research in the general population. Applied Psychological Measurement, 1(3), 385–401.",
+  "prompt": "Below is a list of ways you might have felt or behaved. Please indicate how often you felt this way during the past week.",
+  "useNotice": "Official source documents free use / no copyright claim. This digital version is not independently validated and is not diagnostic. Interpret only within an appropriate clinical, research, or population context.",
+  "responseOptions": [
+    {
+      "value": 0,
+      "label": "Rarely or none (less than 1 day)"
+    },
+    {
+      "value": 1,
+      "label": "Some or a little (1–2 days)"
+    },
+    {
+      "value": 2,
+      "label": "Occasionally or a moderate amount (3–4 days)"
+    },
+    {
+      "value": 3,
+      "label": "Most or all of the time (5–7 days)"
+    }
+  ],
+  "questions": [
+    "I was bothered by things that usually don't bother me.",
+    "I did not feel like eating; my appetite was poor.",
+    "I felt that I could not shake off the blues even with help from my family or friends.",
+    "I felt that I was just as good as other people.",
+    "I had trouble keeping my mind on what I was doing.",
+    "I felt depressed.",
+    "I felt that everything I did was an effort.",
+    "I felt hopeful about the future.",
+    "I thought my life had been a failure.",
+    "I felt fearful.",
+    "My sleep was restless.",
+    "I was happy.",
+    "I talked less than usual.",
+    "I felt lonely.",
+    "People were unfriendly.",
+    "I enjoyed life.",
+    "I had crying spells.",
+    "I felt sad.",
+    "I felt that people disliked me.",
+    "I could not get going."
+  ],
+  "reverseItems": [
+    4,
+    8,
+    12,
+    16
+  ],
+  "scoringNote": "Sum 20 responses after reverse-scoring items 4, 8, 12, and 16 (0↔3, 1↔2). Range 0–60. This implementation reports raw score only; cut-offs vary by setting and are not diagnostic."
+}

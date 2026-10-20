@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0.0",
+  "title": "Academic Motivation Scale — College Version (AMS-C 28)",
+  "sourceUrl": "https://lrcs.uqam.ca/wp-content/uploads/2017/08/emec_en.pdf",
+  "sourcePageUrl": "https://www.lrcs.uqam.ca/en/scales/",
+  "useNotice": "Research purposes only. Do not use for diagnosis, treatment, selection, or high-stakes decisions. The official source page labels the scales for research purposes only; commercial-use permission has not been verified.",
+  "prompt": "WHY DO YOU GO TO COLLEGE? Using the scale below, indicate to what extent each item presently corresponds to one of the reasons why you go to college.",
+  "responseOptions": [
+    {
+      "value": 1,
+      "label": "Does not correspond at all"
+    },
+    {
+      "value": 2,
+      "label": "Corresponds a little"
+    },
+    {
+      "value": 3,
+      "label": "Corresponds a little"
+    },
+    {
+      "value": 4,
+      "label": "Corresponds moderately"
+    },
+    {
+      "value": 5,
+      "label": "Corresponds a lot"
+    },
+    {
+      "value": 6,
+      "label": "Corresponds a lot"
+    },
+    {
+      "value": 7,
+      "label": "Corresponds exactly"
+    }
+  ],
+  "questions": [
+    "Because with only a high-school degree I would not find a high-paying job later on.",
+    "Because I experience pleasure and satisfaction while learning new things.",
+    "Because I think that a college education will help me better prepare for the career I have chosen.",
+    "For the intense feelings I experience when I am communicating my own ideas to others.",
+    "Honestly, I don't know; I really feel that I am wasting my time in school.",
+    "For the pleasure I experience while surpassing myself in my studies.",
+    "To prove to myself that I am capable of completing my college degree.",
+    "In order to obtain a more prestigious job later on.",
+    "For the pleasure I experience when I discover new things never seen before.",
+    "Because eventually it will enable me to enter the job market in a field that I like.",
+    "For the pleasure that I experience when I read interesting authors.",
+    "I once had good reasons for going to college; however, now I wonder whether I should continue.",
+    "For the pleasure that I experience while I am surpassing myself in one of my personal accomplishments.",
+    "Because of the fact that when I succeed in college I feel important.",
+    "Because I want to have “the good life” later on.",
+    "For the pleasure that I experience in broadening my knowledge about subjects which appeal to me.",
+    "Because this will help me make a better choice regarding my career orientation.",
+    "For the pleasure that I experience when I feel completely absorbed by what certain authors have written.",
+    "I can't see why I go to college and frankly, I couldn't care less.",
+    "For the satisfaction I feel when I am in the process of accomplishing difficult academic activities.",
+    "To show myself that I am an intelligent person.",
+    "In order to have a better salary later on.",
+    "Because my studies allow me to continue to learn about many things that interest me.",
+    "Because I believe that a few additional years of education will improve my competence as a worker.",
+    "For the “high” feeling that I experience while reading about various interesting subjects.",
+    "I don't know; I can't understand what I am doing in school.",
+    "Because college allows me to experience a personal satisfaction in my quest for excellence in my studies.",
+    "Because I want to show myself that I can succeed in my studies."
+  ],
+  "subscales": [
+    {
+      "id": "intrinsic-know",
+      "name": "Intrinsic motivation — to know",
+      "items": [
+        2,
+        9,
+        16,
+        23
+      ]
+    },
+    {
+      "id": "intrinsic-accomplishment",
+      "name": "Intrinsic motivation — toward accomplishment",
+      "items": [
+        6,
+        13,
+        20,
+        27
+      ]
+    },
+    {
+      "id": "intrinsic-stimulation",
+      "name": "Intrinsic motivation — to experience stimulation",
+      "items": [
+        4,
+        11,
+        18,
+        25
+      ]
+    },
+    {
+      "id": "extrinsic-identified",
+      "name": "Extrinsic motivation — identified regulation",
+      "items": [
+        3,
+        10,
+        17,
+        24
+      ]
+    },
+    {
+      "id": "extrinsic-introjected",
+      "name": "Extrinsic motivation — introjected regulation",
+      "items": [
+        7,
+        14,
+        21,
+        28
+      ]
+    },
+    {
+      "id": "extrinsic-external",
+      "name": "Extrinsic motivation — external regulation",
+      "items": [
+        1,
+        8,
+        15,
+        22
+      ]
+    },
+    {
+      "id": "amotivation",
+      "name": "Amotivation",
+      "items": [
+        5,
+        12,
+        19,
+        26
+      ]
+    }
+  ],
+  "citation": "Vallerand, R. J., Pelletier, L. G., Blais, M. R., Brière, N. M., Senécal, C., & Vallières, É. F. (1992). The Academic Motivation Scale: A measure of intrinsic, extrinsic, and amotivation in education. Educational and Psychological Measurement, 52(4), 1003–1017. https://doi.org/10.1177/0013164492052004025"
+}

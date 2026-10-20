@@ -119,13 +119,13 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
               ) : (
                 <>
                   <p class="catalogue-only-note">{instrument.deployment_status === 'permission-review'
-                    ? 'This version is not embedded here because the exact rights, administration requirements, or use context require review. Use the official access or permissions route below; an external link is not an Ozarbox-hosted assessment.'
-                    : 'No questionnaire or score is provided by Ozarbox for this entry. Use the official source below to review the instrument or obtain authorized access.'}</p>
-                  {instrument.access_url && (
-                    <a class="instrument-action external-access" href={instrument.access_url} target="_blank" rel="noopener noreferrer">{instrument.access_label || 'Open official source / access information'} ↗</a>
-                  )}
+                    ? 'The named instrument is not administered by Ozarbox while rights or professional-use requirements are unresolved. Start with the original Ozarbox reflection guide below; it is not the clinical test and does not reproduce its items or scoring. The official source link is external and is for instrument/access information.'
+                    : 'Ozarbox does not provide the named questionnaire or its score. You can use the original, unscored reflection guide below; it is not a substitute for the named instrument. The official source link, when present, opens externally.'}</p>
                   {instrument.open_alternative_route && (
-                    <a class="instrument-action" href={base + instrument.open_alternative_route.replace(/^\//, '')}>{instrument.open_alternative_label || 'Open original reflection alternative'} →</a>
+                    <a class="instrument-action local-alternative" href={base + instrument.open_alternative_route.replace(/^\\//, '')}>{instrument.open_alternative_label || 'Open original reflection alternative'} (on Ozarbox) →</a>
+                  )}
+                  {instrument.access_url && (
+                    <a class="instrument-action external-access" href={instrument.access_url} target="_blank" rel="noopener noreferrer">{instrument.access_label || 'Official source and rights information (external)'} ↗</a>
                   )}
                 </>
               )}
@@ -229,7 +229,7 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
     .instrument-card dt{font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;font-weight:850;color:#64748b}
     .instrument-card dd{margin:2px 0 0;font-size:.88rem;overflow-wrap:anywhere}
     .instrument-action{display:inline-block;margin-top:13px;font-weight:850;color:#1d4ed8;text-decoration:underline}
-    .catalogue-only-note{font-size:.88rem;color:#64748b;border-left:3px solid #cbd5e1;padding-left:10px;margin-top:13px}.external-access{display:block;margin-top:10px;font-size:.9rem;line-height:1.4}
+    .catalogue-only-note{font-size:.88rem;color:#64748b;border-left:3px solid #cbd5e1;padding-left:10px;margin-top:13px}.local-alternative{display:block;margin-top:14px}.external-access{display:block;margin-top:10px;font-size:.9rem;line-height:1.4}
     .source-links{margin-top:14px;border-top:1px solid #e2e8f0;padding-top:10px;font-size:.84rem}
     .source-links summary{font-weight:750;cursor:pointer}
     .source-links ul{padding-left:20px}

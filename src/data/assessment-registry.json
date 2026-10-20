@@ -8981,7 +8981,9 @@
         "route": null
       },
       "access_url": "https://www.nih.gov/node/21506",
-      "access_label": "Open official source and rights information"
+      "access_label": "Open official source and rights information",
+      "open_alternative_route": "/tools/open-assessments/phq-4/",
+      "open_alternative_label": "Open original reflection guide"
     },
     {
       "instrument_id": "gds-15",
@@ -9032,7 +9034,9 @@
         "route": null
       },
       "access_url": "https://www.apa.org/depression-guideline/assessment/",
-      "access_label": "Open official source and rights information"
+      "access_label": "Open official source and rights information",
+      "open_alternative_route": "/tools/open-assessments/gds-15/",
+      "open_alternative_label": "Open original reflection guide"
     },
     {
       "instrument_id": "gds-30",
@@ -9083,7 +9087,9 @@
         "route": null
       },
       "access_url": "https://www.apa.org/depression-guideline/assessment/",
-      "access_label": "Open official source and rights information"
+      "access_label": "Open official source and rights information",
+      "open_alternative_route": "/tools/open-assessments/gds-30/",
+      "open_alternative_label": "Open original reflection guide"
     },
     {
       "instrument_id": "hrqol-4",
@@ -9134,7 +9140,9 @@
         "route": null
       },
       "access_url": "https://archive.cdc.gov/www_cdc_gov/hrqol/hrqol14_measure.htm",
-      "access_label": "Open official source and rights information"
+      "access_label": "Open official source and rights information",
+      "open_alternative_route": "/tools/open-assessments/hrqol-4/",
+      "open_alternative_label": "Open original reflection guide"
     },
     {
       "instrument_id": "ham-d",
@@ -9185,7 +9193,9 @@
         "route": null
       },
       "access_url": "https://www.apa.org/depression-guideline/assessment/",
-      "access_label": "Open official source and rights information"
+      "access_label": "Open official source and rights information",
+      "open_alternative_route": "/tools/open-assessments/ham-d/",
+      "open_alternative_label": "Open original reflection guide"
     },
     {
       "instrument_id": "phq-8",
@@ -9236,7 +9246,9 @@
         "route": null
       },
       "access_url": "https://www.phqscreeners.com/",
-      "access_label": "Open official source and rights information"
+      "access_label": "Open official source and rights information",
+      "open_alternative_route": "/tools/open-assessments/phq-8/",
+      "open_alternative_label": "Open original reflection guide"
     },
     {
       "instrument_id": "phq-a",
@@ -9287,7 +9299,9 @@
         "route": null
       },
       "access_url": "https://www.nimh.nih.gov/research/research-conducted-at-nimh/asq-toolkit-materials/asq-tool/phq-9-modified-for-adolescents-phq-a",
-      "access_label": "Open official source and rights information"
+      "access_label": "Open official source and rights information",
+      "open_alternative_route": "/tools/open-assessments/phq-a/",
+      "open_alternative_label": "Open original reflection guide"
     },
     {
       "instrument_id": "hrqol-14",
@@ -9338,7 +9352,9 @@
         "route": null
       },
       "access_url": "https://archive.cdc.gov/www_cdc_gov/hrqol/hrqol14_measure.htm",
-      "access_label": "Open official source and rights information"
+      "access_label": "Open official source and rights information",
+      "open_alternative_route": "/tools/open-assessments/hrqol-14/",
+      "open_alternative_label": "Open original reflection guide"
     },
     {
       "instrument_id": "ssi-sa",
@@ -9389,7 +9405,9 @@
         "route": null
       },
       "access_url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_400-PURL-LPS84562/pdf/GOVPUB-HE20_400-PURL-LPS84562.pdf",
-      "access_label": "Open official source and rights information"
+      "access_label": "Open official source and rights information",
+      "open_alternative_route": "/tools/open-assessments/ssi-sa/",
+      "open_alternative_label": "Open original reflection guide"
     },
     {
       "instrument_id": "tcu-drug-dependence-screen",
@@ -9440,7 +9458,9 @@
         "route": null
       },
       "access_url": "https://www.govinfo.gov/content/pkg/GOVPUB-J16_100-PURL-gpo36955/pdf/GOVPUB-J16_100-PURL-gpo36955.pdf",
-      "access_label": "Open official source and rights information"
+      "access_label": "Open official source and rights information",
+      "open_alternative_route": "/tools/open-assessments/tcu-drug-dependence-screen/",
+      "open_alternative_label": "Open original reflection guide"
     }
   ]
 }

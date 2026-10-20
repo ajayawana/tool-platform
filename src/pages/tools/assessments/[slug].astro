@@ -1,49 +1,63 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { BRIEF_ASSESSMENTS, BRIEF_RESPONSE_OPTIONS } from '../../../lib/brief-assessments.js';
+import { PUBLIC_DOMAIN_ASSESSMENTS } from '../../../lib/public-domain-assessments.js';
+
+
 
 export function getStaticPaths() {
-  return Object.values(BRIEF_ASSESSMENTS).map((instrument) => ({
+  const assessments = { ...BRIEF_ASSESSMENTS, ...PUBLIC_DOMAIN_ASSESSMENTS };
+  return Object.values(assessments).map((instrument) => ({
     params: { slug: instrument.id },
     props: { instrument },
   }));
 }
 const { instrument } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const instrumentId: string = instrument.id;
+const isLikert = !instrument.kind || instrument.kind === 'likert';
+const questionCount = instrument.kind === 'exposure-checklist' ? instrument.events.length
+  : instrument.kind === 'yes-no-branch' ? instrument.items.length + 1
+  : instrument.items.length;
+const responseOptions = instrument.responseOptions || BRIEF_RESPONSE_OPTIONS;
+const functionalImpact: { label: string; options: string[]; note: string } | null = 'functionalImpact' in instrument ? (instrument.functionalImpact as { label: string; options: string[]; note: string }) : null;
 ---
-<Layout title={instrument.officialName + ' | Ozarbox'} description={instrument.purpose + '. Private, browser-based screening with transparent deterministic scoring and clear limitations.'} robots="index,follow,max-image-preview:large">
+<Layout title={instrument.officialName + ' | Ozarbox'} description={instrument.purpose + '. Browser-only assessment with deterministic scoring or an explicitly unscored exposure summary.'} robots="index,follow,max-image-preview:large">
   <section class="container tool-wrap" aria-labelledby="page-title">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={base}>Home</a> / <a href={base + 'assessments/'}>Psychological assessments</a> / {instrument.id.toUpperCase()}</nav>
     <header class="tool-head">
       <p class="eyebrow">Ozarbox · Psychological assessment</p>
       <h1 id="page-title">{instrument.officialName}</h1>
-      <p>{instrument.purpose}. This is a self-report screening measure, not a diagnostic interview.</p>
+      <p>{instrument.kind === 'exposure-checklist' ? 'Self-report inventory of lifetime exposure to potentially traumatic events. It does not produce a symptom score.' : instrument.purpose + '. This is not a diagnostic interview.'}</p>
     </header>
 
     <div class="notice notice-warning" role="note">
       <h2>Before you begin</h2>
-      <p>This tool can help you describe recent symptoms and prepare for a conversation with a qualified health professional. It cannot diagnose a condition, determine its cause, or replace professional assessment.</p>
-      <p><strong>Privacy:</strong> Answers and scoring stay in this page's browser session. This module does not use AI, send answers to an Ozarbox assessment endpoint, or save answers or scores to local storage. Leaving or refreshing the page clears your unsaved answers.</p>
-      <p><strong>Safety:</strong> This screen does not assess suicide risk and is not monitored. If you are in immediate danger or may act on thoughts of harming yourself or someone else, stop and seek immediate local emergency or in-person support. Do not wait for this tool or assume a clinician has seen your answers.</p>
+      <p>This tool can support structured discussion or help record recent symptoms. It cannot diagnose a condition, determine the cause of symptoms, establish that an event meets formal criteria, or replace professional assessment.</p>
+      {instrument.audienceNotice && <p><strong>Intended use:</strong> {instrument.audienceNotice}</p>}
+      <p><strong>Privacy:</strong> Answers and scoring stay in this page's browser session. This module does not use AI, send answers to an Ozarbox assessment endpoint, or save answers or scores to local storage. Leaving or refreshing the page clears your unsaved answers. Avoid entering names or identifying details.</p>
+      <p><strong>Safety:</strong> {instrument.safetyNotice || 'This screen is not monitored and does not alert clinicians. If you are in immediate danger, may act on thoughts of harming yourself or someone else, or someone is currently harming you, stop and seek immediate local emergency or in-person support. Do not wait for this tool or assume a clinician has seen your answers.'}</p>
     </div>
 
     <section class="tool-box assessment-box" aria-labelledby="instructions-heading">
       <h2 id="instructions-heading">Instructions</h2>
-      <p>{instrument.instructions}</p>
+      {instrument.kind !== 'yes-no-branch' && <p>{instrument.instructions}</p>}
       <p><strong>Recall period:</strong> {instrument.recallPeriod}.</p>
-      <p>Choose one response for each item. Answer based on your experience, not on what you think an answer should be. You may exit at any time.</p>
+      {instrument.kind === 'exposure-checklist'
+        ? <p>For each event, select the response(s) that apply. This checklist has no total score. You may leave without completing it.</p>
+        : <p>Choose one response for each required question. Answer based on your experience, not on what you think an answer should be. You may pause or exit at any time.</p>}
 
       <div class="progress-wrap">
-        <div class="progress-label"><span>Progress</span><span id="progress-text" aria-live="polite">0 of {instrument.items.length} answered</span></div>
-        <progress id="progress" value="0" max={instrument.items.length} aria-label="Questionnaire completion"></progress>
+        <div class="progress-label"><span>Progress</span><span id="progress-text" aria-live="polite">0 of {questionCount} answered</span></div>
+        <progress id="progress" value="0" max={questionCount} aria-label="Questionnaire completion"></progress>
       </div>
 
-      <form id="assessment-form" data-instrument={instrument.id} novalidate>
-        {instrument.items.map((item, index) => (
+      <form id="assessment-form" data-instrument={instrument.id} data-kind={instrument.kind || 'likert'} data-question-count={questionCount} novalidate>
+        {isLikert && instrument.items.map((item, index) => (
           <fieldset class="question" id={'question-' + (index + 1)} data-question={index + 1}>
             <legend><span class="question-number">Question {index + 1} of {instrument.items.length}</span>{item}</legend>
             <div class="options">
-              {BRIEF_RESPONSE_OPTIONS.map((option) => (
+              {responseOptions.map((option) => (
                 <label class="option">
                   <input type="radio" name={'q' + (index + 1)} value={option.value} required />
                   <span>{option.label}</span>
@@ -53,25 +67,77 @@ const base = import.meta.env.BASE_URL;
           </fieldset>
         ))}
 
-        {instrument.functionalImpact && (
+        {instrument.kind === 'yes-no-branch' && (
+          <>
+            <fieldset class="question" id="question-1" data-question="1">
+              <legend><span class="question-number">Exposure question</span>{instrument.instructions}</legend>
+              <div class="options">
+                {responseOptions.map((option) => (
+                  <label class="option">
+                    <input type="radio" name="q1" value={option.value} required />
+                    <span>{option.label}</span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+            <p id="branch-message" class="branch-message" role="status" aria-live="polite"></p>
+            <div id="symptom-questions" hidden>
+              <h3>In the past month, have you…</h3>
+              {instrument.items.map((item, index) => (
+                <fieldset class="question" id={'question-' + (index + 2)} data-question={index + 2}>
+                  <legend><span class="question-number">Question {index + 1} of {instrument.items.length}</span>{item}</legend>
+                  <div class="options options-yes-no">
+                    {responseOptions.map((option) => (
+                      <label class="option">
+                        <input type="radio" name={'q' + (index + 2)} value={option.value} />
+                        <span>{option.label}</span>
+                      </label>
+                    ))}
+                  </div>
+                </fieldset>
+              ))}
+            </div>
+          </>
+        )}
+
+        {instrument.kind === 'exposure-checklist' && (
+          <>
+            {instrument.events.map((item, index) => (
+              <fieldset class="question exposure-question" id={'question-' + (index + 1)} data-question={index + 1}>
+                <legend><span class="question-number">Event {index + 1} of {instrument.events.length}</span>{item}</legend>
+                <p class="muted">Check one or more responses. “Not sure if it fits” and “Doesn't apply” should be used by themselves for this event.</p>
+                <div class="options exposure-options">
+                  {responseOptions.map((option) => (
+                    <label class="option">
+                      <input type="checkbox" name={'e' + (index + 1)} value={option.value} />
+                      <span>{option.label}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+            ))}
+          </>
+        )}
+
+        {functionalImpact && (
           <fieldset class="question functional-impact" id="functional-impact">
             <legend>Daily-life impact (not included in the score)</legend>
-            <p>{instrument.functionalImpact.label}</p>
+            <p>{functionalImpact.label}</p>
             <div class="options">
-              {instrument.functionalImpact.options.map((option, index) => (
+              {functionalImpact.options.map((option: string, index: number) => (
                 <label class="option">
                   <input type="radio" name="functional-impact" value={index} />
                   <span>{option}</span>
                 </label>
               ))}
             </div>
-            <p class="muted">{instrument.functionalImpact.note}</p>
+            <p class="muted">{functionalImpact.note}</p>
           </fieldset>
         )}
 
         <div id="validation-message" class="validation-message" role="alert" aria-live="assertive" hidden></div>
         <div class="form-actions">
-          <button type="submit">Calculate screening score</button>
+          <button type="submit">{instrument.kind === 'exposure-checklist' ? 'Create exposure summary' : 'Calculate screening result'}</button>
           <button type="reset" class="secondary-button">Clear answers</button>
           <a class="exit-link" href={base + 'assessments/'}>Exit assessment</a>
         </div>
@@ -80,10 +146,15 @@ const base = import.meta.env.BASE_URL;
 
     <section id="results" class="tool-box results-box" aria-labelledby="results-heading" hidden>
       <p class="eyebrow">Your result</p>
-      <h2 id="results-heading" tabindex="-1">Screening result</h2>
+      <h2 id="results-heading" tabindex="-1">Assessment result</h2>
       <div class="score-row"><p class="score" id="score-value"></p><p id="score-band" class="score-band"></p></div>
+      <div id="cluster-results" hidden>
+        <h3>Symptom-cluster totals (PCL-5)</h3>
+        <ul id="cluster-list"></ul>
+        <p class="muted">These are sums of responses within the published clusters, not diagnostic decisions.</p>
+      </div>
       <p id="result-date" class="muted"></p>
-      <p class="print-only">Screening result only. This does not diagnose a condition and is not a substitute for professional assessment.</p>
+      <p class="print-only">Screening or exposure summary only. This does not diagnose a condition and is not a substitute for professional assessment.</p>
       <p id="result-summary" class="result-summary" aria-live="polite"></p>
       <h3>What this result can tell you</h3>
       <p id="result-meaning"></p>
@@ -91,28 +162,39 @@ const base = import.meta.env.BASE_URL;
       <p id="result-limitations">{instrument.limitations}</p>
       <h3>What to consider next</h3>
       <p id="result-next-steps">{instrument.nextSteps}</p>
+      <div id="exposure-summary" hidden>
+        <h3>Recorded event responses</h3>
+        <p class="muted">These are the responses you selected, not a score or interpretation.</p>
+        <ul id="exposure-summary-list"></ul>
+      </div>
       <p id="functional-result" hidden></p>
       <div class="result-actions">
         <button type="button" id="print-result">Print / Save as PDF</button>
         <button type="button" id="retake" class="secondary-button">Retake assessment</button>
         <a href={base + 'assessments/'} class="exit-link">Return to assessment centre</a>
-        {instrument.id === 'phq-2' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
+        {String(instrument.id) === 'phq-2' && <a href={base + 'tools/phq-9/'} class="exit-link">Open PHQ-9 screen</a>}
+        {instrument.id === 'pcl-5' && <a href={base + 'tools/assessments/pc-ptsd-5/'} class="exit-link">Open brief PC-PTSD-5 screen</a>}
       </div>
     </section>
 
     <section class="source-panel" aria-labelledby="sources-heading">
       <h2 id="sources-heading">Instrument and scoring provenance</h2>
       <p>{instrument.statusText}</p>
-      <p><strong>Scoring method:</strong> {instrument.scoringMethod}</p>
+      <p><strong>Scoring / response method:</strong> {instrument.scoringMethod}</p>
       <ul>
         {instrument.sources.map((source) => <li><a href={source} target="_blank" rel="noopener noreferrer">{source}</a></li>)}
       </ul>
-      <p>Ozarbox is an independent tool publisher and is not endorsed by the instrument developers, authors, publishers, or health authorities. A technically correct score does not make this website a clinically validated medical device or substitute for professional assessment.</p>
+      <p>Ozarbox is an independent tool publisher and is not endorsed by the instrument developers, authors, publishers, or health authorities. Correct implementation of a source instrument does not make this website clinically validated, regulator-approved or suitable as a standalone basis for patient-care decisions.</p>
     </section>
   </section>
   <script>
     import { scoreBriefAssessment, getBriefAssessment } from '../../../lib/brief-assessments.js';
-    import type { BriefAssessmentResult } from '../../../lib/brief-assessments.js';
+    import { scorePublicDomainAssessment, getPublicDomainAssessment } from '../../../lib/public-domain-assessments.js';
+
+    type AssessmentResult = { instrumentId: string; kind?: string; complete: boolean; missingItems: readonly number[]; total: number | null; maxScore?: number; interpretation: string | null; band?: string | null; screenPositive?: boolean | null; positiveThreshold?: number; clusters?: Readonly<Record<string, number>>; thresholdRange?: Readonly<{ min: number; max: number }>; exposure?: string; symptomResponses?: readonly string[]; summary?: readonly { event: string; responses: readonly string[] }[] };
+    type CompletedAssessmentResult = Omit<AssessmentResult, 'complete' | 'total' | 'interpretation'> & { complete: true; total: number; interpretation: string | null };
+    type FunctionalImpactSpec = { label: string; options: string[]; note: string };
+
 
     const form = document.querySelector<HTMLFormElement>('#assessment-form');
     const validation = document.querySelector<HTMLElement>('#validation-message');
@@ -121,29 +203,92 @@ const base = import.meta.env.BASE_URL;
     const results = document.querySelector<HTMLElement>('#results');
     const resultsHeading = document.querySelector<HTMLElement>('#results-heading');
     const instrumentId = form?.dataset.instrument;
-    const instrument = instrumentId ? getBriefAssessment(instrumentId) : null;
+    const kind = form?.dataset.kind || 'likert';
+    const totalQuestionCount = Number(form?.dataset.questionCount || 0);
+    const instrument = instrumentId
+      ? (kind === 'likert' && ['phq-2', 'gad-7', 'gad-2'].includes(instrumentId)
+        ? getBriefAssessment(instrumentId)
+        : getPublicDomainAssessment(instrumentId))
+      : null;
+    const functionalImpact = instrument && 'functionalImpact' in instrument
+      ? (instrument as { functionalImpact?: FunctionalImpactSpec }).functionalImpact ?? null
+      : null;
+    const activeInstrumentId = instrument?.id ?? instrumentId ?? '';
+    const symptomQuestions = document.querySelector<HTMLElement>('#symptom-questions');
+    const branchMessage = document.querySelector<HTMLElement>('#branch-message');
+    const exposureQuestion = document.querySelector<HTMLFieldSetElement>('#question-1');
     const fieldsets = [...document.querySelectorAll<HTMLFieldSetElement>('#assessment-form fieldset[data-question]')];
+    const exposureFieldsets = [...document.querySelectorAll<HTMLFieldSetElement>('#assessment-form fieldset.exposure-question')];
 
-    function readResponses() {
+    function readResponses(): Array<number | string | string[] | null> {
+      if (kind === 'exposure-checklist') {
+        return exposureFieldsets.map((fieldset) => [...fieldset.querySelectorAll<HTMLInputElement>('input[type="checkbox"]:checked')].map((input) => input.value));
+      }
       return fieldsets.map((fieldset) => {
         const checked = fieldset.querySelector<HTMLInputElement>('input[type="radio"]:checked');
-        return checked ? Number(checked.value) : null;
+        if (!checked) return null;
+        return kind === 'likert' ? Number(checked.value) : checked.value;
       });
     }
 
-    function updateProgress() {
+    function answeredCount(responses: Array<number | string | string[] | null>): number {
+      if (kind === 'exposure-checklist') return responses.filter((value) => Array.isArray(value) && value.length > 0).length;
+      if (kind === 'yes-no-branch' && responses[0] === 'no') return 1;
+      return responses.filter((value) => value !== null && value !== undefined && value !== '').length;
+    }
+
+    function updateProgress(): void {
       const responses = readResponses();
-      const answered = responses.filter((value) => value !== null).length;
-      if (progress) progress.value = answered;
-      if (progressText && instrument) progressText.textContent = answered + ' of ' + instrument.items.length + ' answered';
+      const answered = answeredCount(responses);
+      const exposure = kind === 'yes-no-branch' ? responses[0] : null;
+      const max = exposure === 'no' ? 1 : totalQuestionCount;
+      if (progress) {
+        progress.max = max;
+        progress.value = Math.min(answered, max);
+      }
+      if (progressText && instrument) {
+        progressText.textContent = exposure === 'no'
+          ? 'Exposure question answered; the official instructions stop the screen here.'
+          : answered + ' of ' + max + (kind === 'exposure-checklist' ? ' events recorded' : ' required responses');
+      }
     }
 
-    function selectedFunctionalImpact() {
+    function updateBranch(): void {
+      if (kind !== 'yes-no-branch') return;
+      const exposure = exposureQuestion?.querySelector<HTMLInputElement>('input[type="radio"]:checked')?.value;
+      const show = exposure === 'yes';
+      if (symptomQuestions) symptomQuestions.hidden = !show;
+      if (branchMessage) {
+        branchMessage.textContent = exposure === 'no'
+          ? 'The official instructions say to stop here. The screen total is 0; the symptom questions are not asked.'
+          : exposure === 'yes'
+            ? 'Please answer the five symptom questions about the past month.'
+            : 'Answer the exposure question first. If you select No, the screen ends and the symptom questions are skipped.';
+      }
+      symptomQuestions?.querySelectorAll<HTMLInputElement>('input[type="radio"]').forEach((input) => {
+        input.disabled = !show;
+        input.required = show;
+        if (!show) input.checked = false;
+      });
+      updateProgress();
+    }
+
+    function selectedFunctionalImpact(): string | null {
       const selected = document.querySelector<HTMLInputElement>('input[name="functional-impact"]:checked');
-      return selected && instrument?.functionalImpact ? instrument.functionalImpact.options[Number(selected.value)] : null;
+      return selected && functionalImpact ? functionalImpact.options[Number(selected.value)] : null;
     }
 
-    function renderResult(scored: BriefAssessmentResult, _responses: Array<number | null>) {
+    function setListItems(container: HTMLElement | null, entries: string[]): void {
+      if (!container) return;
+      container.replaceChildren();
+      for (const entry of entries) {
+        const li = document.createElement('li');
+        li.textContent = entry;
+        container.append(li);
+      }
+    }
+
+    function renderResult(scored: CompletedAssessmentResult): void {
       if (!instrument || !results) return;
       const scoreValue = document.querySelector<HTMLElement>('#score-value');
       const scoreBand = document.querySelector<HTMLElement>('#score-band');
@@ -153,28 +298,77 @@ const base = import.meta.env.BASE_URL;
       const nextSteps = document.querySelector<HTMLElement>('#result-next-steps');
       const functional = document.querySelector<HTMLElement>('#functional-result');
       const resultDate = document.querySelector<HTMLElement>('#result-date');
+      const clusterSection = document.querySelector<HTMLElement>('#cluster-results');
+      const exposureSummary = document.querySelector<HTMLElement>('#exposure-summary');
 
-      if (scoreValue) scoreValue.textContent = scored.total + ' / ' + instrument.maxScore;
-      if (scoreBand) scoreBand.textContent = scored.interpretation ?? 'Screening result';
+      if (scoreValue) scoreValue.textContent = kind === 'exposure-checklist' ? 'Not scored' : scored.total + ' / ' + instrument.maxScore;
+      if (scoreBand) scoreBand.textContent = kind === 'exposure-checklist' ? 'Exposure inventory' : scored.interpretation ?? 'Screening result';
       if (resultDate) resultDate.textContent = 'Generated on ' + new Date().toLocaleDateString() + '. Answers and results are not saved by this page.';
-      if (summary) {
-        if (instrument.id === 'gad-7') {
-          summary.textContent = scored.screenPositive
-            ? 'Your score is at or above a commonly used threshold for further assessment. This is a screening result, not a diagnosis.'
-            : instrument.lowResult;
-        } else {
-          summary.textContent = scored.screenPositive ? (instrument.highResult ?? instrument.lowResult) : instrument.lowResult;
+
+      if (instrument.id === 'pcl-5') {
+        if (summary) {
+          summary.textContent = scored.total < instrument.thresholdRange.min
+            ? instrument.lowResult
+            : scored.total <= instrument.thresholdRange.max
+              ? 'The total falls within the commonly cited 31–33 cut-point range. This is a reason for clinician review in context, not a PTSD diagnosis.'
+              : 'The total is above the commonly cited 31–33 cut-point range. This may warrant further clinical assessment; it does not establish a PTSD diagnosis.';
+        }
+        if (meaning) meaning.textContent = 'The total is the sum of 20 self-reported symptom ratings. The clusters below are sums for published DSM-5 symptom groups. They help organise a clinical discussion; they do not make a diagnosis by themselves.';
+      } else if (instrument.id === 'pc-ptsd-5') {
+        if (summary) {
+          summary.textContent = scored.exposure === 'no'
+            ? 'You answered No to the lifetime exposure question. Following the official scoring instructions, the screen stops here with a total of 0.'
+            : scored.screenPositive
+              ? 'This total is at or above a commonly used threshold in some primary-care samples. A positive screen is not a diagnosis and requires further assessment.'
+              : instrument.lowResult;
+        }
+        if (meaning) meaning.textContent = scored.exposure === 'no'
+          ? 'This screening pathway did not ask symptom questions. The result is not proof that no distress occurred or that PTSD is impossible.'
+          : 'The score counts Yes answers to five symptoms about the past month. The official source notes that the most appropriate cut-point varies by population and screening purpose.';
+      } else if (instrument.id === 'lec-5') {
+        if (summary) summary.textContent = 'No total score or severity band is defined for the LEC-5. The list below only repeats the exposure categories you selected.';
+        if (meaning) meaning.textContent = 'This form records lifetime event exposure and how an event was experienced. It does not measure post-traumatic symptoms and it cannot determine whether diagnostic criteria are met.';
+      } else {
+        if (summary) {
+          if (instrument.id === 'gad-7') {
+            summary.textContent = scored.screenPositive
+              ? 'Your score is at or above a commonly used threshold for further assessment. This is a screening result, not a diagnosis.'
+              : instrument.lowResult;
+          } else {
+            summary.textContent = scored.screenPositive ? (instrument.highResult ?? instrument.lowResult) : instrument.lowResult;
+          }
+        }
+        if (meaning) {
+          meaning.textContent = instrument.id === 'gad-7'
+            ? scored.screenPositive
+              ? 'The GAD-7 total is at or above a commonly used threshold for further assessment. The symptom-range label describes the responses on this questionnaire; it does not determine the cause or establish a disorder.'
+              : 'The symptom-range label describes the responses you reported in the past two weeks. It should be considered alongside your concerns, context and day-to-day functioning.'
+            : scored.screenPositive ? (instrument.highResult ?? instrument.lowResult) : instrument.lowResult;
         }
       }
-      if (meaning) {
-        meaning.textContent = instrument.id === 'gad-7'
-          ? scored.screenPositive
-            ? 'The GAD-7 total is at or above a commonly used threshold for further assessment. The symptom-range label describes the responses on this questionnaire; it does not determine the cause or establish a disorder.'
-            : 'The symptom-range label describes the responses you reported in the past two weeks. It should be considered alongside your concerns, context and day-to-day functioning.'
-          : scored.screenPositive ? (instrument.highResult ?? instrument.lowResult) : instrument.lowResult;
-      }
+
       if (limitation) limitation.textContent = instrument.limitations;
       if (nextSteps) nextSteps.textContent = instrument.nextSteps;
+
+      if (clusterSection) {
+        const showClusters = instrument.id === 'pcl-5' && Boolean(scored.clusters);
+        clusterSection.hidden = !showClusters;
+        if (showClusters && scored.clusters) {
+          setListItems(document.querySelector<HTMLElement>('#cluster-list'), [
+            'Cluster B (items 1–5): ' + scored.clusters.B + ' / 20',
+            'Cluster C (items 6–7): ' + scored.clusters.C + ' / 8',
+            'Cluster D (items 8–14): ' + scored.clusters.D + ' / 28',
+            'Cluster E (items 15–20): ' + scored.clusters.E + ' / 24',
+          ]);
+        }
+      }
+
+      if (exposureSummary) {
+        const showSummary = instrument.id === 'lec-5' && Array.isArray(scored.summary);
+        exposureSummary.hidden = !showSummary;
+        if (showSummary && scored.summary) setListItems(document.querySelector<HTMLElement>('#exposure-summary-list'), scored.summary.map((row: { event: string; responses: readonly string[] }) => row.event + ': ' + row.responses.join('; ')));
+      }
+
       if (functional) {
         const impact = selectedFunctionalImpact();
         functional.hidden = !impact;
@@ -185,8 +379,9 @@ const base = import.meta.env.BASE_URL;
     }
 
     form?.addEventListener('change', (event) => {
-      if ((event.target as HTMLElement)?.matches('input[type="radio"]')) {
-        updateProgress();
+      if ((event.target as HTMLElement)?.matches('input[type="radio"], input[type="checkbox"]')) {
+        if (kind === 'yes-no-branch') updateBranch();
+        else updateProgress();
         if (validation) validation.hidden = true;
       }
     });
@@ -195,17 +390,30 @@ const base = import.meta.env.BASE_URL;
       event.preventDefault();
       if (!instrument || !validation) return;
       const responses = readResponses();
-      const scored = scoreBriefAssessment(instrument.id, responses);
-      if (!scored.complete) {
-        validation.textContent = 'Please answer all ' + instrument.items.length + ' required questions before calculating a score. Unanswered questions: ' + scored.missingItems.join(', ') + '. No score has been calculated.';
+      let scored: AssessmentResult;
+      try {
+        scored = kind === 'likert' && ['phq-2', 'gad-7', 'gad-2'].includes(activeInstrumentId)
+          ? scoreBriefAssessment(activeInstrumentId, responses as Array<number | null>)
+          : scorePublicDomainAssessment(activeInstrumentId, responses as never);
+      } catch (error) {
+        validation.textContent = error instanceof Error ? error.message : 'The response values could not be checked. Please review your answers.';
         validation.hidden = false;
-        const firstMissing = fieldsets[scored.missingItems[0] - 1];
+        return;
+      }
+      if (!scored.complete) {
+        validation.textContent = 'Please complete the required responses before calculating a result. Items/events needing a response: ' + scored.missingItems.join(', ') + '. No score has been calculated.';
+        validation.hidden = false;
+        const firstMissing = document.querySelector<HTMLFieldSetElement>('#assessment-form fieldset[data-question="' + scored.missingItems[0] + '"]');
         firstMissing?.scrollIntoView({ behavior: 'auto', block: 'center' });
         firstMissing?.querySelector<HTMLInputElement>('input')?.focus({ preventScroll: true });
         return;
       }
+      if (scored.total === null) {
+        validation.textContent = 'No total score is defined for this instrument; only a response summary will be shown.';
+        validation.hidden = true;
+      }
       validation.hidden = true;
-      renderResult(scored, responses);
+      renderResult(scored as CompletedAssessmentResult);
     });
 
     form?.addEventListener('reset', () => {
@@ -215,7 +423,8 @@ const base = import.meta.env.BASE_URL;
           validation.textContent = '';
         }
         if (results) results.hidden = true;
-        updateProgress();
+        if (kind === 'yes-no-branch') updateBranch();
+        else updateProgress();
       }, 0);
     });
 
@@ -226,7 +435,8 @@ const base = import.meta.env.BASE_URL;
     });
 
     document.querySelector<HTMLButtonElement>('#print-result')?.addEventListener('click', () => window.print());
-    updateProgress();
+    if (kind === 'yes-no-branch') updateBranch();
+    else updateProgress();
   </script>
   <style>
     .notice{margin-top:24px;padding:20px 22px;border-radius:16px;border:1px solid #dbeafe;background:#eff6ff;max-width:860px}
@@ -246,13 +456,15 @@ const base = import.meta.env.BASE_URL;
     .option input{width:20px;height:20px;flex:0 0 auto;accent-color:#1d4ed8;margin:0}
     .functional-impact{background:#fafafa}
     .muted{color:#64748b;font-size:.92rem}
+    .branch-message{color:#475569;font-size:.95rem;font-weight:650;padding:8px 0}
+    .exposure-options{grid-template-columns:repeat(2,minmax(0,1fr))}
     .validation-message{padding:14px;border:2px solid #b91c1c;background:#fef2f2;border-radius:12px;color:#7f1d1d;font-weight:700}
     .form-actions,.result-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:20px}
     .form-actions button,.result-actions button{margin:0}
     .secondary-button{background:#e2e8f0;color:#0f172a}
     .exit-link{display:inline-block;padding:10px 4px;color:#1d4ed8;font-weight:800;text-decoration:underline}
     .score-row{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-    .print-only{display:none}.score{font-size:2.2rem;font-weight:900;line-height:1.2;margin:8px 0}
+    .score{font-size:2.2rem;font-weight:900;line-height:1.2;margin:8px 0}
     .score-band{padding:7px 12px;border-radius:999px;background:#eff6ff;color:#1e40af;font-weight:800}
     .result-summary{font-size:1.1rem;font-weight:750}
     .source-panel{max-width:860px;padding:30px 0}
@@ -260,7 +472,7 @@ const base = import.meta.env.BASE_URL;
     .source-panel a{overflow-wrap:anywhere}
     button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #f59e0b;outline-offset:3px}
     [hidden]{display:none!important}
-    @media(max-width:600px){.options{grid-template-columns:1fr}.question{padding:15px}.notice{padding:16px}.form-actions button,.result-actions button{width:100%}}
+    @media(max-width:600px){.options,.exposure-options{grid-template-columns:1fr}.question{padding:15px}.notice{padding:16px}.form-actions button,.result-actions button{width:100%}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
     @media print{.site-header,footer,.form-actions,.result-actions,.breadcrumbs,.notice,.assessment-box{display:none!important}.source-panel{display:block!important}.print-only{display:block!important}.tool-wrap{padding:0}.results-box{display:block!important;border:0;box-shadow:none;padding:0;max-width:none}.results-box[hidden]{display:none!important}body{background:#fff;color:#000;font-size:12pt}.score-band{border:1px solid #888;background:#fff;color:#000}}
   </style>

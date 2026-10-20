@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { BRIEF_ASSESSMENTS } from "../src/lib/brief-assessments.js";
+import { PUBLIC_DOMAIN_ASSESSMENTS } from "../src/lib/public-domain-assessments.js";
 
 const registry = JSON.parse(readFileSync(new URL("../src/data/assessment-registry.json", import.meta.url), "utf8"));
 
@@ -34,14 +35,14 @@ test("every instrument has version, population, mode, language, permissions, sco
   }
 });
 
-test("only four instrument entries have live routes and all remain labelled unvalidated", () => {
+test("only the seven implemented assessment entries have live routes and all remain labelled unvalidated", () => {
   const routed = registry.instruments.filter((item) => item.route);
-  assert.deepEqual(routed.map((item) => item.instrument_id).sort(), ["gad-2", "gad-7", "phq-2", "phq-9"]);
+  assert.deepEqual(routed.map((item) => item.instrument_id).sort(), ["gad-2", "gad-7", "lec-5", "pc-ptsd-5", "pcl-5", "phq-2", "phq-9"]);
   for (const instrument of routed) {
     assert.equal(instrument.deployment_status, "implemented-unvalidated");
     assert.match(instrument.software_validation, /not been independently clinically validated|validation remain outstanding|not.*validated|unvalidated/i);
   }
-  for (const [id, instrument] of Object.entries(BRIEF_ASSESSMENTS)) {
+  for (const [id, instrument] of Object.entries({ ...BRIEF_ASSESSMENTS, ...PUBLIC_DOMAIN_ASSESSMENTS })) {
     const record = registry.instruments.find((item) => item.instrument_id === id);
     assert.ok(record, id + " has registry record");
     assert.equal(record.route, "/tools/assessments/" + id + "/");
@@ -81,6 +82,17 @@ test("every catalogue-only or permission-review record explicitly has no live qu
       assert.equal(instrument.route ?? null, null, instrument.instrument_id + " must remain catalogue-only");
       assert.match(instrument.scoring_version, /not implemented|none|verify|unverified|permission|official|must be verified/i);
     }
+  }
+});
+
+test("every permission-review entry exposes an official access or permissions route without cloning a test", () => {
+  const gated = registry.instruments.filter((item) => item.deployment_status === "permission-review");
+  assert.equal(gated.length, 31);
+  for (const item of gated) {
+    assert.equal(item.route ?? null, null, item.instrument_id + " must not be cloned as an Ozarbox form");
+    assert.ok(item.access_url, item.instrument_id + " needs an official access or permission route");
+    assert.ok(item.access_label, item.instrument_id + " needs a user-facing access label");
+    assert.match(item.access_url, /^https:\/\//);
   }
 });
 

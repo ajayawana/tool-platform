@@ -110,7 +110,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.wpspublish.com/",
-      "access_label": "Open publisher access and licensing"
+      "access_label": "Open publisher access and licensing",
+      "open_alternative_route": "/tools/open-assessments/abas-3/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "academic-motivation-scale",
@@ -214,7 +216,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.guilford.com/",
-      "access_label": "Open publisher access and licensing"
+      "access_label": "Open publisher access and licensing",
+      "open_alternative_route": "/tools/open-assessments/adhd-rating-scale-5/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "adi-r",
@@ -250,7 +254,9 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.wpspublish.com/",
-      "access_label": "Open publisher access and licensing"
+      "access_label": "Open publisher access and licensing",
+      "open_alternative_route": "/tools/open-assessments/adi-r/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "adis-5",
@@ -320,7 +326,9 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.wpspublish.com/",
-      "access_label": "Open publisher access and licensing"
+      "access_label": "Open publisher access and licensing",
+      "open_alternative_route": "/tools/open-assessments/ados-2/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "altman-self-rating-mania-scale-asrm",
@@ -563,7 +571,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.who.int/publications/i/item/978924159938-2",
-      "access_label": "Open official WHO source and permissions terms"
+      "access_label": "Open official WHO source and permissions terms",
+      "open_alternative_route": "/tools/open-assessments/assist/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "audit",
@@ -602,7 +612,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://auditscreen.org/check-your-drinking/",
-      "access_label": "Open free official AUDIT interactive assessment"
+      "access_label": "Open free official AUDIT interactive assessment",
+      "open_alternative_route": "/tools/open-assessments/audit/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "audit-c",
@@ -674,7 +686,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.pearsonclinical.in/products/programs/beck-anxiety-inventory.html",
-      "access_label": "Open publisher page and purchase/licensing details"
+      "access_label": "Open publisher page and purchase/licensing details",
+      "open_alternative_route": "/tools/open-assessments/bai/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "basc-3",
@@ -746,7 +760,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.pearsonclinical.in/products/programs/beck-depression-inventory.html",
-      "access_label": "Open publisher page and purchase/licensing details"
+      "access_label": "Open publisher page and purchase/licensing details",
+      "open_alternative_route": "/tools/open-assessments/bdi-ii/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "bergen-social-media-addiction-scale",
@@ -1020,7 +1036,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.pearsonclinical.com/",
-      "access_label": "Open publisher portal for access and permissions"
+      "access_label": "Open publisher portal for access and permissions",
+      "open_alternative_route": "/tools/open-assessments/bsi/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "bsi-18",
@@ -1158,7 +1176,9 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.ptsd.va.gov/professional/assessment/adult-int/caps.asp",
-      "access_label": "Open official VA measure and clinician access requirements"
+      "access_label": "Open official VA measure and clinician access requirements",
+      "open_alternative_route": "/tools/open-assessments/caps-5/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "career-adapt-abilities-scale",
@@ -1534,7 +1554,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://mhs.com/",
-      "access_label": "Open publisher portal for access and permissions"
+      "access_label": "Open publisher portal for access and permissions",
+      "open_alternative_route": "/tools/open-assessments/conners-scales/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "connor-davidson-social-support-scale-variants",
@@ -2148,7 +2170,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://registration.euroqol.org/",
-      "access_label": "Open official registration and licensing portal"
+      "access_label": "Open official registration and licensing portal",
+      "open_alternative_route": "/tools/open-assessments/eq-5d/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "ess-epworth-sleepiness-scale",
@@ -3226,7 +3250,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.mchatscreen.com/mchat-rf/",
-      "access_label": "Open official screening form and website licence requirements"
+      "access_label": "Open official screening form and website licence requirements",
+      "open_alternative_route": "/tools/open-assessments/m-chat-r-f/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "maslach-burnout-inventory",
@@ -3262,7 +3288,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.mindgarden.com/117-maslach-burnout-inventory-mbi",
-      "access_label": "Open rights-holder forms and licence options"
+      "access_label": "Open rights-holder forms and licence options",
+      "open_alternative_route": "/tools/open-assessments/maslach-burnout-inventory/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "mcmi-iv",
@@ -3504,7 +3532,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.pearsonclinical.in/legal/permissions-and-licensing.html",
-      "access_label": "Open publisher permissions and licensing"
+      "access_label": "Open publisher permissions and licensing",
+      "open_alternative_route": "/tools/open-assessments/mmpi-3/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "mmse",
@@ -3710,7 +3740,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.parinc.com/",
-      "access_label": "Open publisher portal for access and permissions"
+      "access_label": "Open publisher portal for access and permissions",
+      "open_alternative_route": "/tools/open-assessments/neo-pi-3/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "o-net-interest-profiler",
@@ -3848,7 +3880,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.parinc.com/",
-      "access_label": "Open publisher portal for access and permissions"
+      "access_label": "Open publisher portal for access and permissions",
+      "open_alternative_route": "/tools/open-assessments/pai/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "panas",
@@ -4999,7 +5033,9 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.appi.org/",
-      "access_label": "Open APA Publishing access and permissions"
+      "access_label": "Open APA Publishing access and permissions",
+      "open_alternative_route": "/tools/open-assessments/scid-5-cv/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "scid-5-pd",
@@ -5035,7 +5071,9 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.appi.org/",
-      "access_label": "Open APA Publishing access and permissions"
+      "access_label": "Open APA Publishing access and permissions",
+      "open_alternative_route": "/tools/open-assessments/scid-5-pd/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "scl-90-r",
@@ -5071,7 +5109,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.pearsonclinical.com/",
-      "access_label": "Open publisher portal for access and permissions"
+      "access_label": "Open publisher portal for access and permissions",
+      "open_alternative_route": "/tools/open-assessments/scl-90-r/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "scoff",
@@ -5177,7 +5217,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.sdqinfo.org/",
-      "access_label": "Open official forms and electronic-use permission guidance"
+      "access_label": "Open official forms and electronic-use permission guidance",
+      "open_alternative_route": "/tools/open-assessments/sdq-strengths-and-difficulties-questionnaire/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "sf-36-sf-12",
@@ -5213,7 +5255,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.optum.com/",
-      "access_label": "Open rights-holder access and licensing"
+      "access_label": "Open rights-holder access and licensing",
+      "open_alternative_route": "/tools/open-assessments/sf-36-sf-12/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "sds",
@@ -5419,7 +5463,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://riversideinsights.com/",
-      "access_label": "Open publisher portal for access and permissions"
+      "access_label": "Open publisher portal for access and permissions",
+      "open_alternative_route": "/tools/open-assessments/stanford-binet/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "stop-bang",
@@ -5795,7 +5841,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.pearsonclinical.com/",
-      "access_label": "Open publisher portal for access and permissions"
+      "access_label": "Open publisher portal for access and permissions",
+      "open_alternative_route": "/tools/open-assessments/vineland-3/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "wais",
@@ -5833,7 +5881,9 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.pearsonclinical.in/legal/permissions-and-licensing.html",
-      "access_label": "Open publisher permissions and licensing"
+      "access_label": "Open publisher permissions and licensing",
+      "open_alternative_route": "/tools/open-assessments/wais/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "who-5",
@@ -5872,7 +5922,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://cdn.who.int/media/docs/default-source/mental-health/who-5_english-original4da539d6ed4b49389e3afe47cda2326a.pdf",
-      "access_label": "Open official WHO form and reuse licence"
+      "access_label": "Open official WHO form and reuse licence",
+      "open_alternative_route": "/tools/open-assessments/who-5/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "whodas-2-0",
@@ -5910,7 +5962,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.who.int/classifications/international-classification-of-functioning-disability-and-health/who-disability-assessment-schedule",
-      "access_label": "Open official WHO source and reuse information"
+      "access_label": "Open official WHO source and reuse information",
+      "open_alternative_route": "/tools/open-assessments/whodas-2-0/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "whoqol-bref",
@@ -5982,7 +6036,9 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.pearsonclinical.in/legal/permissions-and-licensing.html",
-      "access_label": "Open publisher permissions and licensing"
+      "access_label": "Open publisher permissions and licensing",
+      "open_alternative_route": "/tools/open-assessments/wisc/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "wisconsin-card-sorting-test",
@@ -6052,7 +6108,9 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://riversideinsights.com/",
-      "access_label": "Open publisher portal for access and permissions"
+      "access_label": "Open publisher portal for access and permissions",
+      "open_alternative_route": "/tools/open-assessments/woodcock-johnson/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "work-and-social-adjustment-scale",
@@ -6158,7 +6216,9 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://www.pearsonclinical.in/legal/permissions-and-licensing.html",
-      "access_label": "Open publisher permissions and licensing"
+      "access_label": "Open publisher permissions and licensing",
+      "open_alternative_route": "/tools/open-assessments/wppsi/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "y-bocs",
@@ -6194,7 +6254,9 @@
       "qualification_requirements": "Professional/clinician workflow indicated by measure type; exact qualification and training requirements must be verified against the official manual.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
       "access_url": "https://pubmed.ncbi.nlm.nih.gov/?term=Yale-Brown+Obsessive+Compulsive+Scale",
-      "access_label": "Find primary publications and clinician-use information"
+      "access_label": "Find primary publications and clinician-use information",
+      "open_alternative_route": "/tools/open-assessments/y-bocs/",
+      "open_alternative_label": "Open original reflection alternative"
     },
     {
       "instrument_id": "ymrs",

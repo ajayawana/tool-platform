@@ -27,7 +27,11 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
     <header class="page-heading">
       <p class="eyebrow">Ozarbox · Assessment library</p>
       <h1 id="page-title">Psychological Assessment Centre</h1>
-      <p class="lead">Find measures by purpose, read what they are designed to measure, and check whether a version is actually available. Each instrument has its own identity, permissions and scoring rules—there is no invented all-in-one mental-health score.</p>
+      <p class="lead">Find measures by purpose, review their evidence and permissions, and check what Ozarbox actually provides. A recognized instrument is not automatically an independently verified website implementation.</p>
+      <div class="quality-legend" aria-label="Assessment quality badge legend">
+        <p><span class="quality-badge quality-gold" aria-hidden="true">★ Gold verified</span> Reserved for an instrument-specific implementation independently checked against authoritative documentation, with rights, scoring, intended population and validation evidence documented.</p>
+        <p><span class="quality-badge quality-unverified">Not verified / unofficial on Ozarbox</span> The Ozarbox copy is not confirmed as a gold-standard implementation. This label does <strong>not</strong> mean the original instrument itself is unofficial or scientifically invalid.</p>
+      </div>
       <div class="catalogue-stats">
         <div><strong>{instruments.length}</strong><span>unique instruments indexed</span></div>
         <div><strong>{domains.length}</strong><span>assessment domains</span></div>
@@ -93,7 +97,14 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
               data-search={(instrument.official_name + ' ' + instrument.main_purpose + ' ' + domainLabels + ' ' + instrument.permission_status + ' ' + instrument.deployment_status).toLowerCase()}
             >
               <div class="instrument-card-top">
-                <span class={'status status-' + instrument.deployment_status}>{labelForStatus(instrument.deployment_status, Boolean(instrument.open_alternative_route))}</span>
+                <div class="instrument-badges">
+                  {instrument.quality_status === 'gold-standard-verified' ? (
+                    <span class="quality-badge quality-gold" title="The instrument-specific Ozarbox implementation has documented independent verification.">★ Gold verified</span>
+                  ) : (
+                    <span class="quality-badge quality-unverified" title="Ozarbox has not established that this website entry is a gold-standard implementation.">Not verified / unofficial on Ozarbox</span>
+                  )}
+                  <span class={'status status-' + instrument.deployment_status}>{labelForStatus(instrument.deployment_status, Boolean(instrument.open_alternative_route))}</span>
+                </div>
                 <span class="instrument-id">{instrument.instrument_id}</span>
               </div>
               <h3>{instrument.official_name}</h3>
@@ -135,7 +146,8 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
       <p class="eyebrow">How we govern this library</p>
       <h2 id="governance-heading">Why some tests are listed but not enabled</h2>
       <p>Many professionally used measures are copyrighted, qualification-controlled, interview-based, norm-dependent or subject to translation restrictions. A free PDF is not automatically permission to embed it in a commercial website. Clinician-only protocols and secure cognitive test items must not be cloned as public quizzes.</p>
-      <p>Before enabling a module, Ozarbox needs an instrument-specific version record, authoritative item/scoring source, rights review, language and population review, deterministic scoring tests, safety handling, accessibility evaluation and a documented human go/no-go review. A passing build is not clinical validation.</p>
+      <p>Before awarding the “★ Gold verified” badge, Ozarbox must document an instrument-specific version, authoritative scoring source, rights clearance, language/population suitability, independently reviewed scoring tests and edge cases, safety and accessibility checks, and a documented human review. A passing build or a well-known original questionnaire is not enough.</p>
+      <p>At present, no registry entry has the evidence-backed <code>quality_status: "gold-standard-verified"</code> designation. Therefore, no entry receives the gold badge yet. The “Not verified / unofficial on Ozarbox” label describes the status of this website's entry—not the scientific standing of the original instrument.</p>
       <p><a href={base + 'privacy/'}>Read the privacy policy</a> · <a href="https://github.com/ajayawana/tool-platform/blob/main/src/data/assessment-registry.json" target="_blank" rel="noopener noreferrer">View the machine-readable registry</a> · <a href="https://github.com/ajayawana/tool-platform/blob/main/docs/phq9-verification.md" target="_blank" rel="noopener noreferrer">PHQ-9 verification report</a></p>
     </section>
   </section>
@@ -174,6 +186,12 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
     .page-heading{max-width:900px;padding:15px 0 22px}
     .page-heading h1{font-size:clamp(2.25rem,5vw,3.75rem);line-height:1.05;letter-spacing:-.04em;margin:.25rem 0 1rem}
     .lead{font-size:1.13rem;color:#475569;max-width:850px}
+    .quality-legend{max-width:900px;margin:20px 0;padding:14px 16px;border:1px solid #dbe3ee;border-radius:12px;background:#f8fafc;color:#334155;font-size:.9rem}
+    .quality-legend p{margin:7px 0;line-height:1.55}
+    .quality-badge{display:inline-flex;align-items:center;gap:5px;max-width:100%;width:fit-content;padding:4px 8px;border-radius:999px;font-size:.73rem;font-weight:850;line-height:1.35}
+    .quality-gold{background:#fff3bf;color:#7c4a03;border:1px solid #e6b94f}
+    .quality-unverified{background:#f1f5f9;color:#475569;border:1px solid #cbd5e1}
+    .instrument-badges{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0}
     .catalogue-stats{display:flex;gap:14px;flex-wrap:wrap;margin:24px 0}
     .catalogue-stats div{display:flex;flex-direction:column;padding:13px 17px;border:1px solid #dbe3ee;border-radius:12px;background:#fff;min-width:150px}
     .catalogue-stats strong{font-size:1.6rem;line-height:1.15}

@@ -122,7 +122,7 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
                     ? 'The named instrument is not administered by Ozarbox while rights or professional-use requirements are unresolved. Start with the original Ozarbox reflection guide below; it is not the clinical test and does not reproduce its items or scoring. The official source link is external and is for instrument/access information.'
                     : 'Ozarbox does not provide the named questionnaire or its score. You can use the original, unscored reflection guide below; it is not a substitute for the named instrument. The official source link, when present, opens externally.'}</p>
                   {instrument.open_alternative_route && (
-                    <a class="instrument-action local-alternative" href={base + instrument.open_alternative_route.replace(/^\\//, '')}>{instrument.open_alternative_label || 'Open original reflection alternative'} (on Ozarbox) →</a>
+                    <a class="instrument-action local-alternative" href={base + instrument.open_alternative_route.replace(/^\//, '')}>{instrument.open_alternative_label || 'Open original reflection alternative'} (on Ozarbox) →</a>
                   )}
                   {instrument.access_url && (
                     <a class="instrument-action external-access" href={instrument.access_url} target="_blank" rel="noopener noreferrer">{instrument.access_label || 'Official source and rights information (external)'} ↗</a>

@@ -11,6 +11,7 @@ test("assessment centre and every implemented short-screen route are linked into
   for (const route of [
     "'/assessments/'",
     "'/tools/phq-9/'",
+    "'/tools/source-assessments/academic-motivation-scale/'",
     "'/tools/assessments/phq-2/'",
     "'/tools/assessments/gad-7/'",
     "'/tools/assessments/gad-2/'",

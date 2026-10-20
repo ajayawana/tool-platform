@@ -125,7 +125,11 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
                     <a class="instrument-action local-alternative" href={base + instrument.open_alternative_route.replace(/^\//, '')}>{instrument.open_alternative_label || 'Open original reflection alternative'} (on Ozarbox) →</a>
                   )}
                   {instrument.access_url && (
-                    <a class="instrument-action external-access" href={instrument.access_url} target="_blank" rel="noopener noreferrer">{instrument.access_label || 'Official source and rights information (external)'} ↗</a>
+                    <details class="external-source">
+                      <summary>Official source / permissions (external)</summary>
+                      <p>This opens an external rights-holder or reference website, not an Ozarbox assessment. The local reflection guide above stays on Ozarbox and is not equivalent to the named test.</p>
+                      <a class="instrument-action external-access" href={instrument.access_url} target="_blank" rel="noopener noreferrer">{instrument.access_label || 'Open official source and rights information'} ↗</a>
+                    </details>
                   )}
                 </>
               )}
@@ -230,6 +234,9 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
     .instrument-card dd{margin:2px 0 0;font-size:.88rem;overflow-wrap:anywhere}
     .instrument-action{display:inline-block;margin-top:13px;font-weight:850;color:#1d4ed8;text-decoration:underline}
     .catalogue-only-note{font-size:.88rem;color:#64748b;border-left:3px solid #cbd5e1;padding-left:10px;margin-top:13px}.local-alternative{display:block;margin-top:14px}.external-access{display:block;margin-top:10px;font-size:.9rem;line-height:1.4}
+    .external-source{margin-top:12px;padding-top:10px;border-top:1px solid #e2e8f0;font-size:.84rem;color:#64748b}
+    .external-source summary{cursor:pointer;font-weight:750;color:#475569}
+    .external-source p{line-height:1.5;margin:.6rem 0}
     .source-links{margin-top:14px;border-top:1px solid #e2e8f0;padding-top:10px;font-size:.84rem}
     .source-links summary{font-weight:750;cursor:pointer}
     .source-links ul{padding-left:20px}
@@ -241,6 +248,6 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
     @media(max-width:900px){.domain-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.filters{grid-template-columns:1fr 1fr}.filters label:first-child{grid-column:1/-1}}
     @media(max-width:600px){.domain-grid,.instrument-grid,.filters{grid-template-columns:1fr}.filters label:first-child{grid-column:auto}.section-title-row{align-items:flex-start;flex-direction:column}.catalogue-stats div{flex:1 1 130px}.assessment-centre{padding-top:24px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
-    @media print{.site-header,footer,.filters,.domain-section,.notice,.instrument-action,.source-links{display:none!important}.assessment-centre{padding:0}.instrument-grid{display:block}.instrument-card{break-inside:avoid;margin:0 0 12px}}
+    @media print{.site-header,footer,.filters,.domain-section,.notice,.instrument-action,.source-links,.external-source{display:none!important}.assessment-centre{padding:0}.instrument-grid{display:block}.instrument-card{break-inside:avoid;margin:0 0 12px}}
   </style>
 </Layout>

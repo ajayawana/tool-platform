@@ -23,19 +23,16 @@ export function getStaticPaths() {
       <p><strong>Do not use this exercise to diagnose a condition, determine IQ, screen a child for autism, make employment/education decisions, or replace a trained professional.</strong> The source instrument may be proprietary or qualification-controlled; this page does not reproduce its items, scoring, norms, or stimuli.</p>
     </aside>
     <form id="reflection-form">
-      <p>Choose the response that best reflects your experience. These answers are not stored or sent by this page. You can skip any question.</p>
+      <p>Use these prompts to organise your thoughts or prepare for a conversation. Responses are optional, are not stored or sent by this page, and are not scored.</p>
       {instrument.questions.map((question) => (
         <fieldset class="question">
           <legend><span>Question {question.id} of {instrument.questions.length}</span>{question.text}</legend>
-          <div class="options">
-            {instrument.scale.map((option) => (
-              <label class="option"><input type="radio" name={'q-' + question.id} value={option.value} /> <span>{option.label}</span></label>
-            ))}
-          </div>
+          <label class="response-label" for={'q-' + question.id}>Your notes (optional)</label>
+          <textarea id={'q-' + question.id} name={'q-' + question.id} rows="3" maxlength="1200" placeholder="Write a brief note, or leave blank."></textarea>
         </fieldset>
       ))}
       <div class="actions"><button type="submit">Create reflection summary</button><button type="reset" class="secondary">Clear answers</button></div>
-      <p id="validation" role="status" hidden>Please answer at least one question to create a reflection summary.</p>
+      <p id="validation" role="status" hidden>Please enter at least one note to create a reflection summary.</p>
     </form>
     <section id="result" hidden aria-live="polite" class="result">
       <h2>Reflection summary</h2>
@@ -53,24 +50,25 @@ export function getStaticPaths() {
     const validation = document.querySelector<HTMLElement>('#validation');
     const summary = document.querySelector<HTMLElement>('#summary');
     const responseList = document.querySelector<HTMLElement>('#response-list');
-    const questions = [1,2,3,4,5];
-    const options = [{"value":0,"label":"Not at all / not applicable"},{"value":1,"label":"A little"},{"value":2,"label":"Somewhat"},{"value":3,"label":"A lot"},{"value":4,"label":"Very much"}];
+    const questionIds = [1,2,3,4,5];
     form?.addEventListener('submit', (event) => {
       event.preventDefault();
-      const answered = questions.map((id) => {
-        const selected = form.querySelector<HTMLInputElement>('input[name="q-' + id + '"]:checked');
-        return selected ? { id, value: Number(selected.value), label: options.find((option) => option.value === Number(selected.value))?.label ?? '' } : null;
-      }).filter((value) => value !== null) as Array<{id:number;value:number;label:string}>;
-      if (!answered.length) { if (validation) validation.hidden = false; return; }
+      const notes = questionIds.map((id) => {
+        const field = form.querySelector<HTMLTextAreaElement>('#q-' + id);
+        const value = field?.value.trim() ?? '';
+        const question = field?.closest('fieldset')?.querySelector('legend')?.textContent?.replace(/^Question \\d+ of \\d+/, '').trim() ?? ('Question ' + id);
+        return value ? { id, question, value } : null;
+      }).filter((value) => value !== null) as Array<{id:number;question:string;value:string}>;
+      if (!notes.length) { if (validation) validation.hidden = false; return; }
       if (validation) validation.hidden = true;
-      const mean = answered.reduce((sum, item) => sum + item.value, 0) / answered.length;
-      if (summary) summary.textContent = 'You answered ' + answered.length + ' of ' + questions.length + ' prompts. Your average response was ' + mean.toFixed(1) + ' out of 4. This is a simple summary of your selected responses only, not a validated scale score or a severity band.';
+      if (summary) summary.textContent = 'You added notes for ' + notes.length + ' of ' + questionIds.length + ' prompts. No total, score, severity band, or diagnosis is generated.';
       if (responseList) {
         responseList.replaceChildren();
-        answered.forEach((item) => {
-          const question = form.querySelector('fieldset:nth-of-type(' + item.id + ') legend');
+        notes.forEach((item) => {
           const li = document.createElement('li');
-          li.textContent = (question?.textContent ?? ('Question ' + item.id)) + ' — ' + item.label;
+          const strong = document.createElement('strong');
+          strong.textContent = item.question + ': ';
+          li.append(strong, document.createTextNode(item.value));
           responseList.append(li);
         });
       }
@@ -82,6 +80,6 @@ export function getStaticPaths() {
     document.querySelector<HTMLButtonElement>('#print-result')?.addEventListener('click', () => window.print());
   </script>
   <style>
-    .reflection-tool{max-width:900px}.question{border:1px solid #dbe2ea;border-radius:14px;padding:18px;margin:18px 0}.question legend{font-weight:750;line-height:1.5}.question legend span{display:block;font-size:.8rem;color:#64748b;text-transform:uppercase;letter-spacing:.04em}.options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:14px}.option{display:flex;align-items:center;gap:10px;border:1px solid #cbd5e1;border-radius:10px;padding:12px;cursor:pointer}.option:has(input:checked){background:#eff6ff;border-color:#2563eb}.option input{width:18px;height:18px;flex:0 0 auto}.notice-warning{background:#fff7ed;border:1px solid #fed7aa;border-radius:14px;padding:18px;margin:22px 0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.actions button{padding:12px 18px;border-radius:10px;border:0;background:#1d4ed8;color:#fff;font-weight:750;cursor:pointer}.actions .secondary{background:#e2e8f0;color:#0f172a}.result,.sources{margin:30px 0;padding:22px;border:1px solid #dbe2ea;border-radius:14px}.sources a{overflow-wrap:anywhere}#validation{color:#b91c1c;font-weight:700}[hidden]{display:none!important}@media(max-width:600px){.options{grid-template-columns:1fr}.question{padding:14px}}@media print{.site-header,footer,.breadcrumbs,form,.actions{display:none!important}.result{display:block!important;border:0}.reflection-tool{max-width:none}}
+    .reflection-tool{max-width:900px}.question{border:1px solid #dbe2ea;border-radius:14px;padding:18px;margin:18px 0}.question legend{font-weight:750;line-height:1.5}.question legend span{display:block;font-size:.8rem;color:#64748b;text-transform:uppercase;letter-spacing:.04em}.response-label{display:block;font-weight:700;margin:14px 0 6px}textarea{display:block;width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:10px;padding:12px;font:inherit;resize:vertical;min-height:84px}.notice-warning{background:#fff7ed;border:1px solid #fed7aa;border-radius:14px;padding:18px;margin:22px 0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.actions button{padding:12px 18px;border-radius:10px;border:0;background:#1d4ed8;color:#fff;font-weight:750;cursor:pointer}.actions .secondary{background:#e2e8f0;color:#0f172a}.result,.sources{margin:30px 0;padding:22px;border:1px solid #dbe2ea;border-radius:14px}.sources a{overflow-wrap:anywhere}#validation{color:#b91c1c;font-weight:700}[hidden]{display:none!important}@media(max-width:600px){.question{padding:14px}}@media print{.site-header,footer,.breadcrumbs,form,.actions{display:none!important}.result{display:block!important;border:0}.reflection-tool{max-width:none}}
   </style>
 </Layout>

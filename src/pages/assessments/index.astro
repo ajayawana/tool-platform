@@ -98,7 +98,7 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
             >
               <div class="instrument-card-top">
                 <div class="instrument-badges">
-                  {instrument.quality_status === 'gold-standard-verified' ? (
+                  {('quality_status' in instrument && instrument.quality_status === 'gold-standard-verified') ? (
                     <span class="quality-badge quality-gold" title="The instrument-specific Ozarbox implementation has documented independent verification.">★ Gold verified</span>
                   ) : (
                     <span class="quality-badge quality-unverified" title="Ozarbox has not established that this website entry is a gold-standard implementation.">Not verified / unofficial on Ozarbox</span>

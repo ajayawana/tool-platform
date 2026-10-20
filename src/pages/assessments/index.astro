@@ -103,7 +103,7 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
                   ) : (
                     <span class="quality-badge quality-unverified" title="Ozarbox has not established that this website entry is a gold-standard implementation.">Not verified / unofficial on Ozarbox</span>
                   )}
-                  {instrument.source_pdf?.status === 'official-source-pdf-used' && instrument.source_pdf?.implementation_status === 'implemented-from-official-source-pdf' ? <span class="source-pdf-badge" title="This implementation was built from the linked official source PDF.">✓ Official PDF used</span> : instrument.source_pdf?.status === 'official-source-pdf-found-not-used' ? <span class="source-pdf-pending">Official PDF found · not used</span> : null}
+                  {instrument.source_pdf?.status === 'official-source-pdf-used' && instrument.source_pdf?.implementation_status === 'implemented-from-official-source-pdf' ? <span class="source-pdf-badge" title="This implementation was built from the linked official source PDF.">✓ Official PDF used</span> : <span class="source-pdf-pending">{instrument.source_pdf?.label || 'PDF source not yet verified'}</span>}
                   <span class={'status status-' + instrument.deployment_status}>{labelForStatus(instrument.deployment_status, Boolean(instrument.open_alternative_route))}</span>
                 </div>
                 <span class="instrument-id">{instrument.instrument_id}</span>

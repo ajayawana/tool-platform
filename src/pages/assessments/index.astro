@@ -10,13 +10,16 @@ const countsByDomain = domains.map((domain) => ({
   ...domain,
   count: instruments.filter((item) => item.domains.some((d) => d.id === domain.id)).length,
 }));
-const labelForStatus = (status: string): string => ({
+const labelForStatus = (status: string, hasAlternative = false): string => {
+  if (status === 'catalogue-only' && hasAlternative) return 'Original reflection guide available';
+  return ({
   'implemented-unvalidated': 'Available · unvalidated',
   'catalogue-only': 'Catalogue only',
   'permission-review': 'Permission / clinical review',
   restricted: 'Restricted workflow',
   disabled: 'Disabled',
 }[status] || 'Review required');
+};
 ---
 <Layout title="Psychological Assessment Centre | Ozarbox" description="A governed catalogue of psychological and health assessment instruments with transparent evidence, permission, and implementation status.">
   <section class="container assessment-centre" aria-labelledby="page-title">
@@ -90,7 +93,7 @@ const labelForStatus = (status: string): string => ({
               data-search={(instrument.official_name + ' ' + instrument.main_purpose + ' ' + domainLabels + ' ' + instrument.permission_status + ' ' + instrument.deployment_status).toLowerCase()}
             >
               <div class="instrument-card-top">
-                <span class={'status status-' + instrument.deployment_status}>{labelForStatus(instrument.deployment_status)}</span>
+                <span class={'status status-' + instrument.deployment_status}>{labelForStatus(instrument.deployment_status, Boolean(instrument.open_alternative_route))}</span>
                 <span class="instrument-id">{instrument.instrument_id}</span>
               </div>
               <h3>{instrument.official_name}</h3>

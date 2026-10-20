@@ -9,19 +9,18 @@ const root = path.resolve(here, '..');
 const registry = JSON.parse(fs.readFileSync(path.join(root, 'src/data/assessment-registry.json'), 'utf8'));
 const alternatives = JSON.parse(fs.readFileSync(path.join(root, 'src/data/open-assessment-alternatives.json'), 'utf8'));
 
-test('all 31 permission-review instruments have a separate open reflection alternative', () => {
-  const pending = registry.instruments.filter((item) => item.deployment_status === 'permission-review');
-  assert.equal(pending.length, 31);
-  const mapped = pending.filter((item) => item.open_alternative_route);
-  assert.equal(mapped.length, 31);
-  assert.equal(alternatives.instruments.length, 31);
+test('all 140 catalogue-only instruments have separate original reflection guides', () => {
+  const pending = registry.instruments.filter((item) => item.deployment_status === 'catalogue-only');
+  assert.equal(pending.length, 140);
+  assert.equal(pending.filter((item) => item.open_alternative_route).length, 140);
+  assert.equal(alternatives.instruments.length, 171);
   for (const item of pending) {
     assert.ok(alternatives.instruments.some((alt) => alt.sourceInstrumentId === item.instrument_id));
     assert.equal(item.open_alternative_route, '/tools/open-assessments/' + item.instrument_id + '/');
   }
 });
 
-test('open alternatives are original, bounded, complete, and have unique routes', () => {
+test('all guides are original, bounded, complete, and have unique routes', () => {
   const slugs = alternatives.instruments.map((item) => item.slug);
   assert.equal(new Set(slugs).size, slugs.length);
   for (const item of alternatives.instruments) {
@@ -29,7 +28,7 @@ test('open alternatives are original, bounded, complete, and have unique routes'
     assert.match(item.description, /not a validated substitute/i);
     assert.match(item.intendedUse, /Not diagnostic/i);
     assert.match(item.resultNotice, /not a clinical score/i);
-    assert.match(item.intendedUse, /Not diagnostic/i);
+    assert.match(item.intendedUse, /not intended for diagnosis|not diagnostic/i);
     assert.equal(item.questions.length, 5);
     assert.equal(new Set(item.questions.map((question) => question.id)).size, 5);
     assert.ok(item.questions.every((question) => question.text.trim().length > 15));

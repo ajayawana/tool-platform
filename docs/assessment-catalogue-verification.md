@@ -118,3 +118,16 @@ The public site cannot enforce administrator qualifications, protect secure test
 ## Test additions in this branch
 
 New tests cover PCL-5 item/response and score boundaries, missing and invalid responses, cluster totals, PC-PTSD-5 skip branch and threshold behavior, LEC-5's no-total-score behavior, all missing exposure positions, mutually exclusive LEC responses, privacy-oriented structure, official access links, and the new sitemap routes. Automated checks are not manual accessibility testing, independent psychometric validation, legal advice or clinical readiness certification.
+
+
+## Original open reflection guides for the 140 catalogue-only entries
+
+**Implementation update (20 October 2026):** every one of the 140 records still marked `catalogue-only` now has a separately addressable, browser-only original reflection guide at `/tools/open-assessments/<instrument-id>/`. Together with the 31 existing alternatives for permission-review entries, the open-reflection data file contains 171 guides. The assessment catalogue labels these as **Original reflection guide available**, not as the standardized instrument itself.
+
+- The five prompts on each new guide are original Ozarbox-authored wording, tailored to the record's stated purpose and broad domain. The prompts do not reproduce named instruments' item wording, scoring keys, protected cognitive stimuli, or interview scripts.
+- These pages gather optional notes locally in the page, produce a reflection summary only, and do not calculate a clinical total, norm, severity band, cut-off, or diagnosis.
+- Official/clinical links on a guide are background reading. They do not validate the new prompts or imply that the source organization endorses Ozarbox.
+- The underlying catalogue records remain `catalogue-only`; no protected or unverified instrument was promoted to a public standardized-test route. The 31 permission-review records remain gated.
+- These guides are free-to-use original reflection prompts, **not gold-standard or psychometrically validated assessment instruments**. Before any of them is used for screening, clinical decisions, research outcomes, school/work eligibility, or patient care, it would need construct-specific item development, expert review, target-population testing, reliability/validity studies, accessibility and language validation, scoring preregistration where applicable, privacy/safety review, and independent clinical governance.
+
+This approach follows a rights-first policy: APA notes that permission is required for measures and scales reproduced from APA publications ([APA copyright policy](https://www.apa.org/about/copyright.html)); WHO reuse depends on the licence attached to the specific material, including non-commercial/share-alike restrictions for some publications ([WHO copyright and licensing](https://www.who.int/about/policies/publishing/copyright)). Publicly available source material is not automatically unrestricted, and permission-free wording is not evidence of clinical validity.

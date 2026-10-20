@@ -38,7 +38,7 @@ test("catalogue supports browser-only search, domain and deployment-status filte
 });
 
 test("catalogue clearly distinguishes catalogue-only entries from usable assessment routes", () => {
-  assert.match(catalogue, /No questionnaire or score is provided by Ozarbox for this entry/);
+  assert.match(catalogue, /Ozarbox does not provide the named questionnaire or its score/);
   assert.match(catalogue, /instrument.access_url/);
   assert.match(catalogue, /instrument.access_label/);
   assert.match(catalogue, /not a claim of clinical validation or institutional approval/i);

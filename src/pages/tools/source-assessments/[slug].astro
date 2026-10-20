@@ -1,0 +1,85 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import scale from '../../../data/source-assessment-ams-c28.json';
+const base = import.meta.env.BASE_URL;
+---
+<Layout title={scale.title + ' | Ozarbox'} description="Research-use digitization of the official AMS-C 28 source PDF with source-defined subscales.">
+  <section class="container assessment-tool">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={base}>Home</a> / <a href={base + 'assessments/'}>Assessment centre</a> / AMS-C 28</nav>
+    <header>
+      <p class="eyebrow">Ozarbox · Source-PDF-based implementation</p>
+      <h1>{scale.title}</h1>
+      <p class="lead">{scale.prompt}</p>
+      <p class="source-badge">✓ Official PDF used</p>
+    </header>
+    <aside class="notice">
+      <h2>Research-use limitation</h2>
+      <p>{scale.useNotice}</p>
+      <p>This is a digital transcription of the official source PDF, not a separately validated software implementation. No clinical diagnosis or norm-referenced interpretation is provided. The scale is intended for college students; do not apply it to other populations without appropriate evidence.</p>
+    </aside>
+    <form id="ams-form">
+      <fieldset class="response-key">
+        <legend>Response scale (1–7)</legend>
+        <p>Choose one response for each item. All 28 items are required to calculate all seven subscale averages.</p>
+        <ol>{scale.responseOptions.map((option) => <li><strong>{option.value}</strong> — {option.label}</li>)}</ol>
+      </fieldset>
+      {scale.questions.map((question, index) => (
+        <fieldset class="question">
+          <legend><span>Item {index + 1} of {scale.questions.length}</span>{question}</legend>
+          <div class="options">
+            {scale.responseOptions.map((option) => (
+              <label><input type="radio" name={'item-' + (index + 1)} value={option.value} required /> <span>{option.value}</span></label>
+            ))}
+          </div>
+        </fieldset>
+      ))}
+      <div class="actions"><button type="submit">Calculate subscale averages</button><button type="reset" class="secondary">Clear responses</button></div>
+    </form>
+    <section id="results" hidden aria-live="polite">
+      <h2>Subscale averages</h2>
+      <p>Each result is the arithmetic mean of the four items assigned to that subscale in the source PDF, on a 1–7 scale. These are descriptive averages, not diagnoses, percentile ranks, or validated cut-offs.</p>
+      <div id="result-list" class="result-grid"></div>
+      <p class="citation"><strong>Source citation:</strong> {scale.citation}</p>
+      <p><a href={scale.sourceUrl} target="_blank" rel="noopener noreferrer">Open official source PDF ↗</a> · <a href={scale.sourcePageUrl} target="_blank" rel="noopener noreferrer">Source laboratory and use note ↗</a></p>
+      <div class="actions"><button type="button" id="print-results">Print results</button><button type="button" id="edit-results" class="secondary">Edit responses</button></div>
+    </section>
+  </section>
+  <script>
+    const form = document.querySelector<HTMLFormElement>('#ams-form');
+    const results = document.querySelector<HTMLElement>('#results');
+    const resultList = document.querySelector<HTMLElement>('#result-list');
+    const subscales = [{"id":"intrinsic-know","name":"Intrinsic motivation — to know","items":[2,9,16,23]},{"id":"intrinsic-accomplishment","name":"Intrinsic motivation — toward accomplishment","items":[6,13,20,27]},{"id":"intrinsic-stimulation","name":"Intrinsic motivation — to experience stimulation","items":[4,11,18,25]},{"id":"extrinsic-identified","name":"Extrinsic motivation — identified regulation","items":[3,10,17,24]},{"id":"extrinsic-introjected","name":"Extrinsic motivation — introjected regulation","items":[7,14,21,28]},{"id":"extrinsic-external","name":"Extrinsic motivation — external regulation","items":[1,8,15,22]},{"id":"amotivation","name":"Amotivation","items":[5,12,19,26]}];
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const values = Array.from({length:28}, (_, index) => {
+        const selected = form.querySelector<HTMLInputElement>('input[name="item-' + (index + 1) + '"]:checked');
+        return selected ? Number(selected.value) : NaN;
+      });
+      if (values.some((value) => !Number.isInteger(value) || value < 1 || value > 7)) return;
+      if (resultList) {
+        resultList.replaceChildren();
+        subscales.forEach((scale) => {
+          const mean = scale.items.reduce((sum, item) => sum + values[item - 1], 0) / scale.items.length;
+          const card = document.createElement('article');
+          const heading = document.createElement('h3');
+          heading.textContent = scale.name;
+          const score = document.createElement('p');
+          score.className = 'score';
+          score.textContent = mean.toFixed(2) + ' / 7';
+          const detail = document.createElement('p');
+          detail.textContent = 'Items: ' + scale.items.join(', ');
+          card.append(heading, score, detail);
+          resultList.append(card);
+        });
+      }
+      if (results) results.hidden = false;
+      results?.scrollIntoView({behavior:'auto',block:'start'});
+    });
+    form?.addEventListener('reset', () => { if (results) results.hidden = true; });
+    document.querySelector<HTMLButtonElement>('#edit-results')?.addEventListener('click', () => { if (results) results.hidden = true; form?.scrollIntoView({behavior:'auto',block:'start'}); });
+    document.querySelector<HTMLButtonElement>('#print-results')?.addEventListener('click', () => window.print());
+  </script>
+  <style>
+    .assessment-tool{max-width:900px;padding:30px 0}.assessment-tool h1{font-size:clamp(2rem,5vw,3rem);line-height:1.1}.lead{font-size:1.1rem}.source-badge{display:inline-block;padding:5px 10px;border:1px solid #9ac5a4;border-radius:999px;background:#eefbf1;color:#166534;font-weight:800;font-size:.82rem}.notice{padding:18px;border:1px solid #f5d08a;border-radius:14px;background:#fffbeb;color:#78350f;margin:20px 0}.response-key,.question{padding:16px;border:1px solid #dbe3ee;border-radius:12px;margin:16px 0}.response-key ol{columns:2}.question legend{font-weight:700;line-height:1.5}.question legend span{display:block;color:#64748b;font-size:.8rem;font-weight:800}.options{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-top:14px}.options label{display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid #cbd5e1;border-radius:10px;padding:9px 4px;cursor:pointer}.options input{accent-color:#2563eb}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}.actions button{padding:12px 16px;border:0;border-radius:10px;background:#1d4ed8;color:white;font-weight:800;cursor:pointer}.actions .secondary{background:#e2e8f0;color:#334155}.result-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.result-grid article{border:1px solid #dbe3ee;border-radius:12px;padding:15px}.result-grid h3{font-size:1rem}.score{font-size:1.7rem;font-weight:850;margin:.3rem 0}.citation{line-height:1.6}.assessment-tool a{overflow-wrap:anywhere}@media(max-width:600px){.options{grid-template-columns:repeat(4,minmax(0,1fr))}.response-key ol{columns:1}.result-grid{grid-template-columns:1fr}}@media print{.actions,form{display:none!important}}
+  </style>
+</Layout>

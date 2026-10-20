@@ -707,12 +707,13 @@
       "open_alternative_route": "/tools/open-assessments/assist/",
       "open_alternative_label": "Open original reflection alternative",
       "source_pdf": {
-        "status": "not-yet-researched",
-        "label": "PDF source not yet verified",
-        "source_url": null,
-        "version": null,
-        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "status": "official-source-pdf-found-not-used",
+        "label": "Official PDF found · not used",
+        "source_url": "https://www.who.int/publications/i/item/978924159938-2",
+        "version": "2010 WHO ASSIST manual; public online PDF.",
+        "use_rights": "The publication page says all rights reserved and directs reproduction requests to WHO. Do not embed the form without permission.",
+        "implementation_status": "not-implemented",
+        "source_name": "World Health Organization — ASSIST manual for use in primary care"
       }
     },
     {
@@ -756,12 +757,13 @@
       "open_alternative_route": "/tools/open-assessments/audit/",
       "open_alternative_label": "Open original reflection alternative",
       "source_pdf": {
-        "status": "not-yet-researched",
-        "label": "PDF source not yet verified",
-        "source_url": null,
-        "version": null,
-        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "status": "official-source-pdf-found-not-used",
+        "label": "Official PDF found · not used",
+        "source_url": "https://www.who.int/publications/i/item/WHO-MSD-MSB-01.6a",
+        "version": "Official WHO AUDIT guideline/manual PDF found; exact form and permitted reproduction to be reviewed.",
+        "use_rights": "The official PDF is available, but its item-reproduction and web-digitization rights must be verified before embedding.",
+        "implementation_status": "not-implemented",
+        "source_name": "World Health Organization — AUDIT guidelines for use in primary health care"
       }
     },
     {
@@ -1160,12 +1162,13 @@
       "open_alternative_route": "/tools/open-assessments/brief-resilience-scale/",
       "open_alternative_label": "Open free original reflection guide",
       "source_pdf": {
-        "status": "not-yet-researched",
-        "label": "PDF source not yet verified",
-        "source_url": null,
-        "version": null,
-        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "status": "official-source-found-not-used",
+        "label": "Official source found · PDF/use review pending",
+        "source_url": "https://agingcenter.duke.edu/psychosocial-resilience",
+        "version": "Original BRS version and form not yet checked against a primary downloadable source.",
+        "use_rights": "Duke page says the scale has no license fees; verify original wording, attribution, and any electronic-use restrictions before implementation.",
+        "implementation_status": "not-implemented",
+        "source_name": "Duke Center for the Study of Aging and Human Development — Brief Resilience Scale resource"
       }
     },
     {
@@ -3019,12 +3022,13 @@
       "open_alternative_route": "/tools/open-assessments/flourishing-scale/",
       "open_alternative_label": "Open free original reflection guide",
       "source_pdf": {
-        "status": "not-yet-researched",
-        "label": "PDF source not yet verified",
-        "source_url": null,
-        "version": null,
-        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "status": "official-source-pdf-found-not-used",
+        "label": "Official PDF found · not used",
+        "source_url": "https://ggsc.berkeley.edu/images/uploads/The_Flourishing_Scale.pdf",
+        "version": "8-item scale PDF; implementation not yet built.",
+        "use_rights": "Official university-hosted PDF found. Reproduction/digitization terms not established from the PDF landing information; verify terms before embedding.",
+        "implementation_status": "not-implemented",
+        "source_name": "Greater Good Science Center, University of California, Berkeley — The Flourishing Scale"
       }
     },
     {
@@ -5486,12 +5490,13 @@
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Screening/measurement support only; not a diagnosis and not independently clinically validated as this website implementation.",
       "source_pdf": {
-        "status": "not-yet-researched",
-        "label": "PDF source not yet verified",
-        "source_url": null,
-        "version": null,
-        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "status": "official-source-found-not-used",
+        "label": "Official source found · implementation source audit pending",
+        "source_url": "https://www.nih.gov/node/19946",
+        "version": "NIH record includes English-language instrument file; exact file-to-current-route comparison pending.",
+        "use_rights": "NIH record lists Copyright: No for this instrument record. The exact questionnaire file and current Ozarbox item wording/scoring still need a source comparison before this is tagged as PDF used.",
+        "implementation_status": "not-implemented",
+        "source_name": "National Institutes of Health — PHQ-9 Common Data Element"
       }
     },
     {
@@ -6149,9 +6154,9 @@
         "status": "official-source-found-not-used",
         "label": "Official source found · PDF/use review pending",
         "source_url": "https://socy.umd.edu/about-us/rosenberg-self-esteem-scale",
-        "source_name": "University of Maryland Sociology Department",
-        "version": "Version and exact downloadable form to be checked before implementation.",
-        "use_rights": "The University of Maryland page states the scale is in the public domain; exact form, attribution and scoring still require review before implementation.",
+        "source_name": "University of Maryland — Rosenberg Self-Esteem Scale",
+        "version": "University page states public-domain status; exact PDF/form to be matched before implementation.",
+        "use_rights": "University of Maryland states the scale is in the public domain and may be used without charge; attribution and exact scoring/form verification still required.",
         "implementation_status": "not-implemented"
       },
       "access_url": "https://socy.umd.edu/about-us/rosenberg-self-esteem-scale",
@@ -7538,12 +7543,13 @@
       "open_alternative_route": "/tools/open-assessments/who-5/",
       "open_alternative_label": "Open original reflection alternative",
       "source_pdf": {
-        "status": "not-yet-researched",
-        "label": "PDF source not yet verified",
-        "source_url": null,
-        "version": null,
-        "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "status": "official-source-pdf-found-not-used",
+        "label": "Official PDF found · not used",
+        "source_url": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
+        "version": "WHO publication page offers a downloadable PDF; no Ozarbox implementation based on it.",
+        "use_rights": "WHO publication reuse terms must be checked for this specific work; WHO materials may be CC BY-NC-SA for non-commercial use, while commercial use requires permission.",
+        "implementation_status": "not-implemented",
+        "source_name": "World Health Organization — WHO-5 Well-Being Index (2024)"
       }
     },
     {

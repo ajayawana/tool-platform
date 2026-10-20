@@ -35,7 +35,7 @@ test("every instrument has version, population, mode, language, permissions, sco
   }
 });
 
-test("only the seven implemented assessment entries have live routes and all remain labelled unvalidated", () => {
+test("all nine routed assessment entries have live routes and all remain labelled unvalidated", () => {
   const routed = registry.instruments.filter((item) => item.route);
   assert.deepEqual(routed.map((item) => item.instrument_id).sort(), ["ces-d","gad-2","gad-7","k6","lec-5","pc-ptsd-5","pcl-5","phq-2","phq-9"]);
   for (const instrument of routed) {

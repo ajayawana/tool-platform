@@ -5,7 +5,7 @@ import registry from '../../data/assessment-registry.json';
 const base = import.meta.env.BASE_URL;
 const domains = registry.domains;
 const instruments = registry.instruments;
-const usable = instruments.filter((item) => item.route);
+const usable = instruments.filter((item) => item.route || item.source_pdf?.implementation_status === 'implemented-from-official-source-pdf');
 const countsByDomain = domains.map((domain) => ({
   ...domain,
   count: instruments.filter((item) => item.domains.some((d) => d.id === domain.id)).length,
@@ -103,6 +103,7 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
                   ) : (
                     <span class="quality-badge quality-unverified" title="Ozarbox has not established that this website entry is a gold-standard implementation.">Not verified / unofficial on Ozarbox</span>
                   )}
+                  {instrument.source_pdf?.status === 'official-source-pdf-used' && instrument.source_pdf?.implementation_status === 'implemented-from-official-source-pdf' ? <span class="source-pdf-badge" title="This implementation was built from the linked official source PDF.">✓ Official PDF used</span> : instrument.source_pdf?.status === 'official-source-pdf-found-not-used' ? <span class="source-pdf-pending">Official PDF found · not used</span> : null}
                   <span class={'status status-' + instrument.deployment_status}>{labelForStatus(instrument.deployment_status, Boolean(instrument.open_alternative_route))}</span>
                 </div>
                 <span class="instrument-id">{instrument.instrument_id}</span>
@@ -132,6 +133,14 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
                     </details>
                   )}
                 </>
+              )}
+              {instrument.source_pdf?.source_url && (
+                <details class="source-links">
+                  <summary>Source PDF and use status</summary>
+                  <p>{instrument.source_pdf.source_name || 'Source document'} — {instrument.source_pdf.label || 'Source status pending'}</p>
+                  <p>{instrument.source_pdf.use_rights}</p>
+                  <a href={instrument.source_pdf.source_url} target="_blank" rel="noopener noreferrer">Open source PDF / source page ↗</a>
+                </details>
               )}
               {instrument.evidence_sources.length > 0 && (
                 <details class="source-links">
@@ -195,6 +204,8 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
     .quality-badge{display:inline-flex;align-items:center;gap:5px;max-width:100%;width:fit-content;padding:4px 8px;border-radius:999px;font-size:.73rem;font-weight:850;line-height:1.35}
     .quality-gold{background:#fff3bf;color:#7c4a03;border:1px solid #e6b94f}
     .quality-unverified{background:#f1f5f9;color:#475569;border:1px solid #cbd5e1}
+    .source-pdf-badge{display:inline-flex;align-items:center;width:fit-content;padding:4px 8px;border-radius:999px;font-size:.73rem;font-weight:850;background:#eefbf1;color:#166534;border:1px solid #9ac5a4}
+    .source-pdf-pending{display:inline-flex;align-items:center;width:fit-content;padding:4px 8px;border-radius:999px;font-size:.73rem;font-weight:850;background:#fff7ed;color:#9a3412;border:1px solid #fdba74}
     .instrument-badges{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0}
     .catalogue-stats{display:flex;gap:14px;flex-wrap:wrap;margin:24px 0}
     .catalogue-stats div{display:flex;flex-direction:column;padding:13px 17px;border:1px solid #dbe3ee;border-radius:12px;background:#fff;min-width:150px}

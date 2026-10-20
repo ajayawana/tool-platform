@@ -9237,6 +9237,210 @@
       },
       "access_url": "https://www.phqscreeners.com/",
       "access_label": "Open official source and rights information"
+    },
+    {
+      "instrument_id": "phq-a",
+      "official_name": "Patient Health Questionnaire Modified for Adolescents (PHQ-A)",
+      "main_purpose": "Adolescent mental-health symptom screening",
+      "domains": [
+        {
+          "id": "children-adolescents",
+          "label": "Children, adolescents, education and development"
+        }
+      ],
+      "version": "Official source/version must be checked before implementation.",
+      "population": "Use only for the population specified by the official source; local language and population validity not independently assessed.",
+      "administration_mode": "Adolescent self-report; use with appropriate clinical safeguarding",
+      "language": "Official English source linked; translations and local validation not verified.",
+      "recall_period": "Past two weeks",
+      "permission_status": "NIH provides the PHQ-A form; NIH/NLM CDE record lists Copyright: No. Follow the intended adolescent clinical screening context and official instructions.",
+      "content_rights": "Official source linked; no item transcription or scoring is reproduced in this Ozarbox entry.",
+      "scoring_specification": "Not implemented in Ozarbox. Open the official source for current items, administration and scoring.",
+      "evidence_status": "Official source and public-domain/free-use statement identified; Ozarbox transcription and scoring not implemented or validated.",
+      "evidence_sources": [
+        "https://www.nimh.nih.gov/research/research-conducted-at-nimh/asq-toolkit-materials/asq-tool/phq-9-modified-for-adolescents-phq-a"
+      ],
+      "safety_rules": [
+        "Screening tool only; not a diagnosis.",
+        "Follow the official source's intended population, instructions, and safeguarding requirements."
+      ],
+      "deployment_status": "catalogue-only",
+      "software_validation": "Official source link only; no in-app test or scoring module.",
+      "route": null,
+      "scoring_version": "Not implemented.",
+      "license_status": "NIH provides the PHQ-A form; NIH/NLM CDE record lists Copyright: No. Follow the intended adolescent clinical screening context and official instructions.",
+      "author_or_developer": "National Institute of Mental Health — official PHQ-A form",
+      "language_validation_status": "No local-language or India-specific validation verified in this work.",
+      "qualification_requirements": "Use within an appropriate clinical setting and follow official safeguarding guidance.",
+      "intended_use_boundary": "Source-linked catalogue entry only. No questionnaire items or scoring are reproduced in Ozarbox.",
+      "source_pdf": {
+        "status": "official-source-found-not-used",
+        "label": "Official source found · not digitized",
+        "source_url": "https://www.nimh.nih.gov/research/research-conducted-at-nimh/asq-toolkit-materials/asq-tool/phq-9-modified-for-adolescents-phq-a",
+        "version": "See official source",
+        "use_rights": "NIH provides the PHQ-A form; NIH/NLM CDE record lists Copyright: No. Follow the intended adolescent clinical screening context and official instructions.",
+        "implementation_status": "not-implemented",
+        "source_name": "National Institute of Mental Health — official PHQ-A form",
+        "reason": "Source-linked in the portfolio only; exact item/version and scoring implementation pending.",
+        "implemented_from": null,
+        "citation": "Johnson, J. G., Harris, E. S., Spitzer, R. L., & Williams, J. B. W. (2002). The Patient Health Questionnaire for Adolescents: validation of an instrument for the assessment of mental disorders among adolescent primary care patients. Journal of Adolescent Health, 30, 196–204.",
+        "route": null
+      },
+      "access_url": "https://www.nimh.nih.gov/research/research-conducted-at-nimh/asq-toolkit-materials/asq-tool/phq-9-modified-for-adolescents-phq-a",
+      "access_label": "Open official source and rights information"
+    },
+    {
+      "instrument_id": "hrqol-14",
+      "official_name": "CDC Healthy Days Measure (HRQOL-14)",
+      "main_purpose": "Health-related quality of life, limitations and symptom days",
+      "domains": [
+        {
+          "id": "mental-health-screening",
+          "label": "Mental health screening and symptom severity"
+        }
+      ],
+      "version": "Official source/version must be checked before implementation.",
+      "population": "Use only for the population specified by the official source; local language and population validity not independently assessed.",
+      "administration_mode": "Survey; core module plus activity-limitation and symptom modules",
+      "language": "Official English source linked; translations and local validation not verified.",
+      "recall_period": "Past 30 days for symptom/day-count questions",
+      "permission_status": "CDC states the HRQOL-14 is federally funded, not copyrighted, public domain, and requires no permission or licensing fees.",
+      "content_rights": "Official source linked; no item transcription or scoring is reproduced in this Ozarbox entry.",
+      "scoring_specification": "Not implemented in Ozarbox. Open the official source for current items, administration and scoring.",
+      "evidence_status": "Official source and public-domain/free-use statement identified; Ozarbox transcription and scoring not implemented or validated.",
+      "evidence_sources": [
+        "https://archive.cdc.gov/www_cdc_gov/hrqol/hrqol14_measure.htm"
+      ],
+      "safety_rules": [
+        "Screening tool only; not a diagnosis.",
+        "Follow the official source's intended population, instructions, and safeguarding requirements."
+      ],
+      "deployment_status": "catalogue-only",
+      "software_validation": "Official source link only; no in-app test or scoring module.",
+      "route": null,
+      "scoring_version": "Not implemented.",
+      "license_status": "CDC states the HRQOL-14 is federally funded, not copyrighted, public domain, and requires no permission or licensing fees.",
+      "author_or_developer": "Centers for Disease Control and Prevention — HRQOL-14 official form",
+      "language_validation_status": "No local-language or India-specific validation verified in this work.",
+      "qualification_requirements": "Follow the official source's administration instructions.",
+      "intended_use_boundary": "Source-linked catalogue entry only. No questionnaire items or scoring are reproduced in Ozarbox.",
+      "source_pdf": {
+        "status": "official-source-found-not-used",
+        "label": "Official source found · not digitized",
+        "source_url": "https://archive.cdc.gov/www_cdc_gov/hrqol/hrqol14_measure.htm",
+        "version": "See official source",
+        "use_rights": "CDC states the HRQOL-14 is federally funded, not copyrighted, public domain, and requires no permission or licensing fees.",
+        "implementation_status": "not-implemented",
+        "source_name": "Centers for Disease Control and Prevention — HRQOL-14 official form",
+        "reason": "Source-linked in the portfolio only; exact item/version and scoring implementation pending.",
+        "implemented_from": null,
+        "citation": "Centers for Disease Control and Prevention. Healthy Days Measures / HRQOL-14.",
+        "route": null
+      },
+      "access_url": "https://archive.cdc.gov/www_cdc_gov/hrqol/hrqol14_measure.htm",
+      "access_label": "Open official source and rights information"
+    },
+    {
+      "instrument_id": "ssi-sa",
+      "official_name": "Simple Screening Instrument for Substance Abuse (SSI-SA)",
+      "main_purpose": "Screening for alcohol and other drug-related problems",
+      "domains": [
+        {
+          "id": "behavioral-health",
+          "label": "Sleep, substance use, eating and behavioral patterns"
+        }
+      ],
+      "version": "Official source/version must be checked before implementation.",
+      "population": "Use only for the population specified by the official source; local language and population validity not independently assessed.",
+      "administration_mode": "Self-administered or interview; official source includes 16 items",
+      "language": "Official English source linked; translations and local validation not verified.",
+      "recall_period": "Past six months",
+      "permission_status": "U.S. government treatment-improvement publications identify this as a public-domain screening instrument available for unrestricted use. Source-linked only; do not infer diagnostic status from the score.",
+      "content_rights": "Official source linked; no item transcription or scoring is reproduced in this Ozarbox entry.",
+      "scoring_specification": "Not implemented in Ozarbox. Open the official source for current items, administration and scoring.",
+      "evidence_status": "Official source and public-domain/free-use statement identified; Ozarbox transcription and scoring not implemented or validated.",
+      "evidence_sources": [
+        "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_400-PURL-LPS84562/pdf/GOVPUB-HE20_400-PURL-LPS84562.pdf"
+      ],
+      "safety_rules": [
+        "Screening tool only; not a diagnosis.",
+        "Follow the official source's intended population, instructions, and safeguarding requirements."
+      ],
+      "deployment_status": "catalogue-only",
+      "software_validation": "Official source link only; no in-app test or scoring module.",
+      "route": null,
+      "scoring_version": "Not implemented.",
+      "license_status": "U.S. government treatment-improvement publications identify this as a public-domain screening instrument available for unrestricted use. Source-linked only; do not infer diagnostic status from the score.",
+      "author_or_developer": "SAMHSA / Center for Substance Abuse Treatment — TIP 11 source material",
+      "language_validation_status": "No local-language or India-specific validation verified in this work.",
+      "qualification_requirements": "Follow the official source's administration instructions.",
+      "intended_use_boundary": "Source-linked catalogue entry only. No questionnaire items or scoring are reproduced in Ozarbox.",
+      "source_pdf": {
+        "status": "official-source-found-not-used",
+        "label": "Official source found · not digitized",
+        "source_url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_400-PURL-LPS84562/pdf/GOVPUB-HE20_400-PURL-LPS84562.pdf",
+        "version": "See official source",
+        "use_rights": "U.S. government treatment-improvement publications identify this as a public-domain screening instrument available for unrestricted use. Source-linked only; do not infer diagnostic status from the score.",
+        "implementation_status": "not-implemented",
+        "source_name": "SAMHSA / Center for Substance Abuse Treatment — TIP 11 source material",
+        "reason": "Source-linked in the portfolio only; exact item/version and scoring implementation pending.",
+        "implemented_from": null,
+        "citation": "Center for Substance Abuse Treatment (1994). Simple Screening Instrument for Substance Abuse.",
+        "route": null
+      },
+      "access_url": "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_400-PURL-LPS84562/pdf/GOVPUB-HE20_400-PURL-LPS84562.pdf",
+      "access_label": "Open official source and rights information"
+    },
+    {
+      "instrument_id": "tcu-drug-dependence-screen",
+      "official_name": "TCU Drug Dependence Screen",
+      "main_purpose": "Substance-use symptom screening",
+      "domains": [
+        {
+          "id": "behavioral-health",
+          "label": "Sleep, substance use, eating and behavioral patterns"
+        }
+      ],
+      "version": "Official source/version must be checked before implementation.",
+      "population": "Use only for the population specified by the official source; local language and population validity not independently assessed.",
+      "administration_mode": "Official screening form; follow source administration guidance",
+      "language": "Official English source linked; translations and local validation not verified.",
+      "recall_period": "Follow official source instructions",
+      "permission_status": "U.S. government publication explicitly identifies the TCU Drug Dependence Screen as public domain and available at no cost. Source-linked only pending source/version and scoring review.",
+      "content_rights": "Official source linked; no item transcription or scoring is reproduced in this Ozarbox entry.",
+      "scoring_specification": "Not implemented in Ozarbox. Open the official source for current items, administration and scoring.",
+      "evidence_status": "Official source and public-domain/free-use statement identified; Ozarbox transcription and scoring not implemented or validated.",
+      "evidence_sources": [
+        "https://www.govinfo.gov/content/pkg/GOVPUB-J16_100-PURL-gpo36955/pdf/GOVPUB-J16_100-PURL-gpo36955.pdf"
+      ],
+      "safety_rules": [
+        "Screening tool only; not a diagnosis.",
+        "Follow the official source's intended population, instructions, and safeguarding requirements."
+      ],
+      "deployment_status": "catalogue-only",
+      "software_validation": "Official source link only; no in-app test or scoring module.",
+      "route": null,
+      "scoring_version": "Not implemented.",
+      "license_status": "U.S. government publication explicitly identifies the TCU Drug Dependence Screen as public domain and available at no cost. Source-linked only pending source/version and scoring review.",
+      "author_or_developer": "U.S. government publication — Instruments for Screening and Assessment of Mental Health and Substance Abuse Disorders",
+      "language_validation_status": "No local-language or India-specific validation verified in this work.",
+      "qualification_requirements": "Follow the official source's administration instructions.",
+      "intended_use_boundary": "Source-linked catalogue entry only. No questionnaire items or scoring are reproduced in Ozarbox.",
+      "source_pdf": {
+        "status": "official-source-found-not-used",
+        "label": "Official source found · not digitized",
+        "source_url": "https://www.govinfo.gov/content/pkg/GOVPUB-J16_100-PURL-gpo36955/pdf/GOVPUB-J16_100-PURL-gpo36955.pdf",
+        "version": "See official source",
+        "use_rights": "U.S. government publication explicitly identifies the TCU Drug Dependence Screen as public domain and available at no cost. Source-linked only pending source/version and scoring review.",
+        "implementation_status": "not-implemented",
+        "source_name": "U.S. government publication — Instruments for Screening and Assessment of Mental Health and Substance Abuse Disorders",
+        "reason": "Source-linked in the portfolio only; exact item/version and scoring implementation pending.",
+        "implemented_from": null,
+        "citation": "Simpson, D. D. (1993). TCU Drug Dependence Screen.",
+        "route": null
+      },
+      "access_url": "https://www.govinfo.gov/content/pkg/GOVPUB-J16_100-PURL-gpo36955/pdf/GOVPUB-J16_100-PURL-gpo36955.pdf",
+      "access_label": "Open official source and rights information"
     }
   ]
 }

@@ -29,10 +29,11 @@ test('open alternatives are original, bounded, complete, and have unique routes'
     assert.match(item.description, /not a validated substitute/i);
     assert.match(item.intendedUse, /Not diagnostic/i);
     assert.match(item.resultNotice, /not a clinical score/i);
+    assert.match(item.intendedUse, /Not diagnostic/i);
     assert.equal(item.questions.length, 5);
     assert.equal(new Set(item.questions.map((question) => question.id)).size, 5);
     assert.ok(item.questions.every((question) => question.text.trim().length > 15));
-    assert.deepEqual(item.scale.map((option) => option.value), [0, 1, 2, 3, 4]);
+    assert.equal('scale' in item, false);
     assert.ok(item.sources.every((source) => /^https:\/\//.test(source)));
   }
 });

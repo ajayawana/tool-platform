@@ -26,6 +26,8 @@ export const GET: APIRoute = ({ site }) => {
     '/disclaimer/',
     '/tools/phq-9/',
     '/tools/source-assessments/academic-motivation-scale/',
+    '/tools/source-assessments/k6/',
+    '/tools/source-assessments/ces-d/',
     '/assessments/',
     '/tools/assessments/phq-2/',
     '/tools/assessments/gad-7/',

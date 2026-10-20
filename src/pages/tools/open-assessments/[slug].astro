@@ -1,0 +1,85 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import data from '../../../data/open-assessment-alternatives.json';
+const { slug } = Astro.params;
+const instrument = data.instruments.find((item) => item.slug === slug);
+if (!instrument) return Astro.redirect('/assessments/');
+const base = import.meta.env.BASE_URL;
+export function getStaticPaths() {
+  return data.instruments.map((item) => ({ params: { slug: item.slug } }));
+}
+---
+<Layout title={instrument.title + ' | Ozarbox'} description={instrument.description}>
+  <section class="container reflection-tool">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={base}>Home</a> / <a href={base + 'assessments/'}>Assessment centre</a> / Open reflection</nav>
+    <header>
+      <p class="eyebrow">Ozarbox · Original open reflection</p>
+      <h1>{instrument.title}</h1>
+      <p class="lead">{instrument.description}</p>
+    </header>
+    <aside class="notice notice-warning">
+      <h2>Important: this is not the named clinical test</h2>
+      <p>{instrument.intendedUse}</p>
+      <p><strong>Do not use this exercise to diagnose a condition, determine IQ, screen a child for autism, make employment/education decisions, or replace a trained professional.</strong> The source instrument may be proprietary or qualification-controlled; this page does not reproduce its items, scoring, norms, or stimuli.</p>
+    </aside>
+    <form id="reflection-form">
+      <p>Use these prompts to organise your thoughts or prepare for a conversation. Responses are optional, are not stored or sent by this page, and are not scored.</p>
+      {instrument.questions.map((question) => (
+        <fieldset class="question">
+          <legend><span>Question {question.id} of {instrument.questions.length}</span>{question.text}</legend>
+          <label class="response-label" for={'q-' + question.id}>Your notes (optional)</label>
+          <textarea id={'q-' + question.id} name={'q-' + question.id} rows="3" maxlength="1200" placeholder="Write a brief note, or leave blank."></textarea>
+        </fieldset>
+      ))}
+      <div class="actions"><button type="submit">Create reflection summary</button><button type="reset" class="secondary">Clear answers</button></div>
+      <p id="validation" role="status" hidden>Please enter at least one note to create a reflection summary.</p>
+    </form>
+    <section id="result" hidden aria-live="polite" class="result">
+      <h2>Reflection summary</h2>
+      <p id="summary"></p>
+      <p><strong>Important limitation:</strong> {instrument.resultNotice}</p>
+      <h3>Responses to discuss</h3><ul id="response-list"></ul>
+      <p>Consider taking this summary to a qualified clinician or relevant professional if you have concerns. For urgent safety concerns, contact local emergency services or a crisis support service.</p>
+      <div class="actions"><button id="print-result" type="button">Print summary</button><button id="retake" type="button" class="secondary">Edit answers</button></div>
+    </section>
+    <section class="sources"><h2>Further reading and context</h2><p>These links are background resources, not the source of the original questions and not an endorsement of this exercise.</p><ul>{instrument.sources.map((source) => <li><a href={source} target="_blank" rel="noopener noreferrer">{source}</a></li>)}</ul><p><a href={base + 'assessments/'}>Return to the assessment centre</a></p></section>
+  </section>
+  <script>
+    const form = document.querySelector<HTMLFormElement>('#reflection-form');
+    const result = document.querySelector<HTMLElement>('#result');
+    const validation = document.querySelector<HTMLElement>('#validation');
+    const summary = document.querySelector<HTMLElement>('#summary');
+    const responseList = document.querySelector<HTMLElement>('#response-list');
+    const questionIds = [1,2,3,4,5];
+    form?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const notes = questionIds.map((id) => {
+        const field = form.querySelector<HTMLTextAreaElement>('#q-' + id);
+        const value = field?.value.trim() ?? '';
+        const question = field?.closest('fieldset')?.querySelector('legend')?.textContent?.replace(/^Question \\d+ of \\d+/, '').trim() ?? ('Question ' + id);
+        return value ? { id, question, value } : null;
+      }).filter((value) => value !== null) as Array<{id:number;question:string;value:string}>;
+      if (!notes.length) { if (validation) validation.hidden = false; return; }
+      if (validation) validation.hidden = true;
+      if (summary) summary.textContent = 'You added notes for ' + notes.length + ' of ' + questionIds.length + ' prompts. No total, score, severity band, or diagnosis is generated.';
+      if (responseList) {
+        responseList.replaceChildren();
+        notes.forEach((item) => {
+          const li = document.createElement('li');
+          const strong = document.createElement('strong');
+          strong.textContent = item.question + ': ';
+          li.append(strong, document.createTextNode(item.value));
+          responseList.append(li);
+        });
+      }
+      if (result) result.hidden = false;
+      result?.scrollIntoView({behavior:'auto',block:'start'});
+    });
+    form?.addEventListener('reset', () => { if (result) result.hidden = true; if (validation) validation.hidden = true; });
+    document.querySelector<HTMLButtonElement>('#retake')?.addEventListener('click', () => { if (result) result.hidden = true; form?.scrollIntoView({behavior:'auto',block:'start'}); });
+    document.querySelector<HTMLButtonElement>('#print-result')?.addEventListener('click', () => window.print());
+  </script>
+  <style>
+    .reflection-tool{max-width:900px}.question{border:1px solid #dbe2ea;border-radius:14px;padding:18px;margin:18px 0}.question legend{font-weight:750;line-height:1.5}.question legend span{display:block;font-size:.8rem;color:#64748b;text-transform:uppercase;letter-spacing:.04em}.response-label{display:block;font-weight:700;margin:14px 0 6px}textarea{display:block;width:100%;box-sizing:border-box;border:1px solid #cbd5e1;border-radius:10px;padding:12px;font:inherit;resize:vertical;min-height:84px}.notice-warning{background:#fff7ed;border:1px solid #fed7aa;border-radius:14px;padding:18px;margin:22px 0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}.actions button{padding:12px 18px;border-radius:10px;border:0;background:#1d4ed8;color:#fff;font-weight:750;cursor:pointer}.actions .secondary{background:#e2e8f0;color:#0f172a}.result,.sources{margin:30px 0;padding:22px;border:1px solid #dbe2ea;border-radius:14px}.sources a{overflow-wrap:anywhere}#validation{color:#b91c1c;font-weight:700}[hidden]{display:none!important}@media(max-width:600px){.question{padding:14px}}@media print{.site-header,footer,.breadcrumbs,form,.actions{display:none!important}.result{display:block!important;border:0}.reflection-tool{max-width:none}}
+  </style>
+</Layout>

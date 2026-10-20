@@ -1,0 +1,1122 @@
+{
+  "schemaVersion": "1.0.0",
+  "purpose": "Original Ozarbox open reflection exercises. These are not copies, validated substitutes, diagnostic tests, or equivalent to the named instruments.",
+  "instruments": [
+    {
+      "sourceInstrumentId": "abas-3",
+      "slug": "abas-3",
+      "domain": "Adaptive skills",
+      "title": "Open Everyday living and independence reflection",
+      "description": "An independently written, free-to-use reflection guide for adaptive skills. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Think about how consistently you manage daily routines without reminders."
+        },
+        {
+          "id": 2,
+          "text": "How comfortably do you adapt when a familiar routine changes?"
+        },
+        {
+          "id": 3,
+          "text": "How often do you complete everyday responsibilities on time?"
+        },
+        {
+          "id": 4,
+          "text": "How easily do you ask for help when a task exceeds your current skills?"
+        },
+        {
+          "id": 5,
+          "text": "How confident are you managing personal and community responsibilities?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.wpspublish.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "adhd-rating-scale-5",
+      "slug": "adhd-rating-scale-5",
+      "domain": "Attention and executive functioning",
+      "title": "Open Attention and organisation reflection",
+      "description": "An independently written, free-to-use reflection guide for attention and executive functioning. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How often do attention slips interfere with tasks you want to finish?"
+        },
+        {
+          "id": 2,
+          "text": "How often do you begin tasks but struggle to complete them?"
+        },
+        {
+          "id": 3,
+          "text": "How difficult is it to organise steps for a multi-part task?"
+        },
+        {
+          "id": 4,
+          "text": "How often do you act before considering likely consequences?"
+        },
+        {
+          "id": 5,
+          "text": "How often do restlessness or distractibility disrupt daily plans?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.guilford.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "adi-r",
+      "slug": "adi-r",
+      "domain": "Autism developmental history",
+      "title": "Open Social communication and development discussion guide",
+      "description": "An independently written, free-to-use reflection guide for autism developmental history. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "What early social or communication differences have you or family members noticed?"
+        },
+        {
+          "id": 2,
+          "text": "Which routines, interests, or sensory experiences have been important across life?"
+        },
+        {
+          "id": 3,
+          "text": "What kinds of social situations are easier or harder for you?"
+        },
+        {
+          "id": 4,
+          "text": "What developmental history would be useful for a clinician to know?"
+        },
+        {
+          "id": 5,
+          "text": "Which strengths or support needs have been consistent since childhood?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.wpspublish.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "ados-2",
+      "slug": "ados-2",
+      "domain": "Social communication observation",
+      "title": "Open Social interaction reflection",
+      "description": "An independently written, free-to-use reflection guide for social communication observation. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How comfortable are you starting a conversation with someone new?"
+        },
+        {
+          "id": 2,
+          "text": "How easy is it to notice when another person wants to change topic?"
+        },
+        {
+          "id": 3,
+          "text": "How do you usually communicate interest or emotion to others?"
+        },
+        {
+          "id": 4,
+          "text": "Which social situations require deliberate effort or recovery time?"
+        },
+        {
+          "id": 5,
+          "text": "What sensory or environmental factors affect your participation?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.wpspublish.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "assist",
+      "slug": "assist",
+      "domain": "Substance use and wellbeing",
+      "title": "Open Substance-use reflection and support planner",
+      "description": "An independently written, free-to-use reflection guide for substance use and wellbeing. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Have alcohol, tobacco, or other substances affected your health or daily responsibilities?"
+        },
+        {
+          "id": 2,
+          "text": "Have you felt a need to reduce use of any substance?"
+        },
+        {
+          "id": 3,
+          "text": "Have other people expressed concern about your use?"
+        },
+        {
+          "id": 4,
+          "text": "Has use contributed to risky situations or conflict?"
+        },
+        {
+          "id": 5,
+          "text": "Would you like confidential help to understand your options?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.who.int/publications/i/item/978924159938-2",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "audit",
+      "slug": "audit",
+      "domain": "Alcohol and wellbeing",
+      "title": "Open Alcohol-use reflection",
+      "description": "An independently written, free-to-use reflection guide for alcohol and wellbeing. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How often do you drink alcohol?"
+        },
+        {
+          "id": 2,
+          "text": "On a typical drinking day, how much do you usually drink?"
+        },
+        {
+          "id": 3,
+          "text": "How often have you found it difficult to stop once you started?"
+        },
+        {
+          "id": 4,
+          "text": "How often has drinking affected responsibilities or relationships?"
+        },
+        {
+          "id": 5,
+          "text": "Have you or someone else been concerned about your drinking?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://auditscreen.org/check-your-drinking/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "bai",
+      "slug": "bai",
+      "domain": "Anxiety and physical arousal",
+      "title": "Open Anxiety experience reflection",
+      "description": "An independently written, free-to-use reflection guide for anxiety and physical arousal. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How often does worry interfere with your day?"
+        },
+        {
+          "id": 2,
+          "text": "How often do you notice physical tension when stressed?"
+        },
+        {
+          "id": 3,
+          "text": "How difficult is it to calm down after feeling alarmed?"
+        },
+        {
+          "id": 4,
+          "text": "How much do anxious feelings lead you to avoid situations?"
+        },
+        {
+          "id": 5,
+          "text": "How much does anxiety affect sleep, work, study, or relationships?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.pearsonclinical.in/products/programs/beck-anxiety-inventory.html",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "bdi-ii",
+      "slug": "bdi-ii",
+      "domain": "Mood and functioning",
+      "title": "Open Mood and daily functioning reflection",
+      "description": "An independently written, free-to-use reflection guide for mood and functioning. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Over the last two weeks, how often has low mood affected your day?"
+        },
+        {
+          "id": 2,
+          "text": "How often have you lost interest in activities you usually value?"
+        },
+        {
+          "id": 3,
+          "text": "How much has your energy or motivation changed?"
+        },
+        {
+          "id": 4,
+          "text": "How often have sleep or appetite changes affected you?"
+        },
+        {
+          "id": 5,
+          "text": "How much has your mood affected daily responsibilities or relationships?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.pearsonclinical.in/products/programs/beck-depression-inventory.html",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "bsi",
+      "slug": "bsi",
+      "domain": "General psychological distress",
+      "title": "Open Distress and support reflection",
+      "description": "An independently written, free-to-use reflection guide for general psychological distress. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How often have emotional concerns felt hard to manage?"
+        },
+        {
+          "id": 2,
+          "text": "How much have stress or worry affected concentration?"
+        },
+        {
+          "id": 3,
+          "text": "How often have you felt overwhelmed by everyday demands?"
+        },
+        {
+          "id": 4,
+          "text": "How much have emotional concerns affected relationships?"
+        },
+        {
+          "id": 5,
+          "text": "How confident do you feel about accessing support when needed?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.pearsonclinical.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "caps-5",
+      "slug": "caps-5",
+      "domain": "PTSD clinical interview preparation",
+      "title": "Open Trauma-related concerns discussion guide",
+      "description": "An independently written, free-to-use reflection guide for ptsd clinical interview preparation. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Are there experiences you consider traumatic that you would like to discuss with a trained clinician?"
+        },
+        {
+          "id": 2,
+          "text": "Do reminders of difficult experiences affect you now?"
+        },
+        {
+          "id": 3,
+          "text": "Have sleep, alertness, mood, or avoidance changed since an event?"
+        },
+        {
+          "id": 4,
+          "text": "How much do these experiences affect daily functioning?"
+        },
+        {
+          "id": 5,
+          "text": "Would you feel safer discussing this with a clinician or trusted support person?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.ptsd.va.gov/professional/assessment/adult-int/caps.asp",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "conners-scales",
+      "slug": "conners-scales",
+      "domain": "Child attention and behaviour",
+      "title": "Open Child functioning observation guide",
+      "description": "An independently written, free-to-use reflection guide for child attention and behaviour. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "In which settings does the child find attention or task completion difficult?"
+        },
+        {
+          "id": 2,
+          "text": "How often do these difficulties interfere with learning or routines?"
+        },
+        {
+          "id": 3,
+          "text": "What strengths does the child show when engaged?"
+        },
+        {
+          "id": 4,
+          "text": "Do concerns appear across more than one setting?"
+        },
+        {
+          "id": 5,
+          "text": "What observations from caregivers and teachers could help a professional?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://mhs.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "eq-5d",
+      "slug": "eq-5d",
+      "domain": "Health-related quality of life",
+      "title": "Open Daily health and functioning reflection",
+      "description": "An independently written, free-to-use reflection guide for health-related quality of life. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How would you describe your mobility in everyday life?"
+        },
+        {
+          "id": 2,
+          "text": "How much difficulty do you have with self-care activities?"
+        },
+        {
+          "id": 3,
+          "text": "How easily can you do usual activities such as work, study, or household tasks?"
+        },
+        {
+          "id": 4,
+          "text": "How much pain or physical discomfort affects your day?"
+        },
+        {
+          "id": 5,
+          "text": "How would you describe your overall health today?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://registration.euroqol.org/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "m-chat-r-f",
+      "slug": "m-chat-r-f",
+      "domain": "Toddler development",
+      "title": "Open Early social communication observation guide",
+      "description": "An independently written, free-to-use reflection guide for toddler development. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Does the toddler look toward you when you call their name?"
+        },
+        {
+          "id": 2,
+          "text": "Does the toddler point to share interest, not only to request something?"
+        },
+        {
+          "id": 3,
+          "text": "Does the toddler imitate everyday actions or gestures?"
+        },
+        {
+          "id": 4,
+          "text": "Does the toddler show you objects simply to share attention?"
+        },
+        {
+          "id": 5,
+          "text": "Are there developmental concerns you want to discuss with the child's pediatrician?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.mchatscreen.com/mchat-rf/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "maslach-burnout-inventory",
+      "slug": "maslach-burnout-inventory",
+      "domain": "Work-related exhaustion",
+      "title": "Open Work wellbeing reflection",
+      "description": "An independently written, free-to-use reflection guide for work-related exhaustion. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How often do work demands leave you emotionally exhausted?"
+        },
+        {
+          "id": 2,
+          "text": "How often do you have enough recovery time between work periods?"
+        },
+        {
+          "id": 3,
+          "text": "How often do you feel detached or cynical about work?"
+        },
+        {
+          "id": 4,
+          "text": "How manageable does your current workload feel?"
+        },
+        {
+          "id": 5,
+          "text": "How supported do you feel by colleagues or supervisors?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.mindgarden.com/117-maslach-burnout-inventory-mbi",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "mmpi-3",
+      "slug": "mmpi-3",
+      "domain": "Broad personality and mental health",
+      "title": "Open Clinical concerns preparation guide",
+      "description": "An independently written, free-to-use reflection guide for broad personality and mental health. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Which current concerns most affect your daily life?"
+        },
+        {
+          "id": 2,
+          "text": "How long have these concerns been present?"
+        },
+        {
+          "id": 3,
+          "text": "What situations tend to worsen or improve them?"
+        },
+        {
+          "id": 4,
+          "text": "How have sleep, health, substances, or medication affected your experience?"
+        },
+        {
+          "id": 5,
+          "text": "What would you want a qualified clinician to understand about your strengths and difficulties?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.pearsonclinical.in/legal/permissions-and-licensing.html",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "neo-pi-3",
+      "slug": "neo-pi-3",
+      "domain": "Personality traits",
+      "title": "Open Personality self-reflection",
+      "description": "An independently written, free-to-use reflection guide for personality traits. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How much do you enjoy exploring new ideas and experiences?"
+        },
+        {
+          "id": 2,
+          "text": "How reliably do you plan ahead and follow through?"
+        },
+        {
+          "id": 3,
+          "text": "How much do you seek social contact versus quiet time?"
+        },
+        {
+          "id": 4,
+          "text": "How do you typically respond when someone disagrees with you?"
+        },
+        {
+          "id": 5,
+          "text": "How easily do you notice and respond to other people's feelings?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.parinc.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "pai",
+      "slug": "pai",
+      "domain": "Clinical concerns overview",
+      "title": "Open Clinical assessment preparation",
+      "description": "An independently written, free-to-use reflection guide for clinical concerns overview. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "What are the main reasons you are considering a psychological assessment?"
+        },
+        {
+          "id": 2,
+          "text": "How much do these concerns interfere with daily functioning?"
+        },
+        {
+          "id": 3,
+          "text": "What recent changes or stressors may be relevant?"
+        },
+        {
+          "id": 4,
+          "text": "What coping strategies or supports have helped?"
+        },
+        {
+          "id": 5,
+          "text": "What would you most like to understand or change with professional help?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.parinc.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "scid-5-cv",
+      "slug": "scid-5-cv",
+      "domain": "Diagnostic interview preparation",
+      "title": "Open Mental health history discussion guide",
+      "description": "An independently written, free-to-use reflection guide for diagnostic interview preparation. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "What symptoms or changes prompted you to seek an assessment?"
+        },
+        {
+          "id": 2,
+          "text": "When did the concerns begin, and how have they changed?"
+        },
+        {
+          "id": 3,
+          "text": "How have the concerns affected work, study, relationships, or self-care?"
+        },
+        {
+          "id": 4,
+          "text": "What medical conditions, medicines, or substances may be relevant?"
+        },
+        {
+          "id": 5,
+          "text": "What personal or family mental-health history would you like to discuss with a clinician?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.appi.org/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "scid-5-pd",
+      "slug": "scid-5-pd",
+      "domain": "Long-term interpersonal patterns",
+      "title": "Open Interpersonal patterns reflection",
+      "description": "An independently written, free-to-use reflection guide for long-term interpersonal patterns. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Which relationship patterns have repeated across different parts of your life?"
+        },
+        {
+          "id": 2,
+          "text": "How do you usually respond when you fear rejection or criticism?"
+        },
+        {
+          "id": 3,
+          "text": "How flexible are you when plans or expectations change?"
+        },
+        {
+          "id": 4,
+          "text": "How do you handle conflict and repair relationships afterward?"
+        },
+        {
+          "id": 5,
+          "text": "Which patterns cause distress or problems across settings?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.appi.org/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "scl-90-r",
+      "slug": "scl-90-r",
+      "domain": "Symptom burden",
+      "title": "Open Symptoms and functioning reflection",
+      "description": "An independently written, free-to-use reflection guide for symptom burden. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How much has emotional distress affected your daily routine recently?"
+        },
+        {
+          "id": 2,
+          "text": "How much has worry or tension affected your concentration?"
+        },
+        {
+          "id": 3,
+          "text": "How much have physical sensations or discomfort added to your distress?"
+        },
+        {
+          "id": 4,
+          "text": "How much have interpersonal difficulties affected your wellbeing?"
+        },
+        {
+          "id": 5,
+          "text": "How much support would be helpful right now?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.pearsonclinical.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "sdq-strengths-and-difficulties-questionnaire",
+      "slug": "sdq-strengths-and-difficulties-questionnaire",
+      "domain": "Child strengths and difficulties",
+      "title": "Open Child wellbeing reflection guide",
+      "description": "An independently written, free-to-use reflection guide for child strengths and difficulties. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "What strengths or positive behaviours does the child show regularly?"
+        },
+        {
+          "id": 2,
+          "text": "What emotional concerns have you noticed recently?"
+        },
+        {
+          "id": 3,
+          "text": "What behaviour or attention concerns interfere with everyday life?"
+        },
+        {
+          "id": 4,
+          "text": "How well does the child get along with peers and family?"
+        },
+        {
+          "id": 5,
+          "text": "What changes have teachers or caregivers noticed across settings?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.sdqinfo.org/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "sf-36-sf-12",
+      "slug": "sf-36-sf-12",
+      "domain": "Health-related quality of life",
+      "title": "Open Health and participation reflection",
+      "description": "An independently written, free-to-use reflection guide for health-related quality of life. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How has your physical health affected everyday activities?"
+        },
+        {
+          "id": 2,
+          "text": "How much has emotional health limited social activities?"
+        },
+        {
+          "id": 3,
+          "text": "How often has pain interfered with work or home responsibilities?"
+        },
+        {
+          "id": 4,
+          "text": "How much energy have you had for your usual activities?"
+        },
+        {
+          "id": 5,
+          "text": "How would you rate your health compared with your usual baseline?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.optum.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "stanford-binet",
+      "slug": "stanford-binet",
+      "domain": "Cognitive strengths",
+      "title": "Open Learning and problem-solving reflection",
+      "description": "An independently written, free-to-use reflection guide for cognitive strengths. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Which kinds of problems do you solve most confidently?"
+        },
+        {
+          "id": 2,
+          "text": "How easy is it for you to learn a new rule or procedure?"
+        },
+        {
+          "id": 3,
+          "text": "What helps you remember instructions?"
+        },
+        {
+          "id": 4,
+          "text": "How do you approach unfamiliar problems when the answer is not obvious?"
+        },
+        {
+          "id": 5,
+          "text": "Which learning conditions help you show your abilities?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://riversideinsights.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "vineland-3",
+      "slug": "vineland-3",
+      "domain": "Adaptive behaviour",
+      "title": "Open Everyday independence reflection",
+      "description": "An independently written, free-to-use reflection guide for adaptive behaviour. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How independently can the person communicate everyday needs?"
+        },
+        {
+          "id": 2,
+          "text": "How well can they manage personal care and routines?"
+        },
+        {
+          "id": 3,
+          "text": "How do they participate in home, school, work, or community activities?"
+        },
+        {
+          "id": 4,
+          "text": "What kinds of support make participation easier?"
+        },
+        {
+          "id": 5,
+          "text": "Which adaptive skills would be most useful to build next?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.pearsonclinical.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "wais",
+      "slug": "wais",
+      "domain": "Adult cognitive strengths",
+      "title": "Open Adult learning and cognition reflection",
+      "description": "An independently written, free-to-use reflection guide for adult cognitive strengths. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How easily do you understand and use verbal information?"
+        },
+        {
+          "id": 2,
+          "text": "How comfortably do you work with visual patterns or spatial information?"
+        },
+        {
+          "id": 3,
+          "text": "How well can you hold several pieces of information in mind briefly?"
+        },
+        {
+          "id": 4,
+          "text": "How quickly can you complete simple tasks accurately under time pressure?"
+        },
+        {
+          "id": 5,
+          "text": "What real-world concern makes you interested in cognitive assessment?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.pearsonclinical.in/legal/permissions-and-licensing.html",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "who-5",
+      "slug": "who-5",
+      "domain": "Psychological wellbeing",
+      "title": "Open Wellbeing check-in",
+      "description": "An independently written, free-to-use reflection guide for psychological wellbeing. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How often have you felt cheerful and in good spirits recently?"
+        },
+        {
+          "id": 2,
+          "text": "How often have you felt calm and relaxed?"
+        },
+        {
+          "id": 3,
+          "text": "How often have you felt active and vigorous?"
+        },
+        {
+          "id": 4,
+          "text": "How often have you woken feeling fresh and rested?"
+        },
+        {
+          "id": 5,
+          "text": "How often has daily life included things that interest you?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://cdn.who.int/media/docs/default-source/mental-health/who-5_english-original4da539d6ed4b49389e3afe47cda2326a.pdf",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "whodas-2-0",
+      "slug": "whodas-2-0",
+      "domain": "Functioning and disability",
+      "title": "Open Daily functioning reflection",
+      "description": "An independently written, free-to-use reflection guide for functioning and disability. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How difficult is it to stand for a long period or move around?"
+        },
+        {
+          "id": 2,
+          "text": "How difficult is it to manage household or work responsibilities?"
+        },
+        {
+          "id": 3,
+          "text": "How difficult is it to participate in community activities?"
+        },
+        {
+          "id": 4,
+          "text": "How much do emotional or health concerns affect relationships?"
+        },
+        {
+          "id": 5,
+          "text": "How much do environmental barriers limit what you can do?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.who.int/classifications/international-classification-of-functioning-disability-and-health/who-disability-assessment-schedule",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "wisc",
+      "slug": "wisc",
+      "domain": "Child learning and cognition",
+      "title": "Open Child learning strengths reflection",
+      "description": "An independently written, free-to-use reflection guide for child learning and cognition. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Which learning tasks does the child complete most confidently?"
+        },
+        {
+          "id": 2,
+          "text": "How does the child manage instructions with several steps?"
+        },
+        {
+          "id": 3,
+          "text": "What helps the child solve unfamiliar problems?"
+        },
+        {
+          "id": 4,
+          "text": "How does the child respond when tasks become challenging?"
+        },
+        {
+          "id": 5,
+          "text": "What learning concerns should be discussed with a qualified school or clinical professional?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.pearsonclinical.in/legal/permissions-and-licensing.html",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "woodcock-johnson",
+      "slug": "woodcock-johnson",
+      "domain": "Learning and achievement",
+      "title": "Open Learning skills reflection",
+      "description": "An independently written, free-to-use reflection guide for learning and achievement. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Which reading or language tasks feel most difficult?"
+        },
+        {
+          "id": 2,
+          "text": "How comfortable are you with everyday number and calculation tasks?"
+        },
+        {
+          "id": 3,
+          "text": "How easily do you learn new academic or work skills?"
+        },
+        {
+          "id": 4,
+          "text": "What environmental factors affect your performance?"
+        },
+        {
+          "id": 5,
+          "text": "What specific learning question would you like an educator or psychologist to evaluate?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://riversideinsights.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "wppsi",
+      "slug": "wppsi",
+      "domain": "Early childhood development",
+      "title": "Open Early learning and play observation",
+      "description": "An independently written, free-to-use reflection guide for early childhood development. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How does the child explore toys or solve simple play problems?"
+        },
+        {
+          "id": 2,
+          "text": "How does the child communicate wants, ideas, or questions?"
+        },
+        {
+          "id": 3,
+          "text": "How does the child respond to new instructions?"
+        },
+        {
+          "id": 4,
+          "text": "What activities hold the child's attention and interest?"
+        },
+        {
+          "id": 5,
+          "text": "What developmental or learning concern should be discussed with a pediatric professional?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.pearsonclinical.in/legal/permissions-and-licensing.html",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "y-bocs",
+      "slug": "y-bocs",
+      "domain": "Obsessions and compulsions",
+      "title": "Open OCD-related concerns discussion guide",
+      "description": "An independently written, free-to-use reflection guide for obsessions and compulsions. It is not the named proprietary instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Do recurring unwanted thoughts or urges cause you distress?"
+        },
+        {
+          "id": 2,
+          "text": "Do you feel driven to repeat actions or mental routines to reduce distress?"
+        },
+        {
+          "id": 3,
+          "text": "How much time do these experiences take on a typical day?"
+        },
+        {
+          "id": 4,
+          "text": "How much do they interfere with responsibilities or relationships?"
+        },
+        {
+          "id": 5,
+          "text": "Would you like a qualified clinician to help assess these experiences?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. The total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/?term=Yale-Brown+Obsessive+Compulsive+Scale",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    }
+  ]
+}

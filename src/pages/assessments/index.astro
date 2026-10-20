@@ -110,6 +110,9 @@ const labelForStatus = (status: string): string => ({
                   {instrument.access_url && (
                     <a class="instrument-action external-access" href={instrument.access_url} target="_blank" rel="noopener noreferrer">{instrument.access_label || 'Open official source / access information'} ↗</a>
                   )}
+                  {instrument.open_alternative_route && (
+                    <a class="instrument-action" href={base + instrument.open_alternative_route.replace(/^\//, '')}>{instrument.open_alternative_label || 'Open original reflection alternative'} →</a>
+                  )}
                 </>
               )}
               {instrument.evidence_sources.length > 0 && (

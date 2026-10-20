@@ -1,6 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import scale from '../../../data/source-assessment-ams-c28.json';
+export function getStaticPaths() { return [{ params: { slug: 'academic-motivation-scale' } }]; }
 const base = import.meta.env.BASE_URL;
 ---
 <Layout title={scale.title + ' | Ozarbox'} description="Research-use digitization of the official AMS-C 28 source PDF with source-defined subscales.">

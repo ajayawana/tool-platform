@@ -9,11 +9,11 @@ const root = path.resolve(here, '..');
 const registry = JSON.parse(fs.readFileSync(path.join(root, 'src/data/assessment-registry.json'), 'utf8'));
 const alternatives = JSON.parse(fs.readFileSync(path.join(root, 'src/data/open-assessment-alternatives.json'), 'utf8'));
 
-test('all 137 remaining catalogue-only instruments have separate original reflection guides', () => {
+test('all 147 remaining catalogue-only instruments have separate original reflection guides', () => {
   const pending = registry.instruments.filter((item) => item.deployment_status === 'catalogue-only');
-  assert.equal(pending.length, 137);
-  assert.equal(pending.filter((item) => item.open_alternative_route).length, 137);
-  assert.equal(alternatives.instruments.length, 171);
+  assert.equal(pending.length, 147);
+  assert.equal(pending.filter((item) => item.open_alternative_route).length, 147);
+  assert.equal(alternatives.instruments.length, 181);
   for (const item of pending) {
     assert.ok(alternatives.instruments.some((alt) => alt.sourceInstrumentId === item.instrument_id));
     assert.equal(item.open_alternative_route, '/tools/open-assessments/' + item.instrument_id + '/');

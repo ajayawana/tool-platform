@@ -1,0 +1,41 @@
+{
+  "id": "k6",
+  "title": "Kessler Psychological Distress Scale (K6)",
+  "sourceUrl": "https://rckessler.scholars.harvard.edu/k10-and-k6-scales",
+  "sourceName": "Ronald C. Kessler — official K6/K10 source and use terms",
+  "citation": "Kessler, R. C., et al. (2003). Screening for serious mental illness in the general population. Archives of General Psychiatry, 60(2), 184–189.",
+  "prompt": "During the past 30 days, about how often did you feel:",
+  "useNotice": "Official source documents free use / no copyright claim. This digital version is not independently validated and is not diagnostic. Interpret only within an appropriate clinical, research, or population context.",
+  "responseOptions": [
+    {
+      "value": 0,
+      "label": "None of the time"
+    },
+    {
+      "value": 1,
+      "label": "A little of the time"
+    },
+    {
+      "value": 2,
+      "label": "Some of the time"
+    },
+    {
+      "value": 3,
+      "label": "Most of the time"
+    },
+    {
+      "value": 4,
+      "label": "All of the time"
+    }
+  ],
+  "questions": [
+    "nervous?",
+    "hopeless?",
+    "restless or fidgety?",
+    "so depressed that nothing could cheer you up?",
+    "that everything was an effort?",
+    "worthless?"
+  ],
+  "reverseItems": [],
+  "scoringNote": "Sum six responses (0–24). This implementation reports raw score only; no severity category or diagnosis."
+}

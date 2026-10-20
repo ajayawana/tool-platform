@@ -9,7 +9,7 @@ const reflectionPage = readFileSync(new URL('../src/pages/tools/open-assessments
 
 test('every catalogue-only and permission-review entry opens a local original reflection guide', () => {
   const gated = registry.instruments.filter((item) => ['catalogue-only', 'permission-review'].includes(item.deployment_status));
-  assert.equal(gated.length, 168);
+  assert.equal(gated.length, 178);
   for (const item of gated) {
     assert.ok(item.open_alternative_route, item.instrument_id + ' must offer a local alternative');
     const slug = item.open_alternative_route.split('/').filter(Boolean).at(-1);

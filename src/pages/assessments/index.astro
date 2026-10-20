@@ -122,6 +122,9 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
                   <p class="catalogue-only-note">{instrument.deployment_status === 'permission-review'
                     ? 'The named instrument is not administered by Ozarbox while rights or professional-use requirements are unresolved. Start with the original Ozarbox reflection guide below; it is not the clinical test and does not reproduce its items or scoring. The official source link is external and is for instrument/access information.'
                     : 'Ozarbox does not provide the named questionnaire or its score. You can use the original, unscored reflection guide below; it is not a substitute for the named instrument. The official source link, when present, opens externally.'}</p>
+                  {instrument.source_pdf?.route && instrument.source_pdf?.implementation_status === 'implemented-from-official-source-pdf' && (
+                    <a class="instrument-action local-alternative" href={base + instrument.source_pdf.route.replace(/^\\//, '')}>Open source-PDF assessment →</a>
+                  )}
                   {instrument.open_alternative_route && (
                     <a class="instrument-action local-alternative" href={base + instrument.open_alternative_route.replace(/^\//, '')}>{instrument.open_alternative_label || 'Open original reflection alternative'} (on Ozarbox) →</a>
                   )}

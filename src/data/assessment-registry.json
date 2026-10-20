@@ -119,7 +119,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -167,7 +172,8 @@
         "implementation_status": "implemented-from-official-source-pdf",
         "implemented_from": "https://lrcs.uqam.ca/wp-content/uploads/2017/08/emec_en.pdf",
         "citation": "Vallerand, R. J., Pelletier, L. G., Blais, M. R., Brière, N. M., Senécal, C., & Vallières, É. F. (1992). The Academic Motivation Scale: A measure of intrinsic, extrinsic, and amotivation in education. Educational and Psychological Measurement, 52(4), 1003–1017. https://doi.org/10.1177/0013164492052004025",
-        "route": "/tools/source-assessments/academic-motivation-scale/"
+        "route": "/tools/source-assessments/academic-motivation-scale/",
+        "reason": null
       },
       "access_url": "https://lrcs.uqam.ca/wp-content/uploads/2017/08/emec_en.pdf",
       "access_label": "Official AMS-C 28 PDF used by this implementation (external)"
@@ -215,7 +221,10 @@
         "version": "User-uploaded Indian English copy is dated 07/03/2013; exact equivalence to the current official download not confirmed.",
         "use_rights": "The official resource page says resources are for non-commercial purposes and describes ACE-III as clinician-administered; professional administration/training and version-specific review are required before a public interactive implementation.",
         "implementation_status": "not-implemented",
-        "reason": "Clinical administration, version matching, and rights/use review remain unresolved."
+        "reason": "Clinical administration, version matching, and rights/use review remain unresolved.",
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       },
       "access_url": "https://www.sydney.edu.au/brain-mind/our-clinics/dementia-test.html",
       "access_label": "Official ACE-III source and PDF versions (external)"
@@ -263,7 +272,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -309,7 +323,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -353,7 +372,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -399,7 +423,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -443,7 +472,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -487,7 +521,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -531,7 +570,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -575,7 +619,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -619,7 +668,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -663,7 +717,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -713,7 +772,11 @@
         "version": "2010 WHO ASSIST manual; public online PDF.",
         "use_rights": "The publication page says all rights reserved and directs reproduction requests to WHO. Do not embed the form without permission.",
         "implementation_status": "not-implemented",
-        "source_name": "World Health Organization — ASSIST manual for use in primary care"
+        "source_name": "World Health Organization — ASSIST manual for use in primary care",
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -763,7 +826,11 @@
         "version": "Official WHO AUDIT guideline/manual PDF found; exact form and permitted reproduction to be reviewed.",
         "use_rights": "The official PDF is available, but its item-reproduction and web-digitization rights must be verified before embedding.",
         "implementation_status": "not-implemented",
-        "source_name": "World Health Organization — AUDIT guidelines for use in primary health care"
+        "source_name": "World Health Organization — AUDIT guidelines for use in primary health care",
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -807,7 +874,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -855,7 +927,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -899,7 +976,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -947,7 +1029,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -991,7 +1078,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1035,7 +1127,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1079,7 +1176,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1123,7 +1225,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1168,7 +1275,11 @@
         "version": "Original BRS version and form not yet checked against a primary downloadable source.",
         "use_rights": "Duke page says the scale has no license fees; verify original wording, attribution, and any electronic-use restrictions before implementation.",
         "implementation_status": "not-implemented",
-        "source_name": "Duke Center for the Study of Aging and Human Development — Brief Resilience Scale resource"
+        "source_name": "Duke Center for the Study of Aging and Human Development — Brief Resilience Scale resource",
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1212,7 +1323,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1256,7 +1372,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1302,7 +1423,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1346,7 +1472,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1390,7 +1521,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1434,7 +1570,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1480,7 +1621,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1524,7 +1670,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1568,7 +1719,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1612,7 +1768,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1656,7 +1817,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1700,7 +1866,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1744,7 +1915,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1788,7 +1964,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1832,7 +2013,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1876,7 +2062,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1920,7 +2111,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -1966,7 +2162,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2010,7 +2211,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2054,7 +2260,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2098,7 +2309,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2142,7 +2358,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2186,7 +2407,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2230,7 +2456,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2274,7 +2505,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2319,7 +2555,11 @@
         "source_name": "UNSW DASS official download page",
         "version": "DASS-21 response form; exact digital implementation not yet built.",
         "use_rights": "The official site permits copying without restriction but says the scales may not be modified or sold for profit; digitization terms need review before interactive implementation.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       },
       "access_url": "https://dass.psy.unsw.edu.au/down.htm",
       "access_label": "Official DASS download and use terms (external)"
@@ -2365,7 +2605,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2409,7 +2654,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2453,7 +2703,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2497,7 +2752,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2541,7 +2801,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2585,7 +2850,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2629,7 +2899,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2673,7 +2948,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2717,7 +2997,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2763,7 +3048,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2807,7 +3097,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2851,7 +3146,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2895,7 +3195,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2939,7 +3244,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -2983,7 +3293,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3028,7 +3343,11 @@
         "version": "8-item scale PDF; implementation not yet built.",
         "use_rights": "Official university-hosted PDF found. Reproduction/digitization terms not established from the PDF landing information; verify terms before embedding.",
         "implementation_status": "not-implemented",
-        "source_name": "Greater Good Science Center, University of California, Berkeley — The Flourishing Scale"
+        "source_name": "Greater Good Science Center, University of California, Berkeley — The Flourishing Scale",
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3072,7 +3391,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3120,7 +3444,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3168,7 +3497,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3212,7 +3546,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3256,7 +3595,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3300,7 +3644,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3344,7 +3693,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3388,7 +3742,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3432,7 +3791,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3476,7 +3840,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3520,7 +3889,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3564,7 +3938,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3608,7 +3987,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3652,7 +4036,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3696,7 +4085,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3740,7 +4134,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3784,7 +4183,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3828,7 +4232,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3872,7 +4281,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3916,7 +4330,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -3960,7 +4379,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4010,7 +4434,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4054,7 +4483,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4098,7 +4532,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4146,7 +4585,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4192,7 +4636,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4236,7 +4685,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4280,7 +4734,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4324,7 +4783,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4368,7 +4832,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4412,7 +4881,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4456,7 +4930,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4504,7 +4983,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4548,7 +5032,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4592,7 +5081,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4636,7 +5130,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4680,7 +5179,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4724,7 +5228,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4770,7 +5279,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4814,7 +5328,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4858,7 +5377,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4902,7 +5426,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4948,7 +5477,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -4992,7 +5526,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5036,7 +5575,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5080,7 +5624,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5124,7 +5673,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5174,7 +5728,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5224,7 +5783,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5268,7 +5832,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5312,7 +5881,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5356,7 +5930,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5400,7 +5979,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5448,7 +6032,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5496,7 +6085,11 @@
         "version": "NIH record includes English-language instrument file; exact file-to-current-route comparison pending.",
         "use_rights": "NIH record lists Copyright: No for this instrument record. The exact questionnaire file and current Ozarbox item wording/scoring still need a source comparison before this is tagged as PDF used.",
         "implementation_status": "not-implemented",
-        "source_name": "National Institutes of Health — PHQ-9 Common Data Element"
+        "source_name": "National Institutes of Health — PHQ-9 Common Data Element",
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5540,7 +6133,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5584,7 +6182,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5628,7 +6231,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5672,7 +6280,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5716,7 +6329,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5760,7 +6378,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5804,7 +6427,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5848,7 +6476,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5892,7 +6525,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5936,7 +6574,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -5980,7 +6623,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6024,7 +6672,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6068,7 +6721,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6112,7 +6770,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6157,7 +6820,11 @@
         "source_name": "University of Maryland — Rosenberg Self-Esteem Scale",
         "version": "University page states public-domain status; exact PDF/form to be matched before implementation.",
         "use_rights": "University of Maryland states the scale is in the public domain and may be used without charge; attribution and exact scoring/form verification still required.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       },
       "access_url": "https://socy.umd.edu/about-us/rosenberg-self-esteem-scale",
       "access_label": "Public-domain status and source (external)"
@@ -6203,7 +6870,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6247,7 +6919,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6291,7 +6968,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6335,7 +7017,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6379,7 +7066,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6425,7 +7117,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6471,7 +7168,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6517,7 +7219,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6561,7 +7268,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6605,7 +7317,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6653,7 +7370,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6699,7 +7421,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6743,7 +7470,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6787,7 +7519,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6831,7 +7568,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6875,7 +7617,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6919,7 +7666,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -6965,7 +7717,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7009,7 +7766,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7053,7 +7815,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7097,7 +7864,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7141,7 +7913,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7185,7 +7962,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7229,7 +8011,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7273,7 +8060,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7317,7 +8109,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7361,7 +8158,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7405,7 +8207,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7451,7 +8258,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7499,7 +8311,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7549,7 +8366,11 @@
         "version": "WHO publication page offers a downloadable PDF; no Ozarbox implementation based on it.",
         "use_rights": "WHO publication reuse terms must be checked for this specific work; WHO materials may be CC BY-NC-SA for non-commercial use, while commercial use requires permission.",
         "implementation_status": "not-implemented",
-        "source_name": "World Health Organization — WHO-5 Well-Being Index (2024)"
+        "source_name": "World Health Organization — WHO-5 Well-Being Index (2024)",
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7597,7 +8418,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7641,7 +8467,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7689,7 +8520,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7733,7 +8569,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7779,7 +8620,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7823,7 +8669,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7867,7 +8718,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7915,7 +8771,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -7961,7 +8822,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -8005,7 +8871,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     },
     {
@@ -8049,7 +8920,12 @@
         "source_url": null,
         "version": null,
         "use_rights": "Not yet verified. A freely downloadable file does not by itself establish permission to reproduce or digitize an instrument.",
-        "implementation_status": "not-implemented"
+        "implementation_status": "not-implemented",
+        "source_name": null,
+        "reason": null,
+        "implemented_from": null,
+        "citation": null,
+        "route": null
       }
     }
   ]

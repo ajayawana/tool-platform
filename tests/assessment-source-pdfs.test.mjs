@@ -29,6 +29,6 @@ test('source-PDF-used badge is only rendered for entries with implemented source
   assert.equal(ams.source_pdf.status, 'official-source-pdf-used');
   assert.equal(ams.source_pdf.implementation_status, 'implemented-from-official-source-pdf');
   assert.equal(ace.source_pdf.implementation_status, 'not-implemented');
-  assert.match(catalogue, /source_pdf.status === 'official-source-pdf-used'/);
+  assert.match(catalogue, /source_pdf\?\.status === 'official-source-pdf-used'/);
   assert.match(catalogue, /Official PDF used/);
 });

@@ -629,8 +629,8 @@
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
-      "access_url": "https://auditscreen.org/check-your-drinking/",
-      "access_label": "Open free official AUDIT interactive assessment",
+      "access_url": "https://www.who.int/publications/i/item/978924159938-2",
+      "access_label": "Official WHO AUDIT guidance and source (external)",
       "open_alternative_route": "/tools/open-assessments/audit/",
       "open_alternative_label": "Open original reflection alternative"
     },
@@ -3399,8 +3399,8 @@
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
-      "access_url": "https://www.mchatscreen.com/mchat-rf/",
-      "access_label": "Open official screening form and website licence requirements",
+      "access_url": "https://www.mchatscreen.com/license-inquiry/",
+      "access_label": "Official M-CHAT licence inquiry and permissions (external)",
       "open_alternative_route": "/tools/open-assessments/m-chat-r-f/",
       "open_alternative_label": "Open original reflection alternative"
     },
@@ -6189,8 +6189,8 @@
       "language_validation_status": "Exact language edition and validation in the intended population are not verified; do not assume that an available translation has validated local norms.",
       "qualification_requirements": "Not verified for the exact edition; check the official manual and rights-holder requirements before administering.",
       "intended_use_boundary": "Catalogue metadata only. Do not reproduce or score until the exact version, rights, scoring, intended use and governance have been verified.",
-      "access_url": "https://cdn.who.int/media/docs/default-source/mental-health/who-5_english-original4da539d6ed4b49389e3afe47cda2326a.pdf",
-      "access_label": "Open official WHO form and reuse licence",
+      "access_url": "https://www.who.int/publications/m/item/WHO-UCN-MSD-MHE-2024.01",
+      "access_label": "Official WHO-5 publication and licence information (external)",
       "open_alternative_route": "/tools/open-assessments/who-5/",
       "open_alternative_label": "Open original reflection alternative"
     },

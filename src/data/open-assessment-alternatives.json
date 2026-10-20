@@ -6017,6 +6017,346 @@
         "https://www.cdc.gov/child-development/",
         "https://www.who.int/health-topics/child-health"
       ]
+    },
+    {
+      "sourceInstrumentId": "phq-4",
+      "slug": "phq-4",
+      "domain": "Mood and anxiety",
+      "title": "Open Mood and anxiety reflection",
+      "description": "An independently written Ozarbox reflection guide. It does not reproduce the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How have low mood or reduced interest affected your everyday life?"
+        },
+        {
+          "id": 2,
+          "text": "How often has worry felt difficult to control?"
+        },
+        {
+          "id": 3,
+          "text": "What patterns, situations or supports seem to influence this part of your life?"
+        },
+        {
+          "id": 4,
+          "text": "What is one realistic next step or support you would like to consider?"
+        },
+        {
+          "id": 5,
+          "text": "What would you like a trusted person or qualified professional to understand about your experience?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.nih.gov/node/21506"
+      ]
+    },
+    {
+      "sourceInstrumentId": "gds-15",
+      "slug": "gds-15",
+      "domain": "Older adult wellbeing",
+      "title": "Open Later-life wellbeing reflection",
+      "description": "An independently written Ozarbox reflection guide. It does not reproduce the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "What has helped you feel connected to others recently?"
+        },
+        {
+          "id": 2,
+          "text": "Which daily activities still bring you a sense of meaning or enjoyment?"
+        },
+        {
+          "id": 3,
+          "text": "What patterns, situations or supports seem to influence this part of your life?"
+        },
+        {
+          "id": 4,
+          "text": "What is one realistic next step or support you would like to consider?"
+        },
+        {
+          "id": 5,
+          "text": "What would you like a trusted person or qualified professional to understand about your experience?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.apa.org/depression-guideline/assessment/"
+      ]
+    },
+    {
+      "sourceInstrumentId": "gds-30",
+      "slug": "gds-30",
+      "domain": "Older adult wellbeing",
+      "title": "Open Later-life wellbeing reflection",
+      "description": "An independently written Ozarbox reflection guide. It does not reproduce the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "What has helped you feel connected to others recently?"
+        },
+        {
+          "id": 2,
+          "text": "Which daily activities still bring you a sense of meaning or enjoyment?"
+        },
+        {
+          "id": 3,
+          "text": "What patterns, situations or supports seem to influence this part of your life?"
+        },
+        {
+          "id": 4,
+          "text": "What is one realistic next step or support you would like to consider?"
+        },
+        {
+          "id": 5,
+          "text": "What would you like a trusted person or qualified professional to understand about your experience?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.apa.org/depression-guideline/assessment/"
+      ]
+    },
+    {
+      "sourceInstrumentId": "hrqol-4",
+      "slug": "hrqol-4",
+      "domain": "Health-related quality of life",
+      "title": "Open Healthy days and daily functioning reflection",
+      "description": "An independently written Ozarbox reflection guide. It does not reproduce the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How has your physical health affected your usual activities recently?"
+        },
+        {
+          "id": 2,
+          "text": "How has your emotional wellbeing affected your usual activities recently?"
+        },
+        {
+          "id": 3,
+          "text": "What patterns, situations or supports seem to influence this part of your life?"
+        },
+        {
+          "id": 4,
+          "text": "What is one realistic next step or support you would like to consider?"
+        },
+        {
+          "id": 5,
+          "text": "What would you like a trusted person or qualified professional to understand about your experience?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://archive.cdc.gov/www_cdc_gov/hrqol/hrqol14_measure.htm"
+      ]
+    },
+    {
+      "sourceInstrumentId": "ham-d",
+      "slug": "ham-d",
+      "domain": "Depression and clinician conversation",
+      "title": "Open Clinician conversation preparation",
+      "description": "An independently written Ozarbox reflection guide. It does not reproduce the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "What changes in mood, sleep, energy or daily functioning would you like to discuss with a clinician?"
+        },
+        {
+          "id": 2,
+          "text": "What changes have people close to you noticed, if any?"
+        },
+        {
+          "id": 3,
+          "text": "What patterns, situations or supports seem to influence this part of your life?"
+        },
+        {
+          "id": 4,
+          "text": "What is one realistic next step or support you would like to consider?"
+        },
+        {
+          "id": 5,
+          "text": "What would you like a trusted person or qualified professional to understand about your experience?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.apa.org/depression-guideline/assessment/"
+      ]
+    },
+    {
+      "sourceInstrumentId": "phq-8",
+      "slug": "phq-8",
+      "domain": "Mood and daily functioning",
+      "title": "Open Mood and daily functioning reflection",
+      "description": "An independently written Ozarbox reflection guide. It does not reproduce the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Which activities have felt less enjoyable or meaningful recently?"
+        },
+        {
+          "id": 2,
+          "text": "What changes have you noticed in sleep, energy or concentration?"
+        },
+        {
+          "id": 3,
+          "text": "What patterns, situations or supports seem to influence this part of your life?"
+        },
+        {
+          "id": 4,
+          "text": "What is one realistic next step or support you would like to consider?"
+        },
+        {
+          "id": 5,
+          "text": "What would you like a trusted person or qualified professional to understand about your experience?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.phqscreeners.com/"
+      ]
+    },
+    {
+      "sourceInstrumentId": "phq-a",
+      "slug": "phq-a",
+      "domain": "Adolescent wellbeing",
+      "title": "Open Adolescent wellbeing reflection",
+      "description": "An independently written Ozarbox reflection guide. It does not reproduce the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "What has been hardest about school, home or friendships lately?"
+        },
+        {
+          "id": 2,
+          "text": "Who is an adult you trust and could talk with if things feel overwhelming?"
+        },
+        {
+          "id": 3,
+          "text": "What patterns, situations or supports seem to influence this part of your life?"
+        },
+        {
+          "id": 4,
+          "text": "What is one realistic next step or support you would like to consider?"
+        },
+        {
+          "id": 5,
+          "text": "What would you like a trusted person or qualified professional to understand about your experience?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.nimh.nih.gov/research/research-conducted-at-nimh/asq-toolkit-materials/asq-tool/phq-9-modified-for-adolescents-phq-a"
+      ]
+    },
+    {
+      "sourceInstrumentId": "hrqol-14",
+      "slug": "hrqol-14",
+      "domain": "Health-related quality of life",
+      "title": "Open Health, limitations and wellbeing reflection",
+      "description": "An independently written Ozarbox reflection guide. It does not reproduce the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "What health-related issues have most affected your daily activities recently?"
+        },
+        {
+          "id": 2,
+          "text": "What support or change could make daily routines easier?"
+        },
+        {
+          "id": 3,
+          "text": "What patterns, situations or supports seem to influence this part of your life?"
+        },
+        {
+          "id": 4,
+          "text": "What is one realistic next step or support you would like to consider?"
+        },
+        {
+          "id": 5,
+          "text": "What would you like a trusted person or qualified professional to understand about your experience?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://archive.cdc.gov/www_cdc_gov/hrqol/hrqol14_measure.htm"
+      ]
+    },
+    {
+      "sourceInstrumentId": "ssi-sa",
+      "slug": "ssi-sa",
+      "domain": "Substance use",
+      "title": "Open Substance use and support reflection",
+      "description": "An independently written Ozarbox reflection guide. It does not reproduce the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Has alcohol or other drug use affected your relationships, health, responsibilities or safety?"
+        },
+        {
+          "id": 2,
+          "text": "What kind of support would feel useful if you wanted to make a change?"
+        },
+        {
+          "id": 3,
+          "text": "What patterns, situations or supports seem to influence this part of your life?"
+        },
+        {
+          "id": 4,
+          "text": "What is one realistic next step or support you would like to consider?"
+        },
+        {
+          "id": 5,
+          "text": "What would you like a trusted person or qualified professional to understand about your experience?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/GOVPUB-HE20_400-PURL-LPS84562/pdf/GOVPUB-HE20_400-PURL-LPS84562.pdf"
+      ]
+    },
+    {
+      "sourceInstrumentId": "tcu-drug-dependence-screen",
+      "slug": "tcu-drug-dependence-screen",
+      "domain": "Substance use",
+      "title": "Open Substance use and support reflection",
+      "description": "An independently written Ozarbox reflection guide. It does not reproduce the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Has alcohol or other drug use affected your relationships, health, responsibilities or safety?"
+        },
+        {
+          "id": 2,
+          "text": "What kind of support would feel useful if you wanted to make a change?"
+        },
+        {
+          "id": 3,
+          "text": "What patterns, situations or supports seem to influence this part of your life?"
+        },
+        {
+          "id": 4,
+          "text": "What is one realistic next step or support you would like to consider?"
+        },
+        {
+          "id": 5,
+          "text": "What would you like a trusted person or qualified professional to understand about your experience?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any total is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.govinfo.gov/content/pkg/GOVPUB-J16_100-PURL-gpo36955/pdf/GOVPUB-J16_100-PURL-gpo36955.pdf"
+      ]
     }
   ],
   "licenseNote": "Added prompts are original Ozarbox-authored text. They may be reused as reflection prompts, but are not validated measures. Linked sources provide general background only and do not endorse these guides or establish validity. Named instruments remain subject to their own copyright, licensing, training, and qualification requirements."

@@ -9,28 +9,6 @@
       "title": "Open Everyday living and independence reflection",
       "description": "An independently written, free-to-use reflection guide for adaptive skills. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -67,28 +45,6 @@
       "title": "Open Attention and organisation reflection",
       "description": "An independently written, free-to-use reflection guide for attention and executive functioning. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -125,28 +81,6 @@
       "title": "Open Social communication and development discussion guide",
       "description": "An independently written, free-to-use reflection guide for autism developmental history. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -183,28 +117,6 @@
       "title": "Open Social interaction reflection",
       "description": "An independently written, free-to-use reflection guide for social communication observation. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -241,28 +153,6 @@
       "title": "Open Substance-use reflection and support planner",
       "description": "An independently written, free-to-use reflection guide for substance use and wellbeing. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -299,28 +189,6 @@
       "title": "Open Alcohol-use reflection",
       "description": "An independently written, free-to-use reflection guide for alcohol and wellbeing. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -357,28 +225,6 @@
       "title": "Open Anxiety experience reflection",
       "description": "An independently written, free-to-use reflection guide for anxiety and physical arousal. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -415,28 +261,6 @@
       "title": "Open Mood and daily functioning reflection",
       "description": "An independently written, free-to-use reflection guide for mood and functioning. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -473,28 +297,6 @@
       "title": "Open Distress and support reflection",
       "description": "An independently written, free-to-use reflection guide for general psychological distress. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -531,28 +333,6 @@
       "title": "Open Trauma-related concerns discussion guide",
       "description": "An independently written, free-to-use reflection guide for ptsd clinical interview preparation. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -589,28 +369,6 @@
       "title": "Open Child functioning observation guide",
       "description": "An independently written, free-to-use reflection guide for child attention and behaviour. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -647,28 +405,6 @@
       "title": "Open Daily health and functioning reflection",
       "description": "An independently written, free-to-use reflection guide for health-related quality of life. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -705,28 +441,6 @@
       "title": "Open Early social communication observation guide",
       "description": "An independently written, free-to-use reflection guide for toddler development. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -763,28 +477,6 @@
       "title": "Open Work wellbeing reflection",
       "description": "An independently written, free-to-use reflection guide for work-related exhaustion. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -821,28 +513,6 @@
       "title": "Open Clinical concerns preparation guide",
       "description": "An independently written, free-to-use reflection guide for broad personality and mental health. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -879,28 +549,6 @@
       "title": "Open Personality self-reflection",
       "description": "An independently written, free-to-use reflection guide for personality traits. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -937,28 +585,6 @@
       "title": "Open Clinical assessment preparation",
       "description": "An independently written, free-to-use reflection guide for clinical concerns overview. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -995,28 +621,6 @@
       "title": "Open Mental health history discussion guide",
       "description": "An independently written, free-to-use reflection guide for diagnostic interview preparation. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1053,28 +657,6 @@
       "title": "Open Interpersonal patterns reflection",
       "description": "An independently written, free-to-use reflection guide for long-term interpersonal patterns. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1111,28 +693,6 @@
       "title": "Open Symptoms and functioning reflection",
       "description": "An independently written, free-to-use reflection guide for symptom burden. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1169,28 +729,6 @@
       "title": "Open Child wellbeing reflection guide",
       "description": "An independently written, free-to-use reflection guide for child strengths and difficulties. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1227,28 +765,6 @@
       "title": "Open Health and participation reflection",
       "description": "An independently written, free-to-use reflection guide for health-related quality of life. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1285,28 +801,6 @@
       "title": "Open Learning and problem-solving reflection",
       "description": "An independently written, free-to-use reflection guide for cognitive strengths. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1343,28 +837,6 @@
       "title": "Open Everyday independence reflection",
       "description": "An independently written, free-to-use reflection guide for adaptive behaviour. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1401,28 +873,6 @@
       "title": "Open Adult learning and cognition reflection",
       "description": "An independently written, free-to-use reflection guide for adult cognitive strengths. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1459,28 +909,6 @@
       "title": "Open Wellbeing check-in",
       "description": "An independently written, free-to-use reflection guide for psychological wellbeing. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1517,28 +945,6 @@
       "title": "Open Daily functioning reflection",
       "description": "An independently written, free-to-use reflection guide for functioning and disability. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1575,28 +981,6 @@
       "title": "Open Child learning strengths reflection",
       "description": "An independently written, free-to-use reflection guide for child learning and cognition. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1633,28 +1017,6 @@
       "title": "Open Learning skills reflection",
       "description": "An independently written, free-to-use reflection guide for learning and achievement. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1691,28 +1053,6 @@
       "title": "Open Early learning and play observation",
       "description": "An independently written, free-to-use reflection guide for early childhood development. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,
@@ -1749,28 +1089,6 @@
       "title": "Open OCD-related concerns discussion guide",
       "description": "An independently written, free-to-use reflection guide for obsessions and compulsions. It is not the named proprietary instrument and is not a validated substitute.",
       "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
-      "scale": [
-        {
-          "value": 0,
-          "label": "Not at all / not applicable"
-        },
-        {
-          "value": 1,
-          "label": "A little"
-        },
-        {
-          "value": 2,
-          "label": "Somewhat"
-        },
-        {
-          "value": 3,
-          "label": "A lot"
-        },
-        {
-          "value": 4,
-          "label": "Very much"
-        }
-      ],
       "questions": [
         {
           "id": 1,

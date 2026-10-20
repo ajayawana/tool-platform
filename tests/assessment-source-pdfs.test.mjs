@@ -18,7 +18,7 @@ test('AMS-C 28 source data contains 28 items and source-defined seven subscales'
 
 test('AMS-C 28 implementation calculates source-defined subscale averages and does not claim clinical validity', () => {
   assert.match(route, /Calculate subscale averages/);
-  assert.match(route, /mean\\.toFixed\\(2\\)/);
+  assert.match(route, /mean\.toFixed\(2\)/);
   assert.match(route, /not diagnoses, percentile ranks, or validated cut-offs/);
   assert.match(route, /Research-use limitation/);
 });

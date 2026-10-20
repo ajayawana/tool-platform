@@ -27,7 +27,11 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
     <header class="page-heading">
       <p class="eyebrow">Ozarbox · Assessment library</p>
       <h1 id="page-title">Psychological Assessment Centre</h1>
-      <p class="lead">Find measures by purpose, read what they are designed to measure, and check whether a version is actually available. Each instrument has its own identity, permissions and scoring rules—there is no invented all-in-one mental-health score.</p>
+      <p class="lead">Find measures by purpose, review their evidence and permissions, and check what Ozarbox actually provides. A recognized instrument is not automatically an independently verified website implementation.</p>
+      <div class="quality-legend" aria-label="Assessment quality badge legend">
+        <p><span class="quality-badge quality-gold" aria-hidden="true">★ Gold verified</span> Reserved for an instrument-specific implementation independently checked against authoritative documentation, with rights, scoring, intended population and validation evidence documented.</p>
+        <p><span class="quality-badge quality-unverified">Not verified / unofficial on Ozarbox</span> The Ozarbox copy is not confirmed as a gold-standard implementation. This label does <strong>not</strong> mean the original instrument itself is unofficial or scientifically invalid.</p>
+      </div>
       <div class="catalogue-stats">
         <div><strong>{instruments.length}</strong><span>unique instruments indexed</span></div>
         <div><strong>{domains.length}</strong><span>assessment domains</span></div>
@@ -93,7 +97,14 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
               data-search={(instrument.official_name + ' ' + instrument.main_purpose + ' ' + domainLabels + ' ' + instrument.permission_status + ' ' + instrument.deployment_status).toLowerCase()}
             >
               <div class="instrument-card-top">
-                <span class={'status status-' + instrument.deployment_status}>{labelForStatus(instrument.deployment_status, Boolean(instrument.open_alternative_route))}</span>
+                <div class="instrument-badges">
+                  {('quality_status' in instrument && instrument.quality_status === 'gold-standard-verified') ? (
+                    <span class="quality-badge quality-gold" title="The instrument-specific Ozarbox implementation has documented independent verification.">★ Gold verified</span>
+                  ) : (
+                    <span class="quality-badge quality-unverified" title="Ozarbox has not established that this website entry is a gold-standard implementation.">Not verified / unofficial on Ozarbox</span>
+                  )}
+                  <span class={'status status-' + instrument.deployment_status}>{labelForStatus(instrument.deployment_status, Boolean(instrument.open_alternative_route))}</span>
+                </div>
                 <span class="instrument-id">{instrument.instrument_id}</span>
               </div>
               <h3>{instrument.official_name}</h3>
@@ -108,13 +119,17 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
               ) : (
                 <>
                   <p class="catalogue-only-note">{instrument.deployment_status === 'permission-review'
-                    ? 'This version is not embedded here because the exact rights, administration requirements, or use context require review. Use the official access or permissions route below; an external link is not an Ozarbox-hosted assessment.'
-                    : 'No questionnaire or score is provided by Ozarbox for this entry. Use the official source below to review the instrument or obtain authorized access.'}</p>
-                  {instrument.access_url && (
-                    <a class="instrument-action external-access" href={instrument.access_url} target="_blank" rel="noopener noreferrer">{instrument.access_label || 'Open official source / access information'} ↗</a>
-                  )}
+                    ? 'The named instrument is not administered by Ozarbox while rights or professional-use requirements are unresolved. Start with the original Ozarbox reflection guide below; it is not the clinical test and does not reproduce its items or scoring. The official source link is external and is for instrument/access information.'
+                    : 'Ozarbox does not provide the named questionnaire or its score. You can use the original, unscored reflection guide below; it is not a substitute for the named instrument. The official source link, when present, opens externally.'}</p>
                   {instrument.open_alternative_route && (
-                    <a class="instrument-action" href={base + instrument.open_alternative_route.replace(/^\//, '')}>{instrument.open_alternative_label || 'Open original reflection alternative'} →</a>
+                    <a class="instrument-action local-alternative" href={base + instrument.open_alternative_route.replace(/^\//, '')}>{instrument.open_alternative_label || 'Open original reflection alternative'} (on Ozarbox) →</a>
+                  )}
+                  {instrument.access_url && (
+                    <details class="external-source">
+                      <summary>Official source / permissions (external)</summary>
+                      <p>This opens an external rights-holder or reference website, not an Ozarbox assessment. The local reflection guide above stays on Ozarbox and is not equivalent to the named test.</p>
+                      <a class="instrument-action external-access" href={instrument.access_url} target="_blank" rel="noopener noreferrer">{instrument.access_label || 'Open official source and rights information'} ↗</a>
+                    </details>
                   )}
                 </>
               )}
@@ -135,7 +150,8 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
       <p class="eyebrow">How we govern this library</p>
       <h2 id="governance-heading">Why some tests are listed but not enabled</h2>
       <p>Many professionally used measures are copyrighted, qualification-controlled, interview-based, norm-dependent or subject to translation restrictions. A free PDF is not automatically permission to embed it in a commercial website. Clinician-only protocols and secure cognitive test items must not be cloned as public quizzes.</p>
-      <p>Before enabling a module, Ozarbox needs an instrument-specific version record, authoritative item/scoring source, rights review, language and population review, deterministic scoring tests, safety handling, accessibility evaluation and a documented human go/no-go review. A passing build is not clinical validation.</p>
+      <p>Before awarding the “★ Gold verified” badge, Ozarbox must document an instrument-specific version, authoritative scoring source, rights clearance, language/population suitability, independently reviewed scoring tests and edge cases, safety and accessibility checks, and a documented human review. A passing build or a well-known original questionnaire is not enough.</p>
+      <p>At present, no registry entry has the evidence-backed <code>quality_status: "gold-standard-verified"</code> designation. Therefore, no entry receives the gold badge yet. The “Not verified / unofficial on Ozarbox” label describes the status of this website's entry—not the scientific standing of the original instrument.</p>
       <p><a href={base + 'privacy/'}>Read the privacy policy</a> · <a href="https://github.com/ajayawana/tool-platform/blob/main/src/data/assessment-registry.json" target="_blank" rel="noopener noreferrer">View the machine-readable registry</a> · <a href="https://github.com/ajayawana/tool-platform/blob/main/docs/phq9-verification.md" target="_blank" rel="noopener noreferrer">PHQ-9 verification report</a></p>
     </section>
   </section>
@@ -174,6 +190,12 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
     .page-heading{max-width:900px;padding:15px 0 22px}
     .page-heading h1{font-size:clamp(2.25rem,5vw,3.75rem);line-height:1.05;letter-spacing:-.04em;margin:.25rem 0 1rem}
     .lead{font-size:1.13rem;color:#475569;max-width:850px}
+    .quality-legend{max-width:900px;margin:20px 0;padding:14px 16px;border:1px solid #dbe3ee;border-radius:12px;background:#f8fafc;color:#334155;font-size:.9rem}
+    .quality-legend p{margin:7px 0;line-height:1.55}
+    .quality-badge{display:inline-flex;align-items:center;gap:5px;max-width:100%;width:fit-content;padding:4px 8px;border-radius:999px;font-size:.73rem;font-weight:850;line-height:1.35}
+    .quality-gold{background:#fff3bf;color:#7c4a03;border:1px solid #e6b94f}
+    .quality-unverified{background:#f1f5f9;color:#475569;border:1px solid #cbd5e1}
+    .instrument-badges{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0}
     .catalogue-stats{display:flex;gap:14px;flex-wrap:wrap;margin:24px 0}
     .catalogue-stats div{display:flex;flex-direction:column;padding:13px 17px;border:1px solid #dbe3ee;border-radius:12px;background:#fff;min-width:150px}
     .catalogue-stats strong{font-size:1.6rem;line-height:1.15}
@@ -211,7 +233,10 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
     .instrument-card dt{font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;font-weight:850;color:#64748b}
     .instrument-card dd{margin:2px 0 0;font-size:.88rem;overflow-wrap:anywhere}
     .instrument-action{display:inline-block;margin-top:13px;font-weight:850;color:#1d4ed8;text-decoration:underline}
-    .catalogue-only-note{font-size:.88rem;color:#64748b;border-left:3px solid #cbd5e1;padding-left:10px;margin-top:13px}.external-access{display:block;margin-top:10px;font-size:.9rem;line-height:1.4}
+    .catalogue-only-note{font-size:.88rem;color:#64748b;border-left:3px solid #cbd5e1;padding-left:10px;margin-top:13px}.local-alternative{display:block;margin-top:14px}.external-access{display:block;margin-top:10px;font-size:.9rem;line-height:1.4}
+    .external-source{margin-top:12px;padding-top:10px;border-top:1px solid #e2e8f0;font-size:.84rem;color:#64748b}
+    .external-source summary{cursor:pointer;font-weight:750;color:#475569}
+    .external-source p{line-height:1.5;margin:.6rem 0}
     .source-links{margin-top:14px;border-top:1px solid #e2e8f0;padding-top:10px;font-size:.84rem}
     .source-links summary{font-weight:750;cursor:pointer}
     .source-links ul{padding-left:20px}
@@ -223,6 +248,6 @@ const labelForStatus = (status: string, hasAlternative = false): string => {
     @media(max-width:900px){.domain-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.filters{grid-template-columns:1fr 1fr}.filters label:first-child{grid-column:1/-1}}
     @media(max-width:600px){.domain-grid,.instrument-grid,.filters{grid-template-columns:1fr}.filters label:first-child{grid-column:auto}.section-title-row{align-items:flex-start;flex-direction:column}.catalogue-stats div{flex:1 1 130px}.assessment-centre{padding-top:24px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
-    @media print{.site-header,footer,.filters,.domain-section,.notice,.instrument-action,.source-links{display:none!important}.assessment-centre{padding:0}.instrument-grid{display:block}.instrument-card{break-inside:avoid;margin:0 0 12px}}
+    @media print{.site-header,footer,.filters,.domain-section,.notice,.instrument-action,.source-links,.external-source{display:none!important}.assessment-centre{padding:0}.instrument-grid{display:block}.instrument-card{break-inside:avoid;margin:0 0 12px}}
   </style>
 </Layout>

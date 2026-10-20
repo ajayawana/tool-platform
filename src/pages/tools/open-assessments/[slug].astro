@@ -1,10 +1,10 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import data from '../../../data/open-assessment-alternatives.json';
+const base = import.meta.env.BASE_URL;
 const { slug } = Astro.params;
 const instrument = data.instruments.find((item) => item.slug === slug);
-if (!instrument) return Astro.redirect('/assessments/');
-const base = import.meta.env.BASE_URL;
+if (!instrument) return Astro.redirect(base + 'assessments/');
 export function getStaticPaths() {
   return data.instruments.map((item) => ({ params: { slug: item.slug } }));
 }
@@ -50,7 +50,9 @@ export function getStaticPaths() {
     const validation = document.querySelector<HTMLElement>('#validation');
     const summary = document.querySelector<HTMLElement>('#summary');
     const responseList = document.querySelector<HTMLElement>('#response-list');
-    const questionIds = [1,2,3,4,5];
+    const questionIds = Array.from(form?.querySelectorAll<HTMLTextAreaElement>('textarea[id^="q-"]') ?? [])
+      .map((field) => Number(field.id.replace('q-', '')))
+      .filter((id) => Number.isInteger(id) && id > 0);
     form?.addEventListener('submit', (event) => {
       event.preventDefault();
       const notes = questionIds.map((id) => {

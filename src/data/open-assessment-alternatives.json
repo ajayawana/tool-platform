@@ -1122,13 +1122,13 @@
       "sourceInstrumentId": "academic-motivation-scale",
       "slug": "academic-motivation-scale",
       "domain": "Academic motivation",
-      "title": "Open Learning, work and career guide",
+      "title": "Open reflection: Academic motivation",
       "description": "A free, independently written reflection guide to help organise observations about academic motivation. This is not Academic Motivation Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What activities or subjects interest you enough that you want to spend time learning more about them?"
+          "text": "Thinking about academic motivation, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1157,13 +1157,13 @@
       "sourceInstrumentId": "ace-iii",
       "slug": "ace-iii",
       "domain": "Cognitive screening",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Cognitive screening",
       "description": "A free, independently written reflection guide to help organise observations about cognitive screening. This is not ACE-III, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about cognitive screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1192,13 +1192,13 @@
       "sourceInstrumentId": "adis-5",
       "slug": "adis-5",
       "domain": "Anxiety and related disorders assessment",
-      "title": "Open Preparing for a clinical conversation guide",
+      "title": "Open reflection: Anxiety and related disorders assessment",
       "description": "A free, independently written reflection guide to help organise observations about anxiety and related disorders assessment. This is not ADIS-5, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What main concern or change led you to consider a professional assessment?"
+          "text": "Thinking about anxiety and related disorders assessment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1227,13 +1227,13 @@
       "sourceInstrumentId": "altman-self-rating-mania-scale-asrm",
       "slug": "altman-self-rating-mania-scale-asrm",
       "domain": "Mania symptom monitoring",
-      "title": "Open Mood patterns and support guide",
+      "title": "Open reflection: Mania symptom monitoring",
       "description": "A free, independently written reflection guide to help organise observations about mania symptom monitoring. This is not Altman Self-Rating Mania Scale (ASRM), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What changes, if any, have you noticed in mood, energy, sleep, or activity over time?"
+          "text": "Thinking about mania symptom monitoring, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1262,13 +1262,13 @@
       "sourceInstrumentId": "aq-autism-spectrum-quotient",
       "slug": "aq-autism-spectrum-quotient",
       "domain": "Autistic traits screening",
-      "title": "Open Everyday attention and development guide",
+      "title": "Open reflection: Autistic traits screening",
       "description": "A free, independently written reflection guide to help organise observations about autistic traits screening. This is not AQ (Autism-Spectrum Quotient), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "In which everyday situations do attention, communication, sensory needs, routines, or organisation feel easiest or hardest?"
+          "text": "Thinking about autistic traits screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1297,13 +1297,13 @@
       "sourceInstrumentId": "asi-3",
       "slug": "asi-3",
       "domain": "Anxiety sensitivity",
-      "title": "Open Anxiety and coping guide",
+      "title": "Open reflection: Anxiety sensitivity",
       "description": "A free, independently written reflection guide to help organise observations about anxiety sensitivity. This is not ASI-3, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What situations, thoughts, or uncertainties tend to bring up worry or fear for you?"
+          "text": "Thinking about anxiety sensitivity, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1332,13 +1332,13 @@
       "sourceInstrumentId": "asq-3",
       "slug": "asq-3",
       "domain": "Developmental screening",
-      "title": "Open Child and adolescent wellbeing guide",
+      "title": "Open reflection: Developmental screening",
       "description": "A free, independently written reflection guide to help organise observations about developmental screening. This is not ASQ-3, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What strengths, interests, and situations bring out this child or young person's best?"
+          "text": "Thinking about developmental screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1367,13 +1367,13 @@
       "sourceInstrumentId": "asq-se-2",
       "slug": "asq-se-2",
       "domain": "Social-emotional development screening",
-      "title": "Open Child and adolescent wellbeing guide",
+      "title": "Open reflection: Social-emotional development screening",
       "description": "A free, independently written reflection guide to help organise observations about social-emotional development screening. This is not ASQ:SE-2, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What strengths, interests, and situations bring out this child or young person's best?"
+          "text": "Thinking about social-emotional development screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1402,13 +1402,13 @@
       "sourceInstrumentId": "asrs-v1-1",
       "slug": "asrs-v1-1",
       "domain": "Adult ADHD screening",
-      "title": "Open Everyday attention and development guide",
+      "title": "Open reflection: Adult ADHD screening",
       "description": "A free, independently written reflection guide to help organise observations about adult adhd screening. This is not ASRS v1.1, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "In which everyday situations do attention, communication, sensory needs, routines, or organisation feel easiest or hardest?"
+          "text": "Thinking about adult adhd screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1437,13 +1437,13 @@
       "sourceInstrumentId": "audit-c",
       "slug": "audit-c",
       "domain": "Brief alcohol screening",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Brief alcohol screening",
       "description": "A free, independently written reflection guide to help organise observations about brief alcohol screening. This is not AUDIT-C, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about brief alcohol screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1472,13 +1472,13 @@
       "sourceInstrumentId": "basc-3",
       "slug": "basc-3",
       "domain": "Behavioral and emotional assessment",
-      "title": "Open Child and adolescent wellbeing guide",
+      "title": "Open reflection: Behavioral and emotional assessment",
       "description": "A free, independently written reflection guide to help organise observations about behavioral and emotional assessment. This is not BASC-3, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What strengths, interests, and situations bring out this child or young person's best?"
+          "text": "Thinking about behavioral and emotional assessment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1507,13 +1507,13 @@
       "sourceInstrumentId": "bergen-social-media-addiction-scale",
       "slug": "bergen-social-media-addiction-scale",
       "domain": "Problematic social media use",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Problematic social media use",
       "description": "A free, independently written reflection guide to help organise observations about problematic social media use. This is not Bergen Social Media Addiction Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about problematic social media use, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1542,13 +1542,13 @@
       "sourceInstrumentId": "bes-binge-eating-scale",
       "slug": "bes-binge-eating-scale",
       "domain": "Binge-eating symptoms",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Binge-eating symptoms",
       "description": "A free, independently written reflection guide to help organise observations about binge-eating symptoms. This is not BES (Binge Eating Scale), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about binge-eating symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1577,13 +1577,13 @@
       "sourceInstrumentId": "bfi-2",
       "slug": "bfi-2",
       "domain": "Big Five personality traits",
-      "title": "Open Personal patterns and relationships guide",
+      "title": "Open reflection: Big Five personality traits",
       "description": "A free, independently written reflection guide to help organise observations about big five personality traits. This is not BFI-2, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What patterns in your reactions, preferences, or relationships have you noticed across different situations?"
+          "text": "Thinking about big five personality traits, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1612,13 +1612,13 @@
       "sourceInstrumentId": "boston-naming-test",
       "slug": "boston-naming-test",
       "domain": "Confrontation naming",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Confrontation naming",
       "description": "A free, independently written reflection guide to help organise observations about confrontation naming. This is not Boston Naming Test, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about confrontation naming, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1647,13 +1647,13 @@
       "sourceInstrumentId": "brief-resilience-scale",
       "slug": "brief-resilience-scale",
       "domain": "Perceived ability to recover from stress",
-      "title": "Open Wellbeing and daily functioning guide",
+      "title": "Open reflection: Perceived ability to recover from stress",
       "description": "A free, independently written reflection guide to help organise observations about perceived ability to recover from stress. This is not Brief Resilience Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What parts of daily life currently give you energy, meaning, connection, or satisfaction?"
+          "text": "Thinking about perceived ability to recover from stress, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1682,13 +1682,13 @@
       "sourceInstrumentId": "brief-2",
       "slug": "brief-2",
       "domain": "Everyday executive functioning",
-      "title": "Open Everyday attention and development guide",
+      "title": "Open reflection: Everyday executive functioning",
       "description": "A free, independently written reflection guide to help organise observations about everyday executive functioning. This is not BRIEF-2, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "In which everyday situations do attention, communication, sensory needs, routines, or organisation feel easiest or hardest?"
+          "text": "Thinking about everyday executive functioning, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1717,13 +1717,13 @@
       "sourceInstrumentId": "brown-add-scales",
       "slug": "brown-add-scales",
       "domain": "Executive-function difficulties associated with ADHD",
-      "title": "Open Everyday attention and development guide",
+      "title": "Open reflection: Executive-function difficulties associated with ADHD",
       "description": "A free, independently written reflection guide to help organise observations about executive-function difficulties associated with adhd. This is not Brown ADD Scales, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "In which everyday situations do attention, communication, sensory needs, routines, or organisation feel easiest or hardest?"
+          "text": "Thinking about executive-function difficulties associated with adhd, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1752,13 +1752,13 @@
       "sourceInstrumentId": "bsi-18",
       "slug": "bsi-18",
       "domain": "Brief psychological symptom assessment",
-      "title": "Open Anxiety and coping guide",
+      "title": "Open reflection: Brief psychological symptom assessment",
       "description": "A free, independently written reflection guide to help organise observations about brief psychological symptom assessment. This is not BSI-18, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What situations, thoughts, or uncertainties tend to bring up worry or fear for you?"
+          "text": "Thinking about brief psychological symptom assessment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1787,13 +1787,13 @@
       "sourceInstrumentId": "c-ssrs",
       "slug": "c-ssrs",
       "domain": "Structured suicide-risk screening or assessment",
-      "title": "Open Mood patterns and support guide",
+      "title": "Open reflection: Structured suicide-risk screening or assessment",
       "description": "A free, independently written reflection guide to help organise observations about structured suicide-risk screening or assessment. This is not C-SSRS, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What changes, if any, have you noticed in mood, energy, sleep, or activity over time?"
+          "text": "Thinking about structured suicide-risk screening or assessment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1822,13 +1822,13 @@
       "sourceInstrumentId": "cage-aid",
       "slug": "cage-aid",
       "domain": "Alcohol and drug screening",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Alcohol and drug screening",
       "description": "A free, independently written reflection guide to help organise observations about alcohol and drug screening. This is not CAGE-AID, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about alcohol and drug screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1857,13 +1857,13 @@
       "sourceInstrumentId": "career-adapt-abilities-scale",
       "slug": "career-adapt-abilities-scale",
       "domain": "Career adaptability",
-      "title": "Open Learning, work and career guide",
+      "title": "Open reflection: Career adaptability",
       "description": "A free, independently written reflection guide to help organise observations about career adaptability. This is not Career Adapt-Abilities Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What activities or subjects interest you enough that you want to spend time learning more about them?"
+          "text": "Thinking about career adaptability, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1892,13 +1892,13 @@
       "sourceInstrumentId": "career-decision-making-difficulties-questionnaire",
       "slug": "career-decision-making-difficulties-questionnaire",
       "domain": "Career decision difficulties",
-      "title": "Open Learning, work and career guide",
+      "title": "Open reflection: Career decision difficulties",
       "description": "A free, independently written reflection guide to help organise observations about career decision difficulties. This is not Career Decision-Making Difficulties Questionnaire, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What activities or subjects interest you enough that you want to spend time learning more about them?"
+          "text": "Thinking about career decision difficulties, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1927,13 +1927,13 @@
       "sourceInstrumentId": "cbcl",
       "slug": "cbcl",
       "domain": "Child behavioral and emotional assessment",
-      "title": "Open Child and adolescent wellbeing guide",
+      "title": "Open reflection: Child behavioral and emotional assessment",
       "description": "A free, independently written reflection guide to help organise observations about child behavioral and emotional assessment. This is not CBCL, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What strengths, interests, and situations bring out this child or young person's best?"
+          "text": "Thinking about child behavioral and emotional assessment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1962,13 +1962,13 @@
       "sourceInstrumentId": "cd-risc",
       "slug": "cd-risc",
       "domain": "Psychological resilience",
-      "title": "Open Wellbeing and daily functioning guide",
+      "title": "Open reflection: Psychological resilience",
       "description": "A free, independently written reflection guide to help organise observations about psychological resilience. This is not CD-RISC, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What parts of daily life currently give you energy, meaning, connection, or satisfaction?"
+          "text": "Thinking about psychological resilience, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -1997,13 +1997,13 @@
       "sourceInstrumentId": "cdi-2",
       "slug": "cdi-2",
       "domain": "Childhood depression symptoms",
-      "title": "Open Child and adolescent wellbeing guide",
+      "title": "Open reflection: Childhood depression symptoms",
       "description": "A free, independently written reflection guide to help organise observations about childhood depression symptoms. This is not CDI-2, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What strengths, interests, and situations bring out this child or young person's best?"
+          "text": "Thinking about childhood depression symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2032,13 +2032,13 @@
       "sourceInstrumentId": "ces-d",
       "slug": "ces-d",
       "domain": "Depressive symptoms in research and screening",
-      "title": "Open Mood and wellbeing guide",
+      "title": "Open reflection: Depressive symptoms in research and screening",
       "description": "A free, independently written reflection guide to help organise observations about depressive symptoms in research and screening. This is not CES-D, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Over the recent period, what changes have you noticed in your mood or emotional wellbeing?"
+          "text": "Thinking about depressive symptoms in research and screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2067,13 +2067,13 @@
       "sourceInstrumentId": "cia-clinical-impairment-assessment",
       "slug": "cia-clinical-impairment-assessment",
       "domain": "Eating-disorder-related impairment",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Eating-disorder-related impairment",
       "description": "A free, independently written reflection guide to help organise observations about eating-disorder-related impairment. This is not CIA (Clinical Impairment Assessment), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about eating-disorder-related impairment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2102,13 +2102,13 @@
       "sourceInstrumentId": "cidi",
       "slug": "cidi",
       "domain": "Composite International Diagnostic Interview",
-      "title": "Open Preparing for a clinical conversation guide",
+      "title": "Open reflection: Composite International Diagnostic Interview",
       "description": "A free, independently written reflection guide to help organise observations about composite international diagnostic interview. This is not CIDI, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What main concern or change led you to consider a professional assessment?"
+          "text": "Thinking about composite international diagnostic interview, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2137,13 +2137,13 @@
       "sourceInstrumentId": "compulsive-buying-scale",
       "slug": "compulsive-buying-scale",
       "domain": "Compulsive buying tendencies",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Compulsive buying tendencies",
       "description": "A free, independently written reflection guide to help organise observations about compulsive buying tendencies. This is not Compulsive Buying Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about compulsive buying tendencies, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2172,13 +2172,13 @@
       "sourceInstrumentId": "conflict-tactics-scales",
       "slug": "conflict-tactics-scales",
       "domain": "Relationship conflict and violence research",
-      "title": "Open Relationships and family guide",
+      "title": "Open reflection: Relationship conflict and violence research",
       "description": "A free, independently written reflection guide to help organise observations about relationship conflict and violence research. This is not Conflict Tactics Scales, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "When do you feel heard, respected, and supported in this relationship or family setting?"
+          "text": "Thinking about relationship conflict and violence research, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2207,13 +2207,13 @@
       "sourceInstrumentId": "connor-davidson-social-support-scale-variants",
       "slug": "connor-davidson-social-support-scale-variants",
       "domain": "Construct and exact version need verification",
-      "title": "Open Wellbeing and daily functioning guide",
+      "title": "Open reflection: Construct and exact version need verification",
       "description": "A free, independently written reflection guide to help organise observations about construct and exact version need verification. This is not Connor-Davidson Social Support Scale variants, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What parts of daily life currently give you energy, meaning, connection, or satisfaction?"
+          "text": "Thinking about construct and exact version need verification, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2242,13 +2242,13 @@
       "sourceInstrumentId": "copenhagen-burnout-inventory",
       "slug": "copenhagen-burnout-inventory",
       "domain": "Work-related, personal and client-related burnout",
-      "title": "Open Learning, work and career guide",
+      "title": "Open reflection: Work-related, personal and client-related burnout",
       "description": "A free, independently written reflection guide to help organise observations about work-related, personal and client-related burnout. This is not Copenhagen Burnout Inventory, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What activities or subjects interest you enough that you want to spend time learning more about them?"
+          "text": "Thinking about work-related, personal and client-related burnout, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2277,13 +2277,13 @@
       "sourceInstrumentId": "core-om",
       "slug": "core-om",
       "domain": "Psychological distress and treatment outcomes",
-      "title": "Open Mood and wellbeing guide",
+      "title": "Open reflection: Psychological distress and treatment outcomes",
       "description": "A free, independently written reflection guide to help organise observations about psychological distress and treatment outcomes. This is not CORE-OM, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Over the recent period, what changes have you noticed in your mood or emotional wellbeing?"
+          "text": "Thinking about psychological distress and treatment outcomes, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2312,13 +2312,13 @@
       "sourceInstrumentId": "csi-couples-satisfaction-index",
       "slug": "csi-couples-satisfaction-index",
       "domain": "Couples' relationship satisfaction",
-      "title": "Open Relationships and family guide",
+      "title": "Open reflection: Couples' relationship satisfaction",
       "description": "A free, independently written reflection guide to help organise observations about couples' relationship satisfaction. This is not CSI (Couples Satisfaction Index), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "When do you feel heard, respected, and supported in this relationship or family setting?"
+          "text": "Thinking about couples' relationship satisfaction, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2347,13 +2347,13 @@
       "sourceInstrumentId": "cvlt",
       "slug": "cvlt",
       "domain": "Verbal learning and memory",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Verbal learning and memory",
       "description": "A free, independently written reflection guide to help organise observations about verbal learning and memory. This is not CVLT, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about verbal learning and memory, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2382,13 +2382,13 @@
       "sourceInstrumentId": "d-kefs",
       "slug": "d-kefs",
       "domain": "Executive functioning",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Executive functioning",
       "description": "A free, independently written reflection guide to help organise observations about executive functioning. This is not D-KEFS, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about executive functioning, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2417,13 +2417,13 @@
       "sourceInstrumentId": "das-revised-dyadic-adjustment-scale",
       "slug": "das-revised-dyadic-adjustment-scale",
       "domain": "Relationship adjustment",
-      "title": "Open Relationships and family guide",
+      "title": "Open reflection: Relationship adjustment",
       "description": "A free, independently written reflection guide to help organise observations about relationship adjustment. This is not DAS / Revised Dyadic Adjustment Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "When do you feel heard, respected, and supported in this relationship or family setting?"
+          "text": "Thinking about relationship adjustment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2452,13 +2452,13 @@
       "sourceInstrumentId": "dass-21",
       "slug": "dass-21",
       "domain": "Depression, anxiety and stress symptoms",
-      "title": "Open Mood and wellbeing guide",
+      "title": "Open reflection: Depression, anxiety and stress symptoms",
       "description": "A free, independently written reflection guide to help organise observations about depression, anxiety and stress symptoms. This is not DASS-21, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Over the recent period, what changes have you noticed in your mood or emotional wellbeing?"
+          "text": "Thinking about depression, anxiety and stress symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2487,13 +2487,13 @@
       "sourceInstrumentId": "dast-10",
       "slug": "dast-10",
       "domain": "Drug-related problems",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Drug-related problems",
       "description": "A free, independently written reflection guide to help organise observations about drug-related problems. This is not DAST-10, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about drug-related problems, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2522,13 +2522,13 @@
       "sourceInstrumentId": "dcdq",
       "slug": "dcdq",
       "domain": "Developmental coordination screening",
-      "title": "Open Everyday attention and development guide",
+      "title": "Open reflection: Developmental coordination screening",
       "description": "A free, independently written reflection guide to help organise observations about developmental coordination screening. This is not DCDQ, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "In which everyday situations do attention, communication, sensory needs, routines, or organisation feel easiest or hardest?"
+          "text": "Thinking about developmental coordination screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2557,13 +2557,13 @@
       "sourceInstrumentId": "des-ii",
       "slug": "des-ii",
       "domain": "Dissociative experiences",
-      "title": "Open Stress and recovery guide",
+      "title": "Open reflection: Dissociative experiences",
       "description": "A free, independently written reflection guide to help organise observations about dissociative experiences. This is not DES-II, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Without describing any event you do not want to share, what effects of stress, loss, or difficult experiences are you noticing now?"
+          "text": "Thinking about dissociative experiences, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2592,13 +2592,13 @@
       "sourceInstrumentId": "digit-span",
       "slug": "digit-span",
       "domain": "Attention and working memory",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Attention and working memory",
       "description": "A free, independently written reflection guide to help organise observations about attention and working memory. This is not Digit Span, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about attention and working memory, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2627,13 +2627,13 @@
       "sourceInstrumentId": "diva-5",
       "slug": "diva-5",
       "domain": "Adult ADHD diagnostic interview",
-      "title": "Open Preparing for a clinical conversation guide",
+      "title": "Open reflection: Adult ADHD diagnostic interview",
       "description": "A free, independently written reflection guide to help organise observations about adult adhd diagnostic interview. This is not DIVA-5, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What main concern or change led you to consider a professional assessment?"
+          "text": "Thinking about adult adhd diagnostic interview, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2662,13 +2662,13 @@
       "sourceInstrumentId": "docs",
       "slug": "docs",
       "domain": "Dimensional obsessive-compulsive symptoms",
-      "title": "Open Anxiety and coping guide",
+      "title": "Open reflection: Dimensional obsessive-compulsive symptoms",
       "description": "A free, independently written reflection guide to help organise observations about dimensional obsessive-compulsive symptoms. This is not DOCS, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What situations, thoughts, or uncertainties tend to bring up worry or fear for you?"
+          "text": "Thinking about dimensional obsessive-compulsive symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2697,13 +2697,13 @@
       "sourceInstrumentId": "dss-b",
       "slug": "dss-b",
       "domain": "Brief dissociative symptom assessment",
-      "title": "Open Stress and recovery guide",
+      "title": "Open reflection: Brief dissociative symptom assessment",
       "description": "A free, independently written reflection guide to help organise observations about brief dissociative symptom assessment. This is not DSS-B, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Without describing any event you do not want to share, what effects of stress, loss, or difficult experiences are you noticing now?"
+          "text": "Thinking about brief dissociative symptom assessment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2732,13 +2732,13 @@
       "sourceInstrumentId": "ecr-r",
       "slug": "ecr-r",
       "domain": "Adult attachment dimensions",
-      "title": "Open Personal patterns and relationships guide",
+      "title": "Open reflection: Adult attachment dimensions",
       "description": "A free, independently written reflection guide to help organise observations about adult attachment dimensions. This is not ECR-R, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What patterns in your reactions, preferences, or relationships have you noticed across different situations?"
+          "text": "Thinking about adult attachment dimensions, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2767,13 +2767,13 @@
       "sourceInstrumentId": "ede-q",
       "slug": "ede-q",
       "domain": "Eating-disorder symptoms",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Eating-disorder symptoms",
       "description": "A free, independently written reflection guide to help organise observations about eating-disorder symptoms. This is not EDE-Q, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about eating-disorder symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2802,13 +2802,13 @@
       "sourceInstrumentId": "ess-epworth-sleepiness-scale",
       "slug": "ess-epworth-sleepiness-scale",
       "domain": "Daytime sleepiness",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Daytime sleepiness",
       "description": "A free, independently written reflection guide to help organise observations about daytime sleepiness. This is not ESS (Epworth Sleepiness Scale), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about daytime sleepiness, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2837,13 +2837,13 @@
       "sourceInstrumentId": "experiences-in-close-relationships-scales",
       "slug": "experiences-in-close-relationships-scales",
       "domain": "Attachment-related anxiety and avoidance",
-      "title": "Open Personal patterns and relationships guide",
+      "title": "Open reflection: Attachment-related anxiety and avoidance",
       "description": "A free, independently written reflection guide to help organise observations about attachment-related anxiety and avoidance. This is not Experiences in Close Relationships scales, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What patterns in your reactions, preferences, or relationships have you noticed across different situations?"
+          "text": "Thinking about attachment-related anxiety and avoidance, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2872,13 +2872,13 @@
       "sourceInstrumentId": "faces-iv",
       "slug": "faces-iv",
       "domain": "Family functioning",
-      "title": "Open Relationships and family guide",
+      "title": "Open reflection: Family functioning",
       "description": "A free, independently written reflection guide to help organise observations about family functioning. This is not FACES-IV, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "When do you feel heard, respected, and supported in this relationship or family setting?"
+          "text": "Thinking about family functioning, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2907,13 +2907,13 @@
       "sourceInstrumentId": "fagerstrom-test",
       "slug": "fagerstrom-test",
       "domain": "Nicotine dependence",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Nicotine dependence",
       "description": "A free, independently written reflection guide to help organise observations about nicotine dependence. This is not Fagerström Test, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about nicotine dependence, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2942,13 +2942,13 @@
       "sourceInstrumentId": "family-apgar",
       "slug": "family-apgar",
       "domain": "Perceived family functioning",
-      "title": "Open Relationships and family guide",
+      "title": "Open reflection: Perceived family functioning",
       "description": "A free, independently written reflection guide to help organise observations about perceived family functioning. This is not Family APGAR, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "When do you feel heard, respected, and supported in this relationship or family setting?"
+          "text": "Thinking about perceived family functioning, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -2977,13 +2977,13 @@
       "sourceInstrumentId": "flourishing-scale",
       "slug": "flourishing-scale",
       "domain": "Psychological flourishing",
-      "title": "Open Wellbeing and daily functioning guide",
+      "title": "Open reflection: Psychological flourishing",
       "description": "A free, independently written reflection guide to help organise observations about psychological flourishing. This is not Flourishing Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What parts of daily life currently give you energy, meaning, connection, or satisfaction?"
+          "text": "Thinking about psychological flourishing, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3012,13 +3012,13 @@
       "sourceInstrumentId": "fq-fear-questionnaire",
       "slug": "fq-fear-questionnaire",
       "domain": "Phobic avoidance",
-      "title": "Open Anxiety and coping guide",
+      "title": "Open reflection: Phobic avoidance",
       "description": "A free, independently written reflection guide to help organise observations about phobic avoidance. This is not FQ (Fear Questionnaire), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What situations, thoughts, or uncertainties tend to bring up worry or fear for you?"
+          "text": "Thinking about phobic avoidance, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3047,13 +3047,13 @@
       "sourceInstrumentId": "general-self-efficacy-scale",
       "slug": "general-self-efficacy-scale",
       "domain": "Perceived self-efficacy",
-      "title": "Open Wellbeing and daily functioning guide",
+      "title": "Open reflection: Perceived self-efficacy",
       "description": "A free, independently written reflection guide to help organise observations about perceived self-efficacy. This is not General Self-Efficacy Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What parts of daily life currently give you energy, meaning, connection, or satisfaction?"
+          "text": "Thinking about perceived self-efficacy, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3082,13 +3082,13 @@
       "sourceInstrumentId": "ghq-12",
       "slug": "ghq-12",
       "domain": "General mental-health screening",
-      "title": "Open Mood and wellbeing guide",
+      "title": "Open reflection: General mental-health screening",
       "description": "A free, independently written reflection guide to help organise observations about general mental-health screening. This is not GHQ-12, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Over the recent period, what changes have you noticed in your mood or emotional wellbeing?"
+          "text": "Thinking about general mental-health screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3117,13 +3117,13 @@
       "sourceInstrumentId": "hads",
       "slug": "hads",
       "domain": "Anxiety and depression in medical settings",
-      "title": "Open Mood and wellbeing guide",
+      "title": "Open reflection: Anxiety and depression in medical settings",
       "description": "A free, independently written reflection guide to help organise observations about anxiety and depression in medical settings. This is not HADS, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Over the recent period, what changes have you noticed in your mood or emotional wellbeing?"
+          "text": "Thinking about anxiety and depression in medical settings, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3152,13 +3152,13 @@
       "sourceInstrumentId": "hcl-32",
       "slug": "hcl-32",
       "domain": "Hypomanic symptoms",
-      "title": "Open Mood patterns and support guide",
+      "title": "Open reflection: Hypomanic symptoms",
       "description": "A free, independently written reflection guide to help organise observations about hypomanic symptoms. This is not HCL-32, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What changes, if any, have you noticed in mood, energy, sleep, or activity over time?"
+          "text": "Thinking about hypomanic symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3187,13 +3187,13 @@
       "sourceInstrumentId": "hexaco-pi-r",
       "slug": "hexaco-pi-r",
       "domain": "Six-factor personality model",
-      "title": "Open Personal patterns and relationships guide",
+      "title": "Open reflection: Six-factor personality model",
       "description": "A free, independently written reflection guide to help organise observations about six-factor personality model. This is not HEXACO-PI-R, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What patterns in your reactions, preferences, or relationships have you noticed across different situations?"
+          "text": "Thinking about six-factor personality model, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3222,13 +3222,13 @@
       "sourceInstrumentId": "holland-riasec-measures",
       "slug": "holland-riasec-measures",
       "domain": "Career-interest profiles",
-      "title": "Open Learning, work and career guide",
+      "title": "Open reflection: Career-interest profiles",
       "description": "A free, independently written reflection guide to help organise observations about career-interest profiles. This is not Holland RIASEC measures, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What activities or subjects interest you enough that you want to spend time learning more about them?"
+          "text": "Thinking about career-interest profiles, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3257,13 +3257,13 @@
       "sourceInstrumentId": "icg-inventory-of-complicated-grief",
       "slug": "icg-inventory-of-complicated-grief",
       "domain": "Complicated-grief symptom assessment",
-      "title": "Open Stress and recovery guide",
+      "title": "Open reflection: Complicated-grief symptom assessment; version and intended use require verification",
       "description": "A free, independently written reflection guide to help organise observations about complicated-grief symptom assessment. This is not ICG (Inventory of Complicated Grief), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Without describing any event you do not want to share, what effects of stress, loss, or difficult experiences are you noticing now?"
+          "text": "Thinking about complicated-grief symptom assessment; version and intended use require verification, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3292,13 +3292,13 @@
       "sourceInstrumentId": "ies-r",
       "slug": "ies-r",
       "domain": "Post-traumatic stress symptoms",
-      "title": "Open Stress and recovery guide",
+      "title": "Open reflection: Post-traumatic stress symptoms",
       "description": "A free, independently written reflection guide to help organise observations about post-traumatic stress symptoms. This is not IES-R, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Without describing any event you do not want to share, what effects of stress, loss, or difficult experiences are you noticing now?"
+          "text": "Thinking about post-traumatic stress symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3327,13 +3327,13 @@
       "sourceInstrumentId": "iip-32",
       "slug": "iip-32",
       "domain": "Interpersonal problems",
-      "title": "Open Personal patterns and relationships guide",
+      "title": "Open reflection: Interpersonal problems",
       "description": "A free, independently written reflection guide to help organise observations about interpersonal problems. This is not IIP-32, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What patterns in your reactions, preferences, or relationships have you noticed across different situations?"
+          "text": "Thinking about interpersonal problems, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3362,13 +3362,13 @@
       "sourceInstrumentId": "internet-gaming-disorder-scale",
       "slug": "internet-gaming-disorder-scale",
       "domain": "Gaming-related symptoms",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Gaming-related symptoms",
       "description": "A free, independently written reflection guide to help organise observations about gaming-related symptoms. This is not Internet Gaming Disorder Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about gaming-related symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3397,13 +3397,13 @@
       "sourceInstrumentId": "ipip-scales",
       "slug": "ipip-scales",
       "domain": "Public-domain personality measures",
-      "title": "Open Personal patterns and relationships guide",
+      "title": "Open reflection: Public-domain personality measures; verify the exact scale and terms",
       "description": "A free, independently written reflection guide to help organise observations about public-domain personality measures. This is not IPIP scales, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What patterns in your reactions, preferences, or relationships have you noticed across different situations?"
+          "text": "Thinking about public-domain personality measures; verify the exact scale and terms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3432,13 +3432,13 @@
       "sourceInstrumentId": "isi-insomnia-severity-index",
       "slug": "isi-insomnia-severity-index",
       "domain": "Insomnia severity",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Insomnia severity",
       "description": "A free, independently written reflection guide to help organise observations about insomnia severity. This is not ISI (Insomnia Severity Index), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about insomnia severity, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3467,13 +3467,13 @@
       "sourceInstrumentId": "itq",
       "slug": "itq",
       "domain": "ICD-11 PTSD and complex PTSD symptoms",
-      "title": "Open Stress and recovery guide",
+      "title": "Open reflection: ICD-11 PTSD and complex PTSD symptoms",
       "description": "A free, independently written reflection guide to help organise observations about icd-11 ptsd and complex ptsd symptoms. This is not ITQ, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Without describing any event you do not want to share, what effects of stress, loss, or difficult experiences are you noticing now?"
+          "text": "Thinking about icd-11 ptsd and complex ptsd symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3502,13 +3502,13 @@
       "sourceInstrumentId": "k-sads-pl",
       "slug": "k-sads-pl",
       "domain": "Child and adolescent diagnostic interview",
-      "title": "Open Preparing for a clinical conversation guide",
+      "title": "Open reflection: Child and adolescent diagnostic interview",
       "description": "A free, independently written reflection guide to help organise observations about child and adolescent diagnostic interview. This is not K-SADS-PL, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What main concern or change led you to consider a professional assessment?"
+          "text": "Thinking about child and adolescent diagnostic interview, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3537,13 +3537,13 @@
       "sourceInstrumentId": "k10",
       "slug": "k10",
       "domain": "General psychological distress",
-      "title": "Open Mood and wellbeing guide",
+      "title": "Open reflection: General psychological distress",
       "description": "A free, independently written reflection guide to help organise observations about general psychological distress. This is not K10, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Over the recent period, what changes have you noticed in your mood or emotional wellbeing?"
+          "text": "Thinking about general psychological distress, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3572,13 +3572,13 @@
       "sourceInstrumentId": "k6",
       "slug": "k6",
       "domain": "Brief psychological distress screening",
-      "title": "Open Mood and wellbeing guide",
+      "title": "Open reflection: Brief psychological distress screening",
       "description": "A free, independently written reflection guide to help organise observations about brief psychological distress screening. This is not K6, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Over the recent period, what changes have you noticed in your mood or emotional wellbeing?"
+          "text": "Thinking about brief psychological distress screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3607,13 +3607,13 @@
       "sourceInstrumentId": "kbit-2",
       "slug": "kbit-2",
       "domain": "Brief intelligence assessment",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Brief intelligence assessment",
       "description": "A free, independently written reflection guide to help organise observations about brief intelligence assessment. This is not KBIT-2, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about brief intelligence assessment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3642,13 +3642,13 @@
       "sourceInstrumentId": "learning-and-study-strategies-inventory",
       "slug": "learning-and-study-strategies-inventory",
       "domain": "Study strategies",
-      "title": "Open Learning, work and career guide",
+      "title": "Open reflection: Study strategies",
       "description": "A free, independently written reflection guide to help organise observations about study strategies. This is not Learning and Study Strategies Inventory, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What activities or subjects interest you enough that you want to spend time learning more about them?"
+          "text": "Thinking about study strategies, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3677,13 +3677,13 @@
       "sourceInstrumentId": "lsas",
       "slug": "lsas",
       "domain": "Social anxiety and avoidance",
-      "title": "Open Anxiety and coping guide",
+      "title": "Open reflection: Social anxiety and avoidance",
       "description": "A free, independently written reflection guide to help organise observations about social anxiety and avoidance. This is not LSAS, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What situations, thoughts, or uncertainties tend to bring up worry or fear for you?"
+          "text": "Thinking about social anxiety and avoidance, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3712,13 +3712,13 @@
       "sourceInstrumentId": "lsns-6",
       "slug": "lsns-6",
       "domain": "Social network and isolation",
-      "title": "Open Relationships and family guide",
+      "title": "Open reflection: Social network and isolation",
       "description": "A free, independently written reflection guide to help organise observations about social network and isolation. This is not LSNS-6, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "When do you feel heard, respected, and supported in this relationship or family setting?"
+          "text": "Thinking about social network and isolation, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3747,13 +3747,13 @@
       "sourceInstrumentId": "mcmi-iv",
       "slug": "mcmi-iv",
       "domain": "Clinical personality and psychopathology assessment",
-      "title": "Open Personal patterns and relationships guide",
+      "title": "Open reflection: Clinical personality and psychopathology assessment",
       "description": "A free, independently written reflection guide to help organise observations about clinical personality and psychopathology assessment. This is not MCMI-IV, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What patterns in your reactions, preferences, or relationships have you noticed across different situations?"
+          "text": "Thinking about clinical personality and psychopathology assessment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3782,13 +3782,13 @@
       "sourceInstrumentId": "mdq",
       "slug": "mdq",
       "domain": "Bipolar-spectrum screening",
-      "title": "Open Mood patterns and support guide",
+      "title": "Open reflection: Bipolar-spectrum screening",
       "description": "A free, independently written reflection guide to help organise observations about bipolar-spectrum screening. This is not MDQ, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What changes, if any, have you noticed in mood, energy, sleep, or activity over time?"
+          "text": "Thinking about bipolar-spectrum screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3817,13 +3817,13 @@
       "sourceInstrumentId": "meaning-in-life-questionnaire",
       "slug": "meaning-in-life-questionnaire",
       "domain": "Meaning and purpose",
-      "title": "Open Wellbeing and daily functioning guide",
+      "title": "Open reflection: Meaning and purpose",
       "description": "A free, independently written reflection guide to help organise observations about meaning and purpose. This is not Meaning in Life Questionnaire, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What parts of daily life currently give you energy, meaning, connection, or satisfaction?"
+          "text": "Thinking about meaning and purpose, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3852,13 +3852,13 @@
       "sourceInstrumentId": "mfq",
       "slug": "mfq",
       "domain": "Mood symptoms in children and adolescents",
-      "title": "Open Child and adolescent wellbeing guide",
+      "title": "Open reflection: Mood symptoms in children and adolescents",
       "description": "A free, independently written reflection guide to help organise observations about mood symptoms in children and adolescents. This is not MFQ, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What strengths, interests, and situations bring out this child or young person's best?"
+          "text": "Thinking about mood symptoms in children and adolescents, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3887,13 +3887,13 @@
       "sourceInstrumentId": "mini",
       "slug": "mini",
       "domain": "Brief structured psychiatric interview",
-      "title": "Open Preparing for a clinical conversation guide",
+      "title": "Open reflection: Brief structured psychiatric interview",
       "description": "A free, independently written reflection guide to help organise observations about brief structured psychiatric interview. This is not MINI, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What main concern or change led you to consider a professional assessment?"
+          "text": "Thinking about brief structured psychiatric interview, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3922,13 +3922,13 @@
       "sourceInstrumentId": "mini-spin",
       "slug": "mini-spin",
       "domain": "Brief social anxiety screening",
-      "title": "Open Anxiety and coping guide",
+      "title": "Open reflection: Brief social anxiety screening",
       "description": "A free, independently written reflection guide to help organise observations about brief social anxiety screening. This is not Mini-SPIN, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What situations, thoughts, or uncertainties tend to bring up worry or fear for you?"
+          "text": "Thinking about brief social anxiety screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3957,13 +3957,13 @@
       "sourceInstrumentId": "mmse",
       "slug": "mmse",
       "domain": "Global cognitive screening",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Global cognitive screening",
       "description": "A free, independently written reflection guide to help organise observations about global cognitive screening. This is not MMSE, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about global cognitive screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -3992,13 +3992,13 @@
       "sourceInstrumentId": "moca",
       "slug": "moca",
       "domain": "Cognitive screening",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Cognitive screening",
       "description": "A free, independently written reflection guide to help organise observations about cognitive screening. This is not MoCA, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about cognitive screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4027,13 +4027,13 @@
       "sourceInstrumentId": "motivated-strategies-for-learning-questionnaire",
       "slug": "motivated-strategies-for-learning-questionnaire",
       "domain": "Learning motivation and strategies",
-      "title": "Open Learning, work and career guide",
+      "title": "Open reflection: Learning motivation and strategies",
       "description": "A free, independently written reflection guide to help organise observations about learning motivation and strategies. This is not Motivated Strategies for Learning Questionnaire, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What activities or subjects interest you enough that you want to spend time learning more about them?"
+          "text": "Thinking about learning motivation and strategies, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4062,13 +4062,13 @@
       "sourceInstrumentId": "msi-bpd",
       "slug": "msi-bpd",
       "domain": "Borderline personality symptom screening",
-      "title": "Open Personal patterns and relationships guide",
+      "title": "Open reflection: Borderline personality symptom screening",
       "description": "A free, independently written reflection guide to help organise observations about borderline personality symptom screening. This is not MSI-BPD, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What patterns in your reactions, preferences, or relationships have you noticed across different situations?"
+          "text": "Thinking about borderline personality symptom screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4097,13 +4097,13 @@
       "sourceInstrumentId": "mspss",
       "slug": "mspss",
       "domain": "Perceived social support",
-      "title": "Open Relationships and family guide",
+      "title": "Open reflection: Perceived social support",
       "description": "A free, independently written reflection guide to help organise observations about perceived social support. This is not MSPSS, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "When do you feel heard, respected, and supported in this relationship or family setting?"
+          "text": "Thinking about perceived social support, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4132,13 +4132,13 @@
       "sourceInstrumentId": "o-net-interest-profiler",
       "slug": "o-net-interest-profiler",
       "domain": "Career interests",
-      "title": "Open Learning, work and career guide",
+      "title": "Open reflection: Career interests",
       "description": "A free, independently written reflection guide to help organise observations about career interests. This is not O*NET Interest Profiler, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What activities or subjects interest you enough that you want to spend time learning more about them?"
+          "text": "Thinking about career interests, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4167,13 +4167,13 @@
       "sourceInstrumentId": "oci-r",
       "slug": "oci-r",
       "domain": "Obsessive-compulsive symptoms",
-      "title": "Open Anxiety and coping guide",
+      "title": "Open reflection: Obsessive-compulsive symptoms",
       "description": "A free, independently written reflection guide to help organise observations about obsessive-compulsive symptoms. This is not OCI-R, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What situations, thoughts, or uncertainties tend to bring up worry or fear for you?"
+          "text": "Thinking about obsessive-compulsive symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4202,13 +4202,13 @@
       "sourceInstrumentId": "oq-45-2",
       "slug": "oq-45-2",
       "domain": "Symptoms, interpersonal functioning and social-role functioning",
-      "title": "Open Mood and wellbeing guide",
+      "title": "Open reflection: Symptoms, interpersonal functioning and social-role functioning",
       "description": "A free, independently written reflection guide to help organise observations about symptoms, interpersonal functioning and social-role functioning. This is not OQ-45.2, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Over the recent period, what changes have you noticed in your mood or emotional wellbeing?"
+          "text": "Thinking about symptoms, interpersonal functioning and social-role functioning, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4237,13 +4237,13 @@
       "sourceInstrumentId": "panas",
       "slug": "panas",
       "domain": "Positive and negative affect",
-      "title": "Open Wellbeing and daily functioning guide",
+      "title": "Open reflection: Positive and negative affect",
       "description": "A free, independently written reflection guide to help organise observations about positive and negative affect. This is not PANAS, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What parts of daily life currently give you energy, meaning, connection, or satisfaction?"
+          "text": "Thinking about positive and negative affect, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4272,13 +4272,13 @@
       "sourceInstrumentId": "parenting-scale",
       "slug": "parenting-scale",
       "domain": "Parenting practices",
-      "title": "Open Relationships and family guide",
+      "title": "Open reflection: Parenting practices",
       "description": "A free, independently written reflection guide to help organise observations about parenting practices. This is not Parenting Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "When do you feel heard, respected, and supported in this relationship or family setting?"
+          "text": "Thinking about parenting practices, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4307,13 +4307,13 @@
       "sourceInstrumentId": "parenting-stress-index",
       "slug": "parenting-stress-index",
       "domain": "Parenting stress",
-      "title": "Open Relationships and family guide",
+      "title": "Open reflection: Parenting stress",
       "description": "A free, independently written reflection guide to help organise observations about parenting stress. This is not Parenting Stress Index, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "When do you feel heard, respected, and supported in this relationship or family setting?"
+          "text": "Thinking about parenting stress, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4342,13 +4342,13 @@
       "sourceInstrumentId": "pas-panic-and-agoraphobia-scale",
       "slug": "pas-panic-and-agoraphobia-scale",
       "domain": "Panic and agoraphobia symptoms",
-      "title": "Open Anxiety and coping guide",
+      "title": "Open reflection: Panic and agoraphobia symptoms",
       "description": "A free, independently written reflection guide to help organise observations about panic and agoraphobia symptoms. This is not PAS (Panic and Agoraphobia Scale), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What situations, thoughts, or uncertainties tend to bring up worry or fear for you?"
+          "text": "Thinking about panic and agoraphobia symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4377,13 +4377,13 @@
       "sourceInstrumentId": "pdss",
       "slug": "pdss",
       "domain": "Panic disorder severity",
-      "title": "Open Anxiety and coping guide",
+      "title": "Open reflection: Panic disorder severity",
       "description": "A free, independently written reflection guide to help organise observations about panic disorder severity. This is not PDSS, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What situations, thoughts, or uncertainties tend to bring up worry or fear for you?"
+          "text": "Thinking about panic disorder severity, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4412,13 +4412,13 @@
       "sourceInstrumentId": "pedsql",
       "slug": "pedsql",
       "domain": "Pediatric quality of life",
-      "title": "Open Child and adolescent wellbeing guide",
+      "title": "Open reflection: Pediatric quality of life",
       "description": "A free, independently written reflection guide to help organise observations about pediatric quality of life. This is not PedsQL, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What strengths, interests, and situations bring out this child or young person's best?"
+          "text": "Thinking about pediatric quality of life, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4447,13 +4447,13 @@
       "sourceInstrumentId": "perceived-stress-scale-pss-10",
       "slug": "perceived-stress-scale-pss-10",
       "domain": "Perceived stress",
-      "title": "Open Stress and recovery guide",
+      "title": "Open reflection: Perceived stress",
       "description": "A free, independently written reflection guide to help organise observations about perceived stress. This is not Perceived Stress Scale (PSS-10), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Without describing any event you do not want to share, what effects of stress, loss, or difficult experiences are you noticing now?"
+          "text": "Thinking about perceived stress, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4482,13 +4482,13 @@
       "sourceInstrumentId": "pg-13-r",
       "slug": "pg-13-r",
       "domain": "Prolonged grief symptoms",
-      "title": "Open Stress and recovery guide",
+      "title": "Open reflection: Prolonged grief symptoms",
       "description": "A free, independently written reflection guide to help organise observations about prolonged grief symptoms. This is not PG-13-R, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Without describing any event you do not want to share, what effects of stress, loss, or difficult experiences are you noticing now?"
+          "text": "Thinking about prolonged grief symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4517,13 +4517,13 @@
       "sourceInstrumentId": "pid-5",
       "slug": "pid-5",
       "domain": "Maladaptive personality traits",
-      "title": "Open Personal patterns and relationships guide",
+      "title": "Open reflection: Maladaptive personality traits",
       "description": "A free, independently written reflection guide to help organise observations about maladaptive personality traits. This is not PID-5, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What patterns in your reactions, preferences, or relationships have you noticed across different situations?"
+          "text": "Thinking about maladaptive personality traits, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4552,13 +4552,13 @@
       "sourceInstrumentId": "problem-gambling-severity-index-pgsi",
       "slug": "problem-gambling-severity-index-pgsi",
       "domain": "Gambling-related harm",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Gambling-related harm",
       "description": "A free, independently written reflection guide to help organise observations about gambling-related harm. This is not Problem Gambling Severity Index (PGSI), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about gambling-related harm, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4587,13 +4587,13 @@
       "sourceInstrumentId": "psc",
       "slug": "psc",
       "domain": "Pediatric psychosocial screening",
-      "title": "Open Child and adolescent wellbeing guide",
+      "title": "Open reflection: Pediatric psychosocial screening",
       "description": "A free, independently written reflection guide to help organise observations about pediatric psychosocial screening. This is not PSC, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What strengths, interests, and situations bring out this child or young person's best?"
+          "text": "Thinking about pediatric psychosocial screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4622,13 +4622,13 @@
       "sourceInstrumentId": "psqi",
       "slug": "psqi",
       "domain": "Sleep quality",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Sleep quality",
       "description": "A free, independently written reflection guide to help organise observations about sleep quality. This is not PSQI, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about sleep quality, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4657,13 +4657,13 @@
       "sourceInstrumentId": "pss-i-5",
       "slug": "pss-i-5",
       "domain": "PTSD clinician interview",
-      "title": "Open Stress and recovery guide",
+      "title": "Open reflection: PTSD clinician interview",
       "description": "A free, independently written reflection guide to help organise observations about ptsd clinician interview. This is not PSS-I-5, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Without describing any event you do not want to share, what effects of stress, loss, or difficult experiences are you noticing now?"
+          "text": "Thinking about ptsd clinician interview, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4692,13 +4692,13 @@
       "sourceInstrumentId": "pswq",
       "slug": "pswq",
       "domain": "Worry and its persistence",
-      "title": "Open Anxiety and coping guide",
+      "title": "Open reflection: Worry and its persistence",
       "description": "A free, independently written reflection guide to help organise observations about worry and its persistence. This is not PSWQ, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What situations, thoughts, or uncertainties tend to bring up worry or fear for you?"
+          "text": "Thinking about worry and its persistence, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4727,13 +4727,13 @@
       "sourceInstrumentId": "qids-sr",
       "slug": "qids-sr",
       "domain": "Depressive symptom severity",
-      "title": "Open Mood patterns and support guide",
+      "title": "Open reflection: Depressive symptom severity",
       "description": "A free, independently written reflection guide to help organise observations about depressive symptom severity. This is not QIDS-SR, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What changes, if any, have you noticed in mood, energy, sleep, or activity over time?"
+          "text": "Thinking about depressive symptom severity, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4762,13 +4762,13 @@
       "sourceInstrumentId": "raads-r",
       "slug": "raads-r",
       "domain": "Adult autism-related traits",
-      "title": "Open Everyday attention and development guide",
+      "title": "Open reflection: Adult autism-related traits; interpret cautiously",
       "description": "A free, independently written reflection guide to help organise observations about adult autism-related traits. This is not RAADS-R, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "In which everyday situations do attention, communication, sensory needs, routines, or organisation feel easiest or hardest?"
+          "text": "Thinking about adult autism-related traits; interpret cautiously, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4797,13 +4797,13 @@
       "sourceInstrumentId": "raven-s-progressive-matrices",
       "slug": "raven-s-progressive-matrices",
       "domain": "Nonverbal reasoning",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Nonverbal reasoning",
       "description": "A free, independently written reflection guide to help organise observations about nonverbal reasoning. This is not Raven's Progressive Matrices, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about nonverbal reasoning, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4832,13 +4832,13 @@
       "sourceInstrumentId": "ravlt",
       "slug": "ravlt",
       "domain": "Verbal learning and memory",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Verbal learning and memory",
       "description": "A free, independently written reflection guide to help organise observations about verbal learning and memory. This is not RAVLT, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about verbal learning and memory, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4867,13 +4867,13 @@
       "sourceInstrumentId": "rbans",
       "slug": "rbans",
       "domain": "Repeatable neuropsychological assessment",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Repeatable neuropsychological assessment",
       "description": "A free, independently written reflection guide to help organise observations about repeatable neuropsychological assessment. This is not RBANS, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about repeatable neuropsychological assessment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4902,13 +4902,13 @@
       "sourceInstrumentId": "rcads",
       "slug": "rcads",
       "domain": "Anxiety and depression in young people",
-      "title": "Open Child and adolescent wellbeing guide",
+      "title": "Open reflection: Anxiety and depression in young people",
       "description": "A free, independently written reflection guide to help organise observations about anxiety and depression in young people. This is not RCADS, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What strengths, interests, and situations bring out this child or young person's best?"
+          "text": "Thinking about anxiety and depression in young people, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4937,13 +4937,13 @@
       "sourceInstrumentId": "relationship-assessment-scale",
       "slug": "relationship-assessment-scale",
       "domain": "Relationship satisfaction",
-      "title": "Open Relationships and family guide",
+      "title": "Open reflection: Relationship satisfaction",
       "description": "A free, independently written reflection guide to help organise observations about relationship satisfaction. This is not Relationship Assessment Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "When do you feel heard, respected, and supported in this relationship or family setting?"
+          "text": "Thinking about relationship satisfaction, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -4972,13 +4972,13 @@
       "sourceInstrumentId": "rey-complex-figure-test",
       "slug": "rey-complex-figure-test",
       "domain": "Visuospatial memory and construction",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Visuospatial memory and construction",
       "description": "A free, independently written reflection guide to help organise observations about visuospatial memory and construction. This is not Rey Complex Figure Test, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about visuospatial memory and construction, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5007,13 +5007,13 @@
       "sourceInstrumentId": "rosenberg-self-esteem-scale",
       "slug": "rosenberg-self-esteem-scale",
       "domain": "Self-esteem",
-      "title": "Open Wellbeing and daily functioning guide",
+      "title": "Open reflection: Self-esteem",
       "description": "A free, independently written reflection guide to help organise observations about self-esteem. This is not Rosenberg Self-Esteem Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What parts of daily life currently give you energy, meaning, connection, or satisfaction?"
+          "text": "Thinking about self-esteem, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5042,13 +5042,13 @@
       "sourceInstrumentId": "sapas",
       "slug": "sapas",
       "domain": "Brief personality-disorder screening",
-      "title": "Open Personal patterns and relationships guide",
+      "title": "Open reflection: Brief personality-disorder screening",
       "description": "A free, independently written reflection guide to help organise observations about brief personality-disorder screening. This is not SAPAS, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What patterns in your reactions, preferences, or relationships have you noticed across different situations?"
+          "text": "Thinking about brief personality-disorder screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5077,13 +5077,13 @@
       "sourceInstrumentId": "satisfaction-with-life-scale",
       "slug": "satisfaction-with-life-scale",
       "domain": "Life satisfaction",
-      "title": "Open Wellbeing and daily functioning guide",
+      "title": "Open reflection: Life satisfaction",
       "description": "A free, independently written reflection guide to help organise observations about life satisfaction. This is not Satisfaction With Life Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What parts of daily life currently give you energy, meaning, connection, or satisfaction?"
+          "text": "Thinking about life satisfaction, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5112,13 +5112,13 @@
       "sourceInstrumentId": "sbq-r",
       "slug": "sbq-r",
       "domain": "Suicide-related risk screening",
-      "title": "Open Mood patterns and support guide",
+      "title": "Open reflection: Suicide-related risk screening",
       "description": "A free, independently written reflection guide to help organise observations about suicide-related risk screening. This is not SBQ-R, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What changes, if any, have you noticed in mood, energy, sleep, or activity over time?"
+          "text": "Thinking about suicide-related risk screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5147,13 +5147,13 @@
       "sourceInstrumentId": "scan",
       "slug": "scan",
       "domain": "Clinical assessment of neuropsychiatric disorders",
-      "title": "Open Preparing for a clinical conversation guide",
+      "title": "Open reflection: Clinical assessment of neuropsychiatric disorders",
       "description": "A free, independently written reflection guide to help organise observations about clinical assessment of neuropsychiatric disorders. This is not SCAN, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What main concern or change led you to consider a professional assessment?"
+          "text": "Thinking about clinical assessment of neuropsychiatric disorders, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5182,13 +5182,13 @@
       "sourceInstrumentId": "scared",
       "slug": "scared",
       "domain": "Childhood anxiety symptoms",
-      "title": "Open Child and adolescent wellbeing guide",
+      "title": "Open reflection: Childhood anxiety symptoms",
       "description": "A free, independently written reflection guide to help organise observations about childhood anxiety symptoms. This is not SCARED, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What strengths, interests, and situations bring out this child or young person's best?"
+          "text": "Thinking about childhood anxiety symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5217,13 +5217,13 @@
       "sourceInstrumentId": "scoff",
       "slug": "scoff",
       "domain": "Brief eating-disorder screening",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Brief eating-disorder screening",
       "description": "A free, independently written reflection guide to help organise observations about brief eating-disorder screening. This is not SCOFF, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about brief eating-disorder screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5252,13 +5252,13 @@
       "sourceInstrumentId": "scq",
       "slug": "scq",
       "domain": "Social communication screening",
-      "title": "Open Everyday attention and development guide",
+      "title": "Open reflection: Social communication screening",
       "description": "A free, independently written reflection guide to help organise observations about social communication screening. This is not SCQ, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "In which everyday situations do attention, communication, sensory needs, routines, or organisation feel easiest or hardest?"
+          "text": "Thinking about social communication screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5287,13 +5287,13 @@
       "sourceInstrumentId": "sds",
       "slug": "sds",
       "domain": "Functional impairment",
-      "title": "Open Mood and wellbeing guide",
+      "title": "Open reflection: Functional impairment",
       "description": "A free, independently written reflection guide to help organise observations about functional impairment. This is not Sheehan Disability Scale (SDS), does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "Over the recent period, what changes have you noticed in your mood or emotional wellbeing?"
+          "text": "Thinking about functional impairment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5322,13 +5322,13 @@
       "sourceInstrumentId": "sitbi",
       "slug": "sitbi",
       "domain": "Structured assessment of self-injurious thoughts and behaviors",
-      "title": "Open Mood patterns and support guide",
+      "title": "Open reflection: Structured assessment of self-injurious thoughts and behaviors",
       "description": "A free, independently written reflection guide to help organise observations about structured assessment of self-injurious thoughts and behaviors. This is not SITBI, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What changes, if any, have you noticed in mood, energy, sleep, or activity over time?"
+          "text": "Thinking about structured assessment of self-injurious thoughts and behaviors, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5357,13 +5357,13 @@
       "sourceInstrumentId": "snap-iv",
       "slug": "snap-iv",
       "domain": "ADHD and oppositional symptom ratings",
-      "title": "Open Everyday attention and development guide",
+      "title": "Open reflection: ADHD and oppositional symptom ratings",
       "description": "A free, independently written reflection guide to help organise observations about adhd and oppositional symptom ratings. This is not SNAP-IV, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "In which everyday situations do attention, communication, sensory needs, routines, or organisation feel easiest or hardest?"
+          "text": "Thinking about adhd and oppositional symptom ratings, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5392,13 +5392,13 @@
       "sourceInstrumentId": "spin",
       "slug": "spin",
       "domain": "Social anxiety symptoms",
-      "title": "Open Anxiety and coping guide",
+      "title": "Open reflection: Social anxiety symptoms",
       "description": "A free, independently written reflection guide to help organise observations about social anxiety symptoms. This is not SPIN, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What situations, thoughts, or uncertainties tend to bring up worry or fear for you?"
+          "text": "Thinking about social anxiety symptoms, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5427,13 +5427,13 @@
       "sourceInstrumentId": "srs-2",
       "slug": "srs-2",
       "domain": "Social responsiveness",
-      "title": "Open Everyday attention and development guide",
+      "title": "Open reflection: Social responsiveness",
       "description": "A free, independently written reflection guide to help organise observations about social responsiveness. This is not SRS-2, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "In which everyday situations do attention, communication, sensory needs, routines, or organisation feel easiest or hardest?"
+          "text": "Thinking about social responsiveness, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5462,13 +5462,13 @@
       "sourceInstrumentId": "stop-bang",
       "slug": "stop-bang",
       "domain": "Obstructive sleep apnea risk screening",
-      "title": "Open Habits and health behaviours guide",
+      "title": "Open reflection: Obstructive sleep apnea risk screening",
       "description": "A free, independently written reflection guide to help organise observations about obstructive sleep apnea risk screening. This is not STOP-Bang, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What pattern or habit are you interested in understanding, and in which situations does it tend to occur?"
+          "text": "Thinking about obstructive sleep apnea risk screening, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5497,13 +5497,13 @@
       "sourceInstrumentId": "strong-interest-inventory",
       "slug": "strong-interest-inventory",
       "domain": "Vocational interests",
-      "title": "Open Learning, work and career guide",
+      "title": "Open reflection: Vocational interests",
       "description": "A free, independently written reflection guide to help organise observations about vocational interests. This is not Strong Interest Inventory, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What activities or subjects interest you enough that you want to spend time learning more about them?"
+          "text": "Thinking about vocational interests, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5532,13 +5532,13 @@
       "sourceInstrumentId": "stroop-tests",
       "slug": "stroop-tests",
       "domain": "Inhibition and interference control",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Inhibition and interference control",
       "description": "A free, independently written reflection guide to help organise observations about inhibition and interference control. This is not Stroop tests, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about inhibition and interference control, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5567,13 +5567,13 @@
       "sourceInstrumentId": "symbol-digit-modalities-test",
       "slug": "symbol-digit-modalities-test",
       "domain": "Processing speed",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Processing speed",
       "description": "A free, independently written reflection guide to help organise observations about processing speed. This is not Symbol Digit Modalities Test, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about processing speed, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5602,13 +5602,13 @@
       "sourceInstrumentId": "tomm",
       "slug": "tomm",
       "domain": "Performance validity assessment",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Performance validity assessment",
       "description": "A free, independently written reflection guide to help organise observations about performance validity assessment. This is not TOMM, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about performance validity assessment, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5637,13 +5637,13 @@
       "sourceInstrumentId": "trail-making-test",
       "slug": "trail-making-test",
       "domain": "Processing speed and executive functioning",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Processing speed and executive functioning",
       "description": "A free, independently written reflection guide to help organise observations about processing speed and executive functioning. This is not Trail Making Test, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about processing speed and executive functioning, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5672,13 +5672,13 @@
       "sourceInstrumentId": "trf",
       "slug": "trf",
       "domain": "Teacher-reported child behavior",
-      "title": "Open Child and adolescent wellbeing guide",
+      "title": "Open reflection: Teacher-reported child behavior",
       "description": "A free, independently written reflection guide to help organise observations about teacher-reported child behavior. This is not TRF, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What strengths, interests, and situations bring out this child or young person's best?"
+          "text": "Thinking about teacher-reported child behavior, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5707,13 +5707,13 @@
       "sourceInstrumentId": "ucla-loneliness-scale",
       "slug": "ucla-loneliness-scale",
       "domain": "Loneliness",
-      "title": "Open Relationships and family guide",
+      "title": "Open reflection: Loneliness",
       "description": "A free, independently written reflection guide to help organise observations about loneliness. This is not UCLA Loneliness Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "When do you feel heard, respected, and supported in this relationship or family setting?"
+          "text": "Thinking about loneliness, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5742,13 +5742,13 @@
       "sourceInstrumentId": "utrecht-work-engagement-scale",
       "slug": "utrecht-work-engagement-scale",
       "domain": "Work engagement",
-      "title": "Open Learning, work and career guide",
+      "title": "Open reflection: Work engagement",
       "description": "A free, independently written reflection guide to help organise observations about work engagement. This is not Utrecht Work Engagement Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What activities or subjects interest you enough that you want to spend time learning more about them?"
+          "text": "Thinking about work engagement, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5777,13 +5777,13 @@
       "sourceInstrumentId": "vanderbilt-scales",
       "slug": "vanderbilt-scales",
       "domain": "ADHD and related behavioral concerns in children",
-      "title": "Open Everyday attention and development guide",
+      "title": "Open reflection: ADHD and related behavioral concerns in children",
       "description": "A free, independently written reflection guide to help organise observations about adhd and related behavioral concerns in children. This is not Vanderbilt scales, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "In which everyday situations do attention, communication, sensory needs, routines, or organisation feel easiest or hardest?"
+          "text": "Thinking about adhd and related behavioral concerns in children, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5812,13 +5812,13 @@
       "sourceInstrumentId": "whoqol-bref",
       "slug": "whoqol-bref",
       "domain": "Quality of life",
-      "title": "Open Wellbeing and daily functioning guide",
+      "title": "Open reflection: Quality of life",
       "description": "A free, independently written reflection guide to help organise observations about quality of life. This is not WHOQOL-BREF, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What parts of daily life currently give you energy, meaning, connection, or satisfaction?"
+          "text": "Thinking about quality of life, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5847,13 +5847,13 @@
       "sourceInstrumentId": "wisconsin-card-sorting-test",
       "slug": "wisconsin-card-sorting-test",
       "domain": "Cognitive flexibility and rule shifting",
-      "title": "Open Everyday cognitive functioning guide",
+      "title": "Open reflection: Cognitive flexibility and rule shifting",
       "description": "A free, independently written reflection guide to help organise observations about cognitive flexibility and rule shifting. This is not Wisconsin Card Sorting Test, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What everyday memory, attention, language, planning, or problem-solving task has felt difficult recently?"
+          "text": "Thinking about cognitive flexibility and rule shifting, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5882,13 +5882,13 @@
       "sourceInstrumentId": "work-and-social-adjustment-scale",
       "slug": "work-and-social-adjustment-scale",
       "domain": "Functional impact on work and daily life",
-      "title": "Open Learning, work and career guide",
+      "title": "Open reflection: Functional impact on work and daily life",
       "description": "A free, independently written reflection guide to help organise observations about functional impact on work and daily life. This is not Work and Social Adjustment Scale, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What activities or subjects interest you enough that you want to spend time learning more about them?"
+          "text": "Thinking about functional impact on work and daily life, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5917,13 +5917,13 @@
       "sourceInstrumentId": "work-related-stress-measures",
       "slug": "work-related-stress-measures",
       "domain": "Occupational stress",
-      "title": "Open Learning, work and career guide",
+      "title": "Open reflection: Occupational stress",
       "description": "A free, independently written reflection guide to help organise observations about occupational stress. This is not Work-related stress measures, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What activities or subjects interest you enough that you want to spend time learning more about them?"
+          "text": "Thinking about occupational stress, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5952,13 +5952,13 @@
       "sourceInstrumentId": "ymrs",
       "slug": "ymrs",
       "domain": "Clinician-rated mania severity",
-      "title": "Open Mood patterns and support guide",
+      "title": "Open reflection: Clinician-rated mania severity",
       "description": "A free, independently written reflection guide to help organise observations about clinician-rated mania severity. This is not YMRS, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What changes, if any, have you noticed in mood, energy, sleep, or activity over time?"
+          "text": "Thinking about clinician-rated mania severity, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,
@@ -5987,13 +5987,13 @@
       "sourceInstrumentId": "ysr",
       "slug": "ysr",
       "domain": "Youth self-report",
-      "title": "Open Child and adolescent wellbeing guide",
+      "title": "Open reflection: Youth self-report",
       "description": "A free, independently written reflection guide to help organise observations about youth self-report. This is not YSR, does not reproduce its items or scoring, and is not a validated substitute.",
       "intendedUse": "Optional self-reflection and preparation for a conversation with an appropriately qualified professional only. This original guide has not been psychometrically validated and is not intended for diagnosis, screening decisions, treatment decisions, eligibility decisions, or use with population norms.",
       "questions": [
         {
           "id": 1,
-          "text": "What strengths, interests, and situations bring out this child or young person's best?"
+          "text": "Thinking about youth self-report, what have you noticed in your own life or in the person you support?"
         },
         {
           "id": 2,

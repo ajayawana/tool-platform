@@ -8931,6 +8931,312 @@
         "citation": null,
         "route": null
       }
+    },
+    {
+      "instrument_id": "phq-4",
+      "official_name": "Patient Health Questionnaire-4 (PHQ-4)",
+      "main_purpose": "Ultra-brief anxiety and depression symptom screening",
+      "domains": [
+        {
+          "id": "mental-health-screening",
+          "label": "Mental health screening and symptom severity"
+        }
+      ],
+      "version": "Official source/version must be checked before implementation.",
+      "population": "Use only for the population specified by the official source; local language and population validity not independently assessed.",
+      "administration_mode": "Self-report; four items",
+      "language": "English source linked; translations and local validation not verified.",
+      "recall_period": "Past two weeks",
+      "permission_status": "NIH Common Data Element lists Copyright: No.",
+      "content_rights": "Source-linked catalogue access only. The exact official source is linked; Ozarbox has not reproduced questionnaire items or implemented scoring in this entry.",
+      "scoring_specification": "Not implemented in Ozarbox. Open the official source for the current instrument, instructions and scoring.",
+      "evidence_status": "Official source and rights statement identified; Ozarbox questionnaire transcription, scoring and software implementation not yet verified.",
+      "evidence_sources": [
+        "https://www.nih.gov/node/21506"
+      ],
+      "safety_rules": [
+        "Screening or clinician-rated assessment only; not a diagnosis.",
+        "Use the official source version and instructions; do not infer score meaning from this catalogue entry."
+      ],
+      "deployment_status": "catalogue-only",
+      "software_validation": "No in-app test or scoring module. Official source link only.",
+      "route": null,
+      "scoring_version": "Not implemented.",
+      "license_status": "NIH Common Data Element lists Copyright: No.",
+      "author_or_developer": "National Institutes of Health — PHQ-4 Common Data Element",
+      "language_validation_status": "No local-language or India-specific validation verified in this work.",
+      "qualification_requirements": "Use within the source's intended population and purpose.",
+      "intended_use_boundary": "Source link only. No questionnaire items or scoring are reproduced in Ozarbox; verify official instructions and professional requirements.",
+      "source_pdf": {
+        "status": "official-source-found-not-used",
+        "label": "Official source found · not digitized",
+        "source_url": "https://www.nih.gov/node/21506",
+        "version": "See official source",
+        "use_rights": "NIH Common Data Element lists Copyright: No.",
+        "implementation_status": "not-implemented",
+        "source_name": "National Institutes of Health — PHQ-4 Common Data Element",
+        "reason": "Source-linked in the portfolio only; no item transcription or scoring implementation.",
+        "implemented_from": null,
+        "citation": "Kroenke, K., Spitzer, R. L., Williams, J. B. W., & Löwe, B. (2009). An ultra-brief screening scale for anxiety and depression: the PHQ-4. Psychosomatics, 50(6), 613–621.",
+        "route": null
+      },
+      "access_url": "https://www.nih.gov/node/21506",
+      "access_label": "Open official source and rights information"
+    },
+    {
+      "instrument_id": "gds-15",
+      "official_name": "Geriatric Depression Scale — Short Form (GDS-15)",
+      "main_purpose": "Depressive symptoms in older adults",
+      "domains": [
+        {
+          "id": "mental-health-screening",
+          "label": "Mental health screening and symptom severity"
+        }
+      ],
+      "version": "Official source/version must be checked before implementation.",
+      "population": "Use only for the population specified by the official source; local language and population validity not independently assessed.",
+      "administration_mode": "Self-report; 15 yes/no items",
+      "language": "English source linked; translations and local validation not verified.",
+      "recall_period": "Generally current feelings; use official form instructions",
+      "permission_status": "American Psychological Association assessment guide identifies the GDS as public domain with no permission required.",
+      "content_rights": "Source-linked catalogue access only. The exact official source is linked; Ozarbox has not reproduced questionnaire items or implemented scoring in this entry.",
+      "scoring_specification": "Not implemented in Ozarbox. Open the official source for the current instrument, instructions and scoring.",
+      "evidence_status": "Official source and rights statement identified; Ozarbox questionnaire transcription, scoring and software implementation not yet verified.",
+      "evidence_sources": [
+        "https://www.apa.org/depression-guideline/assessment/"
+      ],
+      "safety_rules": [
+        "Screening or clinician-rated assessment only; not a diagnosis.",
+        "Use the official source version and instructions; do not infer score meaning from this catalogue entry."
+      ],
+      "deployment_status": "catalogue-only",
+      "software_validation": "No in-app test or scoring module. Official source link only.",
+      "route": null,
+      "scoring_version": "Not implemented.",
+      "license_status": "American Psychological Association assessment guide identifies the GDS as public domain with no permission required.",
+      "author_or_developer": "American Psychological Association — Depression Assessment Instruments",
+      "language_validation_status": "No local-language or India-specific validation verified in this work.",
+      "qualification_requirements": "Use within the source's intended population and purpose.",
+      "intended_use_boundary": "Source link only. No questionnaire items or scoring are reproduced in Ozarbox; verify official instructions and professional requirements.",
+      "source_pdf": {
+        "status": "official-source-found-not-used",
+        "label": "Official source found · not digitized",
+        "source_url": "https://www.apa.org/depression-guideline/assessment/",
+        "version": "See official source",
+        "use_rights": "American Psychological Association assessment guide identifies the GDS as public domain with no permission required.",
+        "implementation_status": "not-implemented",
+        "source_name": "American Psychological Association — Depression Assessment Instruments",
+        "reason": "Source-linked in the portfolio only; no item transcription or scoring implementation.",
+        "implemented_from": null,
+        "citation": "Sheikh, J. I., & Yesavage, J. A. (1986). Geriatric Depression Scale (GDS): recent evidence and development of a shorter version. Clinical Gerontology, 5(1–2), 165–173.",
+        "route": null
+      },
+      "access_url": "https://www.apa.org/depression-guideline/assessment/",
+      "access_label": "Open official source and rights information"
+    },
+    {
+      "instrument_id": "gds-30",
+      "official_name": "Geriatric Depression Scale — 30-item form (GDS-30)",
+      "main_purpose": "Depressive symptoms in older adults",
+      "domains": [
+        {
+          "id": "mental-health-screening",
+          "label": "Mental health screening and symptom severity"
+        }
+      ],
+      "version": "Official source/version must be checked before implementation.",
+      "population": "Use only for the population specified by the official source; local language and population validity not independently assessed.",
+      "administration_mode": "Self-report; 30 yes/no items",
+      "language": "English source linked; translations and local validation not verified.",
+      "recall_period": "Generally current feelings; use official form instructions",
+      "permission_status": "American Psychological Association assessment guide identifies the GDS as public domain with no permission required.",
+      "content_rights": "Source-linked catalogue access only. The exact official source is linked; Ozarbox has not reproduced questionnaire items or implemented scoring in this entry.",
+      "scoring_specification": "Not implemented in Ozarbox. Open the official source for the current instrument, instructions and scoring.",
+      "evidence_status": "Official source and rights statement identified; Ozarbox questionnaire transcription, scoring and software implementation not yet verified.",
+      "evidence_sources": [
+        "https://www.apa.org/depression-guideline/assessment/"
+      ],
+      "safety_rules": [
+        "Screening or clinician-rated assessment only; not a diagnosis.",
+        "Use the official source version and instructions; do not infer score meaning from this catalogue entry."
+      ],
+      "deployment_status": "catalogue-only",
+      "software_validation": "No in-app test or scoring module. Official source link only.",
+      "route": null,
+      "scoring_version": "Not implemented.",
+      "license_status": "American Psychological Association assessment guide identifies the GDS as public domain with no permission required.",
+      "author_or_developer": "American Psychological Association — Depression Assessment Instruments",
+      "language_validation_status": "No local-language or India-specific validation verified in this work.",
+      "qualification_requirements": "Use within the source's intended population and purpose.",
+      "intended_use_boundary": "Source link only. No questionnaire items or scoring are reproduced in Ozarbox; verify official instructions and professional requirements.",
+      "source_pdf": {
+        "status": "official-source-found-not-used",
+        "label": "Official source found · not digitized",
+        "source_url": "https://www.apa.org/depression-guideline/assessment/",
+        "version": "See official source",
+        "use_rights": "American Psychological Association assessment guide identifies the GDS as public domain with no permission required.",
+        "implementation_status": "not-implemented",
+        "source_name": "American Psychological Association — Depression Assessment Instruments",
+        "reason": "Source-linked in the portfolio only; no item transcription or scoring implementation.",
+        "implemented_from": null,
+        "citation": "Yesavage, J. A., et al. (1982–1983). Development and validation of a geriatric depression screening scale: a preliminary report. Journal of Psychiatric Research, 17(1), 37–49.",
+        "route": null
+      },
+      "access_url": "https://www.apa.org/depression-guideline/assessment/",
+      "access_label": "Open official source and rights information"
+    },
+    {
+      "instrument_id": "hrqol-4",
+      "official_name": "CDC Healthy Days Core Module (HRQOL-4)",
+      "main_purpose": "Health-related quality of life and healthy days",
+      "domains": [
+        {
+          "id": "mental-health-screening",
+          "label": "Mental health screening and symptom severity"
+        }
+      ],
+      "version": "Official source/version must be checked before implementation.",
+      "population": "Use only for the population specified by the official source; local language and population validity not independently assessed.",
+      "administration_mode": "Survey; four items",
+      "language": "English source linked; translations and local validation not verified.",
+      "recall_period": "Past 30 days for three day-count items",
+      "permission_status": "CDC explicitly states the measures are federally funded, not copyrighted, public domain, and require no permission or licensing fee.",
+      "content_rights": "Source-linked catalogue access only. The exact official source is linked; Ozarbox has not reproduced questionnaire items or implemented scoring in this entry.",
+      "scoring_specification": "Not implemented in Ozarbox. Open the official source for the current instrument, instructions and scoring.",
+      "evidence_status": "Official source and rights statement identified; Ozarbox questionnaire transcription, scoring and software implementation not yet verified.",
+      "evidence_sources": [
+        "https://archive.cdc.gov/www_cdc_gov/hrqol/hrqol14_measure.htm"
+      ],
+      "safety_rules": [
+        "Screening or clinician-rated assessment only; not a diagnosis.",
+        "Use the official source version and instructions; do not infer score meaning from this catalogue entry."
+      ],
+      "deployment_status": "catalogue-only",
+      "software_validation": "No in-app test or scoring module. Official source link only.",
+      "route": null,
+      "scoring_version": "Not implemented.",
+      "license_status": "CDC explicitly states the measures are federally funded, not copyrighted, public domain, and require no permission or licensing fee.",
+      "author_or_developer": "Centers for Disease Control and Prevention — Healthy Days Core Module",
+      "language_validation_status": "No local-language or India-specific validation verified in this work.",
+      "qualification_requirements": "Use within the source's intended population and purpose.",
+      "intended_use_boundary": "Source link only. No questionnaire items or scoring are reproduced in Ozarbox; verify official instructions and professional requirements.",
+      "source_pdf": {
+        "status": "official-source-found-not-used",
+        "label": "Official source found · not digitized",
+        "source_url": "https://archive.cdc.gov/www_cdc_gov/hrqol/hrqol14_measure.htm",
+        "version": "See official source",
+        "use_rights": "CDC explicitly states the measures are federally funded, not copyrighted, public domain, and require no permission or licensing fee.",
+        "implementation_status": "not-implemented",
+        "source_name": "Centers for Disease Control and Prevention — Healthy Days Core Module",
+        "reason": "Source-linked in the portfolio only; no item transcription or scoring implementation.",
+        "implemented_from": null,
+        "citation": "Centers for Disease Control and Prevention. HRQOL-14: Healthy Days Core Module and measures.",
+        "route": null
+      },
+      "access_url": "https://archive.cdc.gov/www_cdc_gov/hrqol/hrqol14_measure.htm",
+      "access_label": "Open official source and rights information"
+    },
+    {
+      "instrument_id": "ham-d",
+      "official_name": "Hamilton Rating Scale for Depression (HAM-D / HDRS)",
+      "main_purpose": "Clinician-rated depression symptom severity",
+      "domains": [
+        {
+          "id": "mental-health-screening",
+          "label": "Mental health screening and symptom severity"
+        }
+      ],
+      "version": "Official source/version must be checked before implementation.",
+      "population": "Use only for the population specified by the official source; local language and population validity not independently assessed.",
+      "administration_mode": "Clinician-administered interview; not a self-test",
+      "language": "English source linked; translations and local validation not verified.",
+      "recall_period": "Clinician follows the official form",
+      "permission_status": "APA identifies the HAM-D form as public domain with no permission required; clinician administration is required. This catalogue entry does not authorize self-administration.",
+      "content_rights": "Source-linked catalogue access only. The exact official source is linked; Ozarbox has not reproduced questionnaire items or implemented scoring in this entry.",
+      "scoring_specification": "Not implemented in Ozarbox. Open the official source for the current instrument, instructions and scoring.",
+      "evidence_status": "Official source and rights statement identified; Ozarbox questionnaire transcription, scoring and software implementation not yet verified.",
+      "evidence_sources": [
+        "https://www.apa.org/depression-guideline/assessment/"
+      ],
+      "safety_rules": [
+        "Screening or clinician-rated assessment only; not a diagnosis.",
+        "Use the official source version and instructions; do not infer score meaning from this catalogue entry."
+      ],
+      "deployment_status": "catalogue-only",
+      "software_validation": "No in-app test or scoring module. Official source link only.",
+      "route": null,
+      "scoring_version": "Not implemented.",
+      "license_status": "APA identifies the HAM-D form as public domain with no permission required; clinician administration is required. This catalogue entry does not authorize self-administration.",
+      "author_or_developer": "American Psychological Association — Depression Assessment Instruments",
+      "language_validation_status": "No local-language or India-specific validation verified in this work.",
+      "qualification_requirements": "Clinician administration; consult official guidance.",
+      "intended_use_boundary": "Source link only. No questionnaire items or scoring are reproduced in Ozarbox; verify official instructions and professional requirements.",
+      "source_pdf": {
+        "status": "official-source-found-not-used",
+        "label": "Official source found · not digitized",
+        "source_url": "https://www.apa.org/depression-guideline/assessment/",
+        "version": "See official source",
+        "use_rights": "APA identifies the HAM-D form as public domain with no permission required; clinician administration is required. This catalogue entry does not authorize self-administration.",
+        "implementation_status": "not-implemented",
+        "source_name": "American Psychological Association — Depression Assessment Instruments",
+        "reason": "Source-linked in the portfolio only; no item transcription or scoring implementation.",
+        "implemented_from": null,
+        "citation": "Hamilton, M. (1960). A rating scale for depression. Journal of Neurology, Neurosurgery & Psychiatry, 23, 56–62.",
+        "route": null
+      },
+      "access_url": "https://www.apa.org/depression-guideline/assessment/",
+      "access_label": "Open official source and rights information"
+    },
+    {
+      "instrument_id": "phq-8",
+      "official_name": "Patient Health Questionnaire-8 (PHQ-8)",
+      "main_purpose": "Depression symptom screening without the self-harm item",
+      "domains": [
+        {
+          "id": "mental-health-screening",
+          "label": "Mental health screening and symptom severity"
+        }
+      ],
+      "version": "Official source/version must be checked before implementation.",
+      "population": "Use only for the population specified by the official source; local language and population validity not independently assessed.",
+      "administration_mode": "Self-report; eight items",
+      "language": "English source linked; translations and local validation not verified.",
+      "recall_period": "Past two weeks",
+      "permission_status": "PHQ screeners materials provide PHQ measures for use without formal reproduction permission; check the current official terms before commercial deployment.",
+      "content_rights": "Source-linked catalogue access only. The exact official source is linked; Ozarbox has not reproduced questionnaire items or implemented scoring in this entry.",
+      "scoring_specification": "Not implemented in Ozarbox. Open the official source for the current instrument, instructions and scoring.",
+      "evidence_status": "Official source and rights statement identified; Ozarbox questionnaire transcription, scoring and software implementation not yet verified.",
+      "evidence_sources": [
+        "https://www.phqscreeners.com/"
+      ],
+      "safety_rules": [
+        "Screening or clinician-rated assessment only; not a diagnosis.",
+        "Use the official source version and instructions; do not infer score meaning from this catalogue entry."
+      ],
+      "deployment_status": "catalogue-only",
+      "software_validation": "No in-app test or scoring module. Official source link only.",
+      "route": null,
+      "scoring_version": "Not implemented.",
+      "license_status": "PHQ screeners materials provide PHQ measures for use without formal reproduction permission; check the current official terms before commercial deployment.",
+      "author_or_developer": "PHQ Screeners — official measure library",
+      "language_validation_status": "No local-language or India-specific validation verified in this work.",
+      "qualification_requirements": "Use within the source's intended population and purpose.",
+      "intended_use_boundary": "Source link only. No questionnaire items or scoring are reproduced in Ozarbox; verify official instructions and professional requirements.",
+      "source_pdf": {
+        "status": "official-source-found-not-used",
+        "label": "Official source found · not digitized",
+        "source_url": "https://www.phqscreeners.com/",
+        "version": "See official source",
+        "use_rights": "PHQ screeners materials provide PHQ measures for use without formal reproduction permission; check the current official terms before commercial deployment.",
+        "implementation_status": "not-implemented",
+        "source_name": "PHQ Screeners — official measure library",
+        "reason": "Source-linked in the portfolio only; no item transcription or scoring implementation.",
+        "implemented_from": null,
+        "citation": "Kroenke, K., Strine, T. W., Spitzer, R. L., Williams, J. B. W., Berry, J. T., & Mokdad, A. H. (2009). The PHQ-8 as a measure of current depression in the general population. Journal of Affective Disorders, 114(1–3), 163–173.",
+        "route": null
+      },
+      "access_url": "https://www.phqscreeners.com/",
+      "access_label": "Open official source and rights information"
     }
   ]
 }

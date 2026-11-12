@@ -35,6 +35,7 @@ export const GET: APIRoute = ({ site }) => {
     '/tools/assessments/pcl-5/',
     '/tools/assessments/pc-ptsd-5/',
     '/tools/assessments/lec-5/',
+    '/tools/assessments/gds-30/',
     '/dairy/',
     '/niche/accounting/',
     '/niche/tax/',

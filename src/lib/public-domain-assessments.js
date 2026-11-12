@@ -27,6 +27,64 @@ export const LEC5_RESPONSE_OPTIONS = Object.freeze([
 ]);
 
 export const PUBLIC_DOMAIN_ASSESSMENTS = Object.freeze({
+  "gds-30": Object.freeze({
+    id: "gds-30",
+    kind: "binary-scored",
+    officialName: "Geriatric Depression Scale — Long Form (GDS-30)",
+    purpose: "30-item self-report screening scale for depressive symptoms in older adults",
+    instructions: "Choose the best answer for how you felt over the past week.",
+    recallPeriod: "Past week",
+    items: Object.freeze([
+      "Are you basically satisfied with your life?",
+      "Have you dropped many of your activities and interests?",
+      "Do you feel that your life is empty?",
+      "Do you often get bored?",
+      "Are you hopeful about the future?",
+      "Are you bothered by thoughts you can't get out of your head?",
+      "Are you in good spirits most of the time?",
+      "Are you afraid that something bad is going to happen to you?",
+      "Do you feel happy most of the time?",
+      "Do you often feel helpless?",
+      "Do you often get restless and fidgety?",
+      "Do you prefer to stay at home, rather than going out and doing new things?",
+      "Do you frequently worry about the future?",
+      "Do you feel you have more problems with memory than most?",
+      "Do you think it is wonderful to be alive now?",
+      "Do you often feel downhearted and blue?",
+      "Do you feel pretty worthless the way you are now?",
+      "Do you worry a lot about the past?",
+      "Do you find life very exciting?",
+      "Is it hard for you to get started on new projects?",
+      "Do you feel full of energy?",
+      "Do you feel that your situation is hopeless?",
+      "Do you think that most people are better off than you are?",
+      "Do you frequently get upset over little things?",
+      "Do you frequently feel like crying?",
+      "Do you have trouble concentrating?",
+      "Do you enjoy getting up in the morning?",
+      "Do you prefer to avoid social gatherings?",
+      "Is it easy for you to make decisions?",
+      "Is your mind as clear as it used to be?"
+    ]),
+    responseOptions: PTSD_YES_NO_OPTIONS,
+    scoringKeys: Object.freeze([
+      "no","yes","yes","yes","no","yes","no","yes","no","yes",
+      "yes","yes","yes","yes","no","yes","yes","yes","no","yes",
+      "no","yes","yes","yes","yes","yes","no","yes","no","no"
+    ]),
+    maxScore: 30,
+    scoringMethod: "Award one point when the response matches the source scoring key for that item. Sum all 30 items for a total from 0 to 30. Source bands: normal 0–9; mild depressive symptoms 10–19; severe depressive symptoms 20–30. No missing answers are imputed.",
+    limitations: "The GDS-30 is a screening measure, not a diagnostic instrument. The source form's score bands are reproduced as supplied, but a result cannot establish a depressive disorder or determine its cause. Consider age, cognition, physical health, medications, culture, language and clinical context. A low score does not rule out concerns; a qualified health professional should assess persistent symptoms or impairment.",
+    lowResult: "The GDS-30 score is within the source form's normal band (0–9). This does not rule out depression or other concerns when symptoms or impairment persist.",
+    nextSteps: "If symptoms, distress or changes in daily functioning persist, discuss them with a qualified health professional. Do not use this score alone to make diagnosis, treatment or safety decisions.",
+    safetyNotice: "Some questions concern hopelessness and worthlessness. You may pause or leave at any time. This site is not monitored and does not alert a clinician. If you may act on thoughts of harming yourself or someone else, or are in immediate danger, seek immediate local emergency or in-person support.",
+    audienceNotice: "This is a self-report screening measure intended for older adults. Use the result as a conversation aid, not a diagnosis or a substitute for clinical assessment.",
+    sources: Object.freeze([
+      "https://www.apa.org/depression-guideline/assessment/",
+      "https://doi.org/10.1016/0022-3956(82)90033-4"
+    ]),
+    statusText: "GDS-30 long-form questionnaire and scoring key transcribed from the user-supplied PDF. The APA assessment guide identifies the GDS as public domain. This independent Ozarbox software implementation has not been independently clinically validated."
+  }),
   "pcl-5": Object.freeze({
     id: "pcl-5",
     kind: "likert",
@@ -175,6 +233,21 @@ export function scorePublicDomainAssessment(instrumentId, responses) {
     else if (total <= instrument.thresholdRange.max) interpretation = "Within a commonly cited 31–33 cutoff range";
     else interpretation = "Above the commonly cited 31–33 cutoff range";
     return Object.freeze({ instrumentId, kind: instrument.kind, complete: true, missingItems: Object.freeze([]), total, maxScore: instrument.maxScore, clusters, interpretation, thresholdRange: instrument.thresholdRange });
+  }
+
+  if (instrument.kind === "binary-scored") {
+    if (!Array.isArray(responses) || responses.length !== instrument.items.length) {
+      throw new TypeError(instrument.officialName + " requires exactly " + instrument.items.length + " response positions.");
+    }
+    const missingItems = [];
+    responses.forEach((value, index) => {
+      if (value === null || value === undefined || value === "") missingItems.push(index + 1);
+      else if (value !== "yes" && value !== "no") throw new RangeError("Response for item " + (index + 1) + " must be yes or no.");
+    });
+    if (missingItems.length) return Object.freeze({ instrumentId, kind: instrument.kind, complete: false, missingItems: Object.freeze(missingItems), total: null, interpretation: null });
+    const total = responses.reduce((sum, value, index) => sum + (value === instrument.scoringKeys[index] ? 1 : 0), 0);
+    const interpretation = total <= 9 ? "Normal band (0–9)" : total <= 19 ? "Mild depressive symptoms band (10–19)" : "Severe depressive symptoms band (20–30)";
+    return Object.freeze({ instrumentId, kind: instrument.kind, complete: true, missingItems: Object.freeze([]), total, maxScore: instrument.maxScore, interpretation, screenPositive: total >= 10 });
   }
 
   if (instrument.kind === "yes-no-branch") {

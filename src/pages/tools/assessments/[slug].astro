@@ -15,7 +15,7 @@ export function getStaticPaths() {
 const { instrument } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const instrumentId: string = instrument.id;
-const isLikert = !instrument.kind || instrument.kind === 'likert';
+const isLikert = !instrument.kind || instrument.kind === 'likert' || instrument.kind === 'binary-scored';
 const questionCount = instrument.kind === 'exposure-checklist' ? instrument.events.length
   : instrument.kind === 'yes-no-branch' ? instrument.items.length + 1
   : instrument.items.length;
@@ -305,7 +305,10 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
       if (scoreBand) scoreBand.textContent = kind === 'exposure-checklist' ? 'Exposure inventory' : scored.interpretation ?? 'Screening result';
       if (resultDate) resultDate.textContent = 'Generated on ' + new Date().toLocaleDateString() + '. Answers and results are not saved by this page.';
 
-      if (instrument.id === 'pcl-5') {
+      if (instrument.id === 'gds-30') {\n      } else if (instrument.id === 'gds-30') {
+        if (summary) summary.textContent = scored.interpretation + '. This is a screening result, not a diagnosis.';
+        if (meaning) meaning.textContent = 'The total counts the 30 responses that match the source scoring key. The source form labels 0–9 normal, 10–19 mild depressive symptoms and 20–30 severe depressive symptoms. These bands do not establish a depressive disorder.';
+      } else if (instrument.id === 'pcl-5') {
         if (summary) {
           summary.textContent = scored.total < instrument.thresholdRange.min
             ? instrument.lowResult

@@ -397,7 +397,9 @@ export function scorePublicDomainAssessment(instrumentId, responses) {
     const missingItems=[]; responses.forEach((v,i)=>{if(!Number.isInteger(v)||v<0||v>2) missingItems.push(i+1);});
     if(missingItems.length) return Object.freeze({instrumentId,kind:instrument.kind,complete:false,missingItems:Object.freeze(missingItems),total:null,interpretation:null});
     const total=responses.reduce((a,b)=>a+b,0); const screenPositive=total>=instrument.positiveThreshold;
-    return Object.freeze({instrumentId,kind:instrument.kind,complete:true,missingItems:Object.freeze([]),total,maxScore:instrument.maxScore,screenPositive,positiveThreshold:instrument.positiveThreshold,interpretation:screenPositive?"At or above the commonly used screening threshold":"Below the commonly used screening threshold"});
+    const sum=(numbers)=>numbers.reduce((acc,n)=>acc+responses[n-1],0);
+    const clusters=Object.freeze({PN:sum([1,6,9,12,15,18,19,22,24,27,30,34,38]),GD:sum([5,7,14,21,23,28,33,35,37]),SP:sum([4,8,13,16,20,25,29,31]),SC:sum([3,10,26,32,39,40,41]),SH:sum([2,11,17,36])});
+    return Object.freeze({instrumentId,kind:instrument.kind,complete:true,missingItems:Object.freeze([]),total,maxScore:instrument.maxScore,screenPositive,positiveThreshold:instrument.positiveThreshold,clusters,interpretation:screenPositive?"At or above the commonly used screening threshold":"Below the commonly used screening threshold"});
   }
   if (instrument.kind === "likert") {
     if (!Array.isArray(responses) || responses.length !== instrument.items.length) {

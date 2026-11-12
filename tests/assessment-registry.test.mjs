@@ -87,7 +87,7 @@ test("every catalogue-only or permission-review record explicitly has no live qu
 
 test("every permission-review entry exposes an official access or permissions route without cloning a test", () => {
   const gated = registry.instruments.filter((item) => item.deployment_status === "permission-review");
-  assert.equal(gated.length, 31);
+  assert.equal(gated.length, 36);
   for (const item of gated) {
     assert.equal(item.route ?? null, null, item.instrument_id + " must not be cloned as an Ozarbox form");
     assert.ok(item.access_url, item.instrument_id + " needs an official access or permission route");

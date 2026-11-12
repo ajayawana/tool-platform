@@ -1,0 +1,122 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Layout title="Wellbeing Activities & Self-Help Worksheets | Ozarbox" description="Free, private, printable mental wellbeing exercises for worry, reassurance seeking, low mood, stress, coping and personal reflection.">
+  <section class="container tool-wrap wellbeing-page" aria-labelledby="page-title">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href={base}>Home</a> / Wellbeing activities</nav>
+    <header class="tool-head">
+      <p class="eyebrow">Ozarbox · Guided activities</p>
+      <h1 id="page-title">Wellbeing Activities & Self-Help Worksheets</h1>
+      <p>Practical exercises you can complete at your own pace. These are educational self-help activities—not psychological tests, therapy, diagnosis or crisis monitoring.</p>
+    </header>
+    <div class="notice notice-warning">
+      <h2>Use these activities safely</h2>
+      <p>Choose only what feels manageable. You can stop, skip a prompt or return later. If an exercise increases distress, pause and use a grounding or support option that feels safe. Trauma-related work is best done with a qualified professional when it feels overwhelming.</p>
+      <p>Ozarbox does not receive or monitor anything you write here. Do not enter identifying or highly sensitive information. This page does not assess suicide risk. If you may act on thoughts of harming yourself or someone else, are in immediate danger, or someone is currently harming you, stop and seek immediate local emergency or in-person help.</p>
+    </div>
+
+    <section class="tool-box" aria-labelledby="reassurance">
+      <p class="eyebrow">Anxiety · Uncertainty</p>
+      <h2 id="reassurance">1. Reduce repeated reassurance-seeking</h2>
+      <p>Repeatedly asking for certainty can bring brief relief while strengthening the urge to ask again. This exercise adapts the Stop–Drop–Delay approach described in the uploaded Centre for Clinical Interventions handout.</p>
+      <ol>
+        <li><strong>Notice the loop:</strong> What uncertainty or feared outcome triggered the urge?</li>
+        <li><strong>STOP:</strong> If manageable, choose not to perform one specific reassurance behaviour.</li>
+        <li><strong>DROP:</strong> If stopping at once feels too difficult, reduce one part of the behaviour gradually (for example, one fewer check or one fewer person asked).</li>
+        <li><strong>DELAY:</strong> Postpone the response for a short, realistic interval. Increase the interval gradually if it remains manageable.</li>
+        <li><strong>Allow the wave:</strong> Notice the urge without arguing with it. Return attention to the activity you had chosen.</li>
+      </ol>
+      <h3>My small experiment</h3>
+      <div class="worksheet-grid">
+        <label>Situation or uncertainty<input type="text" placeholder="What triggered the urge?"></label>
+        <label>Reassurance behaviour I want to change<input type="text" placeholder="For example, repeated checking"></label>
+        <label>My first step (stop, drop or delay)<input type="text" placeholder="Make it small and specific"></label>
+        <label>What I will do while the urge passes<input type="text" placeholder="Return to a chosen activity"></label>
+      </div>
+      <p class="muted">This is not a recommendation to withhold necessary medical advice, safety support or help in an emergency.</p>
+    </section>
+
+    <section class="tool-box" aria-labelledby="activation">
+      <p class="eyebrow">Low mood · Daily routine</p>
+      <h2 id="activation">2. Small-step activity planner</h2>
+      <p>When mood is low, waiting until you feel motivated can keep life getting smaller. Plan one modest, meaningful action first; motivation may follow rather than lead.</p>
+      <ol>
+        <li>Choose one action that is genuinely small (5–15 minutes is enough).</li>
+        <li>Give it a time and place. Make the first step obvious.</li>
+        <li>Include a mix of care, connection, mastery and enjoyment over the week—without forcing all categories every day.</li>
+        <li>Afterwards, record what you did and how it felt. Do not grade yourself for the result.</li>
+      </ol>
+      <div class="worksheet-grid">
+        <label>Action I will try<input type="text" placeholder="A short walk, shower, message, tidy one surface…"></label>
+        <label>When and where<input type="text" placeholder="Day, time and place"></label>
+        <label>Make it easier<input type="text" placeholder="What can I prepare or simplify?"></label>
+        <label>Afterwards: what did I notice?<input type="text" placeholder="Mood, energy, difficulty or any small benefit"></label>
+      </div>
+    </section>
+
+    <section class="tool-box" aria-labelledby="stress">
+      <p class="eyebrow">Stress · Emotional regulation</p>
+      <h2 id="stress">3. Grounding and present-moment reset</h2>
+      <p>A short attention exercise for moments when stress is rising. Keep your eyes open if that feels safer; skip any step that is uncomfortable.</p>
+      <ol>
+        <li>Look around and name five things you can see.</li>
+        <li>Notice four physical sensations that are neutral or comfortable (for example, feet on the floor).</li>
+        <li>Notice three sounds, near or far.</li>
+        <li>Notice two scents, or two things you can sense in another comfortable way.</li>
+        <li>Notice one taste, or take one slow, comfortable breath without forcing it.</li>
+      </ol>
+      <p>Finish by naming where you are, the approximate date, and one next action you choose. If focusing on the body or senses makes you feel worse, stop and orient to a safe person or familiar object instead.</p>
+    </section>
+
+    <section class="tool-box" aria-labelledby="fiveps">
+      <p class="eyebrow">Reflection · Understanding patterns</p>
+      <h2 id="fiveps">4. Personal 5P reflection map</h2>
+      <p>This is a simplified self-reflection aid inspired by the 5P formulation approach described in the uploaded Queensland Health formulation resources and the case-formulation reading. It is not a clinical formulation or diagnosis.</p>
+      <div class="worksheet-grid">
+        <label><strong>Presenting:</strong> What feels hardest right now?<textarea rows="3" placeholder="Describe the current difficulty in your own words."></textarea></label>
+        <label><strong>Predisposing:</strong> What earlier experiences or vulnerabilities may matter?<textarea rows="3" placeholder="Only include what feels safe to reflect on."></textarea></label>
+        <label><strong>Precipitating:</strong> What changed or happened before this became harder?<textarea rows="3" placeholder="Recent events, transitions or stressors."></textarea></label>
+        <label><strong>Perpetuating:</strong> What may be keeping the difficulty going?<textarea rows="3" placeholder="Patterns, barriers, avoidance or unmet needs."></textarea></label>
+        <label><strong>Protective:</strong> What strengths, supports or resources help?<textarea rows="3" placeholder="People, skills, values, routines or places."></textarea></label>
+      </div>
+      <p><strong>One goal that matters to me:</strong> <input type="text" placeholder="A small change that would make life more workable"></p>
+      <p class="muted">You do not need to revisit traumatic experiences to complete this reflection. A clinician can help explore complex or painful material safely.</p>
+    </section>
+
+    <section class="tool-box" aria-labelledby="support">
+      <p class="eyebrow">Support · Safety</p>
+      <h2 id="support">5. Support and next-step plan</h2>
+      <p>Write down practical support before a difficult moment, rather than relying on memory when distressed.</p>
+      <div class="worksheet-grid">
+        <label>Someone I can contact<input type="text" placeholder="Name or relationship (keep private on a shared device)"></label>
+        <label>A place where I feel safer<input type="text" placeholder="A familiar, accessible place"></label>
+        <label>One helpful thing I can ask for<input type="text" placeholder="Company, transport, listening, practical help"></label>
+        <label>Professional support I can contact<input type="text" placeholder="Clinician, counsellor, primary-care service"></label>
+      </div>
+      <p>If there is immediate danger or an imminent risk of harm, do not rely on a worksheet or online score. Contact local emergency services or go to the nearest emergency department and involve a trusted person if possible.</p>
+    </section>
+
+    <section class="source-panel" aria-labelledby="sources">
+      <h2 id="sources">Sources and approach</h2>
+      <ul>
+        <li>Centre for Clinical Interventions (CCI), <em>Reducing Reassurance-Seeking</em> and <em>Responding to Reassurance-Seeking</em> — concepts adapted into a new, shorter worksheet; original handouts remain the source documents.</li>
+        <li>Uploaded patient resource, <em>Understanding Depression</em> — supports the emphasis on gradual self-management and activity planning.</li>
+        <li>Queensland Health, Comprehensive Care formulation resources — supports collaborative, strengths-based 5P reflection and linking understanding to practical goals.</li>
+        <li>Eells, T. D., <em>Psychotherapy Case Formulation</em> — background reading for clinicians and students; this page does not reproduce its text or clinical models.</li>
+      </ul>
+      <p>These activities are original educational adaptations, not validated interventions or substitutes for clinician-led care. They are not scored and no answers are saved or transmitted.</p>
+      <p><button type="button" onclick="window.print()">Print / Save worksheets as PDF</button> <a class="exit-link" href={base + 'assessments/'}>Go to psychological assessment centre</a></p>
+    </section>
+  </section>
+  <style>
+    .wellbeing-page .tool-box{margin:1.25rem 0;padding:clamp(1rem,3vw,1.5rem);border:1px solid var(--border,#ddd);border-radius:1rem;background:var(--surface,#fff)}
+    .wellbeing-page .tool-box h2{margin-top:.25rem}
+    .wellbeing-page .worksheet-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1rem;margin:1rem 0}
+    .wellbeing-page label{display:grid;gap:.4rem;font-weight:600}
+    .wellbeing-page input,.wellbeing-page textarea{width:100%;padding:.7rem;border:1px solid var(--border,#bbb);border-radius:.5rem;font:inherit}
+    .wellbeing-page li{margin:.55rem 0;line-height:1.55}
+    .wellbeing-page .muted{color:var(--muted,#666);font-size:.92rem}
+    @media print{header.site-header,footer,.breadcrumbs,.notice,.wellbeing-page button,.wellbeing-page .exit-link{display:none!important}.wellbeing-page .tool-box{break-inside:avoid;border:1px solid #999}.wellbeing-page input,.wellbeing-page textarea{border:0;border-bottom:1px solid #999;border-radius:0}}
+  </style>
+</Layout>

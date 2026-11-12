@@ -141,7 +141,238 @@ export const PUBLIC_DOMAIN_ASSESSMENTS = Object.freeze({
       "https://doi.org/10.1177/1073191104269954"
     ]),
     statusText: "Public-domain English standard self-report exposure checklist. No total symptom score is generated. Ozarbox implementation is independent and unvalidated."
-  })
+  }),
+  "gds-15": {
+  "id": "gds-15",
+  "kind": "likert",
+  "scoreType": "gds",
+  "officialName": "Geriatric Depression Scale (GDS-15)",
+  "purpose": "Public-domain yes/no screening questionnaire for depressive symptoms in older adults",
+  "instructions": "Choose the answer that best describes how you have felt over the past week. Answer every item. This screen is intended for older adults and does not diagnose depression.",
+  "recallPeriod": "Past week",
+  "items": [
+    "Are you basically satisfied with your life?",
+    "Have you dropped many of your activities and interests?",
+    "Do you feel that your life is empty?",
+    "Do you often get bored?",
+    "Are you in good spirits most of the time?",
+    "Are you afraid that something bad is going to happen to you?",
+    "Do you feel happy most of the time?",
+    "Do you often feel helpless?",
+    "Do you prefer to stay at home, rather than going out and doing new things?",
+    "Do you feel you have more problems with memory than most?",
+    "Do you think it is wonderful to be alive now?",
+    "Do you feel pretty worthless the way you are now?",
+    "Do you feel full of energy?",
+    "Do you feel that your situation is hopeless?",
+    "Do you think that most people are better off than you are?"
+  ],
+  "responseOptions": [
+    {
+      "value": "no",
+      "label": "No"
+    },
+    {
+      "value": "yes",
+      "label": "Yes"
+    }
+  ],
+  "depressionKeys": [
+    2,
+    3,
+    4,
+    6,
+    8,
+    9,
+    10,
+    12,
+    14,
+    15
+  ],
+  "positiveThreshold": 6,
+  "maxScore": 15,
+  "scoringMethod": "Count one point for each depression-keyed response. GDS-15: items 2,3,4,6,8,9,10,12,14,15 = Yes; items 1,5,7,11,13 = No. GDS-30 uses the original Stanford answer key.",
+  "limitations": "A screening score is not a diagnosis. The GDS is designed for older adults; cognitive, medical, cultural and language context matter. A low score does not rule out depression. Persistent distress, functional decline or safety concerns warrant professional assessment.",
+  "lowResult": "This score is below the commonly used follow-up threshold. It does not rule out depression or another health concern.",
+  "highResult": "This score is at or above a commonly used follow-up threshold. Arrange a fuller assessment with a qualified health professional; this is not a diagnosis.",
+  "nextSteps": "Discuss persistent low mood, loss of interest, changes in daily functioning or any safety concerns with a qualified health professional. If there is immediate danger, seek urgent local emergency or in-person support.",
+  "safetyNotice": "This questionnaire is not monitored and does not assess suicide risk. You may stop at any time. If you may act on thoughts of harming yourself or someone else, or are in immediate danger, seek immediate local emergency or in-person help.",
+  "audienceNotice": "Public-domain English GDS. Intended for screening older adults; not a diagnostic instrument. Ozarbox software implementation is independent and has not been clinically validated.",
+  "sources": [
+    "https://www.apa.org/depression-guideline/assessment/",
+    "https://web.stanford.edu/~yesavage/GDS",
+    "https://web.stanford.edu/~yesavage/GDS.english.long.html"
+  ],
+  "statusText": "Public-domain English GDS form, transcribed from Stanford University source. Original instrument is public domain. Ozarbox software implementation is not independently clinically validated."
+},
+  "gds-30": {
+  "id": "gds-30",
+  "kind": "likert",
+  "scoreType": "gds",
+  "officialName": "Geriatric Depression Scale (GDS-30)",
+  "purpose": "Public-domain yes/no screening questionnaire for depressive symptoms in older adults",
+  "instructions": "Choose the answer that best describes how you have felt over the past week. Answer every item. This screen is intended for older adults and does not diagnose depression.",
+  "recallPeriod": "Past week",
+  "items": [
+    "Are you basically satisfied with your life?",
+    "Have you dropped many of your activities and interests?",
+    "Do you feel that your life is empty?",
+    "Do you often get bored?",
+    "Are you hopeful about the future?",
+    "Are you bothered by thoughts you can’t get out of your head?",
+    "Are you in good spirits most of the time?",
+    "Are you afraid that something bad is going to happen to you?",
+    "Do you feel happy most of the time?",
+    "Do you often feel helpless?",
+    "Do you often get restless and fidgety?",
+    "Do you prefer to stay at home, rather than going out and doing new things?",
+    "Do you frequently worry about the future?",
+    "Do you feel you have more problems with memory than most?",
+    "Do you think it is wonderful to be alive now?",
+    "Do you often feel downhearted and blue?",
+    "Do you feel pretty worthless the way you are now?",
+    "Do you worry a lot about the past?",
+    "Do you find life very exciting?",
+    "Is it hard for you to get started on new projects?",
+    "Do you feel full of energy?",
+    "Do you feel that your situation is hopeless?",
+    "Do you think that most people are better off than you are?",
+    "Do you frequently get upset over little things?",
+    "Do you frequently feel like crying?",
+    "Do you have trouble concentrating?",
+    "Do you enjoy getting up in the morning?",
+    "Do you prefer to avoid social gatherings?",
+    "Is it easy for you to make decisions?",
+    "Is your mind as clear as it used to be?"
+  ],
+  "responseOptions": [
+    {
+      "value": "no",
+      "label": "No"
+    },
+    {
+      "value": "yes",
+      "label": "Yes"
+    }
+  ],
+  "depressionKeys": [
+    2,
+    3,
+    4,
+    6,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    28
+  ],
+  "positiveThreshold": 10,
+  "maxScore": 30,
+  "scoringMethod": "Count one point for each depression-keyed response. GDS-15: items 2,3,4,6,8,9,10,12,14,15 = Yes; items 1,5,7,11,13 = No. GDS-30 uses the original Stanford answer key.",
+  "limitations": "A screening score is not a diagnosis. The GDS is designed for older adults; cognitive, medical, cultural and language context matter. A low score does not rule out depression. Persistent distress, functional decline or safety concerns warrant professional assessment.",
+  "lowResult": "This score is below the commonly used follow-up threshold. It does not rule out depression or another health concern.",
+  "highResult": "This score is at or above a commonly used follow-up threshold. Arrange a fuller assessment with a qualified health professional; this is not a diagnosis.",
+  "nextSteps": "Discuss persistent low mood, loss of interest, changes in daily functioning or any safety concerns with a qualified health professional. If there is immediate danger, seek urgent local emergency or in-person support.",
+  "safetyNotice": "This questionnaire is not monitored and does not assess suicide risk. You may stop at any time. If you may act on thoughts of harming yourself or someone else, or are in immediate danger, seek immediate local emergency or in-person help.",
+  "audienceNotice": "Public-domain English GDS. Intended for screening older adults; not a diagnostic instrument. Ozarbox software implementation is independent and has not been clinically validated.",
+  "sources": [
+    "https://www.apa.org/depression-guideline/assessment/",
+    "https://web.stanford.edu/~yesavage/GDS",
+    "https://web.stanford.edu/~yesavage/GDS.english.long.html"
+  ],
+  "statusText": "Public-domain English GDS form, transcribed from Stanford University source. Original instrument is public domain. Ozarbox software implementation is not independently clinically validated."
+},
+  "scared": {
+  "id": "scared",
+  "kind": "likert",
+  "scoreType": "scared",
+  "officialName": "Screen for Child Anxiety Related Emotional Disorders (SCARED) — Parent Report",
+  "purpose": "41-item parent-report screen for anxiety symptoms in children and adolescents",
+  "instructions": "For each statement, choose how true it has been for your child over the last 3 months. This is the parent-report form. PhenX recommends collecting both parent and child reports where possible.",
+  "recallPeriod": "Last 3 months",
+  "items": [
+    "When my child feels frightened, it is hard for him/her to breathe.",
+    "My child gets headaches when he/she is at school.",
+    "My child doesn’t like to be with people he/she doesn’t know well.",
+    "My child gets scared if he/she sleeps away from home.",
+    "My child worries about other people liking him/her.",
+    "When my child gets frightened, he/she feels like passing out.",
+    "My child is nervous.",
+    "My child follows me wherever I go.",
+    "People tell me that my child looks nervous.",
+    "My child feels nervous with people he/she doesn’t know well.",
+    "My child gets stomachaches at school.",
+    "When my child gets frightened, he/she feels like he/she is going crazy.",
+    "My child worries about sleeping alone.",
+    "My child worries about being as good as other kids.",
+    "When my child gets frightened, he/she feels like things are not real.",
+    "My child has nightmares about something bad happening to his/her parents.",
+    "My child worries about going to school.",
+    "When my child gets frightened, his/her heart beats fast.",
+    "My child gets shaky.",
+    "My child has nightmares about something bad happening to him/her.",
+    "My child worries about things working out for him/her.",
+    "When my child gets frightened, he/she sweats a lot.",
+    "My child is a worrier.",
+    "My child gets really frightened for no reason at all.",
+    "My child is afraid to be alone in the house.",
+    "It is hard for my child to talk with people he/she doesn’t know well.",
+    "When my child gets frightened, he/she feels like he/she is choking.",
+    "People tell me that my child worries too much.",
+    "My child doesn’t like to be away from his/her family.",
+    "My child is afraid of having anxiety (or panic) attacks.",
+    "My child worries that something bad might happen to his/her parents.",
+    "My child feels shy with people he/she doesn’t know well.",
+    "My child worries about what is going to happen in the future.",
+    "When my child gets frightened, he/she feels like throwing up.",
+    "My child worries about how well he/she does things.",
+    "My child is scared to go to school.",
+    "My child worries about things that have already happened.",
+    "When my child gets frightened, he/she feels dizzy.",
+    "My child feels nervous when he/she is with other children or adults and he/she has to do something while they watch him/her (for example: read aloud, speak, play a game, play a sport).",
+    "My child feels nervous when he/she is going to parties, dances, or any place where there will be people that he/she doesn’t know well.",
+    "My child is shy."
+  ],
+  "responseOptions": [
+    {
+      "value": 0,
+      "label": "Not true or hardly ever true"
+    },
+    {
+      "value": 1,
+      "label": "Somewhat true or sometimes true"
+    },
+    {
+      "value": 2,
+      "label": "Very true or often true"
+    }
+  ],
+  "positiveThreshold": 25,
+  "maxScore": 82,
+  "scoringMethod": "Sum all 41 items (0–2). A total score of 25 or more may indicate an anxiety disorder and warrants further assessment. Subscales: Panic/Somatic items 1,6,9,12,15,18,19,22,24,27,30,34,38 (threshold 7); Generalized Anxiety items 5,7,14,21,23,28,33,35,37 (9); Separation Anxiety items 4,8,13,16,20,25,29,31 (5); Social Anxiety items 3,10,26,32,39,40,41 (8); School Avoidance items 2,11,17,36 (3).",
+  "limitations": "This is the parent-report SCARED form for children/adolescents, not the child self-report version. Scores are screening indicators, not diagnoses. The source recommends both parent and child reports when possible; language, age, context and impairment require professional interpretation.",
+  "lowResult": "The total is below the commonly used screening threshold of 25. This does not rule out anxiety or the need for support.",
+  "highResult": "The total is at or above the commonly used screening threshold. Arrange further assessment with a qualified child/adolescent mental-health professional; this is not a diagnosis.",
+  "nextSteps": "Discuss persistent anxiety, avoidance, school attendance problems, physical complaints or impairment with a qualified child/adolescent professional. Consider obtaining the child's self-report version as well, following the source protocol.",
+  "safetyNotice": "This screen is not monitored and does not assess immediate safety. Do not use it alone to make school, treatment or diagnostic decisions. If a child is in immediate danger, seek urgent local emergency or in-person support.",
+  "audienceNotice": "Freely available PhenX SCARED Parent Report protocol; permission not required for use according to PhenX. This is the parent form, not a substitute for clinical assessment.",
+  "sources": [
+    "https://www.phenxtoolkit.org/protocols/view/121801?origin=browse",
+    "https://pubmed.ncbi.nlm.nih.gov/10517055/"
+  ],
+  "statusText": "SCARED Parent Report form based on PhenX protocol 121801. PhenX states the protocol is freely available and permission is not required. Ozarbox software implementation is not independently clinically validated."
+}
 });
 
 export function getPublicDomainAssessment(instrumentId) {
@@ -153,6 +384,23 @@ export function getPublicDomainAssessment(instrumentId) {
 export function scorePublicDomainAssessment(instrumentId, responses) {
   const instrument = getPublicDomainAssessment(instrumentId);
 
+  if (instrument.scoreType === "gds") {
+    if (!Array.isArray(responses) || responses.length !== instrument.items.length) throw new TypeError(instrument.officialName + " requires exactly " + instrument.items.length + " responses.");
+    const missingItems=[]; responses.forEach((v,i)=>{if(v!=="yes"&&v!=="no") missingItems.push(i+1);});
+    if(missingItems.length) return Object.freeze({instrumentId,kind:instrument.kind,complete:false,missingItems:Object.freeze(missingItems),total:null,interpretation:null});
+    const total=responses.reduce((sum,v,i)=>sum+((instrument.depressionKeys.includes(i+1)?v==="yes":v==="no")?1:0),0);
+    const screenPositive=total>=instrument.positiveThreshold;
+    return Object.freeze({instrumentId,kind:instrument.kind,complete:true,missingItems:Object.freeze([]),total,maxScore:instrument.maxScore,screenPositive,positiveThreshold:instrument.positiveThreshold,interpretation:screenPositive?"At or above a commonly used follow-up threshold":"Below a commonly used follow-up threshold"});
+  }
+  if (instrument.scoreType === "scared") {
+    if (!Array.isArray(responses) || responses.length !== instrument.items.length) throw new TypeError(instrument.officialName + " requires exactly " + instrument.items.length + " responses.");
+    const missingItems=[]; responses.forEach((v,i)=>{if(!Number.isInteger(v)||v<0||v>2) missingItems.push(i+1);});
+    if(missingItems.length) return Object.freeze({instrumentId,kind:instrument.kind,complete:false,missingItems:Object.freeze(missingItems),total:null,interpretation:null});
+    const total=responses.reduce((a,b)=>a+b,0); const screenPositive=total>=instrument.positiveThreshold;
+    const sum=(numbers)=>numbers.reduce((acc,n)=>acc+responses[n-1],0);
+    const clusters=Object.freeze({PN:sum([1,6,9,12,15,18,19,22,24,27,30,34,38]),GD:sum([5,7,14,21,23,28,33,35,37]),SP:sum([4,8,13,16,20,25,29,31]),SC:sum([3,10,26,32,39,40,41]),SH:sum([2,11,17,36])});
+    return Object.freeze({instrumentId,kind:instrument.kind,complete:true,missingItems:Object.freeze([]),total,maxScore:instrument.maxScore,screenPositive,positiveThreshold:instrument.positiveThreshold,clusters,interpretation:screenPositive?"At or above the commonly used screening threshold":"Below the commonly used screening threshold"});
+  }
   if (instrument.kind === "likert") {
     if (!Array.isArray(responses) || responses.length !== instrument.items.length) {
       throw new TypeError(instrument.officialName + " requires exactly " + instrument.items.length + " response positions.");

@@ -227,7 +227,7 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
       return fieldsets.map((fieldset) => {
         const checked = fieldset.querySelector<HTMLInputElement>('input[type="radio"]:checked');
         if (!checked) return null;
-        return kind === 'likert' ? Number(checked.value) : checked.value;
+        return kind === 'likert' && instrument?.scoreType !== 'gds' ? Number(checked.value) : checked.value;
       });
     }
 
@@ -351,7 +351,7 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
       if (nextSteps) nextSteps.textContent = instrument.nextSteps;
 
       if (clusterSection) {
-        const showClusters = instrument.id === 'pcl-5' && Boolean(scored.clusters);
+        const showClusters = ['pcl-5', 'scared'].includes(instrument.id) && Boolean(scored.clusters);
         clusterSection.hidden = !showClusters;
         if (showClusters && scored.clusters) {
           setListItems(document.querySelector<HTMLElement>('#cluster-list'), [
@@ -359,6 +359,7 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
             'Cluster C (items 6–7): ' + scored.clusters.C + ' / 8',
             'Cluster D (items 8–14): ' + scored.clusters.D + ' / 28',
             'Cluster E (items 15–20): ' + scored.clusters.E + ' / 24',
+            ...(instrument.id === 'scared' ? ['Panic / somatic: ' + scored.clusters.PN + ' / 26 (threshold 7)', 'Generalized anxiety: ' + scored.clusters.GD + ' / 18 (threshold 9)', 'Separation anxiety: ' + scored.clusters.SP + ' / 16 (threshold 5)', 'Social anxiety: ' + scored.clusters.SC + ' / 14 (threshold 8)', 'School avoidance: ' + scored.clusters.SH + ' / 8 (threshold 3)'] : []),
           ]);
         }
       }

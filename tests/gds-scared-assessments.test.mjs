@@ -6,14 +6,16 @@ test("GDS-15 and GDS-30 expose the exact item counts and yes/no response options
   assert.equal(PUBLIC_DOMAIN_ASSESSMENTS["gds-15"].items.length, 15);
   assert.equal(PUBLIC_DOMAIN_ASSESSMENTS["gds-30"].items.length, 30);
   for (const id of ["gds-15", "gds-30"]) {
-    const result = scorePublicDomainAssessment(id, Array(PUBLIC_DOMAIN_ASSESSMENTS[id].items.length).fill("no"));
+    const spec = PUBLIC_DOMAIN_ASSESSMENTS[id];
+    const result = scorePublicDomainAssessment(id, spec.items.map((_, i) => spec.depressionKeys.includes(i + 1) ? "no" : "yes"));
     assert.equal(result.complete, true);
     assert.equal(result.total, 0);
   }
 });
 
 test("GDS-15 counts only source-keyed depression responses", () => {
-  const answers = Array(15).fill("no");
+  const spec = PUBLIC_DOMAIN_ASSESSMENTS["gds-15"];
+  const answers = spec.items.map((_, i) => spec.depressionKeys.includes(i + 1) ? "no" : "yes");
   answers[1] = "yes";
   answers[2] = "yes";
   answers[3] = "yes";

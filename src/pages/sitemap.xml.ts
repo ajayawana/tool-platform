@@ -29,6 +29,7 @@ export const GET: APIRoute = ({ site }) => {
     '/tools/source-assessments/k6/',
     '/tools/source-assessments/ces-d/',
     '/assessments/',
+    '/wellbeing/',
     '/tools/assessments/phq-2/',
     '/tools/assessments/gad-7/',
     '/tools/assessments/gad-2/',

@@ -12,7 +12,7 @@ const alternatives = JSON.parse(fs.readFileSync(path.join(root, 'src/data/open-a
 test('all 148 remaining catalogue-only instruments have separate original reflection guides', () => {
   const pending = registry.instruments.filter((item) => item.deployment_status === 'catalogue-only');
   assert.equal(pending.length, 148);
-  assert.equal(pending.filter((item) => item.open_alternative_route).length, 147);
+  assert.equal(pending.filter((item) => item.open_alternative_route).length, 148);
   assert.equal(alternatives.instruments.length, 187);
   for (const item of pending) {
     assert.ok(alternatives.instruments.some((alt) => alt.sourceInstrumentId === item.instrument_id));

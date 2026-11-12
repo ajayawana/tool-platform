@@ -6357,6 +6357,222 @@
       "sources": [
         "https://www.govinfo.gov/content/pkg/GOVPUB-J16_100-PURL-gpo36955/pdf/GOVPUB-J16_100-PURL-gpo36955.pdf"
       ]
+    },
+    {
+      "sourceInstrumentId": "epds",
+      "slug": "epds",
+      "domain": "Perinatal mental wellbeing",
+      "title": "Open Perinatal wellbeing and support reflection",
+      "description": "An independently written reflection guide about perinatal mental wellbeing. It is not the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How have changes in mood affected your day during pregnancy or after birth?"
+        },
+        {
+          "id": 2,
+          "text": "What has felt harder than you expected in caring for yourself or your baby?"
+        },
+        {
+          "id": 3,
+          "text": "When do you feel most supported, and when do you feel alone?"
+        },
+        {
+          "id": 4,
+          "text": "What practical help would make the next few days easier?"
+        },
+        {
+          "id": 5,
+          "text": "Who could you contact to discuss persistent distress or safety concerns?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any response pattern is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.rcpsych.ac.uk/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "stai",
+      "slug": "stai",
+      "domain": "State and trait anxiety",
+      "title": "Open State and ongoing anxiety reflection",
+      "description": "An independently written reflection guide about state and trait anxiety. It is not the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "In what situations do you notice anxiety rising right now?"
+        },
+        {
+          "id": 2,
+          "text": "How often does a more general sense of worry stay with you across days?"
+        },
+        {
+          "id": 3,
+          "text": "What physical or mental signs tell you anxiety is increasing?"
+        },
+        {
+          "id": 4,
+          "text": "What helps you settle without avoiding something important?"
+        },
+        {
+          "id": 5,
+          "text": "How does anxiety affect decisions, sleep or relationships?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any response pattern is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.mindgarden.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "asi-16",
+      "slug": "asi-16",
+      "domain": "Anxiety sensitivity",
+      "title": "Open Fear of anxiety sensations reflection",
+      "description": "An independently written reflection guide about anxiety sensitivity. It is not the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Which bodily sensations tend to trigger worry for you?"
+        },
+        {
+          "id": 2,
+          "text": "What do you fear those sensations might mean?"
+        },
+        {
+          "id": 3,
+          "text": "How do you usually respond when those sensations appear?"
+        },
+        {
+          "id": 4,
+          "text": "Does avoiding sensations or situations make life smaller?"
+        },
+        {
+          "id": 5,
+          "text": "What information or professional support could help you respond safely?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any response pattern is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://www.mindgarden.com/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "pdss-sr",
+      "slug": "pdss-sr",
+      "domain": "Panic symptoms and coping",
+      "title": "Open Panic experiences and recovery reflection",
+      "description": "An independently written reflection guide about panic symptoms and coping. It is not the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "How have panic-like episodes affected your daily routine?"
+        },
+        {
+          "id": 2,
+          "text": "What situations do you worry might trigger another episode?"
+        },
+        {
+          "id": 3,
+          "text": "What do you tend to do before, during or after an episode?"
+        },
+        {
+          "id": 4,
+          "text": "How has this affected work, study, relationships or independence?"
+        },
+        {
+          "id": 5,
+          "text": "What would be one manageable step toward valued activity?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any response pattern is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "scaared",
+      "slug": "scaared",
+      "domain": "Child and adult anxiety concerns",
+      "title": "Open Child and adolescent anxiety discussion guide",
+      "description": "An independently written reflection guide about child and adult anxiety concerns. It is not the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "What situations seem to bring up worry or fear for the child or young person?"
+        },
+        {
+          "id": 2,
+          "text": "How does worry affect school, friendships, family life or sleep?"
+        },
+        {
+          "id": 3,
+          "text": "What does the young person do when anxiety rises?"
+        },
+        {
+          "id": 4,
+          "text": "What helps them feel safe while still building confidence?"
+        },
+        {
+          "id": 5,
+          "text": "What would they like a trusted adult or professional to understand?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any response pattern is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
+    },
+    {
+      "sourceInstrumentId": "wsas",
+      "slug": "wsas",
+      "domain": "Work, home and social functioning",
+      "title": "Open Daily functioning and participation reflection",
+      "description": "An independently written reflection guide about work, home and social functioning. It is not the named instrument and is not a validated substitute.",
+      "intendedUse": "Self-reflection and preparation for a conversation with a qualified professional only. Not diagnostic, norm-referenced, or validated for clinical decisions.",
+      "questions": [
+        {
+          "id": 1,
+          "text": "Which everyday responsibilities feel most affected by current difficulties?"
+        },
+        {
+          "id": 2,
+          "text": "How has work, study or household activity changed?"
+        },
+        {
+          "id": 3,
+          "text": "How have close relationships or social activities been affected?"
+        },
+        {
+          "id": 4,
+          "text": "Which area would make the biggest difference if it became easier?"
+        },
+        {
+          "id": 5,
+          "text": "What small practical adjustment or support could you try?"
+        }
+      ],
+      "resultNotice": "This is an original, unvalidated reflection exercise. Any response pattern is not a clinical score and has no diagnostic cut-off. Do not compare it with the named instrument or use it for diagnosis, treatment, eligibility, or emergency decisions.",
+      "sources": [
+        "https://camcops.readthedocs.io/en/stable/tasks/wsas.html",
+        "https://www.apa.org/depression-guideline/assessment/",
+        "https://www.who.int/health-topics/mental-health"
+      ]
     }
   ],
   "licenseNote": "Added prompts are original Ozarbox-authored text. They may be reused as reflection prompts, but are not validated measures. Linked sources provide general background only and do not endorse these guides or establish validity. Named instruments remain subject to their own copyright, licensing, training, and qualification requirements."

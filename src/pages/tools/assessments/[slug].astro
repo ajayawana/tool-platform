@@ -305,7 +305,7 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
       if (scoreBand) scoreBand.textContent = kind === 'exposure-checklist' ? 'Exposure inventory' : scored.interpretation ?? 'Screening result';
       if (resultDate) resultDate.textContent = 'Generated on ' + new Date().toLocaleDateString() + '. Answers and results are not saved by this page.';
 
-      if (instrument.id === 'gds-30') {\n      } else if (instrument.id === 'gds-30') {
+      if (instrument.id === 'gds-30') {
         if (summary) summary.textContent = scored.interpretation + '. This is a screening result, not a diagnosis.';
         if (meaning) meaning.textContent = 'The total counts the 30 responses that match the source scoring key. The source form labels 0–9 normal, 10–19 mild depressive symptoms and 20–30 severe depressive symptoms. These bands do not establish a depressive disorder.';
       } else if (instrument.id === 'pcl-5') {

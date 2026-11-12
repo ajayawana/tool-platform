@@ -34,6 +34,7 @@ test("SCARED parent report has 41 items and deterministic total scoring", () => 
   assert.equal(high.total, 41);
   assert.equal(high.screenPositive, true);
   assert.equal(high.maxScore, 82);
+  assert.deepEqual(high.clusters, {PN:13,GD:9,SP:8,SC:7,SH:4});
 });
 
 test("GDS and SCARED reject incomplete and out-of-range responses", () => {

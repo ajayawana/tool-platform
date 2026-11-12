@@ -3832,7 +3832,7 @@
       "recall_period": "Generally current feelings; use official form instructions",
       "permission_status": "Public domain per Stanford GDS source and APA assessment guide; no permission required for use.",
       "content_rights": "Public-domain questionnaire / freely available protocol; preserve source attribution and do not claim endorsement.",
-      "scoring_specification": "",
+      "scoring_specification": "Count one point for each source-keyed response (0–30). The original Stanford long-form page lists 0–9 as normal, 10–19 as mild and 20–30 as severe; Ozarbox reports the total and follow-up threshold only and does not assign a severity diagnosis.",
       "evidence_status": "Official source form and scoring reviewed; Ozarbox implementation not independently psychometrically validated.",
       "evidence_sources": [
         "https://web.stanford.edu/~yesavage/GDS.english.long.html"

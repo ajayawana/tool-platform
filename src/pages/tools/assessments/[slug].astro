@@ -227,7 +227,7 @@ const functionalImpact: { label: string; options: string[]; note: string } | nul
       return fieldsets.map((fieldset) => {
         const checked = fieldset.querySelector<HTMLInputElement>('input[type="radio"]:checked');
         if (!checked) return null;
-        return kind === 'likert' ? Number(checked.value) : checked.value;
+        return kind === 'likert' && instrument?.scoreType !== 'gds' ? Number(checked.value) : checked.value;
       });
     }
 
